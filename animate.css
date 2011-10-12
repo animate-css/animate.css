@@ -834,6 +834,424 @@
 	}
 }
 
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes fadeOutUp {
+	0% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(-20px);
+	}
+}
+
+@-ms-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes fadeOutDown {
+	0% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(20px);
+	}
+}
+
+@-ms-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(-20px);
+	}
+}
+
+@-ms-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeOutRight {
+	0% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(20px);
+	}
+}
+
+@-ms-keyframes fadeInUpBig {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes fadeOutUpBig {
+	0% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(-2000px);
+	}
+}
+
+@-ms-keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes fadeOutDownBig {
+	0% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(2000px);
+	}
+}
+
+@-ms-keyframes fadeInRightBig {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeOutLeftBig {
+	0% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(-2000px);
+	}
+}
+
+@-ms-keyframes fadeInLeftBig {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeOutRightBig {
+	0% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(2000px);
+	}
+}
+
+@-ms-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-ms-transform: scale(.3);
+	}
+	
+	50% {
+		opacity: 1;
+		-ms-transform: scale(1.05);
+	}
+	
+	70% {
+		-ms-transform: scale(.9);
+	}
+	
+	100% {
+		-ms-transform: scale(1);
+	}
+}
+
+@-ms-keyframes bounceInDown {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(-2000px);
+	}
+	
+	60% {
+		opacity: 1;
+		-ms-transform: translateY(30px);
+	}
+	
+	80% {
+		-ms-transform: translateY(-10px);
+	}
+	
+	100% {
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(2000px);
+	}
+	
+	60% {
+		opacity: 1;
+		-ms-transform: translateY(-30px);
+	}
+	
+	80% {
+		-ms-transform: translateY(10px);
+	}
+	
+	100% {
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(2000px);
+	}
+	
+	60% {
+		opacity: 1;
+		-ms-transform: translateX(-30px);
+	}
+	
+	80% {
+		-ms-transform: translateX(10px);
+	}
+	
+	100% {
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(-2000px);
+	}
+	
+	60% {
+		opacity: 1;
+		-ms-transform: translateX(30px);
+	}
+	
+	80% {
+		-ms-transform: translateX(-10px);
+	}
+	
+	100% {
+		-ms-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes bounceOut {
+	0% {
+		-ms-transform: scale(1);
+	}
+	
+	25% {
+		-ms-transform: scale(.95);
+	}
+	
+	50% {
+		opacity: 1;
+		-ms-transform: scale(1.1);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: scale(.3);
+	}	
+}
+
+@-ms-keyframes bounceOutUp {
+	0% {
+		-ms-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-ms-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(-2000px);
+	}
+}
+
+@-ms-keyframes bounceOutDown {
+	0% {
+		-ms-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-ms-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateY(2000px);
+	}
+}
+
+@-ms-keyframes bounceOutLeft {
+	0% {
+		-ms-transform: translateX(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-ms-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(-2000px);
+	}
+}
+
+@-ms-keyframes bounceOutRight {
+	0% {
+		-ms-transform: translateX(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-ms-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(2000px);
+	}
+}
+
+@-ms-keyframes flash {
+	0% {
+		opacity: 1;
+	}
+	
+	25% {
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	75% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -1252,32 +1670,32 @@
 	}
 }
 
-.flash { -webkit-animation-name: flash; -moz-animation-name: flash; animation-name: flash; }
-.fadeIn { -webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; animation-name: fadeIn; }
-.fadeInUp { -webkit-animation-name: fadeInUp; -moz-animation-name: fadeInUp; animation-name: fadeInUp; }
-.fadeInDown { -webkit-animation-name: fadeInDown; -moz-animation-name: fadeInDown; animation-name: fadeInDown; }
-.fadeInLeft { -webkit-animation-name: fadeInLeft; -moz-animation-name: fadeInLeft; animation-name: fadeInLeft; }
-.fadeInRight {-webkit-animation-name: fadeInRight; -moz-animation-name: fadeInRight; animation-name: fadeInRight; }
-.fadeOut { -webkit-animation-name: fadeOut; -moz-animation-name: fadeOut; animation-name: fadeOut; }
-.fadeOutUp { -webkit-animation-name: fadeOutUp; -moz-animation-name: fadeOutUp; animation-name: fadeOutUp; }
-.fadeOutDown { -webkit-animation-name: fadeOutDown; -moz-animation-name: fadeOutDown; animation-name: fadeOutDown; }
-.fadeOutLeft { -webkit-animation-name: fadeOutLeft; -moz-animation-name: fadeOutLeft; animation-name: fadeOutLeft; }
-.fadeOutRight { -webkit-animation-name: fadeOutRight; -moz-animation-name: fadeOutRight; animation-name: fadeOutRight; }
-.fadeInUpBig { -webkit-animation-name: fadeInUpBig; -moz-animation-name: fadeInUpBig; animation-name: fadeInUpBig; }
-.fadeInDownBig { -webkit-animation-name: fadeInDownBig; -moz-animation-name: fadeInDownBig; animation-name: fadeInDownBig; }
-.fadeInLeftBig { -webkit-animation-name: fadeInLeftBig; -moz-animation-name: fadeInLeftBig; animation-name: fadeInLeftBig; }
-.fadeInRightBig {-webkit-animation-name: fadeInRightBig; -moz-animation-name: fadeInRightBig; animation-name: fadeInRightBig; }
-.fadeOutUpBig { -webkit-animation-name: fadeOutUpBig; -moz-animation-name: fadeOutUpBig; animation-name: fadeOutUpBig; }
-.fadeOutDownBig { -webkit-animation-name: fadeOutDownBig; -moz-animation-name: fadeOutDownBig; animation-name: fadeOutDownBig; }
-.fadeOutLeftBig { -webkit-animation-name: fadeOutLeftBig; -moz-animation-name: fadeOutLeftBig; animation-name: fadeOutLeftBig; }
-.fadeOutRightBig { -webkit-animation-name: fadeOutRightBig; -moz-animation-name: fadeOutRightBig; animation-name: fadeOutRightBig; }
-.bounceIn { -webkit-animation-name: bounceIn; -moz-animation-name: bounceIn; animation-name: bounceIn; }
-.bounceInDown { -webkit-animation-name: bounceInDown; -moz-animation-name: bounceInDown; animation-name: bounceInDown; }
-.bounceInUp { -webkit-animation-name: bounceInUp; -moz-animation-name: bounceInUp; animation-name: bounceInUp; }
-.bounceInLeft { -webkit-animation-name: bounceInLeft; -moz-animation-name: bounceInLeft; animation-name: bounceInLeft; }
-.bounceInRight { -webkit-animation-name: bounceInRight; -moz-animation-name: bounceInRight; animation-name: bounceInRight; }
-.bounceOut { -webkit-animation-name: bounceOut; -moz-animation-name: bounceOut; animation-name: bounceOut; }
-.bounceOutUp { -webkit-animation-name: bounceOutUp; -moz-animation-name: bounceOutUp; animation-name: bounceOutUp; }
-.bounceOutDown { -webkit-animation-name: bounceOutDown; -moz-animation-name: bounceOutDown; animation-name: bounceOutDown; }
-.bounceOutLeft { -webkit-animation-name: bounceOutLeft; -moz-animation-name: bounceOutLeft; animation-name: bounceOutLeft; }
-.bounceOutRight { -webkit-animation-name: bounceOutRight; -moz-animation-name: bounceOutRight; animation-name: bounceOutRight; }
+.flash { -webkit-animation-name: flash; -moz-animation-name: flash; -ms-animation-name: flash; animation-name: flash; }
+.fadeIn { -webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; -ms-animation-name: fadeIn; animation-name: fadeIn; }
+.fadeInUp { -webkit-animation-name: fadeInUp; -moz-animation-name: fadeInUp; -ms-animation-name: fadeInUp; animation-name: fadeInUp; }
+.fadeInDown { -webkit-animation-name: fadeInDown; -moz-animation-name: fadeInDown; -ms-animation-name: fadeInDown; animation-name: fadeInDown; }
+.fadeInLeft { -webkit-animation-name: fadeInLeft; -moz-animation-name: fadeInLeft; -ms-animation-name: fadeInLeft; animation-name: fadeInLeft; }
+.fadeInRight {-webkit-animation-name: fadeInRight; -moz-animation-name: fadeInRight; -ms-animation-name: fadeInRight; animation-name: fadeInRight; }
+.fadeOut { -webkit-animation-name: fadeOut; -moz-animation-name: fadeOut; -ms-animation-name: fadeOut; animation-name: fadeOut; }
+.fadeOutUp { -webkit-animation-name: fadeOutUp; -moz-animation-name: fadeOutUp; -ms-animation-name: fadeOutUp; animation-name: fadeOutUp; }
+.fadeOutDown { -webkit-animation-name: fadeOutDown; -moz-animation-name: fadeOutDown; -ms-animation-name: fadeOutDown; animation-name: fadeOutDown; }
+.fadeOutLeft { -webkit-animation-name: fadeOutLeft; -moz-animation-name: fadeOutLeft; -ms-animation-name: fadeOutLeft; animation-name: fadeOutLeft; }
+.fadeOutRight { -webkit-animation-name: fadeOutRight; -moz-animation-name: fadeOutRight; -ms-animation-name: fadeOutRight; animation-name: fadeOutRight; }
+.fadeInUpBig { -webkit-animation-name: fadeInUpBig; -moz-animation-name: fadeInUpBig; -ms-animation-name: fadeInUpBig; animation-name: fadeInUpBig; }
+.fadeInDownBig { -webkit-animation-name: fadeInDownBig; -moz-animation-name: fadeInDownBig; -ms-animation-name: fadeInDownBig; animation-name: fadeInDownBig; }
+.fadeInLeftBig { -webkit-animation-name: fadeInLeftBig; -moz-animation-name: fadeInLeftBig; -ms-animation-name: fadeInLeftBig; animation-name: fadeInLeftBig; }
+.fadeInRightBig {-webkit-animation-name: fadeInRightBig; -moz-animation-name: fadeInRightBig; -ms-animation-name: fadeInRightBig; animation-name: fadeInRightBig; }
+.fadeOutUpBig { -webkit-animation-name: fadeOutUpBig; -moz-animation-name: fadeOutUpBig; -ms-animation-name: fadeOutUpBig; animation-name: fadeOutUpBig; }
+.fadeOutDownBig { -webkit-animation-name: fadeOutDownBig; -moz-animation-name: fadeOutDownBig; -ms-animation-name: fadeOutDownBig; animation-name: fadeOutDownBig; }
+.fadeOutLeftBig { -webkit-animation-name: fadeOutLeftBig; -moz-animation-name: fadeOutLeftBig; -ms-animation-name: fadeOutLeftBig; animation-name: fadeOutLeftBig; }
+.fadeOutRightBig { -webkit-animation-name: fadeOutRightBig; -moz-animation-name: fadeOutRightBig; -ms-animation-name: fadeOutRightBig; animation-name: fadeOutRightBig; }
+.bounceIn { -webkit-animation-name: bounceIn; -moz-animation-name: bounceIn; -ms-animation-name: bounceIn; animation-name: bounceIn; }
+.bounceInDown { -webkit-animation-name: bounceInDown; -moz-animation-name: bounceInDown; -ms-animation-name: bounceInDown; animation-name: bounceInDown; }
+.bounceInUp { -webkit-animation-name: bounceInUp; -moz-animation-name: bounceInUp; -ms-animation-name: bounceInUp; animation-name: bounceInUp; }
+.bounceInLeft { -webkit-animation-name: bounceInLeft; -moz-animation-name: bounceInLeft; -ms-animation-name: bounceInLeft; animation-name: bounceInLeft; }
+.bounceInRight { -webkit-animation-name: bounceInRight; -moz-animation-name: bounceInRight; -ms-animation-name: bounceInRight; animation-name: bounceInRight; }
+.bounceOut { -webkit-animation-name: bounceOut; -moz-animation-name: bounceOut; -ms-animation-name: bounceOut; animation-name: bounceOut; }
+.bounceOutUp { -webkit-animation-name: bounceOutUp; -moz-animation-name: bounceOutUp; -ms-animation-name: bounceOutUp; animation-name: bounceOutUp; }
+.bounceOutDown { -webkit-animation-name: bounceOutDown; -moz-animation-name: bounceOutDown; -ms-animation-name: bounceOutDown; animation-name: bounceOutDown; }
+.bounceOutLeft { -webkit-animation-name: bounceOutLeft; -moz-animation-name: bounceOutLeft; -ms-animation-name: bounceOutLeft; animation-name: bounceOutLeft; }
+.bounceOutRight { -webkit-animation-name: bounceOutRight; -moz-animation-name: bounceOutRight; -ms-animation-name: bounceOutRight; animation-name: bounceOutRight; }
