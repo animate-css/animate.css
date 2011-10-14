@@ -391,13 +391,9 @@
 
 
 @-webkit-keyframes bounce {
-	0% {-webkit-transform: translateY(0);}
-	20% {-webkit-transform: translateY(0);}
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
 	40% {-webkit-transform: translateY(-30px);}
-	50% {-webkit-transform: translateY(0);}
 	60% {-webkit-transform: translateY(-15px);}
-	80% {-webkit-transform: translateY(0);}
-	100% {-webkit-transform: translateY(0);}
 }
 
 @-webkit-keyframes shake {
@@ -970,33 +966,9 @@
 }
 
 @-moz-keyframes bounce {
-	0% {
-		-moz-transform: translateY(0);
-	}
-	
-	20% {
-		-moz-transform: translateY(0);
-	}
-	
-	40% {
-		-moz-transform: translateY(-30px);
-	}
-	
-	50% {
-		-moz-transform: translateY(0);
-	}
-	
-	60% {
-		-moz-transform: translateY(-15px);
-	}
-	
-	80% {
-		-moz-transform: translateY(0);
-	}
-	
-	100% {
-		-moz-transform: translateY(0);
-	}
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
 }
 
 @-moz-keyframes shake {
@@ -1601,33 +1573,9 @@
 }
 
 @-ms-keyframes bounce {
-	0% {
-		-ms-transform: translateY(0);
-	}
-	
-	20% {
-		-ms-transform: translateY(0);
-	}
-	
-	40% {
-		-ms-transform: translateY(-30px);
-	}
-	
-	50% {
-		-ms-transform: translateY(0);
-	}
-	
-	60% {
-		-ms-transform: translateY(-15px);
-	}
-	
-	80% {
-		-ms-transform: translateY(0);
-	}
-	
-	100% {
-		-ms-transform: translateY(0);
-	}
+	0%, 20%, 50%, 80%, 100% {-ms-transform: translateY(0);}
+	40% {-ms-transform: translateY(-30px);}
+	60% {-ms-transform: translateY(-15px);}
 }
 
 @-ms-keyframes shake {
@@ -2232,33 +2180,9 @@
 }
 
 @keyframes bounce {
-	0% {
-		transform: translateY(0);
-	}
-	
-	20% {
-		transform: translateY(0);
-	}
-	
-	40% {
-		transform: translateY(-30px);
-	}
-	
-	50% {
-		transform: translateY(0);
-	}
-	
-	60% {
-		transform: translateY(-15px);
-	}
-	
-	80% {
-		transform: translateY(0);
-	}
-	
-	100% {
-		transform: translateY(0);
-	}
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 
 @keyframes shake {
