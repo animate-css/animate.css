@@ -1,54 +1,25 @@
 @-webkit-keyframes shake {
-	0% {-webkit-transform: translateX(0);}
-	10% {-webkit-transform: translateX(-10px);}
-	20% {-webkit-transform: translateX(10px);}
-	30% {-webkit-transform: translateX(-10px);}
-	40% {-webkit-transform: translateX(10px);}
-	50% {-webkit-transform: translateX(-10px);}
-	60% {-webkit-transform: translateX(10px);}
-	70% {-webkit-transform: translateX(-10px);}
-	80% {-webkit-transform: translateX(10px);}
-	90% {-webkit-transform: translateX(-10px);}
-	100% {-webkit-transform: translateX(0);}
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
 }
+
 @-moz-keyframes shake {
-	0% {-moz-transform: translateX(0);}
-	10% {-moz-transform: translateX(-10px);}
-	20% {-moz-transform: translateX(10px);}
-	30% {-moz-transform: translateX(-10px);}
-	40% {-moz-transform: translateX(10px);}
-	50% {-moz-transform: translateX(-10px);}
-	60% {-moz-transform: translateX(10px);}
-	70% {-moz-transform: translateX(-10px);}
-	80% {-moz-transform: translateX(10px);}
-	90% {-moz-transform: translateX(-10px);}
-	100% {-moz-transform: translateX(0);}
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
 }
+
 @-ms-keyframes shake {
-	0% {-ms-transform: translateX(0);}
-	10% {-ms-transform: translateX(-10px);}
-	20% {-ms-transform: translateX(10px);}
-	30% {-ms-transform: translateX(-10px);}
-	40% {-ms-transform: translateX(10px);}
-	50% {-ms-transform: translateX(-10px);}
-	60% {-ms-transform: translateX(10px);}
-	70% {-ms-transform: translateX(-10px);}
-	80% {-ms-transform: translateX(10px);}
-	90% {-ms-transform: translateX(-10px);}
-	100% {-ms-transform: translateX(0);}
+	0%, 100% {-ms-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
 }
+
 @keyframes shake {
-	0% {transform: translateX(0);}
-	10% {transform: translateX(-10px);}
-	20% {transform: translateX(10px);}
-	30% {transform: translateX(-10px);}
-	40% {transform: translateX(10px);}
-	50% {transform: translateX(-10px);}
-	60% {transform: translateX(10px);}
-	70% {transform: translateX(-10px);}
-	80% {transform: translateX(10px);}
-	90% {transform: translateX(-10px);}
-	100% {transform: translateX(0);}
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
 .shake {
