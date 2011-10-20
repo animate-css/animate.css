@@ -62,5 +62,6 @@
 	-webkit-animation-name: fadeInRightBig;
 	-moz-animation-name: fadeInRightBig;
 	-ms-animation-name: fadeInRightBig;
+	-o-animation-name: fadeInRightBig;
 	animation-name: fadeInRightBig;
 }
