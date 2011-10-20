@@ -34,6 +34,18 @@
 	}
 }
 
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
@@ -50,5 +62,6 @@
 	-webkit-animation-name: fadeInUp;
 	-moz-animation-name: fadeInUp;
 	-ms-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
 	animation-name: fadeInUp;
 }

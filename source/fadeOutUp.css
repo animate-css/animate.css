@@ -31,6 +31,17 @@
 		-ms-transform: translateY(-20px);
 	}
 }
+@-o-keyframes fadeOutUp {
+	0% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+}
 @keyframes fadeOutUp {
 	0% {
 		opacity: 1;
@@ -47,5 +58,6 @@
 	-webkit-animation-name: fadeOutUp;
 	-moz-animation-name: fadeOutUp;
 	-ms-animation-name: fadeOutUp;
+	-o-animation-name: fadeOutUp;
 	animation-name: fadeOutUp;
 }

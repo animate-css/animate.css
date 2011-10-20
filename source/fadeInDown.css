@@ -34,6 +34,18 @@
 	}
 }
 
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-ms-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateY(0);
+	}
+}
+
 @keyframes fadeInDown {
 	0% {
 		opacity: 0;
@@ -50,5 +62,6 @@
 	-webkit-animation-name: fadeInDown;
 	-moz-animation-name: fadeInDown;
 	-ms-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
 	animation-name: fadeInDown;
 }

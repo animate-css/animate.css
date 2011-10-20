@@ -34,6 +34,18 @@
 	}
 }
 
+@-o-keyframes fadeInDownBig {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-2000px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
 @keyframes fadeInDownBig {
 	0% {
 		opacity: 0;
@@ -50,5 +62,6 @@
 	-webkit-animation-name: fadeInDownBig;
 	-moz-animation-name: fadeInDownBig;
 	-ms-animation-name: fadeInDownBig;
+	-o-animation-name: fadeInDownBig;
 	animation-name: fadeInDownBig;
 }

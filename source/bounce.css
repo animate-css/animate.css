@@ -31,5 +31,6 @@
 	-webkit-animation-name: bounce;
 	-moz-animation-name: bounce;
 	-ms-animation-name: bounce;
+	-o-animation-name: bounce;
 	animation-name: bounce;
 }
