@@ -82,5 +82,6 @@
 	-webkit-animation-name: bounceOutRight;
 	-moz-animation-name: bounceOutRight;
 	-ms-animation-name: bounceOutRight;
+	-o-animation-name: bounceOutRight;
 	animation-name: bounceOutRight;
 }
