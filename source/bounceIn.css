@@ -102,5 +102,6 @@
 	-webkit-animation-name: bounceIn;
 	-moz-animation-name: bounceIn;
 	-ms-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
 	animation-name: bounceIn;
 }
