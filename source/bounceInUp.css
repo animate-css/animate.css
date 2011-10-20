@@ -55,6 +55,27 @@
 		-ms-transform: translateY(0);
 	}
 }
+
+@-o-keyframes bounceInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(2000px);
+	}
+	
+	60% {
+		opacity: 1;
+		-o-transform: translateY(-30px);
+	}
+	
+	80% {
+		-o-transform: translateY(10px);
+	}
+	
+	100% {
+		-o-transform: translateY(0);
+	}
+}
+
 @keyframes bounceInUp {
 	0% {
 		opacity: 0;
@@ -79,5 +100,6 @@
 	-webkit-animation-name: bounceInUp;
 	-moz-animation-name: bounceInUp;
 	-ms-animation-name: bounceInUp;
+	-o-animation-name: bounceInUp;
 	animation-name: bounceInUp;
 }

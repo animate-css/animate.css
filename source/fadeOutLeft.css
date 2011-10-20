@@ -33,6 +33,19 @@
 		-ms-transform: translateX(-20px);
 	}
 }
+
+@-o-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateX(-20px);
+	}
+}
+
 @keyframes fadeOutLeft {
 	0% {
 		opacity: 1;
@@ -49,5 +62,6 @@
 	-webkit-animation-name: fadeOutLeft;
 	-moz-animation-name: fadeOutLeft;
 	-ms-animation-name: fadeOutLeft;
+	-o-animation-name: fadeOutLeft;
 	animation-name: fadeOutLeft;
 }

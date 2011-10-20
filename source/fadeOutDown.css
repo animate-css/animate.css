@@ -34,6 +34,18 @@
 	}
 }
 
+@-o-keyframes fadeOutDown {
+	0% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+}
+
 @keyframes fadeOutDown {
 	0% {
 		opacity: 1;
@@ -50,5 +62,6 @@
 	-webkit-animation-name: fadeOutDown;
 	-moz-animation-name: fadeOutDown;
 	-ms-animation-name: fadeOutDown;
+	-o-animation-name: fadeOutDown;
 	animation-name: fadeOutDown;
 }

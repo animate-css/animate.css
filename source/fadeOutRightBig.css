@@ -31,6 +31,17 @@
 		-ms-transform: translateX(2000px);
 	}
 }
+@-o-keyframes fadeOutRightBig {
+	0% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateX(2000px);
+	}
+}
 @keyframes fadeOutRightBig {
 	0% {
 		opacity: 1;
@@ -47,5 +58,6 @@
 	-webkit-animation-name: fadeOutRightBig;
 	-moz-animation-name: fadeOutRightBig;
 	-ms-animation-name: fadeOutRightBig;
+	-o-animation-name: fadeOutRightBig;
 	animation-name: fadeOutRightBig;
 }
