@@ -102,5 +102,6 @@
 	-webkit-animation-name: bounceInLeft;
 	-moz-animation-name: bounceInLeft;
 	-ms-animation-name: bounceInLeft;
+	-o-animation-name: bounceInLeft;
 	animation-name: bounceInLeft;
 }
