@@ -46,6 +46,22 @@
 	}
 }
 
+@-o-keyframes bounceOutRight {
+	0% {
+		-o-transform: translateX(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-o-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateX(2000px);
+	}
+}
+
 @keyframes bounceOutRight {
 	0% {
 		transform: translateX(0);
