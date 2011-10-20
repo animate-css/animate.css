@@ -62,5 +62,6 @@
 	-webkit-animation-name: fadeOutRight;
 	-moz-animation-name: fadeOutRight;
 	-ms-animation-name: fadeOutRight;
+	-o-animation-name: fadeOutRight;
 	animation-name: fadeOutRight;
 }
