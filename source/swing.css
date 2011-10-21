@@ -8,7 +8,6 @@
 }
 
 @-moz-keyframes swing {
-	20%, 40%, 60%, 80%, 100% { -moz-transform-origin: top center; }
 	20% { -moz-transform: rotate(15deg); }	
 	40% { -moz-transform: rotate(-10deg); }
 	60% { -moz-transform: rotate(5deg); }	
@@ -17,7 +16,6 @@
 }
 
 @-ms-keyframes swing {
-	20%, 40%, 60%, 80%, 100% { -ms-transform-origin: top center; }
 	20% { -ms-transform: rotate(15deg); }	
 	40% { -ms-transform: rotate(-10deg); }
 	60% { -ms-transform: rotate(5deg); }	
@@ -26,7 +24,6 @@
 }
 
 @-o-keyframes swing {
-	20%, 40%, 60%, 80%, 100% { -o-transform-origin: top center; }
 	20% { -o-transform: rotate(15deg); }	
 	40% { -o-transform: rotate(-10deg); }
 	60% { -o-transform: rotate(5deg); }	
@@ -35,7 +32,6 @@
 }
 
 @keyframes swing {
-	20%, 40%, 60%, 80%, 100% { transform-origin: top center; }
 	20% { transform: rotate(15deg); }	
 	40% { transform: rotate(-10deg); }
 	60% { transform: rotate(5deg); }	
@@ -44,6 +40,11 @@
 }
 
 .swing {
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+	-ms-transform-origin: top center;
+	-o-transform-origin: top center;
+	transform-origin: top center;
 	-webkit-animation-name: swing;
 	-moz-animation-name: swing;
 	-ms-animation-name: swing;
