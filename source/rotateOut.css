@@ -40,6 +40,20 @@
 	}
 }
 
+@-o-keyframes rotateOut {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: rotate(0);
+		opacity: 1;
+	}
+	
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: rotate(200deg);
+		opacity: 0;
+	}
+}
+
 @keyframes rotateOut {
 	0% {
 		transform-origin: center center;
@@ -58,5 +72,6 @@
 	-webkit-animation-name: rotateOut;
 	-moz-animation-name: rotateOut;
 	-ms-animation-name: rotateOut;
+	-o-animation-name: rotateOut;
 	animation-name: rotateOut;
 }
