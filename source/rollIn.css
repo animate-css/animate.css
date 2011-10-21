@@ -29,5 +29,6 @@
 	-webkit-animation-name: rollIn;
 	-moz-animation-name: rollIn;
 	-ms-animation-name: rollIn;
+	-o-animation-name: rollIn;
 	animation-name: rollIn;
 }
