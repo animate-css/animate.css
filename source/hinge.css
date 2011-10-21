@@ -47,5 +47,6 @@
 	-webkit-animation-name: hinge;
 	-moz-animation-name: hinge;
 	-ms-animation-name: hinge;
+	-o-animation-name: hinge;
 	animation-name: hinge;
 }
