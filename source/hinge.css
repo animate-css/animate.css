@@ -25,6 +25,15 @@
 	100% { -ms-transform: translateY(700px); opacity: 0; }
 }
 
+@-o-keyframes hinge {
+	0%, 20%, 40%, 60%, 80% { -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }
+	0% { -o-transform: rotate(0); }	
+	20%, 60% { -o-transform: rotate(80deg); }	
+	40% { -o-transform: rotate(60deg); }	
+	80% { -o-transform: rotate(60deg) translateY(0); opacity: 1; }	
+	100% { -o-transform: translateY(700px); opacity: 0; }
+}
+
 @keyframes hinge {
 	0%, 20%, 40%, 60%, 80% { transform-origin: top left; animation-timing-function: ease-in-out; }
 	0% { transform: rotate(0); }	
