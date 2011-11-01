@@ -15,6 +15,11 @@
 	100% { opacity: 1; -ms-transform: translateX(0px) rotate(0deg); }
 }
 
+@-o-keyframes rollIn {
+	0% { opacity: 0; -o-transform: translateX(-100%) rotate(-120deg); }
+	100% { opacity: 1; -o-transform: translateX(0px) rotate(0deg); }
+}
+
 @keyframes rollIn {
 	0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
 	100% { opacity: 1; transform: translateX(0px) rotate(0deg); }
@@ -24,5 +29,6 @@
 	-webkit-animation-name: rollIn;
 	-moz-animation-name: rollIn;
 	-ms-animation-name: rollIn;
+	-o-animation-name: rollIn;
 	animation-name: rollIn;
 }

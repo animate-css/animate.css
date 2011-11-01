@@ -46,6 +46,22 @@
 	}
 }
 
+@-o-keyframes bounceOutLeft {
+	0% {
+		-o-transform: translateX(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-o-transform: translateX(20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateX(-2000px);
+	}
+}
+
 @keyframes bounceOutLeft {
 	0% {
 		transform: translateX(0);
@@ -66,5 +82,6 @@
 	-webkit-animation-name: bounceOutLeft;
 	-moz-animation-name: bounceOutLeft;
 	-ms-animation-name: bounceOutLeft;
+	-o-animation-name: bounceOutLeft;
 	animation-name: bounceOutLeft;
 }

@@ -36,6 +36,18 @@
 	}
 }
 
+@-o-keyframes rollOut {
+    0% {
+		opacity: 1;
+		-o-transform: translateX(0px) rotate(0deg);
+	}
+
+    100% {
+		opacity: 0;
+		-o-transform: translateX(100%) rotate(120deg);
+	}
+}
+
 @keyframes rollOut {
     0% {
 		opacity: 1;
@@ -52,5 +64,6 @@
 	-webkit-animation-name: rollOut;
 	-moz-animation-name: rollOut;
 	-ms-animation-name: rollOut;
+	-o-animation-name: rollOut;
 	animation-name: rollOut;
 }

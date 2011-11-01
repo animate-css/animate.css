@@ -37,6 +37,19 @@
 		opacity: 1;
 	}
 }
+@-o-keyframes rotateIn {
+	0% {
+		-o-transform-origin: center center;
+		-o-transform: rotate(-200deg);
+		opacity: 0;
+	}
+	
+	100% {
+		-o-transform-origin: center center;
+		-o-transform: rotate(0);
+		opacity: 1;
+	}
+}
 @keyframes rotateIn {
 	0% {
 		transform-origin: center center;
@@ -55,5 +68,6 @@
 	-webkit-animation-name: rotateIn;
 	-moz-animation-name: rotateIn;
 	-ms-animation-name: rotateIn;
+	-o-animation-name: rotateIn;
 	animation-name: rotateIn;
 }

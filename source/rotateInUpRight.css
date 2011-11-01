@@ -40,6 +40,20 @@
 	}
 }
 
+@-o-keyframes rotateInUpRight {
+	0% {
+		-o-transform-origin: right bottom;
+		-o-transform: rotate(-90deg);
+		opacity: 0;
+	}
+	
+	100% {
+		-o-transform-origin: right bottom;
+		-o-transform: rotate(0);
+		opacity: 1;
+	}
+}
+
 @keyframes rotateInUpRight {
 	0% {
 		transform-origin: right bottom;
@@ -58,5 +72,6 @@
 	-webkit-animation-name: rotateInUpRight;
 	-moz-animation-name: rotateInUpRight;
 	-ms-animation-name: rotateInUpRight;
+	-o-animation-name: rotateInUpRight;
 	animation-name: rotateInUpRight;
 }
