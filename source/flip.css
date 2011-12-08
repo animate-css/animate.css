@@ -110,6 +110,11 @@
 }
 
 .flip {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-backface-visibility: visible !important;
 	-webkit-animation-name: flip;
 	-moz-backface-visibility: visible !important;
