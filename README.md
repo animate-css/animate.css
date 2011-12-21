@@ -14,7 +14,8 @@ $('#yourElement').addClass('animated bounceOutLeft');
 
 You can change the duration of your animations, add a delay or change the number of times that it plays!
 
-```#yourElement {
+```
+#yourElement {
 	-vendor-animation-duration: 3s;
 	-vendor-animation-delay: 2s;
 	-vendor-animation-iteration-count: infinite;
