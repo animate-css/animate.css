@@ -12,11 +12,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 .animated {
-	-webkit-animation: 1s ease;
-	   -moz-animation: 1s ease;
-	    -ms-animation: 1s ease;
-	     -o-animation: 1s ease;
-	        animation: 1s ease;
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	    -ms-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	   -moz-animation-fill-mode: both;
 	    -ms-animation-fill-mode: both;
@@ -25,11 +25,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .animated.hinge {
-	-webkit-animation: 2s ease;
-	   -moz-animation: 2s ease;
-	    -ms-animation: 2s ease;
-	     -o-animation: 2s ease;
-	        animation: 2s ease;
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	    -ms-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
 }
 
 @-webkit-keyframes flash {
