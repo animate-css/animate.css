@@ -24,6 +24,9 @@ You can change the duration of your animations, add a delay or change the number
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o)*
 
+##License
+Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
+
 ##Learn more
 You can learn more about animate.css over at http://daneden.me/animate
 You can also get in touch via email (dan.eden@me.com) or twitter (@_dte) if you need any help or have any issues.
