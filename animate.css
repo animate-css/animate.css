@@ -2699,6 +2699,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	}
 }
 
+@-o-keyframes bounceOutDown {
+	0% {
+		-o-transform: translateY(0);
+	}
+	
+	20% {
+		opacity: 1;
+		-o-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateY(2000px);
+	}
+}
+
 @keyframes bounceOutDown {
 	0% {
 		transform: translateY(0);
@@ -2719,6 +2735,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-webkit-animation-name: bounceOutDown;
 	-moz-animation-name: bounceOutDown;
 	-ms-animation-name: bounceOutDown;
+	-o-animation-name: bounceOutDown;
 	animation-name: bounceOutDown;
 }
 @-webkit-keyframes bounceOutLeft {
