@@ -1,0 +1,137 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.min.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+	<style>
+	*{background: #cccccc;color:#ffffff;}
+	div {
+	  background: #fff;
+	  margin: 0 auto;
+	  width: 100px;
+	  color:#000;
+	  padding: 50px;
+	  text-align: center;
+	  /* border-radius */
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	  /* box-shadow */
+	  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+	  -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+	  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+	}
+	.myButton {
+		-moz-box-shadow:inset 0px 1px 2px 0px #bbdaf7;
+		-webkit-box-shadow:inset 0px 1px 2px 0px #bbdaf7;
+		box-shadow:inset 0px 1px 2px 0px #bbdaf7;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+		background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+		background-color:#79bbff;
+		-moz-border-radius:17px;
+		-webkit-border-radius:17px;
+		border-radius:17px;
+		border:1px solid #84bbf3;
+		display:inline-block;
+		color:#ffffff;
+		font-family:arial;
+		font-size:17px;
+		font-weight:bold;
+		padding:7px 24px;
+		text-decoration:none;
+		text-shadow:1px 1px 0px #528ecc;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+	</style>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+var animate = [ 'bounceInDown',
+'bounceInLeft',
+'bounceInRight',
+'bounceInUp',
+'bounceOut',
+'bounceOutLeft',
+'bounceOutRight',
+'bounceOutUp',
+'bounceOutdown',
+'fadeIn',
+'fadeInDown',
+'fadeInDownBig',
+'fadeInLeft',
+'fadeInLeftBig',
+'fadeInRight',
+'fadeInRightBig',
+'fadeInUp',
+'fadeInUpBig',
+'fadeOut',
+'fadeOutDown',
+'fadeOutDownBig',
+'fadeOutLeft',
+'fadeOutLeftBig',
+'fadeOutRight',
+'fadeOutRightBig',
+'fadeOutUp',
+'fadeOutUpBig',
+'flash',
+'flip',
+'flipInX',
+'flipInY',
+'flipOutX',
+'flipOutY',
+'hinge',
+'lightSpeedIn',
+'lightSpeedOut',
+'pulse',
+'rollIn',
+'rollOut',
+'rotateIn',
+'rotateInDownLeft',
+'rotateInDownRight',
+'rotateInUpLeft',
+'rotateInUpRight',
+'rotateOut',
+'rotateOutDownLeft',
+'rotateOutDownRight',
+'rotateOutUpLeft',
+'rotateOutUpRight',
+'shake',
+'swing',
+'tada',
+'wiggle',
+'wobble' ];
+
+
+for (var i = 0; i < animate.length; i++) {
+    $('#thetable').append("<tr><td><div id=\""+animate[i]+"\">"+animate[i]+"</div></td><td width=25% align=center>"+animate[i]+"<br/><br/><a class=\"myButton\" href=\"javascript:runAnimate('#"+animate[i]+"','"+animate[i]+"');\">"+animate[i]+"</a></td></tr>");
+}
+
+});
+
+function runAnimate(me,Animate){
+	if ($(me).is('.'+Animate)) {
+		$(me).removeClass('animated '+Animate);
+	} else {
+		$(me).addClass('animated '+Animate);
+	}	
+}
+</script>
+<style type="text/css" media="screen">
+.animated {
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+	
+</style>
+</head>
+<body>
+<table cellpadding=10 width=100% id="thetable">
+</table>
+</body>
+</html>
