@@ -22,18 +22,6 @@
 	}
 }
 
-@-ms-keyframes fadeInUpBig {
-	0% {
-		opacity: 0;
-		-ms-transform: translateY(2000px);
-	}
-	
-	100% {
-		opacity: 1;
-		-ms-transform: translateY(0);
-	}
-}
-
 @-o-keyframes fadeInUpBig {
 	0% {
 		opacity: 0;
@@ -61,7 +49,6 @@
 .fadeInUpBig {
 	-webkit-animation-name: fadeInUpBig;
 	-moz-animation-name: fadeInUpBig;
-	-ms-animation-name: fadeInUpBig;
 	-o-animation-name: fadeInUpBig;
 	animation-name: fadeInUpBig;
 }

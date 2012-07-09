@@ -36,25 +36,6 @@
         opacity: 1;
     }
 }
-@-ms-keyframes flipInX {
-    0% {
-        -ms-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    
-    40% {
-        -ms-transform: perspective(400px) rotateX(-10deg);
-    }
-    
-    70% {
-        -ms-transform: perspective(400px) rotateX(10deg);
-    }
-    
-    100% {
-        -ms-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
 @-o-keyframes flipInX {
     0% {
         -o-transform: perspective(400px) rotateX(90deg);
@@ -99,8 +80,6 @@
 	-webkit-animation-name: flipInX;
 	-moz-backface-visibility: visible !important;
 	-moz-animation-name: flipInX;
-	-ms-backface-visibility: visible !important;
-	-ms-animation-name: flipInX;
 	-o-backface-visibility: visible !important;
 	-o-animation-name: flipInX;
 	backface-visibility: visible !important;

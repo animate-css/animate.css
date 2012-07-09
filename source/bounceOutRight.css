@@ -30,22 +30,6 @@
 	}
 }
 
-@-ms-keyframes bounceOutRight {
-	0% {
-		-ms-transform: translateX(0);
-	}
-	
-	20% {
-		opacity: 1;
-		-ms-transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 0;
-		-ms-transform: translateX(2000px);
-	}
-}
-
 @-o-keyframes bounceOutRight {
 	0% {
 		-o-transform: translateX(0);
@@ -81,7 +65,6 @@
 .bounceOutRight {
 	-webkit-animation-name: bounceOutRight;
 	-moz-animation-name: bounceOutRight;
-	-ms-animation-name: bounceOutRight;
 	-o-animation-name: bounceOutRight;
 	animation-name: bounceOutRight;
 }

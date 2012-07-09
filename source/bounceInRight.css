@@ -38,26 +38,6 @@
 	}
 }
 
-@-ms-keyframes bounceInRight {
-	0% {
-		opacity: 0;
-		-ms-transform: translateX(2000px);
-	}
-	
-	60% {
-		opacity: 1;
-		-ms-transform: translateX(-30px);
-	}
-	
-	80% {
-		-ms-transform: translateX(10px);
-	}
-	
-	100% {
-		-ms-transform: translateX(0);
-	}
-}
-
 @-o-keyframes bounceInRight {
 	0% {
 		opacity: 0;
@@ -101,7 +81,6 @@
 .bounceInRight {
 	-webkit-animation-name: bounceInRight;
 	-moz-animation-name: bounceInRight;
-	-ms-animation-name: bounceInRight;
 	-o-animation-name: bounceInRight;
 	animation-name: bounceInRight;
 }

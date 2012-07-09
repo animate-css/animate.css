@@ -26,20 +26,6 @@
 	100% { -moz-transform: skewX(0deg); }
 }
 
-@-ms-keyframes wiggle {
-    0% { -ms-transform: skewX(9deg); }
-    10% { -ms-transform: skewX(-8deg); }
-    20% { -ms-transform: skewX(7deg); }
-    30% { -ms-transform: skewX(-6deg); }
-    40% { -ms-transform: skewX(5deg); }
-    50% { -ms-transform: skewX(-4deg); }
-    60% { -ms-transform: skewX(3deg); }
-    70% { -ms-transform: skewX(-2deg); }
-    80% { -ms-transform: skewX(1deg); }
-    90% { -ms-transform: skewX(0deg); }
-	100% { -ms-transform: skewX(0deg); }
-}
-
 @-o-keyframes wiggle {
     0% { -o-transform: skewX(9deg); }
     10% { -o-transform: skewX(-8deg); }
@@ -71,13 +57,11 @@
 .wiggle {
     -webkit-animation-name: wiggle;
     -moz-animation-name: wiggle;
-    -ms-animation-name: wiggle;
     -o-animation-name: wiggle;
     animation-name: wiggle;
 
     -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }

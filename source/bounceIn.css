@@ -38,26 +38,6 @@
 	}
 }
 
-@-ms-keyframes bounceIn {
-	0% {
-		opacity: 0;
-		-ms-transform: scale(.3);
-	}
-	
-	50% {
-		opacity: 1;
-		-ms-transform: scale(1.05);
-	}
-	
-	70% {
-		-ms-transform: scale(.9);
-	}
-	
-	100% {
-		-ms-transform: scale(1);
-	}
-}
-
 @-o-keyframes bounceIn {
 	0% {
 		opacity: 0;
@@ -101,7 +81,6 @@
 .bounceIn {
 	-webkit-animation-name: bounceIn;
 	-moz-animation-name: bounceIn;
-	-ms-animation-name: bounceIn;
 	-o-animation-name: bounceIn;
 	animation-name: bounceIn;
 }

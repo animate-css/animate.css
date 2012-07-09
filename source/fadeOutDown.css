@@ -22,18 +22,6 @@
 	}
 }
 
-@-ms-keyframes fadeOutDown {
-	0% {
-		opacity: 1;
-		-ms-transform: translateY(0);
-	}
-	
-	100% {
-		opacity: 0;
-		-ms-transform: translateY(20px);
-	}
-}
-
 @-o-keyframes fadeOutDown {
 	0% {
 		opacity: 1;
@@ -61,7 +49,6 @@
 .fadeOutDown {
 	-webkit-animation-name: fadeOutDown;
 	-moz-animation-name: fadeOutDown;
-	-ms-animation-name: fadeOutDown;
 	-o-animation-name: fadeOutDown;
 	animation-name: fadeOutDown;
 }

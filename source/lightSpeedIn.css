@@ -12,13 +12,6 @@
 	100% { -moz-transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
-@-ms-keyframes lightSpeedIn {
-	0% { -ms-transform: translateX(100%) skewX(-30deg); opacity: 0; }
-	60% { -ms-transform: translateX(-20%) skewX(30deg); opacity: 1; }
-	80% { -ms-transform: translateX(0%) skewX(-15deg); opacity: 1; }
-	100% { -ms-transform: translateX(0%) skewX(0deg); opacity: 1; }
-}
-
 @-o-keyframes lightSpeedIn {
 	0% { -o-transform: translateX(100%) skewX(-30deg); opacity: 0; }
 	60% { -o-transform: translateX(-20%) skewX(30deg); opacity: 1; }
@@ -36,13 +29,11 @@
 .lightSpeedIn {
     -webkit-animation-name: lightSpeedIn;
     -moz-animation-name: lightSpeedIn;
-    -ms-animation-name: lightSpeedIn;
     -o-animation-name: lightSpeedIn;
     animation-name: lightSpeedIn;
 
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
 }

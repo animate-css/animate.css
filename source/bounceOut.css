@@ -38,26 +38,6 @@
 	}	
 }
 
-@-ms-keyframes bounceOut {
-	0% {
-		-ms-transform: scale(1);
-	}
-	
-	25% {
-		-ms-transform: scale(.95);
-	}
-	
-	50% {
-		opacity: 1;
-		-ms-transform: scale(1.1);
-	}
-	
-	100% {
-		opacity: 0;
-		-ms-transform: scale(.3);
-	}	
-}
-
 @-o-keyframes bounceOut {
 	0% {
 		-o-transform: scale(1);
@@ -101,7 +81,6 @@
 .bounceOut {
 	-webkit-animation-name: bounceOut;
 	-moz-animation-name: bounceOut;
-	-ms-animation-name: bounceOut;
 	-o-animation-name: bounceOut;
 	animation-name: bounceOut;
 }

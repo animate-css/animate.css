@@ -22,18 +22,6 @@
 	}
 }
 
-@-ms-keyframes fadeInRight {
-	0% {
-		opacity: 0;
-		-ms-transform: translateX(20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-ms-transform: translateX(0);
-	}
-}
-
 @-o-keyframes fadeInRight {
 	0% {
 		opacity: 0;
@@ -61,7 +49,6 @@
 .fadeInRight {
 	-webkit-animation-name: fadeInRight;
 	-moz-animation-name: fadeInRight;
-	-ms-animation-name: fadeInRight;
 	-o-animation-name: fadeInRight;
 	animation-name: fadeInRight;
 }

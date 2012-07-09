@@ -26,20 +26,6 @@
 	}
 }
 
-@-ms-keyframes rotateInUpLeft {
-	0% {
-		-ms-transform-origin: left bottom;
-		-ms-transform: rotate(90deg);
-		opacity: 0;
-	}
-	
-	100% {
-		-ms-transform-origin: left bottom;
-		-ms-transform: rotate(0);
-		opacity: 1;
-	}
-}
-
 @-o-keyframes rotateInUpLeft {
 	0% {
 		-o-transform-origin: left bottom;
@@ -71,7 +57,6 @@
 .rotateInUpLeft {
 	-webkit-animation-name: rotateInUpLeft;
 	-moz-animation-name: rotateInUpLeft;
-	-ms-animation-name: rotateInUpLeft;
 	-o-animation-name: rotateInUpLeft;
 	animation-name: rotateInUpLeft;
 }

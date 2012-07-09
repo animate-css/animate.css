@@ -10,12 +10,6 @@
 	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
 }
 
-@-ms-keyframes shake {
-	0%, 100% {-ms-transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
-}
-
 @-o-keyframes shake {
 	0%, 100% {-o-transform: translateX(0);}
 	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
@@ -31,7 +25,6 @@
 .shake {
 	-webkit-animation-name: shake;
 	-moz-animation-name: shake;
-	-ms-animation-name: shake;
 	-o-animation-name: shake;
 	animation-name: shake;
 }

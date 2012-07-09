@@ -15,14 +15,6 @@
 	100% { -moz-transform: rotate(0deg); }
 }
 
-@-ms-keyframes swing {
-	20% { -ms-transform: rotate(15deg); }	
-	40% { -ms-transform: rotate(-10deg); }
-	60% { -ms-transform: rotate(5deg); }	
-	80% { -ms-transform: rotate(-5deg); }	
-	100% { -ms-transform: rotate(0deg); }
-}
-
 @-o-keyframes swing {
 	20% { -o-transform: rotate(15deg); }	
 	40% { -o-transform: rotate(-10deg); }
@@ -42,12 +34,10 @@
 .swing {
 	-webkit-transform-origin: top center;
 	-moz-transform-origin: top center;
-	-ms-transform-origin: top center;
 	-o-transform-origin: top center;
 	transform-origin: top center;
 	-webkit-animation-name: swing;
 	-moz-animation-name: swing;
-	-ms-animation-name: swing;
 	-o-animation-name: swing;
 	animation-name: swing;
 }

@@ -20,17 +20,6 @@
 		-moz-transform: translateX(0);
 	}
 }
-@-ms-keyframes fadeInLeftBig {
-	0% {
-		opacity: 0;
-		-ms-transform: translateX(-2000px);
-	}
-	
-	100% {
-		opacity: 1;
-		-ms-transform: translateX(0);
-	}
-}
 @-o-keyframes fadeInLeftBig {
 	0% {
 		opacity: 0;
@@ -57,7 +46,6 @@
 .fadeInLeftBig {
 	-webkit-animation-name: fadeInLeftBig;
 	-moz-animation-name: fadeInLeftBig;
-	-ms-animation-name: fadeInLeftBig;
 	-o-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
 }
