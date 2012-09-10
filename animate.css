@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 Animate.css - http://daneden.me/animate
 Licensed under the ☺ license (http://licence.visualidiot.com/)
@@ -23,7 +23,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	        animation-fill-mode: both;
 }
 
-.animated.hinge {
+.animated.hinge,
+.animated.hingeRight {
 	-webkit-animation-duration: 2s;
 	   -moz-animation-duration: 2s;
 	     -o-animation-duration: 2s;
@@ -3007,6 +3008,44 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-moz-animation-name: hinge;
 	-o-animation-name: hinge;
 	animation-name: hinge;
+}
+@-webkit-keyframes hingeRight {
+	0% { -webkit-transform: rotate(0); -webkit-transform-origin: top right; -webkit-animation-timing-function: ease-in-out; }	
+	20%, 60% { -webkit-transform: rotate(-80deg); -webkit-transform-origin: top right; -webkit-animation-timing-function: ease-in-out; }	
+	40% { -webkit-transform: rotate(-60deg); -webkit-transform-origin: top right; -webkit-animation-timing-function: ease-in-out; }	
+	80% { -webkit-transform: rotate(-60deg) translateY(0); opacity: 1; -webkit-transform-origin: top right; -webkit-animation-timing-function: ease-in-out; }	
+	100% { -webkit-transform: translateY(700px); opacity: 0; }
+}
+
+@-moz-keyframes hinge {
+	0% { -moz-transform: rotate(0); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
+	20%, 60% { -moz-transform: rotate(-80deg); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
+	40% { -moz-transform: rotate(-60deg); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
+	80% { -moz-transform: rotate(-60deg) translateY(0); opacity: 1; -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
+	100% { -moz-transform: translateY(700px); opacity: 0; }
+}
+
+@-o-keyframes hingeRight {
+	0% { -o-transform: rotate(0); -o-transform-origin: top right; -o-animation-timing-function: ease-in-out; }	
+	20%, 60% { -o-transform: rotate(-80deg); -o-transform-origin: top right; -o-animation-timing-function: ease-in-out; }	
+	40% { -o-transform: rotate(-60deg); -o-transform-origin: top right; -o-animation-timing-function: ease-in-out; }	
+	80% { -o-transform: rotate(-60deg) translateY(0); opacity: 1; -o-transform-origin: top right; -o-animation-timing-function: ease-in-out; }	
+	100% { -o-transform: translateY(700px); opacity: 0; }
+}
+
+@keyframes hingeRight {
+	0% { transform: rotate(0); transform-origin: top right; animation-timing-function: ease-in-out; }	
+	20%, 60% { transform: rotate(-80deg); transform-origin: top right; animation-timing-function: ease-in-out; }	
+	40% { transform: rotate(-60deg); transform-origin: top right; animation-timing-function: ease-in-out; }	
+	80% { transform: rotate(-60deg) translateY(0); opacity: 1; transform-origin: top right; animation-timing-function: ease-in-out; }	
+	100% { transform: translateY(700px); opacity: 0; }
+}
+
+.hingeRight {
+	-webkit-animation-name: hingeRight;
+	-moz-animation-name: hingeRight;
+	-o-animation-name: hingeRight;
+	animation-name: hingeRight;
 }
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 

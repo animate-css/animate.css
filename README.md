@@ -106,5 +106,6 @@ lightSpeedOut
 
 ####Specials:
 hinge
+hingeRight
 rollIn
 rollOut
