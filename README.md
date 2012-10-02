@@ -8,7 +8,7 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
 
-```jquery
+```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
