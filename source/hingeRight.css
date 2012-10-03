@@ -6,7 +6,7 @@
 	100% { -webkit-transform: translateY(700px); opacity: 0; }
 }
 
-@-moz-keyframes hinge {
+@-moz-keyframes hingeRight {
 	0% { -moz-transform: rotate(0); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
 	20%, 60% { -moz-transform: rotate(-80deg); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
 	40% { -moz-transform: rotate(-60deg); -moz-transform-origin: top right; -moz-animation-timing-function: ease-in-out; }	
