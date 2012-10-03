@@ -8,7 +8,7 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
 
-```jquery
+```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
@@ -23,6 +23,8 @@ You can change the duration of your animations, add a delay or change the number
 ```
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o)*
+
+*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
 
 ##License
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
