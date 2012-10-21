@@ -2774,8 +2774,8 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	}
 	
 	100% {
-		-transform-origin: left bottom;
-		-transform: rotate(-90deg);
+		transform-origin: left bottom;
+		transform: rotate(-90deg);
 		opacity: 0;
 	}
 }
