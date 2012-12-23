@@ -1,6 +1,8 @@
 #Animate.less
 *Cross-browser CSS3 animation library for Bootstrap*
 
+If you're a web hipster, and you're already using Twitter's Bootstrap like a whore, you're gonna love this.
+
 `animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use in your Bootstrap projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##Usage
@@ -11,8 +13,12 @@ To use animate.less in your Bootstrap project, simply add the line below into `b
 @import "animate.less";
 ```
 
+Check my sample`bootstrap.less` file for an example of how to implement this with your Bootstrap project.
+
+`animate.less` is 60kb and `animate.min.less` is 48kb.
+
 ###Inside your HTML
-Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+Add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
 For example:
 
@@ -21,7 +27,7 @@ For example:
 ```
 
 ###Inside your styelsheet
-Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+Since we're using LESS, we can utilize our animation library by adding .animated Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
 ###Working with jQuery
 You can add more functionality to your animations with jQuery such as below:
