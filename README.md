@@ -1,5 +1,5 @@
 #Animate.less
-*Cross-browser CSS3 animation library for Bootstrap*
+*Cross-browser CSS3 animation library
 
 If you're a web hipster, and you're already using Twitter's Bootstrap like a whore, you're gonna love this.
 
@@ -27,7 +27,22 @@ For example:
 ```
 
 ###Inside your styelsheet
-Since we're using LESS, we can utilize our animation library by adding .animated Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+Since we're using LESS, we can utilize our animation library by adding `.animated` and any of the many animation names.
+
+For example:
+
+````css
+h1#logo {
+  float: left;
+  font-family: 'Cubano', sans-serif;
+  font-weight: normal;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  *.animated;*
+  *.bounce;*
+}
 
 ###Working with jQuery
 You can add more functionality to your animations with jQuery such as below:
