@@ -1,11 +1,15 @@
 #Animate.less
-*Cross-browser CSS3 animation library mixin for Bootstrap*
+*Cross-browser CSS3 animation library for Bootstrap*
 
-`animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use as a Bootstrap mixin. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+`animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use in your Bootstrap projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##Usage
 ###Bootstrap
-To use animate.less in your Bootstrap project, simply add the line below into `bootstrap.less`.
+To use animate.less in your Bootstrap project, simply add the line below into `bootstrap.less`:
+
+```css
+@import "animate.less";
+```
 
 ###Inside your HTML
 Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
