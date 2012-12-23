@@ -1,5 +1,5 @@
-#Animate.css
-*Just-add-water CSS animation*
+#Animate.less
+*Animation library mixin for Bootstrap*
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
