@@ -12,6 +12,7 @@ You can do a whole bunch of other stuff with animate.css when you combine it wit
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
+###Editing an animation
 You can change the duration of your animations, add a delay or change the number of times that it plays!
 
 ```css
