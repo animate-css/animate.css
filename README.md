@@ -1,5 +1,5 @@
 #Animate.less
-*Animation library mixin for Bootstrap*
+*Cross-browser CSS3 animation library mixin for Bootstrap*
 
 `animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations for you to use as a Bootstrap mixin. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
