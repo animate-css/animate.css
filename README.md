@@ -4,9 +4,23 @@
 `animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use as a Bootstrap mixin. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##Usage
-To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+###Bootstrap
+To use animate.less in your Bootstrap project, simply add the line below into `bootstrap.less`.
 
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
+###Inside your HTML
+Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+
+For example:
+
+```html
+<h1 id="logo" class="animated fadeIn">...</h1>
+```
+
+###Inside your styelsheet
+Add  the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+
+###Working with jQuery
+You can add more functionality to your animations with jQuery such as below:
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
