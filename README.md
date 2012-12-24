@@ -40,8 +40,8 @@ h1#logo {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  _.animated;_
-  _.bounce;_
+  .animated; // Attach animation library
+  .bounce; // Initiate bounce effect
 }
 ```
 
