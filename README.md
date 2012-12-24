@@ -13,9 +13,11 @@ To use animate.less in your Bootstrap project, simply add the line below into `b
 @import "animate.less";
 ```
 
-Check my sample`bootstrap.less` file for an example of how to implement this with your Bootstrap project.
+`bootstrap.less` file an example of how to implement this with your Bootstrap project.
 
 `animate.less` is 60kb and `animate.min.less` is 48kb.
+
+`animate.css` is 61kb and is an original copy by Dan Eden.
 
 ###Inside your HTML
 Add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
@@ -45,7 +47,7 @@ h1#logo {
 }
 ```
 
-*Note: if you're having issues, be sure re-compile `bootstrap.less` for changes to take effect*
+*Note: if you're having issues, try re-compiling `bootstrap.less` for changes to take effect.*
 
 ###Extending with jQuery
 You can add more functionality to your animations with jQuery such as below:
