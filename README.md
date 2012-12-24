@@ -73,7 +73,7 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
 
 ```css
 #logo {
-	-vendor-animation-duration: 3s; // Change to Webkit, Mozilla,
+	-vendor-animation-duration: 3s; // Change to Webkit, Mozilla, Opera, etc.
 	-vendor-animation-delay: 2s;
 	-vendor-animation-iteration-count: infinite;
 	animation-duration 3s; // Default
