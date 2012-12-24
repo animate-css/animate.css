@@ -1,5 +1,5 @@
 #Animate.less
-*Cross-browser CSS3 animation library
+*Cross-browser CSS3 animation library*
 
 If you're a web hipster, and you're already using Twitter's Bootstrap like a whore, you're gonna love this.
 
@@ -12,7 +12,7 @@ To use animate.less in your Bootstrap project, simply add the line below into `b
 ```css
 @import "animate.less";
 ```
-
+###Files
 `bootstrap.less` file an example of how to implement this with your Bootstrap project.
 
 `animate.less` is 60kb and `animate.min.less` is 48kb.
