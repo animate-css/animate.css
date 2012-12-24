@@ -5,19 +5,23 @@ If you're a web hipster, and you're already using Twitter's Bootstrap like a who
 
 `animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use in your Bootstrap projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
+
 ##Usage
+###Files
+
+`animate.less` is 60kb and `animate.min.less` is 48kb.
+
+`bootstrap.less` file an example of how to implement this with your Bootstrap project.
+
+`animate.css` is 61kb and is an original copy by Dan Eden.
+
+
 ###Bootstrap
 To use animate.less in your Bootstrap project, simply add the line below into `bootstrap.less`:
 
 ```css
 @import "animate.less";
 ```
-###Files
-`bootstrap.less` file an example of how to implement this with your Bootstrap project.
-
-`animate.less` is 60kb and `animate.min.less` is 48kb.
-
-`animate.css` is 61kb and is an original copy by Dan Eden.
 
 ###Inside your HTML
 Add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
