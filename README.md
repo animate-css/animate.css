@@ -11,7 +11,7 @@ If you're a web hipster, and you're already using Twitter's Bootstrap like a who
 
 `animate.less` is 60kb and `animate.min.less` is 48kb.
 
-`bootstrap.less` file an example of how to implement this with your Bootstrap project.
+`bootstrap.less` file a straightforward example of how to implement this library with your Bootstrap project.
 
 `animate.css` is 61kb and is an original copy by Dan Eden.
 
