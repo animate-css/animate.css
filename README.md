@@ -47,7 +47,7 @@ h1#logo {
 
 *Note: if you're having issues, be sure re-compile `bootstrap.less` for changes to take effect*
 
-###Working with jQuery
+###Extending with jQuery
 You can add more functionality to your animations with jQuery such as below:
 
 ```javascript
@@ -63,14 +63,17 @@ $(document).ready(function(){
 	});
 });
 ```
-###Editing an animation
-You can change the duration of your animations, add a delay or change the number of times that it plays!
+###Editing an animation effect
+You can 1) change the duration of your animations, 2) extend the delay, or 3) change the number of times that it plays. If you do want to edit an animation effect, make sure you change them cross-browser.
 
 ```css
-#yourElement {
-	-vendor-animation-duration: 3s;
+#logo {
+	-vendor-animation-duration: 3s; // Change to Webkit, Mozilla,
 	-vendor-animation-delay: 2s;
 	-vendor-animation-iteration-count: infinite;
+	animation-duration 3s; // Default
+	animation-delay: 2s; // Default
+ 	animation-iteration-count: infinite; // Default
 }
 ```
 
@@ -82,8 +85,7 @@ You can change the duration of your animations, add a delay or change the number
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
 
 ##Learn more
-You can learn more about animate.css over at http://daneden.me/animate
-You can also get in touch via email (dan.eden@me.com) or twitter (@_dte) if you need any help or have any issues.
+You can learn more about animate.css over at http://daneden.me/animate &amp; Bootstrap at http://getbootstrap.com/
 
 ##Cheat Sheet
 
