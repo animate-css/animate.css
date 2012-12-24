@@ -10,7 +10,7 @@ If you're a web hipster, and you're already using Twitter's Bootstrap like a who
 
 `animate.less` is 60kb and `animate.min.less` is 48kb.
 
-`bootstrap.less` file a straightforward example of how to implement this library with your Bootstrap project.
+`bootstrap.less` is a straightforward example of how to implement this library with your Bootstrap project.
 
 `animate.css` is 61kb and is an original copy by Dan Eden.
 
@@ -81,6 +81,10 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
  	animation-iteration-count: infinite; // Default
 }
 ```
+### Build a custom library
+
+Head over to http://daneden.me/animate/build/ to select which animations you need.
+
 ###Live demo
 
 View the animation library in action over at http://daneden.me/animate/
