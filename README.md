@@ -81,6 +81,11 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
  	animation-iteration-count: infinite; // Default
 }
 ```
+
+*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
+
+*Note: Safari in Mountain Lion (OS X 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
+
 ### Build a custom library
 
 Head over to http://daneden.me/animate/build/ to select which animations you need. This will download a .css file, so just rename it to .less and use as described above.
@@ -89,14 +94,12 @@ Head over to http://daneden.me/animate/build/ to select which animations you nee
 
 View the animation library in action over at http://daneden.me/animate/.
 
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
-
-*Note: Safari in Mountain Lion (OS X 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
-
 ##License
+
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
 
 ##Learn more
+
 You can learn more about animate.css over at http://daneden.me/animate and Twitter Bootstrap over at http://getbootstrap.com/
 
 ##Cheat Sheet
