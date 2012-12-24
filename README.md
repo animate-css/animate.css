@@ -5,7 +5,6 @@ If you're a web hipster, and you're already using Twitter's Bootstrap like a who
 
 `animate.less`, originally created by [Dan Eden](https://github.com/daneden/animate.css "Dan Eden"), is a bunch of cool, fun, and cross-browser animations converted into LESS for you to use in your Bootstrap projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
-View the animation library in action over at http://daneden.me/animate/
 ##Usage
 ###Files
 
@@ -82,6 +81,9 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
  	animation-iteration-count: infinite; // Default
 }
 ```
+###Live demo
+
+View the animation library in action over at http://daneden.me/animate/
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
 
