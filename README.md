@@ -31,7 +31,7 @@ Since we're using LESS, we can utilize our animation library by adding `.animate
 
 For example:
 
-````css
+```css
 h1#logo {
   float: left;
   font-family: 'Cubano', sans-serif;
@@ -43,14 +43,26 @@ h1#logo {
   *.animated;*
   *.bounce;*
 }
+```
+
+*Note: *
 
 ###Working with jQuery
 You can add more functionality to your animations with jQuery such as below:
 
 ```javascript
-$('#yourElement').addClass('animated bounceOutLeft');
+$("#logo").addClass('animated bounceOutLeft');
 ```
 
+Since we're using jQuery, we can bind these classes with events or triggers like below:
+
+```javascript
+$(document).ready(function(){
+	$("#logo").click(function() {
+		$("this").addClass("animated bounceOutLeft");
+	});
+});
+```
 ###Editing an animation
 You can change the duration of your animations, add a delay or change the number of times that it plays!
 
