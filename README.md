@@ -32,7 +32,7 @@ For example:
 <h1 id="logo" class="animated fadeIn">...</h1>
 ```
 
-###Inside your styelsheet
+###Inside your stylesheet
 Since we're using LESS, we can utilize our animation library by adding `.animated` and any of the many animation names as classes.
 
 For example:
