@@ -40,8 +40,8 @@ h1#logo {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  *.animated;*
-  *.bounce;*
+  _.animated;_
+  _.bounce;_
 }
 ```
 
