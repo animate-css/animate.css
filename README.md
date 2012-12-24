@@ -31,7 +31,7 @@ Since we're using LESS, we can utilize our animation library by adding `.animate
 
 For example:
 
-```less
+```css
 h1#logo {
   float: left;
   font-family: 'Cubano', sans-serif;
@@ -45,7 +45,7 @@ h1#logo {
 }
 ```
 
-*Note: *
+*Note: if you're having issues, be sure re-compile `bootstrap.less` for changes to take effect*
 
 ###Working with jQuery
 You can add more functionality to your animations with jQuery such as below:
