@@ -79,7 +79,7 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
 
-*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent <div>.*
+*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
 
 ##License
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
