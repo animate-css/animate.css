@@ -31,7 +31,7 @@ Since we're using LESS, we can utilize our animation library by adding `.animate
 
 For example:
 
-```css
+```less
 h1#logo {
   float: left;
   font-family: 'Cubano', sans-serif;
