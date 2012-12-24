@@ -27,7 +27,7 @@ For example:
 ```
 
 ###Inside your styelsheet
-Since we're using LESS, we can utilize our animation library by adding `.animated` and any of the many animation names.
+Since we're using LESS, we can utilize our animation library by adding `.animated` and any of the many animation names as classes.
 
 For example:
 
@@ -54,7 +54,7 @@ You can add more functionality to your animations with jQuery such as below:
 $("#logo").addClass('animated bounceOutLeft');
 ```
 
-Since we're using jQuery, we can bind these classes with events or triggers like below:
+We can also bind these classes with events or triggers like below:
 
 ```javascript
 $(document).ready(function(){
@@ -64,7 +64,7 @@ $(document).ready(function(){
 });
 ```
 ###Editing an animation effect
-You can 1) change the duration of your animations, 2) extend the delay, or 3) change the number of times that it plays. If you do want to edit an animation effect, make sure you change them cross-browser.
+You can 1) change the duration of your animations, 2) extend the delay, or 3) change the number of times that it plays. If you do edit an animation effect, make sure you change them cross-browser.
 
 ```css
 #logo {
@@ -77,15 +77,15 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
 }
 ```
 
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o)*
+*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
 
-*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
+*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent <div>.*
 
 ##License
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
 
 ##Learn more
-You can learn more about animate.css over at http://daneden.me/animate &amp; Bootstrap at http://getbootstrap.com/
+You can learn more about animate.css over at http://daneden.me/animate and Twitter Bootstrap over at http://getbootstrap.com/
 
 ##Cheat Sheet
 
