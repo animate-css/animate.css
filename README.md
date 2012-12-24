@@ -83,11 +83,11 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
 ```
 ### Build a custom library
 
-Head over to http://daneden.me/animate/build/ to select which animations you need.
+Head over to http://daneden.me/animate/build/ to select which animations you need. This will download a .css file, so just rename it to .less and use as described above.
 
 ###Live demo
 
-View the animation library in action over at http://daneden.me/animate/
+View the animation library in action over at http://daneden.me/animate/.
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o).*
 
