@@ -45,7 +45,7 @@ h1#logo {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  .animated; // Attach animation library
+  .animated; // Initiate animation library
   .bounce; // Initiate bounce effect
 }
 ```
@@ -94,6 +94,10 @@ Head over to http://daneden.me/animate/build/ to select which animations you nee
 
 View the animation library in action over at http://daneden.me/animate/.
 
+##Browser Support
+
+Since we're using CSS3 here, we're limited to only modern browsers like Chrome, Safari, Mozilla, and Opera.
+
 ##License
 
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
@@ -101,6 +105,8 @@ Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.c
 ##Future Development
 
 I'll shortly be compiling an `animation-library.less` which will allow you to pick and choose which effects you need in your project.
+
+Down the line, IE8/9 support hopefully.
 
 ##Learn more
 
