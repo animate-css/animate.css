@@ -98,6 +98,10 @@ View the animation library in action over at http://daneden.me/animate/.
 
 Animate.css is licensed under the &#9786; license. (http://licence.visualidiot.com/)
 
+##Future Development
+
+I'll shortly be compiling an `animation-library.less` which will allow you to pick and choose which effects you need in your project.
+
 ##Learn more
 
 You can learn more about animate.css over at http://daneden.me/animate and Twitter Bootstrap over at http://getbootstrap.com/
