@@ -110,3 +110,7 @@ lightSpeedOut
 hinge
 rollIn
 rollOut
+
+## Other Resources
+
+- There's a [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css
