@@ -27,7 +27,7 @@ You can change the duration of your animations, add a delay or change the number
 *Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
 
 ##License
-Animate.css is licensed under the GPL license. (http://www.gnu.org/licenses/gpl.html)
+Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ##Learn more
 You can learn more about animate.css over at http://daneden.me/animate
