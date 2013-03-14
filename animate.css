@@ -32,6 +32,31 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	        animation-duration: 2s;
 }
 
+.animated-delay-one{
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+
+.animated-delay-two{
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+}
+
+.animated-delay-three{
+	animation-delay:3s;
+	-webkit-animation-delay:3s;
+}
+
+.animated-delay-four{
+	animation-delay:4s;
+	-webkit-animation-delay:4s;
+}
+
+.animated-delay-five{
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+}
+
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}	
 	25%, 75% {opacity: 0;}
