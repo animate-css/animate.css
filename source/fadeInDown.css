@@ -25,12 +25,12 @@
 @-o-keyframes fadeInDown {
 	0% {
 		opacity: 0;
-		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
 	}
 	
 	100% {
 		opacity: 1;
-		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
 	}
 }
 
