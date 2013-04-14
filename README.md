@@ -26,6 +26,16 @@ You can change the duration of your animations, add a delay or change the number
 
 *Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
 
+Update: Now you can add a delay up to five seconds to your effects.  Example below:
+```html
+<div class="animated fadeInUp animated-delay-one">...</div>
+```
+
+You can use the following classes:
+```css
+.animated-delay-one .animated-delay-two .animated-delay-three .animated-delay-four .animated-delay-five
+```
+
 ##License
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
