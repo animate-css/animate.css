@@ -1,7 +1,3 @@
 .project
 .DS_Store
-.ds_store
-*/.DS_Store
-*/.ds_store
 .sass_cache
-.sas_cache/*
