@@ -50,17 +50,41 @@
             window.onload = function() {
 
                 var el = document.querySelector(".container");
+                var controller = Animate(el);
                 el.addEventListener("click", function() {
 
-                    Animate(el)
+                    // adding with callback
+                    // controller.add("flipInY", function() {
+                    //     alert("flipInY finishes");
+                    // });
+
+                    // removing (i.e. returning to the initial state)
+                    // controller.add("rotateOutUpRight", function() {
+                    //     this.remove('rotateOutUpRight');
+                    // });
+
+                    // catching the end of an animation
+                    // controller
+                    // .add("rotateOutUpRight")
+                    // .end("rotateOutUpRight", function() {
+                    //     alert("rotateOutUpRight");
+                    // })
+
+                    // catching the end of an animation and adds another one
+                    controller
+                    .add("flipInY")
                     .end("flipInY", 'rotateInDownLeft')
-                    .end("rotateInDownLeft", 'bounceOutDown')
-                    .end('bounceOutDown', function() {
-                        this
-                        .removeAll()
-                        .sequence('flip', 'flipInX', 'flipOutX', 'flipOutY', 'fadeIn', 'fadeInUp', 'fadeInDown', 'fadeInLeft', 'fadeInRight', 'fadeInUpBig', 'fadeInDownBig', 'fadeInLeftBig', 'fadeInRightBig', 'fadeOut', 'fadeOutUp', 'fadeOutDown', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUpBig', 'fadeOutDownBig', 'fadeOutLeftBig', 'fadeOutRightBig', 'bounceIn', 'bounceInDown', 'bounceInUp', 'bounceInLeft', 'bounceInRight', 'bounceOut', 'bounceOutUp', 'bounceOutLeft', 'bounceOutRight', 'rotateIn', 'rotateInDownRight', 'rotateInUpLeft', 'rotateInUpRight', 'rotateOut', 'rotateOutDownLeft', 'rotateOutDownRight', 'rotateOutUpLeft', 'rotateOutUpRight', 'lightSpeedIn', 'lightSpeedOut', 'hinge', 'rollIn', 'rollOut');
-                    })
-                    .add("animated").add("flipInY");
+                    .end("rotateInDownLeft", 'bounceOutDown');
+
+                    // controller
+                    // .end("flipInY", 'rotateInDownLeft')
+                    // .end("rotateInDownLeft", 'bounceOutDown')
+                    // .end('bounceOutDown', function() {
+                    //     this
+                    //     .removeAll()
+                    //     .sequence('flip', 'flipInX', 'flipOutX', 'flipOutY', 'fadeIn', 'fadeInUp', 'fadeInDown', 'fadeInLeft', 'fadeInRight', 'fadeInUpBig', 'fadeInDownBig', 'fadeInLeftBig', 'fadeInRightBig', 'fadeOut', 'fadeOutUp', 'fadeOutDown', 'fadeOutLeft', 'fadeOutRight', 'fadeOutUpBig', 'fadeOutDownBig', 'fadeOutLeftBig', 'fadeOutRightBig', 'bounceIn', 'bounceInDown', 'bounceInUp', 'bounceInLeft', 'bounceInRight', 'bounceOut', 'bounceOutUp', 'bounceOutLeft', 'bounceOutRight', 'rotateIn', 'rotateInDownRight', 'rotateInUpLeft', 'rotateInUpRight', 'rotateOut', 'rotateOutDownLeft', 'rotateOutDownRight', 'rotateOutUpLeft', 'rotateOutUpRight', 'lightSpeedIn', 'lightSpeedOut', 'hinge', 'rollIn', 'rollOut');
+                    // })
+                    // .add("flipInY");
 
                 });
 
