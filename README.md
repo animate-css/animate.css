@@ -42,7 +42,6 @@ shake
 tada
 swing
 wobble
-wiggle
 pulse
 
 ####Flippers (currently Webkit, Firefox, &amp; IE10 only):
