@@ -29,6 +29,9 @@ You can change the duration of your animations, add a delay or change the number
 ##License
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
+## Contributing
+Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
+
 ##Learn more
 You can learn more about animate.css over at http://daneden.me/animate
 You can also get in touch via email (dan.eden@me.com) or twitter (@_dte) if you need any help or have any issues.
