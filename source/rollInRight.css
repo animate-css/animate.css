@@ -1,0 +1,29 @@
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+/* updated by Trezy - http://trezy.com */
+
+@-webkit-keyframes rollInRight {
+	0% { opacity: 0; -webkit-transform: translateX(100%) rotate(120deg); }
+	100% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); }
+}
+
+@-moz-keyframes rollInRight {
+	0% { opacity: 0; -moz-transform: translateX(100%) rotate(120deg); }
+	100% { opacity: 1; -moz-transform: translateX(0px) rotate(0deg); }
+}
+
+@-o-keyframes rollInRight {
+	0% { opacity: 0; -o-transform: translateX(100%) rotate(120deg); }
+	100% { opacity: 1; -o-transform: translateX(0px) rotate(0deg); }
+}
+
+@keyframes rollInRight {
+	0% { opacity: 0; transform: translateX(100%) rotate(120deg); }
+	100% { opacity: 1; transform: translateX(0px) rotate(0deg); }
+}
+
+.rollInRight {
+	-webkit-animation-name: rollInRight;
+	-moz-animation-name: rollInRight;
+	-o-animation-name: rollInRight;
+	animation-name: rollInRight;
+}
