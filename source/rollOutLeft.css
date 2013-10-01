@@ -1,5 +1,6 @@
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-/* updated by Trezy for Animate.css - http://trezy.com */
+/* updated by Trezy - http://trezy.com */
+
 @-webkit-keyframes rollOutLeft {
 	0% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); }
 	100% { opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); }
