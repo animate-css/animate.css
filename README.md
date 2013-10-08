@@ -116,3 +116,4 @@ rollOut
 ## Other Resources
 
 - There's a [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css
+- There's also a [component](https://github.com/jheytompkins/animate) version of Animate.css for use with the [component](https://github.com/component/component) package manager.
