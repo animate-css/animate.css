@@ -3491,7 +3491,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     animation-duration: 0.25s;
 }
 
-/**Originally Authored by Harsha Bhat /
+/**Originally Authored by Harsha Bhat 
+Feature: TurnOff
+*/
 
 @-webkit-keyframes turnOff {
 	0% {
@@ -3552,3 +3554,69 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	-o-animation-name: turnOff;
 	animation-name: turnOff;
 }
+
+/**Originally Authored by Harsha Bhat 
+Feature: bigBang
+
+*/
+
+@-webkit-keyframes bigBang {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+
+	100% {
+		-webkit-opacity: 0;
+		-webkit-transform: scale(100);
+	}
+}
+
+@-moz-keyframes bigBang {
+	
+	0% {
+		-moz-transform: scale(1);
+	}
+	
+	
+	100% {
+		-moz-opacity: 0;
+		-moz-transform: scale(100);
+	}
+}
+
+@-o-keyframes bigBang {
+	
+	0% {
+		-o-transform: scale(1);
+	}
+	
+	
+	
+	100% {
+		-o-opacity: 0;
+		-o-transform: scale(100);
+	}
+}
+
+@keyframes bigBang {
+	
+	0% {
+		transform: scale(1);
+	}
+	
+	
+	100% {
+		opacity: 0;
+		transform: scale(100);
+	}
+}
+
+
+.animated.bigBang{
+	-webkit-animation-name: bigBang;
+	-moz-animation-name: bigBang;
+	-o-animation-name: bigBang;
+	animation-name: bigBang;
+}
+
