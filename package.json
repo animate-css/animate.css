@@ -1,0 +1,12 @@
+{
+  "name": "animate.css",
+  "version": "3.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.4.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csso": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
