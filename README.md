@@ -104,6 +104,18 @@ rotateOutDownRight
 rotateOutUpLeft
 rotateOutUpRight
 
+####Sliding entrances:
+slideInUp
+slideInDown
+slideInLeft
+slideInRight
+
+####Sliding exits:
+slideOutUp
+slideOutDown
+slideOutLeft
+slideOutRight
+
 ####Lightspeed:
 lightSpeedIn
 lightSpeedOut
