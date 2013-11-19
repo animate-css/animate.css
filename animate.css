@@ -1697,6 +1697,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		-webkit-transform: translateX(-2000px);
 	}
 
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-1000px);
+	}
+
 	100% {
 		-webkit-transform: translateX(0);
 	}
@@ -1706,6 +1711,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		opacity: 0;
 		-moz-transform: translateX(-2000px);
+	}
+
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-1000px);
 	}
 
 	100% {
@@ -1719,6 +1729,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		-o-transform: translateX(-2000px);
 	}
 
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-1000px);
+	}
+
 	100% {
 		-o-transform: translateX(0);
 	}
@@ -1728,6 +1743,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		opacity: 0;
 		transform: translateX(-2000px);
+	}
+
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-1000px);
 	}
 
 	100% {
@@ -1748,6 +1768,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		-webkit-transform: translateX(2000px);
 	}
 
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(1000px);
+	}
+
 	100% {
 		-webkit-transform: translateX(0);
 	}
@@ -1757,6 +1782,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		opacity: 0;
 		-moz-transform: translateX(2000px);
+	}
+
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(1000px);
 	}
 
 	100% {
@@ -1770,6 +1800,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		-o-transform: translateX(2000px);
 	}
 
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(1000px);
+	}
+
 	100% {
 		-o-transform: translateX(0);
 	}
@@ -1779,6 +1814,11 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		opacity: 0;
 		transform: translateX(2000px);
+	}
+
+	50% {
+		opacity: 0.5;
+		-webkit-transform: translateX(1000px);
 	}
 
 	100% {
