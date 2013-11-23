@@ -6,13 +6,25 @@
 ##Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
+```html
+<head>
+	<link rel="stylesheet" href="animate.min.css">
+</head>
+```
+
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
-You can change the duration of your animations, add a delay or change the number of times that it plays!
+You can also detect when an animation ends:
+
+```javascript
+$('#yourElement').one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', doSomething());
+```
+
+You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
 #yourElement {
@@ -22,97 +34,32 @@ You can change the duration of your animations, add a delay or change the number
 }
 ```
 
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o)*
+*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
-*Note: Safari in Mountion Lion (OS 10.8) has a display glitch with the Flippers. They may not appear at all until the animation is completed, or the page may have other artifacting. One fix is to add overflow: hidden to the parent div.*
+## Custom Builds
+Animate.css is powered by [Grunt](http://gruntjs.com), and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:
 
-##License
+```
+$ cd path/to/animate.css/
+$ sudo npm install
+```
+
+Next, run `grunt watch` to watch for changes and compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the `.animate-config` file to select only the animations you want to use.
+
+```javascript
+"attention_seekers": {
+  "bounce": true,
+  "flash": false,
+  "pulse": false,
+  "shake": true,
+  "swing": true,
+  "tada": true,
+  "wobble": true
+}
+```
+
+## License
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
 Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
-
-##Learn more
-You can learn more about animate.css over at http://daneden.me/animate
-You can also get in touch via email (dan.eden@me.com) or twitter (@_dte) if you need any help or have any issues.
-
-##Cheat Sheet
-
-####Attention seekers:
-flash
-bounce
-shake
-tada
-swing
-wobble
-pulse
-
-####Flippers (currently Webkit, Firefox, &amp; IE10 only):
-flip
-flipInX
-flipOutX
-flipInY
-flipOutY
-
-####Fading entrances:
-fadeIn
-fadeInUp
-fadeInDown
-fadeInLeft
-fadeInRight
-fadeInUpBig
-fadeInDownBig
-fadeInLeftBig
-fadeInRightBig
-
-####Fading exits:
-fadeOut
-fadeOutUp
-fadeOutDown
-fadeOutLeft
-fadeOutRight
-fadeOutUpBig
-fadeOutDownBig
-fadeOutLeftBig
-fadeOutRightBig
-
-####Bouncing entrances:
-bounceIn
-bounceInDown
-bounceInUp
-bounceInLeft
-bounceInRight
-
-####Bouncing exits:
-bounceOut
-bounceOutDown
-bounceOutUp
-bounceOutLeft
-bounceOutRight
-
-####Rotating entrances:
-rotateIn
-rotateInDownLeft
-rotateInDownRight
-rotateInUpLeft
-rotateInUpRight
-
-####Rotating exits:
-rotateOut
-rotateOutDownLeft
-rotateOutDownRight
-rotateOutUpLeft
-rotateOutUpRight
-
-####Lightspeed:
-lightSpeedIn
-lightSpeedOut
-
-####Specials:
-hinge
-rollIn
-rollOut
-
-## Other Resources
-
-- There's a [Ruby gem](https://github.com/camelmasa/animate-rails) available for Animate.css

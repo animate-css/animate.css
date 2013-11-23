@@ -1,0 +1,14 @@
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.slideInRight {
+	animation-name: slideInRight;
+}
