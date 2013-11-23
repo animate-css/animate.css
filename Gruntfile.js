@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           // _base.css required for .animated helper class
           'source/_base.css',
           'source/**/*.css'
-        ]
+        ],
         dest: 'animate.css'
       }
     },
@@ -40,10 +40,11 @@ module.exports = function(grunt) {
       css: {
         files: [
           'source/**/*',
-          '!node_modules'
+          '!node_modules',
+          '.animate-config'
         ],
         // Run Sass, autoprefixer, and CSSO
-        tasks: ['concat', 'autoprefixer', 'csso'],
+        tasks: ['concat-anim', 'autoprefixer', 'csso'],
       }
     }
 
@@ -55,4 +56,28 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-csso');
   grunt.registerTask('default', ['watch']);
+
+  grunt.registerTask('concat-anim', 'Concatenates activated animations', function () {
+    var config = grunt.file.readJSON('.animate-config'),
+        target = [ 'source/_base.css' ],
+        count = 0
+
+    for (var cat in config) {
+      for (var file in config[cat]) {
+        if (config[cat][file]) {
+          target.push('source/' + cat + '/' + file + '.css')
+          count++
+        }
+      }
+    }
+
+    if (!count) {
+      grunt.log.writeln('No animations activated.')
+    }
+
+    grunt.log.writeln(count + (count > 1 ? ' animations' : ' animation') + ' activated.')
+
+    grunt.config('concat', { 'animate.css': target })
+    grunt.task.run('concat')
+  });
 };
