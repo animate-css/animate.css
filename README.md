@@ -18,7 +18,13 @@ You can do a whole bunch of other stuff with animate.css when you combine it wit
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
-You can change the duration of your animations, add a delay or change the number of times that it plays!
+You can also detect when an animation ends:
+
+```javascript
+$('#yourElement').one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', doSomething());
+```
+
+You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
 #yourElement {
@@ -28,29 +34,27 @@ You can change the duration of your animations, add a delay or change the number
 }
 ```
 
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, ms, o)*
+*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
 ## Custom Builds
-Animate.css is powered by Grunt, and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:
+Animate.css is powered by [Grunt](http://gruntjs.com), and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:
 
 ```
 $ cd path/to/animate.css/
 $ sudo npm install
 ```
 
-Next, run `grunt watch` to watch for changes and compile your custom builds. For example, if you want only the “attention seekers”, simply delete them from the repository, or change `Gruntfile.js` to only concatenate the files you want:
+Next, run `grunt watch` to watch for changes and compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the `.animate-config` file to select only the animations you want to use.
 
 ```javascript
-concat: {
-  dist: {
-    src: [
-    	// _base.css required for .animated helper class
-    	'source/_base.css',
-    	'source/attention_seekers/*.css',
-    	'source/flippers/*.css'
-    ],
-    dest: 'animate.css'
-  }
+"attention_seekers": {
+  "bounce": true,
+  "flash": false,
+  "pulse": false,
+  "shake": true,
+  "swing": true,
+  "tada": true,
+  "wobble": true
 }
 ```
 
