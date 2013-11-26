@@ -6,8 +6,8 @@
 	}
 
 	100% {
-		-transform-origin: left bottom;
-		-transform: rotate(-90deg);
+		transform-origin: left bottom;
+		transform: rotate(-90deg);
 		opacity: 0;
 	}
 }
