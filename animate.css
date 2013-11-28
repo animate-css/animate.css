@@ -139,18 +139,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @-webkit-keyframes shake {
   0%, 100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate(0,0);
+    transform: translateX(0,0);
   }
 
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    -webkit-transform: translate(-10px,10px);
+    transform: translate(-10px,10px);
   }
 
   20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+    -webkit-transform: translate(10px,-10px);
+    transform: translate(10px,-10px);
   }
 }
 
