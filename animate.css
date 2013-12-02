@@ -2742,3 +2742,45 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+@-webkit-keyframes shrinkThenGrow {
+  0% {
+    -webkit-transform: scale(0, 1.0);
+    transform: scale(0, 1.0);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+@keyframes shrinkThenGrow {
+  0% {
+    -webkit-transform: scale(0, 1.0);
+    -ms-transform: scale(0, 1.0);
+    transform: scale(0, 1.0);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.shrinkThenGrow {
+  -webkit-animation-name: shrinkThenGrow;
+  animation-name: shrinkThenGrow;
+}
