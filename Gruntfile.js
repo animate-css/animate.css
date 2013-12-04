@@ -26,13 +26,17 @@ module.exports = function(grunt) {
     },
 
     // Minify CSS
-    csso: {
-      dist: {
-        files: {
-          // Output compressed CSS to style.min.css
-          'animate.min.css': ['animate.css']
-        }
-      }
+    cssmin: {
+			add_banner: {
+				options: {
+					keepSpecialComments: 0,
+					banner: '/*! animate.css v3.0.1 http://daneden.me/animate, (c)2013 Daniel Eden, MIT license */'
+				},
+				files: {
+					// Output compressed CSS to *.min.css
+					'animate.min.css': ['animate.css']
+				}
+			}
     },
 
     // Watch files for changes
@@ -43,8 +47,8 @@ module.exports = function(grunt) {
           '!node_modules',
           '.animate-config'
         ],
-        // Run Sass, autoprefixer, and CSSO
-        tasks: ['concat-anim', 'autoprefixer', 'csso'],
+        // Run Sass, autoprefixer, and cssmin
+        tasks: ['concat-anim', 'autoprefixer', 'cssmin'],
       }
     }
 
@@ -54,7 +58,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-csso');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['watch']);
 
   grunt.registerTask('concat-anim', 'Concatenates activated animations', function () {
