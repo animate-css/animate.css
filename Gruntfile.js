@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
-  pkg: grunt.file.readJSON('package.json'),
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
     // Concatenate CSS files
     concat: {
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 			add_banner: {
 				options: {
 					keepSpecialComments: 0,
-					banner: '/*! animate.css v3.0.1 http://daneden.me/animate, (c)2013 Daniel Eden, MIT license */'
+          banner: "<%= '/*! '+ pkg.name +' v'+ pkg.version +' '+ pkg.homepage +', (c)2013 '+ pkg.author.name +', MIT license */' %>"
 				},
 				files: {
 					// Output compressed CSS to *.min.css
