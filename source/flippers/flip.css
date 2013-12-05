@@ -1,10 +1,10 @@
 @keyframes flip {
 	0% {
-		transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+		transform: perspective(400px);
 		animation-timing-function: ease-out;
 	}
 	40% {
-		transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
 		animation-timing-function: ease-out;
 	}
 	50% {
@@ -16,7 +16,7 @@
 		animation-timing-function: ease-in;
 	}
 	100% {
-		transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+		transform: perspective(400px) rotateY(360deg);
 		animation-timing-function: ease-in;
 	}
 }

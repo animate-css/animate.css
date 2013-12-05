@@ -3,12 +3,10 @@
 		opacity: 0;
 		transform: translateX(-2000px);
 	}
-
 	60% {
 		opacity: 1;
 		transform: translateX(30px);
 	}
-
 	80% {
 		transform: translateX(-10px);
 	}

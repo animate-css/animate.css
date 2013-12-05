@@ -3,12 +3,10 @@
 		opacity: 0;
 		transform: scale(.3);
 	}
-
 	50% {
 		opacity: 1;
 		transform: scale(1.05);
 	}
-
 	70% {
 		transform: scale(.9);
 	}
