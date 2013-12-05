@@ -1,8 +1,4 @@
 @keyframes bounceOut {
-	0% {
-		transform: scale(1);
-	}
-
 	25% {
 		transform: scale(.95);
 	}

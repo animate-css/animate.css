@@ -1,8 +1,4 @@
 @keyframes bounceOutRight {
-	0% {
-		transform: translateX(0);
-	}
-
 	20% {
 		opacity: 1;
 		transform: translateX(-20px);
