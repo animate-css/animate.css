@@ -13,8 +13,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-fill-mode: both;
 }
 
 .animated.hinge {
