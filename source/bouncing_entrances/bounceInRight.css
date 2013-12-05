@@ -12,10 +12,6 @@
 	80% {
 		transform: translateX(10px);
 	}
-
-	100% {
-		transform: translateX(0);
-	}
 }
 
 .bounceInRight {
