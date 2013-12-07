@@ -34,6 +34,7 @@
     "fadeInLeftBig": true,
     "fadeInRight": true,
     "fadeInRightBig": true,
+    "fadeInScale": true,
     "fadeInUp": true,
     "fadeInUpBig": true
   },
@@ -46,6 +47,7 @@
     "fadeOutLeftBig": true,
     "fadeOutRight": true,
     "fadeOutRightBig": true,
+    "fadeOutScale": true,
     "fadeOutUp": true,
     "fadeOutUpBig": true
   },
