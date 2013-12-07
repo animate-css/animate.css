@@ -62,4 +62,11 @@ Next, run `grunt watch` to watch for changes and compile your custom builds. For
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
-Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
+Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have four short rules for submitting a pull request:
+
+1. match the naming convention (camelCase)
+2. categorise correctly (fades, bounces, etc)
+3. use 2 space indentations
+4. let us see a demo of submitted animations in a [pen](http://codepen.io).
+
+CodePen is important.
