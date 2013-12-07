@@ -1,14 +1,14 @@
 @keyframes rotateOutDownLeft {
-	0% {
-		transform-origin: left bottom;
-	}
-	100% {
-		transform-origin: left bottom;
-		transform: rotate(90deg);
-		opacity: 0;
-	}
+  0% {
+    transform-origin: left bottom;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
 }
 
 .rotateOutDownLeft {
-	animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
 }

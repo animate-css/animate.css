@@ -1,10 +1,10 @@
 @keyframes slideOutUp {
-	100% {
-		opacity: 0;
-		transform: translateY(-2000px);
-	}
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
 }
 
 .slideOutUp {
-	animation-name: slideOutUp;
+  animation-name: slideOutUp;
 }

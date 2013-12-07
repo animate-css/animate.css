@@ -1,10 +1,10 @@
 @keyframes slideInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-2000px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
 }
 
 .slideInDown {
-	animation-name: slideInDown;
+  animation-name: slideInDown;
 }

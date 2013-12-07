@@ -1,10 +1,10 @@
 @keyframes slideInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-2000px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
 }
 
 .slideInLeft {
-	animation-name: slideInLeft;
+  animation-name: slideInLeft;
 }

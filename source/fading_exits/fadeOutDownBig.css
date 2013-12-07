@@ -1,10 +1,10 @@
 @keyframes fadeOutDownBig {
-	100% {
-		opacity: 0;
-		transform: translateY(2000px);
-	}
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
 }
 
 .fadeOutDownBig {
-	animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
 }

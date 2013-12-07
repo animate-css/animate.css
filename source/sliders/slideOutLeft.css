@@ -1,10 +1,10 @@
 @keyframes slideOutLeft {
-	100% {
-		opacity: 0;
-		transform: translateX(-2000px);
-	}
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
 }
 
 .slideOutLeft {
-	animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
 }

@@ -1,10 +1,10 @@
 @keyframes fadeOutLeft {
-	100% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
 }
 
 .fadeOutLeft {
-	animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
 }

@@ -1,10 +1,10 @@
 @keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
 
 .fadeInUp {
-	animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }

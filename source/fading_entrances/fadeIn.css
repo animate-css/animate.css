@@ -1,7 +1,7 @@
 @keyframes fadeIn {
-	0% { opacity: 0; }
+  0% { opacity: 0; }
 }
 
 .fadeIn {
-	animation-name: fadeIn;
+  animation-name: fadeIn;
 }

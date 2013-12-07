@@ -1,10 +1,10 @@
 @keyframes fadeOutRightBig {
-	100% {
-		opacity: 0;
-		transform: translateX(2000px);
-	}
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
 }
 
 .fadeOutRightBig {
-	animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
 }

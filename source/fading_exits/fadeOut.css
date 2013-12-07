@@ -1,7 +1,7 @@
 @keyframes fadeOut {
-	100% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 .fadeOut {
-	animation-name: fadeOut;
+  animation-name: fadeOut;
 }

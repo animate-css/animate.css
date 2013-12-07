@@ -1,14 +1,14 @@
 @keyframes flipOutX {
-	0% {
-		transform: perspective(400px);
-	}
-	100% {
-		transform: perspective(400px) rotateX(90deg);
-		opacity: 0;
-	}
+  0% {
+    transform: perspective(400px);
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
 }
 
 .flipOutX {
-	animation-name: flipOutX;
-	backface-visibility: visible !important;
+  animation-name: flipOutX;
+  backface-visibility: visible !important;
 }

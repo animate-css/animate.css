@@ -1,11 +1,11 @@
 @keyframes lightSpeedOut {
-	100% {
-		transform: translateX(100%) skewX(-30deg);
-		opacity: 0;
-	}
+  100% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
 }
 
 .lightSpeedOut {
-	animation-name: lightSpeedOut;
-	animation-timing-function: ease-in;
+  animation-name: lightSpeedOut;
+  animation-timing-function: ease-in;
 }

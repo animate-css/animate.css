@@ -1,10 +1,10 @@
 @keyframes rotateOut {
-	100% {
-		transform: rotate(200deg);
-		opacity: 0;
-	}
+  100% {
+    transform: rotate(200deg);
+    opacity: 0;
+  }
 }
 
 .rotateOut {
-	animation-name: rotateOut;
+  animation-name: rotateOut;
 }

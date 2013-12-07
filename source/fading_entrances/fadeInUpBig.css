@@ -1,10 +1,10 @@
 @keyframes fadeInUpBig {
-	0% {
-		opacity: 0;
-		transform: translateY(2000px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
 }
 
 .fadeInUpBig {
-	animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
 }

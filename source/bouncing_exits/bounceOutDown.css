@@ -1,14 +1,14 @@
 @keyframes bounceOutDown {
-	20% {
-		opacity: 1;
-		transform: translateY(-20px);
-	}
-	100% {
-		opacity: 0;
-		transform: translateY(2000px);
-	}
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
 }
 
 .bounceOutDown {
-	animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
 }
