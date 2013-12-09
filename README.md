@@ -65,3 +65,12 @@ And then adding animations to elements with class names will work:
 ```html
 <div class="bounce">This is bouncing</div>
 ```
+
+##What if I don't use Stylus?
+Well, I feel very sorry for you because you are missing out on something great. But, you can still use this animation library - just compile `index.styl` and you'll get a big CSS file (called `index.css`) that you can use:
+
+```bash
+$ npm install stylus -g
+$ cd directory/this/repo/is/in
+$ stylus ./
+```
