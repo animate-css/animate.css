@@ -1,0 +1,11 @@
+/* https://github.com/tomByrer */
+@keyframes rotateOutCounter {
+  100% {
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutCounter {
+  animation-name: rotateOutCounter;
+}

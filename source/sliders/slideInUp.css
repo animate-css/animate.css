@@ -1,0 +1,11 @@
+/* authored by Russell Keith-Magee - https://github.com/freakboy3742 */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}

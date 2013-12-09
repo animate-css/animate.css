@@ -1,0 +1,11 @@
+/* authored by Russell Keith-Magee - https://github.com/freakboy3742 */
+@keyframes slideOutDown {
+  100% {
+    opacity: 0;
+  transform: translateY(2000px);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+}

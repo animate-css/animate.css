@@ -1,0 +1,14 @@
+/* https://github.com/tomByrer */
+@keyframes swivel3dOutLeftBack {
+  50% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate3d(1,0,1,179deg);
+  }
+}
+
+.swivel3dOutLeftBack {
+  animation-name: swivel3dOutLeftBack;
+}

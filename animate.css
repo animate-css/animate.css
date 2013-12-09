@@ -115,6 +115,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: pulse;
 }
 
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes rotateClockwise {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateClockwise {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotateClockwise {
+  -webkit-animation-name: rotateClockwise;
+  animation-name: rotateClockwise;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes rotateCounter {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateCounter {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.rotateCounter {
+  -webkit-animation-name: rotateCounter;
+  animation-name: rotateCounter;
+}
+
 @-webkit-keyframes shake {
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
@@ -1461,47 +1505,48 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @-webkit-keyframes rotateIn {
   0% {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
     -webkit-transform: rotate(-200deg);
     transform: rotate(-200deg);
     opacity: 0;
-  }
-
-  100% {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
   }
 }
 
 @keyframes rotateIn {
   0% {
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
     -webkit-transform: rotate(-200deg);
     -ms-transform: rotate(-200deg);
     transform: rotate(-200deg);
     opacity: 0;
-  }
-
-  100% {
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
   }
 }
 
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes rotateInCounter {
+  0% {
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateInCounter {
+  0% {
+    -webkit-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+.rotateInCounter {
+  -webkit-animation-name: rotateInCounter;
+  animation-name: rotateInCounter;
 }
 
 @-webkit-keyframes rotateInDownLeft {
@@ -1704,6 +1749,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rotateOut {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes rotateOutCounter {
+  100% {
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutCounter {
+  100% {
+    -webkit-transform: rotate(-200deg);
+    -ms-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutCounter {
+  -webkit-animation-name: rotateOutCounter;
+  animation-name: rotateOutCounter;
 }
 
 @-webkit-keyframes rotateOutDownLeft {
@@ -1924,6 +1993,54 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: slideInRight;
 }
 
+/* authored by Russell Keith-Magee - https://github.com/freakboy3742 */
+
+@-webkit-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+/* authored by Russell Keith-Magee - https://github.com/freakboy3742 */
+
+@-webkit-keyframes slideOutDown {
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+
+@keyframes slideOutDown {
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
 @-webkit-keyframes slideOutLeft {
   100% {
     opacity: 0;
@@ -2135,4 +2252,132 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes swivel3dInLeftBack {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,179deg);
+    transform: rotate3d(1,0,1,179deg);
+  }
+
+  50% {
+    opacity: .9;
+  }
+}
+
+@keyframes swivel3dInLeftBack {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,179deg);
+    -ms-transform: rotate3d(1,0,1,179deg);
+    transform: rotate3d(1,0,1,179deg);
+  }
+
+  50% {
+    opacity: .9;
+  }
+}
+
+.swivel3dInLeftBack {
+  -webkit-animation-name: swivel3dInLeftBack;
+  animation-name: swivel3dInLeftBack;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes swivel3dInRightBack {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,-179deg);
+    transform: rotate3d(1,0,1,-179deg);
+  }
+
+  50% {
+    opacity: .9;
+  }
+}
+
+@keyframes swivel3dInRightBack {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,-179deg);
+    -ms-transform: rotate3d(1,0,1,-179deg);
+    transform: rotate3d(1,0,1,-179deg);
+  }
+
+  50% {
+    opacity: .9;
+  }
+}
+
+.swivel3dInRightBack {
+  -webkit-animation-name: swivel3dInRightBack;
+  animation-name: swivel3dInRightBack;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes swivel3dOutLeftBack {
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,179deg);
+    transform: rotate3d(1,0,1,179deg);
+  }
+}
+
+@keyframes swivel3dOutLeftBack {
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,179deg);
+    -ms-transform: rotate3d(1,0,1,179deg);
+    transform: rotate3d(1,0,1,179deg);
+  }
+}
+
+.swivel3dOutLeftBack {
+  -webkit-animation-name: swivel3dOutLeftBack;
+  animation-name: swivel3dOutLeftBack;
+}
+
+/* https://github.com/tomByrer */
+
+@-webkit-keyframes swivel3dOutRightBack {
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,-179deg);
+    transform: rotate3d(1,0,1,-179deg);
+  }
+}
+
+@keyframes swivel3dOutRightBack {
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate3d(1,0,1,-179deg);
+    -ms-transform: rotate3d(1,0,1,-179deg);
+    transform: rotate3d(1,0,1,-179deg);
+  }
+}
+
+.swivel3dOutRightBack {
+  -webkit-animation-name: swivel3dOutRightBack;
+  animation-name: swivel3dOutRightBack;
 }

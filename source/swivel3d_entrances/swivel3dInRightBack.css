@@ -1,0 +1,15 @@
+/* https://github.com/tomByrer */
+@keyframes swivel3dInRightBack {
+  0% {
+    opacity: 0;
+    transform: rotate3d(1,0,1,-179deg);
+  }
+
+  50% {
+    opacity: .9;
+  }
+}
+
+.swivel3dInRightBack {
+  animation-name: swivel3dInRightBack;
+}

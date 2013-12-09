@@ -1,0 +1,11 @@
+/* https://github.com/tomByrer */
+@keyframes rotateInCounter {
+  0% {
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+.rotateInCounter {
+  animation-name: rotateInCounter;
+}
