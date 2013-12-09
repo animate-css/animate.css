@@ -1,5 +1,5 @@
 {
-  "name": "animate.css",
+  "name": "animate-stylus",
   "version": "3.1.0",
-  "main": "./animate.css"
+  "main": "./index.styl"
 }
