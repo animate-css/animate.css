@@ -40,3 +40,28 @@ There's no need to make custom builds because with Stylus you can import everyth
 
 ##Vendor Prefixes
 I've left the code unprefixed so you can support whatever browsers you're targeting without having them choosen for you. I recommend using [nib](http://visionmedia.github.io/nib/) or [auto-prefixer](https://github.com/ai/autoprefixer) to add the prefixes.
+
+##Adding Animations with Class Names
+First off, making classes like `.bounce` is [unsemantic](http://css-tricks.com/semantic-class-names/) because it states the style (which is the job of CSS), rather than describing what the element is. Your HTML is for content, and your CSS is for style - thus, class names (a feature of HTML) should describe the content, not the style.
+
+But I suppose you don't really care about proper semantics, or you wouldn't be trying to do this. So, if you're really determined, you can add this:
+
+```stylus
+//list of animations that we are using
+animations = (bounce slideInDown slideOutUp)
+
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+
+for animation_name in animations
+  .{animation_name}
+    @extends .animated
+    animation-name: animation_name
+```
+
+And then adding animations to elements with class names will work:
+
+```html
+<div class="bounce">This is bouncing</div>
+```
