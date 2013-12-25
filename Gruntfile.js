@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         files: [
           'source/**/*',
           '!node_modules',
-          '.animate-config'
+          '.animate-config.json'
         ],
         // Run Sass, autoprefixer, and CSSO
         tasks: ['concat-anim', 'autoprefixer', 'csso'],
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
   grunt.registerTask('concat-anim', 'Concatenates activated animations', function () {
-    var config = grunt.file.readJSON('.animate-config'),
+    var config = grunt.file.readJSON('.animate-config.json'),
         target = [ 'source/_base.css' ],
         count = 0
 
