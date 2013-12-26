@@ -1,9 +1,9 @@
-.skew {
-	animation-name: skew;
+.skewX {
+	animation-name: skewX;
 	animation-timing-function: ease-in-out;
 }
 
-@keyframes skew  {
+@keyframes skewX  {
 	0%, 100% {
 		transform: skewX(0deg);
 	}
