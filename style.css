@@ -26,6 +26,7 @@ input, select, button, textarea {
 
 .butt, .input {
   padding: .75rem;
+  margin: .375rem;
 
   background-color: transparent;
   border-radius: 4px;
