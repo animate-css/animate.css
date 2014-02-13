@@ -4,6 +4,7 @@
     "bounce": true,
     "flash": true,
     "pulse": true,
+    "rubberBand": true,
     "shake": true,
     "swing": true,
     "tada": true,
