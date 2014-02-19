@@ -210,6 +210,6 @@ html {
   }
 
   to {
-    -webkit-filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(-360deg);
   }
 }
