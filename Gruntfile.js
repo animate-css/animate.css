@@ -26,13 +26,11 @@ module.exports = function(grunt) {
     },
 
     // Minify CSS
-    csso: {
-      dist: {
-        files: {
-          // Output compressed CSS to style.min.css
-          'animate.min.css': ['animate.css']
-        }
-      }
+    cssmin: {
+      minify: {
+        src: ['animate.css'],
+        dest: 'animate.min.css',
+      },
     },
 
     // Watch files for changes
@@ -41,10 +39,10 @@ module.exports = function(grunt) {
         files: [
           'source/**/*',
           '!node_modules',
-          '.animate-config.json'
+          'animate-config.json'
         ],
         // Run Sass, autoprefixer, and CSSO
-        tasks: ['concat-anim', 'autoprefixer', 'csso'],
+        tasks: ['concat-anim', 'autoprefixer', 'cssmin'],
       }
     }
 
@@ -54,11 +52,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-csso');
-  grunt.registerTask('default', ['watch']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin', 'watch']);
 
   grunt.registerTask('concat-anim', 'Concatenates activated animations', function () {
-    var config = grunt.file.readJSON('.animate-config.json'),
+    var config = grunt.file.readJSON('animate-config.json'),
         target = [ 'source/_base.css' ],
         count = 0
 
