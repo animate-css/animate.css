@@ -19,6 +19,6 @@
 }
 
 .flipInX {
-	backface-visibility: visible !important;
-	animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
 }

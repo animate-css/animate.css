@@ -19,6 +19,6 @@
 }
 
 .flipInY {
-	backface-visibility: visible !important;
-	animation-name: flipInY;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
 }

@@ -1,17 +1,17 @@
 @keyframes tada {
-	0% {
+  0% {
     transform: scale(1);
   }
 
-	10%, 20% {
+  10%, 20% {
     transform: scale(0.9) rotate(-3deg);
   }
 
-	30%, 50%, 70%, 90% {
+  30%, 50%, 70%, 90% {
     transform: scale(1.1) rotate(3deg);
   }
 
-	40%, 60%, 80% {
+  40%, 60%, 80% {
     transform: scale(1.1) rotate(-3deg);
   }
 
@@ -21,5 +21,5 @@
 }
 
 .tada {
-	animation-name: tada;
+  animation-name: tada;
 }

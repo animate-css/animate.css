@@ -11,6 +11,6 @@
 }
 
 .flipOutY {
-	backface-visibility: visible !important;
-	animation-name: flipOutY;
+  backface-visibility: visible !important;
+  animation-name: flipOutY;
 }
