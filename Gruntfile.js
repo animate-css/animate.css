@@ -1,4 +1,7 @@
 module.exports = function(grunt) {
+
+  require('load-grunt-tasks')(grunt);
+
   pkg: grunt.file.readJSON('package.json'),
   grunt.initConfig({
 
@@ -49,10 +52,6 @@ module.exports = function(grunt) {
   });
 
   // Register our tasks
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin', 'watch']);
 
   grunt.registerTask('concat-anim', 'Concatenates activated animations', function () {
