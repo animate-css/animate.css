@@ -20,6 +20,12 @@ $('#yourElement').addClass('animated bounceOutLeft');
 
 You can also detect when an animation ends:
 
+<!--
+Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
+
+http://api.jquery.com/one/
+-->
+
 ```javascript
 $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
 ```
