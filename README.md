@@ -27,7 +27,7 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
