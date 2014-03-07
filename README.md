@@ -8,7 +8,7 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 
 ```html
 <head>
-	<link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="animate.min.css">
 </head>
 ```
 
@@ -34,9 +34,9 @@ You can change the duration of your animations, add a delay or change the number
 
 ```css
 #yourElement {
-	-vendor-animation-duration: 3s;
-	-vendor-animation-delay: 2s;
-	-vendor-animation-iteration-count: infinite;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
 }
 ```
 

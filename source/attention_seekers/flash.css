@@ -1,8 +1,13 @@
 @keyframes flash {
-	0%, 50%, 100% {opacity: 1;}
-	25%, 75% {opacity: 0;}
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
 }
 
 .flash {
-	animation-name: flash;
+  animation-name: flash;
 }
