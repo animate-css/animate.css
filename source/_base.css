@@ -17,6 +17,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-fill-mode: both;
 }
 
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
 .animated.hinge {
   animation-duration: 2s;
 }
