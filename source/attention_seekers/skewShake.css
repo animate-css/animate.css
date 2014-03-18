@@ -1,0 +1,17 @@
+@keyframes skewShake {
+  0%, 100% {
+    transform: skewX(0);
+  }
+
+  10%, 40%, 70% {
+    transform: skewX(-15deg);
+  }
+
+  25%, 55%, 85% {
+    transform: skewX(15deg);
+  }
+}
+
+.skewShake {
+  animation-name: skewShake;
+}
