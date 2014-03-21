@@ -1,0 +1,14 @@
+@keyframes slideOutDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+}
