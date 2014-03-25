@@ -1,0 +1,16 @@
+@keyframes zoomInLeft {
+  0% {
+    opacity: 0;
+    transform: scale(.1) translateX(-2000px);
+    animation-timing-function: linear;
+  }
+  
+  60% {
+    opacity: 1;
+    transform: scale(.475) translateX(60px);
+  }
+}
+
+.zoomInLeft {
+  animation-name: zoomInLeft;
+}
