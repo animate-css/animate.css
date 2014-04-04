@@ -1,0 +1,14 @@
+@keyframes slideInUp {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
