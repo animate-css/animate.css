@@ -30,6 +30,8 @@ http://api.jquery.com/one/
 $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
 ```
 
+**Note:** `jQuery#one` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
+
 You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
