@@ -11,9 +11,9 @@ To use animate-stylus in your website, just `@import animate-stylus` and referen
 
 #yourElement
   animation-name: bounceOutLeft
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
+  animation-duration: 3s
+  animation-delay: 2s
+  animation-iteration-count: infinite
 ```
 
 You can do a whole bunch of other stuff with animate-stylus when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
@@ -21,8 +21,8 @@ You can do a whole bunch of other stuff with animate-stylus when you combine it 
 ```stylus
 .bounceOutLeft
   animation-name: bounce
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-duration: 1s
+  animation-fill-mode: both
 ```
 
 ```javascript
