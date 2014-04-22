@@ -2,12 +2,13 @@
   0% {
     opacity: 0;
     transform: scale(.1) translateX(2000px);
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
   }
   
   60% {
     opacity: 1;
-    transform: scale(.475) translateX(-60px);
+    transform: scale(.475) translateX(-48px);
+    animation-timing-function: ease-out;
   }
 }
 

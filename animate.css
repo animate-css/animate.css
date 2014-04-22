@@ -2914,14 +2914,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: scale(.1) translateX(-2000px);
     transform: scale(.1) translateX(-2000px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(60px);
-    transform: scale(.475) translateX(60px);
+    -webkit-transform: scale(.475) translateX(48px);
+    transform: scale(.475) translateX(48px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -2931,15 +2933,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-transform: scale(.1) translateX(-2000px);
     -ms-transform: scale(.1) translateX(-2000px);
     transform: scale(.1) translateX(-2000px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(60px);
-    -ms-transform: scale(.475) translateX(60px);
-    transform: scale(.475) translateX(60px);
+    -webkit-transform: scale(.475) translateX(48px);
+    -ms-transform: scale(.475) translateX(48px);
+    transform: scale(.475) translateX(48px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -2953,14 +2957,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     -webkit-transform: scale(.1) translateX(2000px);
     transform: scale(.1) translateX(2000px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(-60px);
-    transform: scale(.475) translateX(-60px);
+    -webkit-transform: scale(.475) translateX(-48px);
+    transform: scale(.475) translateX(-48px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -2970,15 +2976,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-transform: scale(.1) translateX(2000px);
     -ms-transform: scale(.1) translateX(2000px);
     transform: scale(.1) translateX(2000px);
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(-60px);
-    -ms-transform: scale(.475) translateX(-60px);
-    transform: scale(.475) translateX(-60px);
+    -webkit-transform: scale(.475) translateX(-48px);
+    -ms-transform: scale(.475) translateX(-48px);
+    transform: scale(.475) translateX(-48px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -3033,8 +3041,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(60px);
-    transform: scale(.475) translateX(60px);
+    -webkit-transform: scale(.475) translateX(42px);
+    transform: scale(.475) translateX(42px);
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
   }
@@ -3051,9 +3059,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(60px);
-    -ms-transform: scale(.475) translateX(60px);
-    transform: scale(.475) translateX(60px);
+    -webkit-transform: scale(.475) translateX(42px);
+    -ms-transform: scale(.475) translateX(42px);
+    transform: scale(.475) translateX(42px);
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
   }
@@ -3077,8 +3085,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes zoomOutRight {
   40% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(-60px);
-    transform: scale(.475) translateX(-60px);
+    -webkit-transform: scale(.475) translateX(-42px);
+    transform: scale(.475) translateX(-42px);
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
   }
@@ -3095,9 +3103,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @keyframes zoomOutRight {
   40% {
     opacity: 1;
-    -webkit-transform: scale(.475) translateX(-60px);
-    -ms-transform: scale(.475) translateX(-60px);
-    transform: scale(.475) translateX(-60px);
+    -webkit-transform: scale(.475) translateX(-42px);
+    -ms-transform: scale(.475) translateX(-42px);
+    transform: scale(.475) translateX(-42px);
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
   }
