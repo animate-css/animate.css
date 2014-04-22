@@ -95,22 +95,18 @@
     "hinge": true,
     "rollIn": true,
     "rollOut": true
-  }
+  },
 
   "zooming_entrances": {
     "zoomIn": true,
-    "zoomInDown": true,
     "zoomInLeft": true,
-    "zoomInRight": true,
-    "zoomInUp": true
+    "zoomInRight": true
   },
   
   "zooming_exits": {
     "zoomOut": true,
-    "zoomOutDown": true,
     "zoomOutLeft": true,
-    "zoomOutRight": true,
-    "zoomOutUp": true
+    "zoomOutRight": true
   }
 
 }
