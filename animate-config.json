@@ -99,14 +99,18 @@
 
   "zooming_entrances": {
     "zoomIn": true,
+    "zoomInDown": true,
     "zoomInLeft": true,
-    "zoomInRight": true
+    "zoomInRight": true,
+    "zoomInUp": true
   },
   
   "zooming_exits": {
     "zoomOut": true,
+    "zoomOutDown": true,
     "zoomOutLeft": true,
-    "zoomOutRight": true
+    "zoomOutRight": true,
+    "zoomOutUp": true
   }
 
 }
