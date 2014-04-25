@@ -1,0 +1,17 @@
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    transform: scale(.1) translateY(-2000px);
+    animation-timing-function: ease-in-out;
+  }
+  
+  60% {
+    opacity: 1;
+    transform: scale(.475) translateY(60px);
+    animation-timing-function: ease-out;
+  }
+}
+
+.zoomInDown {
+  animation-name: zoomInDown;
+}

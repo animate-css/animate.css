@@ -1,0 +1,17 @@
+@keyframes zoomOutLeft {
+  40% {
+    opacity: 1;
+    transform: scale(.475) translateX(42px);
+    animation-timing-function: linear;
+  }
+  
+  100% {
+    opacity: 0;
+    transform: scale(.1) translateX(-2000px);
+    transform-origin: left center;
+  }
+}
+
+.zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
