@@ -27,7 +27,7 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+$('#yourElement').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
 ```
 
 **Note:** `jQuery#one` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
