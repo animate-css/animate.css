@@ -8,5 +8,8 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.8.0",
     "load-grunt-tasks": "~0.2.0"
+  },
+  "spm": {
+    "main": "./animate.css"
   }
 }
