@@ -36,7 +36,8 @@
     "fadeInRightBig": true,
     "fadeInScale": true,
     "fadeInUp": true,
-    "fadeInUpBig": true
+    "fadeInUpBig": true,
+    "fadeInScale": true
   },
 
   "fading_exits": {
@@ -49,7 +50,8 @@
     "fadeOutRightBig": true,
     "fadeOutScale": true,
     "fadeOutUp": true,
-    "fadeOutUpBig": true
+    "fadeOutUpBig": true,
+    "fadeOutScale": true
   },
 
   "flippers": {
