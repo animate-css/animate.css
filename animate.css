@@ -2875,6 +2875,120 @@ Copyright (c) 2013 Daniel Eden
   animation-name: rollOut;
 }
 
+@-webkit-keyframes trotIn {
+  0% {
+    -webkit-transform: perspective(400px) translateZ(-1000px) rotateZ(25deg);
+    opacity: 0.2;
+  }
+  
+  25% {
+    -webkit-transform: perspective(400px) translateZ(-750px) rotateZ(-25deg);
+    opacity: 0.8;
+  }
+  
+  50% {
+    -webkit-transform: perspective(400px) translateZ(-500px) rotateZ(25deg);
+    opacity: 1;
+  }
+  
+  75% {
+    -webkit-transform: perspective(400px) translateZ(-250px) rotateZ(-25deg);
+  }
+
+  100% { 
+    -webkit-transform: perspective(400px) translateZ(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes trotIn {
+  0% {
+    transform: perspective(400px) translateZ(-1000px) rotateZ(25deg);
+    opacity: 0.2;
+  }
+  
+  25% {
+    transform: perspective(400px) translateZ(-750px) rotateZ(-25deg);
+    opacity: 0.8;
+  }
+  
+  50% {
+    transform: perspective(400px) translateZ(-500px) rotateZ(25deg);
+    opacity: 1;
+  }
+  
+  75% {
+    transform: perspective(400px) translateZ(-250px) rotateZ(-25deg);
+  }
+
+  100% { 
+    transform: perspective(400px) translateZ(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
+.trotIn {
+  -webkit-animation-name: trotIn;
+  animation-name: trotIn;
+}
+
+@-webkit-keyframes trotOut {
+  0% {
+     -webkit-transform: perspective(400px) translateZ(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+  
+  25% {
+    -webkit-transform: perspective(400px) translateZ(-250px) rotateZ(-25deg);
+  }
+  
+  50% {
+    -webkit-transform: perspective(400px) translateZ(-500px) rotateZ(25deg);
+    opacity: 1;
+  }
+  
+  75% {
+     -webkit-transform: perspective(400px) translateZ(-750px) rotateZ(-25deg);
+    opacity: 0.8;
+  }
+
+  100% { 
+    -webkit-transform: perspective(400px) translateZ(-1000px) rotateZ(25deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes trotOut {
+  0% {
+    transform: perspective(400px) translateZ(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+  
+  25% {
+    transform: perspective(400px) translateZ(-250px) rotateZ(-25deg);
+  }
+  
+  50% {
+    transform: perspective(400px) translateZ(-500px) rotateZ(25deg);
+    opacity: 1;
+  }
+  
+  75% {
+    transform: perspective(400px) translateZ(-750px) rotateZ(-25deg);
+    opacity: 0.8;
+  }
+
+  100% { 
+    transform: perspective(400px) translateZ(-1000px) rotateZ(25deg);
+    opacity: 0.2;
+  }
+}
+
+.trotOut {
+  -webkit-animation-name: trotOut;
+  animation-name: trotOut;
+}
+
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;

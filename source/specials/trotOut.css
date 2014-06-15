@@ -1,0 +1,29 @@
+@keyframes trotOut {
+  0% {
+    transform: perspective(400px) translateZ(0px) rotateZ(0deg);
+    opacity: 1;
+  }
+  
+  25% {
+    transform: perspective(400px) translateZ(-250px) rotateZ(-25deg);
+  }
+  
+  50% {
+    transform: perspective(400px) translateZ(-500px) rotateZ(25deg);
+    opacity: 1;
+  }
+  
+  75% {
+    transform: perspective(400px) translateZ(-750px) rotateZ(-25deg);
+    opacity: 0.8;
+  }
+
+  100% { 
+    transform: perspective(400px) translateZ(-1000px) rotateZ(25deg);
+    opacity: 0.2;
+  }
+}
+
+.trotOut {
+  animation-name: trotOut;
+}
