@@ -110,7 +110,8 @@
     "zoomOutDown": true,
     "zoomOutLeft": true,
     "zoomOutRight": true,
-    "zoomOutUp": true
+    "zoomOutUp": true,
+    "zoomOutBig": true
   }
 
 }
