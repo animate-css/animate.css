@@ -1,7 +1,7 @@
 @keyframes bounceInDown {
   0% {
     opacity: 0;
-    transform: translateY(-2000px);
+    transform: translateY(-3000px);
   }
 
   60% {
@@ -9,8 +9,12 @@
     transform: translateY(30px);
   }
 
-  80% {
-    transform: translateY(-10px);
+  75% {
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(5px);
   }
 
   100% {

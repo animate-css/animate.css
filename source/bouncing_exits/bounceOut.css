@@ -4,7 +4,7 @@
   }
 
   25% {
-    transform: scale(.95);
+    transform: scale(.9);
   }
 
   50% {
@@ -20,4 +20,5 @@
 
 .bounceOut {
   animation-name: bounceOut;
+  animation-duration: .75s;
 }

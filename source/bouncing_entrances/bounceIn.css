@@ -4,13 +4,21 @@
     transform: scale(.3);
   }
 
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
+  20% {
+    transform: scale(1.1);
   }
 
-  70% {
+  40% {
     transform: scale(.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(.97);
   }
 
   100% {
@@ -21,4 +29,5 @@
 
 .bounceIn {
   animation-name: bounceIn;
+  animation-duration: .75s;
 }

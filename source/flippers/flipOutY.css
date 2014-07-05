@@ -1,6 +1,10 @@
 @keyframes flipOutY {
   0% {
     transform: perspective(400px) rotateY(0deg);
+  }
+
+  30% {
+    transform: perspective(400px) rotateY(-15deg);
     opacity: 1;
   }
 
@@ -13,4 +17,5 @@
 .flipOutY {
   backface-visibility: visible !important;
   animation-name: flipOutY;
+  animation-duration: .75s;
 }
