@@ -1,0 +1,14 @@
+@keyframes slideInDownRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px) translateX(2000px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.slideInDownRight {
+  animation-name: slideInDownRight;
+}
