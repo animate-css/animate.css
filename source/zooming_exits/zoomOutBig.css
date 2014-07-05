@@ -1,0 +1,19 @@
+.zoomOutBig {
+  animation-name: zoomOutBig;
+}
+
+@keyframes zoomOutBig {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  80% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
