@@ -1,21 +1,21 @@
 @keyframes lightSpeedIn {
   0% {
-    transform: translateX(100%) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
 
   60% {
-    transform: translateX(-20%) skewX(30deg);
+    transform: skewX(20deg);
     opacity: 1;
   }
 
   80% {
-    transform: translateX(0%) skewX(-15deg);
+    transform: skewX(-5deg);
     opacity: 1;
   }
 
   100% {
-    transform: translateX(0%) skewX(0deg);
+    transform: none;
     opacity: 1;
   }
 }

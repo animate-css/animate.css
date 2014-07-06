@@ -3,12 +3,12 @@
 @keyframes rollIn {
   0% {
     opacity: 0;
-    transform: translateX(-100%) rotate(-120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0px) rotate(0deg);
+    transform: none;
   }
 }
 

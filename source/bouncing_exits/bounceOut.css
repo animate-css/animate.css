@@ -1,20 +1,16 @@
 @keyframes bounceOut {
-  0% {
-    transform: scale(1);
+  20% {
+    transform: scale3d(.9, .9, .9);
   }
 
-  25% {
-    transform: scale(.9);
-  }
-
-  50% {
+  50%, 55% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 
   100% {
     opacity: 0;
-    transform: scale(.3);
+    transform: scale3d(.3, .3, .3);
   }
 }
 

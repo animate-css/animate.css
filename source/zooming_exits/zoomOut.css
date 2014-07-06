@@ -1,14 +1,13 @@
 @keyframes zoomOut {
   0% {
     opacity: 1;
-    transform: scale(1);
   }
-  
+
   50% {
     opacity: 0;
-    transform: scale(.3);
+    transform: scale3d(.3, .3, .3);
   }
-  
+
   100% {
     opacity: 0;
   }

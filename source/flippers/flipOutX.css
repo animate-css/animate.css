@@ -1,15 +1,15 @@
 @keyframes flipOutX {
   0% {
-    transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px);
   }
 
   30% {
-    transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
 
   100% {
-    transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
 }

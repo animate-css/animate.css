@@ -1,12 +1,12 @@
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
-    transform: translateX(2000px);
+    transform: translate3d(2000px, 0, 0);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: none;
   }
 }
 

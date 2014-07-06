@@ -80,17 +80,6 @@
     "rotateOutUpRight": true
   },
 
-  "sliders": {
-    "slideInDown": true,
-    "slideInLeft": true,
-    "slideInRight": true,
-    "slideOutLeft": true,
-    "slideOutRight": true,
-    "slideOutUp": true,
-    "slideInUp": true,
-    "slideOutDown": true
-  },
-
   "specials": {
     "hinge": true,
     "rollIn": true,
@@ -104,7 +93,7 @@
     "zoomInRight": true,
     "zoomInUp": true
   },
-  
+
   "zooming_exits": {
     "zoomOut": true,
     "zoomOutDown": true,

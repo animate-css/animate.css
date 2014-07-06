@@ -1,14 +1,14 @@
 @keyframes zoomInDown {
   0% {
     opacity: 0;
-    transform: scale(.1) translateY(-2000px);
-    animation-timing-function: ease-in-out;
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
-  
+
   60% {
     opacity: 1;
-    transform: scale(.475) translateY(60px);
-    animation-timing-function: ease-out;
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
 }
 

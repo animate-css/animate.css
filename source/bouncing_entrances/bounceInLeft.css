@@ -1,24 +1,28 @@
 @keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
   0% {
     opacity: 0;
-    transform: translateX(-3000px);
+    transform: translate3d(-3000px, 0, 0);
   }
 
   60% {
     opacity: 1;
-    transform: translateX(30px);
+    transform: translate3d(25px, 0, 0);
   }
 
   75% {
-    transform: translateX(-15px);
+    transform: translate3d(-10px, 0, 0);
   }
 
   90% {
-    transform: translateX(5px);
+    transform: translate3d(5px, 0, 0);
   }
 
   100% {
-    transform: translateX(0);
+    transform: none;
   }
 }
 
