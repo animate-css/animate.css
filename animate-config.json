@@ -31,24 +31,40 @@
     "fadeIn": true,
     "fadeInDown": true,
     "fadeInDownBig": true,
+    "fadeInDownLeft": true,
+    "fadeInDownLeftBig": true,
     "fadeInLeft": true,
     "fadeInLeftBig": true,
+    "fadeInUpLeft": true,
+    "fadeInUpLeftBig": true,
+    "fadeInUp": true,
+    "fadeInUpBig": true,
+    "fadeInUpRight": true,
+    "fadeInUpRightBig": true,
     "fadeInRight": true,
     "fadeInRightBig": true,
-    "fadeInUp": true,
-    "fadeInUpBig": true
+    "fadeInDownRight": true,
+    "fadeInDownRightBig": true
   },
 
   "fading_exits": {
     "fadeOut": true,
     "fadeOutDown": true,
     "fadeOutDownBig": true,
+    "fadeOutDownLeft": true,
+    "fadeOutDownLeftBig": true,
     "fadeOutLeft": true,
     "fadeOutLeftBig": true,
+    "fadeOutUpLeft": true,
+    "fadeOutUpLeftBig": true,
+    "fadeOutUp": true,
+    "fadeOutUpBig": true,
+    "fadeOutUpRight": true,
+    "fadeOutUpRightBig": true,
     "fadeOutRight": true,
     "fadeOutRightBig": true,
-    "fadeOutUp": true,
-    "fadeOutUpBig": true
+    "fadeOutDownRight": true,
+    "fadeOutDownRightBig": true
   },
 
   "flippers": {
