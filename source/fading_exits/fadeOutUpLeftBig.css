@@ -1,4 +1,4 @@
-@keyframes fadeOutLeftBig {
+@keyframes fadeOutUpLeftBig {
   0% {
     opacity: 1;
   }
@@ -9,6 +9,6 @@
   }
 }
 
-.fadeOutLeftBig {
-  animation-name: fadeOutLeftBig;
+.fadeOutUpLeftBig {
+  animation-name: fadeOutUpLeftBig;
 }
