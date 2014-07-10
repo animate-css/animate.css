@@ -1,0 +1,14 @@
+@keyframes fadeOutUpLeftBig {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-2000px, -2000px, 0);
+  }
+}
+
+.fadeOutUpLeftBig {
+  animation-name: fadeOutUpLeftBig;
+}
