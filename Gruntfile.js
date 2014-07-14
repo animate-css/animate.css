@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [ 'source/_base.css', 'source/**/*.css' ], // _base.css required for .animated helper class
-        dest: 'animate.css'
+        dest: 'dn-animate.css'
       }
     },
 
@@ -20,20 +20,20 @@ module.exports = function(grunt) {
         browsers: ['last 3 versions', 'bb 10', 'android 3']
       },
       no_dest: {
-        src: 'animate.css' // output file
+        src: 'dn-animate.css' // output file
       }
     },
 
     cssmin: {
       minify: {
-        src: ['animate.css'],
-        dest: 'animate.min.css',
+        src: ['dn-animate.css'],
+        dest: 'dn-animate.min.css',
       }
     },
 
     watch: {
       css: {
-        files: [ 'source/**/*', 'animate-config.json' ],
+        files: [ 'source/**/*', 'dn-animate-config.json' ],
         tasks: ['default']
       }
     }
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
   // fuction to perform custom task
   concatAnim = function () {
 
-    var categories = grunt.file.readJSON('animate-config.json'),
+    var categories = grunt.file.readJSON('dn-animate-config.json'),
       category, files, file,
       target = [ 'source/_base.css' ],
       count = 0;
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       grunt.log.writeln(count + (count > 1 ? ' animations' : ' animation') + ' activated.');
     }
 
-    grunt.config('concat', { 'animate.css': target });
+    grunt.config('concat', { 'dn-animate.css': target });
     grunt.task.run('concat');
 
   };

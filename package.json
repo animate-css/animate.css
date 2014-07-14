@@ -1,6 +1,6 @@
 {
-  "name": "animate.css",
-  "version": "3.2.1",
+  "name": "dn-animate-css",
+  "version": "3.2.2",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
@@ -10,6 +10,6 @@
     "load-grunt-tasks": "~0.2.0"
   },
   "spm": {
-    "main": "./animate.css"
+    "main": "./dn-animate.css"
   }
 }
