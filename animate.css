@@ -2410,8 +2410,8 @@ Copyright (c) 2014 Daniel Eden
   100% {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate(0, 0, 1, 45deg);
-    transform: rotate(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 }
@@ -2428,9 +2428,9 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform-origin: left bottom;
     -ms-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate(0, 0, 1, 45deg);
-    -ms-transform: rotate(0, 0, 1, 45deg);
-    transform: rotate(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 }
