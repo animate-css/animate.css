@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2013 Daniel Eden
+*/
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+@import
+  /**
+   * Attention Seekers
+   */
+  "attention_seekers/bounce",
+  "attention_seekers/flash",
+  "attention_seekers/pulse",
+  "attention_seekers/rubberBand",
+  "attention_seekers/shake",
+  "attention_seekers/swing",
+  "attention_seekers/tada",
+  "attention_seekers/wobble",
+
+  /**
+   * Bouncing Extras
+   */
+  "bouncing_entrances/bounceIn",
+  "bouncing_entrances/bounceInDown",
+  "bouncing_entrances/bounceInLeft",
+  "bouncing_entrances/bounceInRight",
+  "bouncing_entrances/bounceInUp",
+
+  /**
+   * Bouncing Exits
+   */
+  "bouncing_exits/bounceOut",
+  "bouncing_exits/bounceOutDown",
+  "bouncing_exits/bounceOutLeft",
+  "bouncing_exits/bounceOutRight",
+  "bouncing_exits/bounceOutUp",
+
+  /**
+   * Fading Entrances
+   */
+  "fading_entrances/fadeIn",
+  "fading_entrances/fadeInDown",
+  "fading_entrances/fadeInDownBig",
+  "fading_entrances/fadeInLeft",
+  "fading_entrances/fadeInLeftBig",
+  "fading_entrances/fadeInRight",
+  "fading_entrances/fadeInRightBig",
+  "fading_entrances/fadeInUp",
+  "fading_entrances/fadeInUpBig",
+
+  /**
+   * Fading Exits
+   */
+  "fading_exits/fadeOut",
+  "fading_exits/fadeOutDown",
+  "fading_exits/fadeOutDownBig",
+  "fading_exits/fadeOutLeft",
+  "fading_exits/fadeOutLeftBig",
+  "fading_exits/fadeOutRight",
+  "fading_exits/fadeOutRightBig",
+  "fading_exits/fadeOutUp",
+  "fading_exits/fadeOutUpBig",
+
+  /**
+   * Flippers
+   */
+  "flippers/flip",
+  "flippers/flipInX",
+  "flippers/flipInY",
+  "flippers/flipOutX",
+  "flippers/flipOutY",
+
+  /**
+   * Lightspeed
+   */
+  "lightspeed/lightSpeedIn",
+  "lightspeed/lightSpeedOut",
+
+  /**
+   * Rotating Entrances
+   */
+  "rotating_entrances/rotateIn",
+  "rotating_entrances/rotateInDownLeft",
+  "rotating_entrances/rotateInDownRight",
+  "rotating_entrances/rotateInUpLeft",
+  "rotating_entrances/rotateInUpRight",
+
+  /**
+   * Rotating Exits
+   */
+  "rotating_exits/rotateOut",
+  "rotating_exits/rotateOutDownLeft",
+  "rotating_exits/rotateOutDownRight",
+  "rotating_exits/rotateOutUpLeft",
+  "rotating_exits/rotateOutUpRight",
+
+  /**
+   * Specials
+   */
+  "specials/hinge",
+  "specials/rollIn",
+  "specials/rollOut",
+
+  /**
+   * Zooming Entrances
+   */
+  "zooming_entrances/zoomIn",
+  "zooming_entrances/zoomInDown",
+  "zooming_entrances/zoomInLeft",
+  "zooming_entrances/zoomInRight",
+  "zooming_entrances/zoomInUp",
+
+  /**
+   * Zooming Exits
+   */
+  "zooming_exits/zoomOut",
+  "zooming_exits/zoomOutDown",
+  "zooming_exits/zoomOutLeft",
+  "zooming_exits/zoomOutRight",
+  "zooming_exits/zoomOutUp";
