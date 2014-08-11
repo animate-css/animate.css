@@ -100,6 +100,19 @@
     "zoomOutLeft": true,
     "zoomOutRight": true,
     "zoomOutUp": true
-  }
+  },
 
+  "sliding_entrances": {
+    "slideInDown": true,
+    "slideInLeft": true,
+    "slideInRight": true,
+    "slideInUp": true
+  },
+
+  "sliding_exits": {
+    "slideOutDown": true,
+    "slideOutLeft": true,
+    "slideOutRight": true,
+    "slideOutUp": true
+  }
 }
