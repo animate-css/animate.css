@@ -2761,12 +2761,11 @@
 }
 
 // Mixin to select custom settings for animations and to select animations
-@mixin ae($name) {
+@mixin ae($name, $fill-mode: both) {
   -webkit-animation-name: $name;
   animation-name: $name;
   @include animation-duration(1s);
-  @include animation-fill-mode(both);
-  @include transform-origin($value);
+  @include animation-fill-mode($fill-mode);
   @if $name == "bounce" {
     @include transform-origin(bottom center);
   } @else if $name == "swing" {
