@@ -4,9 +4,10 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
     "load-grunt-tasks": "~0.2.0"
   },
   "spm": {
