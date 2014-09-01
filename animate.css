@@ -12,14 +12,9 @@ Copyright (c) 2014 Daniel Eden
   animation-fill-mode: both;
 }
 
-.animated.infinite {
+.animated--infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
 }
 
 @-webkit-keyframes bounce {
