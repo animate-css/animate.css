@@ -1,3 +1,7 @@
+#Dependencies: 
+
+    Bourbon or Compass mixin libs are req. to make it work
+
 
 #How to include
 
