@@ -1,0 +1,36 @@
+@mixin rotateOutUpRight() {
+  @-webkit-keyframes rotateOutUpRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 90deg);
+      transform: rotate3d(0, 0, 1, 90deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes rotateOutUpRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+      transform-origin: right bottom;
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 90deg);
+      -ms-transform: rotate3d(0, 0, 1, 90deg);
+      transform: rotate3d(0, 0, 1, 90deg);
+      opacity: 0;
+    }
+  }
+}

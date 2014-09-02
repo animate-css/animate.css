@@ -1,0 +1,26 @@
+@mixin fadeOutRight() {
+  @-webkit-keyframes fadeOutRight {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  @keyframes fadeOutRight {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+}

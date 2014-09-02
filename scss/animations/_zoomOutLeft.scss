@@ -1,0 +1,36 @@
+@mixin zoomOutLeft() {
+  @-webkit-keyframes zoomOutLeft {
+    40% {
+      opacity: 1;
+      -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+      transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
+      transform: scale(.1) translate3d(-2000px, 0, 0);
+      -webkit-transform-origin: left center;
+      transform-origin: left center;
+    }
+  }
+
+  @keyframes zoomOutLeft {
+    40% {
+      opacity: 1;
+      -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+      -ms-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+      transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
+      -ms-transform: scale(.1) translate3d(-2000px, 0, 0);
+      transform: scale(.1) translate3d(-2000px, 0, 0);
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@mixin lightSpeedOut() {
+  @-webkit-keyframes lightSpeedOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+      transform: translate3d(100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes lightSpeedOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+      -ms-transform: translate3d(100%, 0, 0) skewX(30deg);
+      transform: translate3d(100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
+  }
+}
