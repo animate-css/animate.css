@@ -1,8 +1,3 @@
-#Dependencies: 
-
-    Bourbon or Compass mixin libs are req. to make it work
-
-
 #How to include
 
 A simple way to include a animation from the library, it uses the original naming conventions with camalCasing all animations from the original library is included as mixins.
