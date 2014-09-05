@@ -1,5 +1,99 @@
 /*/
 	List of used animations
+	
+	Just incomment the keyframes you need
 /*/
 
-@include bounce();
+// Bounces
+//@include bounce(); 
+//@include bounceIn(); 
+//@include bounceInDown(); 
+//@include bounceInLeft(); 
+//@include bounceInRight(); 
+//@include bounceInUp(); 
+//@include bounceOut(); 
+//@include bounceOutDown(); 
+//@include bounceOutRight(); 
+//@include bounceOutLeft(); 
+//@include bounceOutUp(); 
+
+// Fades
+//@include fadeInDown(); 
+//@include fadeInDownBig(); 
+//@include fadeIn(); 
+//@include fadeInLeft(); 
+//@include fadeInRightBig(); 
+//@include fadeInUpBig(); 
+//@include fadeOut(); 
+//@include fadeInRight(); 
+//@include fadeOutDownBig(); 
+//@include fadeOutDown(); 
+//@include fadeInLeftBig(); 
+//@include fadeOutRightBig(); 
+//@include fadeOutRight(); 
+//@include fadeOutLeft(); 
+//@include fadeOutLeftBig(); 
+//@include fadeInUp(); 
+//@include fadeOutUp(); 
+//@include fadeOutUpBig(); 
+
+// Flashes
+//@include flash(); 
+
+// Flips
+//@include flip(); 
+//@include flipInX(); 
+//@include flipInY(); 
+//@include flipOutX(); 
+//@include flipOutY(); 
+
+// Hinges
+//@include hinge(); 
+
+// LigthSpeeds
+//@include lightSpeedIn(); 
+//@include lightSpeedOut(); 
+
+// Pulses
+//@include pulse(); 
+
+// Rolls
+//@include rollIn(); 
+//@include rollOut(); 
+
+// Rotates
+//@include rotateIn(); 
+//@include rotateInDownRight(); 
+//@include rotateInDownLeft(); 
+//@include rotateInUpLeft(); 
+//@include rotateInUpRight(); 
+//@include rotateOut(); 
+//@include rotateOutDownLeft(); 
+//@include rotateOutUpLeft(); 
+//@include rotateOutDownRight(); 
+//@include rubberBand(); 
+//@include rotateOutUpRight(); 
+
+// Shakes
+//@include shake(); 
+
+// Swings
+//@include swing(); 
+
+// Tadas
+//@include tada(); 
+
+// Wobbles
+//@include wobble(); 
+
+// Zooms
+//@include zoomIn(); 
+//@include zoomInDown(); 
+//@include zoomInLeft(); 
+//@include zoomInRight(); 
+//@include zoomInUp(); 
+//@include zoomOutDown(); 
+//@include zoomOut(); 
+//@include zoomOutLeft(); 
+//@include zoomOutRight(); 
+//@include zoomOutUp();
