@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>animate.css helper test page</title>
+
+        <link href="lib/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../animate.min.css" rel="stylesheet"/>
+        <script type="text/javascript" src="lib/js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="AnimateHelper.js"></script>
+
+        <style type="text/css">
+            .test-block {
+                width: 60px;
+                height: 60px;
+                background-color: red;
+                float: left;
+                margin: 5px;
+            }
+            .group {
+                width: 495px;
+                margin: 20px;
+                border: solid 2px #000000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="test">
+            <h2>Animate once: </h2>
+            <div id='test0' class="btn btn-info">Test</div>
+            AnimateHelper.animateOnce(element, animationName); 
+            <h2>List item entry: </h2>
+            <div id='test1' class="btn btn-info">Test</div>
+            AnimateHelper.fadeInElementList(elements, animationName, 0, 150); 
+            <h2>List item random entry: </h2>
+            <div id='test2' class="btn btn-info">Test</div>
+            AnimateHelper.fadeInElementListRandom(elements, animationName, 0, 800); 
+            <br>
+            <label for="animationName">Animation:</label>
+            <select id="animationName">
+                <option value="fadeIn">Fade in</option>
+                <option value="fadeInDown">Fade in down</option>
+                <option value="fadeInUp">Fade in up</option>
+                <option value="bounceIn">Bounce in</option>
+                <option value="bounceInDown">Bounce in down</option>
+                <option value="bounceInUp">Bounce in up</option>
+                <option value="rotateIn">Rotate in</option>
+                <option value="rotateInDownLeft">Rotate in down left</option>
+                <option value="rotateInUpRight">Rotate in up right</option>
+            </select>
+            <div id="group" class="group">
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="test-block"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $('#test0').on('click', function(){
+                AnimateHelper.animateOnce($('#group div'), $('#animationName').val());
+            });
+
+            $('#test1').on('click', function(){
+                AnimateHelper.fadeInElementList($('#group div'), $('#animationName').val(), 0, 150);
+            });
+
+            $('#test2').on('click', function(){
+                AnimateHelper.fadeInElementListRandom($('#group div'), $('#animationName').val(), 0, 800);
+            });
+
+        </script>
+    </body>
+</html>
