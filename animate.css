@@ -2135,6 +2135,47 @@ Copyright (c) 2014 Daniel Eden
   animation-timing-function: ease-in;
 }
 
+@-webkit-keyframes rotateInNoFade {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes rotateInNoFade {
+  0% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    -ms-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.rotateInNoFade {
+  -webkit-animation-name: rotateInNoFade;
+  animation-name: rotateInNoFade;
+}
+
 @-webkit-keyframes rotateIn {
   0% {
     -webkit-transform-origin: center;
@@ -2358,6 +2399,42 @@ Copyright (c) 2014 Daniel Eden
 .rotateInUpRight {
   -webkit-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight;
+}
+
+@-webkit-keyframes rotateOutNoFade {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+@keyframes rotateOutNoFade {
+  0% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    -ms-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.rotateOutNoFade {
+  -webkit-animation-name: rotateOutNoFade;
+  animation-name: rotateOutNoFade;
 }
 
 @-webkit-keyframes rotateOut {
