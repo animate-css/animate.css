@@ -2,26 +2,14 @@
   0% {
     @include transform(rotate3d(1, 0, 0, -30deg));
   }
-  12% {
-    @include transform(rotate3d(1, 0, 0, 40deg));
-  }
   24% {
-    @include transform(rotate3d(1, 0, 0, -20deg));
-  }
-  36% {
     @include transform(rotate3d(1, 0, 0, 30deg));
   }
   48% {
     @include transform(rotate3d(1, 0, 0, -20deg));
   }
-  60% {
-    @include transform(rotate3d(1, 0, 0, 20deg));
-  }
   72% {
-    @include transform(rotate3d(1, 0, 0, -10deg));
-  }
-  84% {
-    @include transform(rotate3d(1, 0, 0, 5deg));
+    @include transform(rotate3d(1, 0, 0, 20deg));
   }
   100% {
     @include transform(rotate3d(1, 0, 0, 0));
