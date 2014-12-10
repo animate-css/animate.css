@@ -29,7 +29,7 @@
 }
 
 .nodYes {
-  @include transform-origin(0 0 -10px);
+  @include transform-origin(50% 50% -10px);
   @include animation(nodYes 2s);
   @include animation-fill-mode(forwards);
 }
