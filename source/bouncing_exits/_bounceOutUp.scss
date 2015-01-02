@@ -1,16 +1,16 @@
 @keyframes bounceOutUp {
   20% {
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0) scaleY(.985);
   }
 
   40%, 45% {
     opacity: 1;
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0) scaleY(.9);
   }
 
   100% {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 }
 
