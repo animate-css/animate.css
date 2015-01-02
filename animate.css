@@ -697,24 +697,24 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
   }
 
   100% {
@@ -731,28 +731,28 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    -ms-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    -ms-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    -ms-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    -ms-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    -ms-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    -ms-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    -ms-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    -ms-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
   }
 
   100% {
