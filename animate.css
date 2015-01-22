@@ -18,35 +18,42 @@ Copyright (c) 2014 Daniel Eden
 }
 
 @-webkit-keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
+  0%, 20%, 53%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
   40%, 43% {
     -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
   }
 
   70% {
     -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
 }
 
 @keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
+  0%, 20%, 53%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     -webkit-transform: translate3d(0, 0, 0);
@@ -54,26 +61,34 @@ Copyright (c) 2014 Daniel Eden
     transform: translate3d(0, 0, 0);
   }
 
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    -ms-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
   40%, 43% {
     -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    -ms-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    -ms-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
   }
 
   70% {
     -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    -ms-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    -ms-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    -ms-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    -ms-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
 }
 
@@ -152,6 +167,8 @@ Copyright (c) 2014 Daniel Eden
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes rubberBand {
@@ -602,24 +619,24 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, -3000px, 0) scaleY(5);
+    transform: translate3d(0, -3000px, 0) scaleY(5);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+    -webkit-transform: translate3d(0, 25px, 0) scaleY(0.9);
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
   }
 
   75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0) scaleY(0.95);
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
   }
 
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 5px, 0) scaleY(0.985);
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
   }
 
   100% {
@@ -636,28 +653,28 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    -ms-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, -3000px, 0) scaleY(5);
+    -ms-transform: translate3d(0, -3000px, 0) scaleY(5);
+    transform: translate3d(0, -3000px, 0) scaleY(5);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    -ms-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+    -webkit-transform: translate3d(0, 25px, 0) scaleY(0.9);
+    -ms-transform: translate3d(0, 25px, 0) scaleY(0.9);
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
   }
 
   75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    -ms-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0) scaleY(0.95);
+    -ms-transform: translate3d(0, -10px, 0) scaleY(0.95);
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
   }
 
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    -ms-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 5px, 0) scaleY(0.985);
+    -ms-transform: translate3d(0, 5px, 0) scaleY(0.985);
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
   }
 
   100% {
@@ -680,24 +697,24 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
   }
 
   100% {
@@ -714,28 +731,28 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-    -ms-transform: translate3d(-3000px, 0, 0);
-    transform: translate3d(-3000px, 0, 0);
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    -ms-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    -ms-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    -ms-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    -ms-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    -ms-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    -ms-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    -ms-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
   }
 
   100% {
@@ -758,24 +775,24 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
   }
 
   100% {
@@ -792,28 +809,28 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    -ms-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    -ms-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    -ms-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    -ms-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
   }
 
   75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    -ms-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    -ms-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
   }
 
   90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    -ms-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    -ms-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
   }
 
   100% {
@@ -836,24 +853,24 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 3000px, 0);
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
   }
 
   75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
   }
 
   100% {
@@ -870,28 +887,28 @@ Copyright (c) 2014 Daniel Eden
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-    -ms-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 3000px, 0);
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    -ms-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    -ms-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    -ms-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
   }
 
   75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    -ms-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    -ms-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    -ms-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    -ms-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
   }
 
   100% {
@@ -956,42 +973,42 @@ Copyright (c) 2014 Daniel Eden
 
 @-webkit-keyframes bounceOutDown {
   20% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.985);
+    transform: translate3d(0, 10px, 0) scaleY(0.985);
   }
 
   40%, 45% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 2000px, 0) scaleY(3);
+    transform: translate3d(0, 2000px, 0) scaleY(3);
   }
 }
 
 @keyframes bounceOutDown {
   20% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    -ms-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.985);
+    -ms-transform: translate3d(0, 10px, 0) scaleY(0.985);
+    transform: translate3d(0, 10px, 0) scaleY(0.985);
   }
 
   40%, 45% {
     opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    -ms-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    -ms-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    -ms-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 2000px, 0) scaleY(3);
+    -ms-transform: translate3d(0, 2000px, 0) scaleY(3);
+    transform: translate3d(0, 2000px, 0) scaleY(3);
   }
 }
 
@@ -1003,30 +1020,30 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes bounceOutLeft {
   20% {
     opacity: 1;
-    -webkit-transform: translate3d(20px, 0, 0);
-    transform: translate3d(20px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0) scaleX(0.9);
+    transform: translate3d(20px, 0, 0) scaleX(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
+    -webkit-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    transform: translate3d(-2000px, 0, 0) scaleX(2);
   }
 }
 
 @keyframes bounceOutLeft {
   20% {
     opacity: 1;
-    -webkit-transform: translate3d(20px, 0, 0);
-    -ms-transform: translate3d(20px, 0, 0);
-    transform: translate3d(20px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0) scaleX(0.9);
+    -ms-transform: translate3d(20px, 0, 0) scaleX(0.9);
+    transform: translate3d(20px, 0, 0) scaleX(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    -ms-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
+    -webkit-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    -ms-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    transform: translate3d(-2000px, 0, 0) scaleX(2);
   }
 }
 
@@ -1038,30 +1055,30 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes bounceOutRight {
   20% {
     opacity: 1;
-    -webkit-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
+    -webkit-transform: translate3d(-20px, 0, 0) scaleX(0.9);
+    transform: translate3d(-20px, 0, 0) scaleX(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(2000px, 0, 0) scaleX(2);
+    transform: translate3d(2000px, 0, 0) scaleX(2);
   }
 }
 
 @keyframes bounceOutRight {
   20% {
     opacity: 1;
-    -webkit-transform: translate3d(-20px, 0, 0);
-    -ms-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
+    -webkit-transform: translate3d(-20px, 0, 0) scaleX(0.9);
+    -ms-transform: translate3d(-20px, 0, 0) scaleX(0.9);
+    transform: translate3d(-20px, 0, 0) scaleX(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    -ms-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(2000px, 0, 0) scaleX(2);
+    -ms-transform: translate3d(2000px, 0, 0) scaleX(2);
+    transform: translate3d(2000px, 0, 0) scaleX(2);
   }
 }
 
@@ -1072,42 +1089,42 @@ Copyright (c) 2014 Daniel Eden
 
 @-webkit-keyframes bounceOutUp {
   20% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0) scaleY(0.985);
+    transform: translate3d(0, -10px, 0) scaleY(0.985);
   }
 
   40%, 45% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0) scaleY(0.9);
+    transform: translate3d(0, 20px, 0) scaleY(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, -2000px, 0) scaleY(3);
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 }
 
 @keyframes bounceOutUp {
   20% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    -ms-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0) scaleY(0.985);
+    -ms-transform: translate3d(0, -10px, 0) scaleY(0.985);
+    transform: translate3d(0, -10px, 0) scaleY(0.985);
   }
 
   40%, 45% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 20px, 0);
-    -ms-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0) scaleY(0.9);
+    -ms-transform: translate3d(0, 20px, 0) scaleY(0.9);
+    transform: translate3d(0, 20px, 0) scaleY(0.9);
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    -ms-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, -2000px, 0) scaleY(3);
+    -ms-transform: translate3d(0, -2000px, 0) scaleY(3);
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 }
 
@@ -1144,8 +1161,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0) scaleY(1.2);
+    transform: translate3d(0, -100%, 0) scaleY(1.2);
   }
 
   100% {
@@ -1158,9 +1175,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    -ms-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0) scaleY(1.2);
+    -ms-transform: translate3d(0, -100%, 0) scaleY(1.2);
+    transform: translate3d(0, -100%, 0) scaleY(1.2);
   }
 
   100% {
@@ -1179,8 +1196,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0) scaleX(1.2);
+    transform: translate3d(-100%, 0, 0) scaleX(1.2);
   }
 
   100% {
@@ -1193,9 +1210,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0) scaleX(1.2);
+    -ms-transform: translate3d(-100%, 0, 0) scaleX(1.2);
+    transform: translate3d(-100%, 0, 0) scaleX(1.2);
   }
 
   100% {
@@ -1214,8 +1231,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0) scaleX(1.2);
+    transform: translate3d(100%, 0, 0) scaleX(1.2);
   }
 
   100% {
@@ -1228,9 +1245,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0) scaleX(1.2);
+    -ms-transform: translate3d(100%, 0, 0) scaleX(1.2);
+    transform: translate3d(100%, 0, 0) scaleX(1.2);
   }
 
   100% {
@@ -1249,8 +1266,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0) scaleY(1.2);
+    transform: translate3d(0, 100%, 0) scaleY(1.2);
   }
 
   100% {
@@ -1263,9 +1280,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0) scaleY(1.2);
+    -ms-transform: translate3d(0, 100%, 0) scaleY(1.2);
+    transform: translate3d(0, 100%, 0) scaleY(1.2);
   }
 
   100% {
@@ -1284,8 +1301,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInDownBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, -2000px, 0) scaleY(3);
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 
   100% {
@@ -1298,9 +1315,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInDownBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    -ms-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, -2000px, 0) scaleY(3);
+    -ms-transform: translate3d(0, -2000px, 0) scaleY(3);
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 
   100% {
@@ -1319,8 +1336,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInLeftBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
+    -webkit-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    transform: translate3d(-2000px, 0, 0) scaleX(2);
   }
 
   100% {
@@ -1333,9 +1350,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInLeftBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    -ms-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
+    -webkit-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    -ms-transform: translate3d(-2000px, 0, 0) scaleX(2);
+    transform: translate3d(-2000px, 0, 0) scaleX(2);
   }
 
   100% {
@@ -1354,8 +1371,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInRightBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(2000px, 0, 0) scaleX(2);
+    transform: translate3d(2000px, 0, 0) scaleX(2);
   }
 
   100% {
@@ -1368,9 +1385,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    -ms-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(2000px, 0, 0) scaleX(2);
+    -ms-transform: translate3d(2000px, 0, 0) scaleX(2);
+    transform: translate3d(2000px, 0, 0) scaleX(2);
   }
 
   100% {
@@ -1389,8 +1406,8 @@ Copyright (c) 2014 Daniel Eden
 @-webkit-keyframes fadeInUpBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 2000px, 0) scaleY(3);
+    transform: translate3d(0, 2000px, 0) scaleY(3);
   }
 
   100% {
@@ -1403,9 +1420,9 @@ Copyright (c) 2014 Daniel Eden
 @keyframes fadeInUpBig {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    -ms-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 2000px, 0) scaleY(3);
+    -ms-transform: translate3d(0, 2000px, 0) scaleY(3);
+    transform: translate3d(0, 2000px, 0) scaleY(3);
   }
 
   100% {
