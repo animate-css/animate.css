@@ -1,0 +1,14 @@
+@keyframes rotateOutNoFade {
+  0% {
+    transform-origin: center;
+  }
+
+  100% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.rotateOutNoFade {
+  animation-name: rotateOutNoFade;
+}

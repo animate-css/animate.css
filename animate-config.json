@@ -65,6 +65,7 @@
   },
 
   "rotating_entrances": {
+    "rotateInNoFade": true,
     "rotateIn": true,
     "rotateInDownLeft": true,
     "rotateInDownRight": true,
@@ -73,6 +74,7 @@
   },
 
   "rotating_exits": {
+    "rotateOutNoFade": true,
     "rotateOut": true,
     "rotateOutDownLeft": true,
     "rotateOutDownRight": true,
