@@ -18,3 +18,7 @@ Copyright (c) 2014 Daniel Eden
 .animated.hinge {
   animation-duration: 2s;
 }
+
+.animated.lost {
+  animation-duration: 3s;
+}

@@ -1,0 +1,28 @@
+@keyframes lost{
+  0% {
+    opacity: 0.2;
+    animation-timing-function: linear;
+    transform: perspective(50px) translate3d(-150%, -600%, -200px) rotateY(-5deg) rotateZ(-15deg);
+  }
+  25% {
+    animation-timing-function: linear;
+    transform: perspective(50px) translate3d(-100%, -400%, -150px) rotateY(-5deg) rotateZ(-3deg)
+  }
+  50% {
+    animation-timing-function: linear;
+    transform: perspective(50px) translate3d(-50%, -200%, -100px) rotateY(-5deg) rotateZ(9deg);
+  }
+  75% {
+    animation-timing-function: linear;
+    transform: perspective(50px) translate3d(0, 25%, -50px) rotateY(-5deg) rotateZ(19deg);
+  }
+  100% {
+    animation-timing-function: linear;
+    transform: perspective(50px) translate3d(0, 0, 0) rotateY(0) rotateZ(0);
+  }
+}
+
+.lost {
+  animation-name: lost;
+  animation-duration: 3s;
+}

@@ -1,0 +1,21 @@
+@keyframes springOpenLetters{
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(.97, .41, .68, 1);
+    letter-spacing: -5rem;
+  }
+  70% {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(.97, .41, .68, 1);
+    letter-spacing: 2.6rem;
+  }
+  100% {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(.97, .41, .68, 1);
+    letter-spacing: 2rem;
+  }
+}
+
+.springOpenLetters {
+  animation-name: springOpenLetters;
+}

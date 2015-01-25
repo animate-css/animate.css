@@ -1,0 +1,38 @@
+@keyframes swingIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 0;
+    animation-timing-function: ease-in;
+    transform: perspective(500px) rotateX(-130deg);
+  }
+  25% {
+    opacity: 1;
+    transform-origin: 50% 0;
+    animation-timing-function: linear;
+    transform: perspective(500px) rotateX(-90deg);
+  }
+  50% {
+    transform-origin: 50% 0;
+    animation-timing-function: ease-out;
+    transform: perspective(500px) rotateX(45deg);
+  }
+  70% {
+    transform-origin: 50% 0;
+    animation-timing-function: ease;
+    transform: perspective(500px) rotateX(-25deg);
+  }
+  90% {
+    transform-origin: 50% 0;
+    animation-timing-function: ease-out;
+    transform: perspective(500px) rotateX(10deg);
+  }
+  100% {
+    transform-origin: 50% 0;
+    animation-timing-function: ease-in;
+    transform: perspective(500px) rotateX(0); 
+  }
+}
+
+.swingIn {
+  animation-name: swingIn;
+}

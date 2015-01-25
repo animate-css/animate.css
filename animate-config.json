@@ -82,8 +82,19 @@
 
   "specials": {
     "hinge": true,
+    "lost": true,
     "rollIn": true,
     "rollOut": true
+  },
+
+  "swingers": {
+    "swingIn": true,
+    "swingOut": true
+  },
+
+  "text_specific": {
+    "springCloseLetters": true,
+    "springOpenLetters": true
   },
 
   "zooming_entrances": {
