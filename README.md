@@ -8,18 +8,29 @@ If you're a web hipster, and you're already using Twitter's Bootstrap like a who
 ##Usage
 ###Files
 
-`animate.less` is 60kb and `animate.min.less` is 48kb.
+`animate.css` is 64kb and `animate.min.css` is 48kb.
 
-`bootstrap.less` is a straightforward example of how to implement this library with your Bootstrap project.
+### Getting a Copy
 
-`animate.css` is 61kb and is an original copy by Dan Eden.
+You can use bower, npm, or [download a zip](https://github.com/machito/animate.less/archive/master.zip).
+
+#### bower
+
+```
+bower --save install animate.less
+```
+
+#### npm
+```
+npm --save install animate.less
+```
 
 
-###Bootstrap
+###Bootstrap/LESS
 To use animate.less in your Bootstrap project, simply add the line below into `bootstrap.less`:
 
 ```css
-@import "animate.less";
+@import "<PATH_TO_SOURCE>/animate.less";
 ```
 
 ###Inside your HTML
@@ -69,7 +80,7 @@ $(document).ready(function(){
 });
 ```
 ###Editing an animation effect
-You can 1) change the duration of your animations, 2) extend the delay, or 3) change the number of times that it plays. If you do edit an animation effect, make sure you change them cross-browser.
+You can 1) change the duration of your animations with the LESS varible `@animationLessTime`, 2) extend the delay, or 3) change the number of times that it plays. If you do edit an animation effect, make sure you change them cross-browser.
 
 ```css
 #logo {
@@ -89,6 +100,28 @@ You can 1) change the duration of your animations, 2) extend the delay, or 3) ch
 ### Build a custom library
 
 Head over to http://daneden.me/animate/build/ to select which animations you need. This will download a .css file, so just rename it to .less and use as described above.
+
+You can also pick & choose which LESS files in your own LESS, just set the variables & import stuff (see animate.less for example):
+
+```less
+@animationLessTime: 0.5s;
+@animationLessLocation: '../node_modules/animate.less/source';
+
+@import "@{animationLessLocation}/animated.less";
+
+@import "@{animationLessLocation}/bounce.less";
+@import "@{animationLessLocation}/bounceIn.less";
+@import "@{animationLessLocation}/bounceInDown.less";
+@import "@{animationLessLocation}/bounceInLeft.less";
+@import "@{animationLessLocation}/bounceInRight.less";
+@import "@{animationLessLocation}/bounceInUp.less";
+@import "@{animationLessLocation}/bounceOut.less";
+@import "@{animationLessLocation}/bounceOutDown.less";
+@import "@{animationLessLocation}/bounceOutLeft.less";
+@import "@{animationLessLocation}/bounceOutRight.less";
+@import "@{animationLessLocation}/bounceOutUp.less";
+```
+
 
 ###Live demo
 
@@ -189,3 +222,8 @@ lightSpeedOut
 hinge
 rollIn
 rollOut
+
+## Development
+
+-  Type `npm install` to install the dev tools.
+-  Type `npm run build` to build the CSS files. Check out `package.json` to see how to add these tools to your own LESS-based project.
