@@ -14,7 +14,7 @@
 2. Add the class `animated` to the element you want to animate.
  You may also want to include the class `infinite` for an infinite loop.
 
-3. Finally to need to add one of the following classes:
+3. Finally you need to add one of the following classes:
 
   * `bounce`
   * `flash`
