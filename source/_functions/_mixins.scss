@@ -1,0 +1,11 @@
+// Animate.css Mixins
+
+@mixin animate($name, $duration: $AnimateDuration, $delay: 0, $iterate: 1) {
+  $delay: $delay + '';
+  
+  @if (str-index($delay, s) == null) {
+    $delay: unquote($delay + 's');
+  }
+
+  animation: $name $duration $delay $iterate;
+}

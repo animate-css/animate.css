@@ -2,16 +2,12 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  var concatAnim;
-
   grunt.initConfig({
-
-    pkg: grunt.file.readJSON('package.json'),
 
     sass: {
       dist: {
         files: {
-          'animate.css': 'source/animate.scss',
+          'dist/animate.css': 'source/animate.scss',
         },
       },
     },
@@ -21,14 +17,14 @@ module.exports = function(grunt) {
         browsers: ['last 3 versions', 'bb 10', 'android 3']
       },
       no_dest: {
-        src: 'animate.css' // output file
+        src: 'dist/animate.css' // output file
       }
     },
 
     cssmin: {
       minify: {
-        src: ['animate.css'],
-        dest: 'animate.min.css',
+        src: ['dist/animate.css'],
+        dest: 'dist/animate.min.css',
       }
     },
 
@@ -43,6 +39,6 @@ module.exports = function(grunt) {
 
   // register task
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dev', ['default', 'watch']);
 
 };

@@ -1,4 +1,5 @@
 .sass-cache
 node_modules/
 .DS_Store
-test/
+
+dist/animate.css.map

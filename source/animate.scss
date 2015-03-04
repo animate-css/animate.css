@@ -2,7 +2,7 @@
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Copyright (c) 2014 Daniel Eden
+Copyright (c) 2015 Daniel Eden
 */
 
 // CONFIGURATION
@@ -18,6 +18,14 @@ $AnimateHook: "animated";
 // Defaults to 1s
 $AnimateDuration: 1s;
 
+// FUNCTIONS
+// ====================================
+//
+// Include functions and mixins provided by Animate.css
+
+@import "_functions/mixins";
+
+
 // BASE STYLES
 // ====================================
 //
@@ -31,7 +39,6 @@ $AnimateDuration: 1s;
   &--infinite {
     animation-iteration-count: infinite;
   }
-
 }
 
 // IMPORT
