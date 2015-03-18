@@ -16,6 +16,5 @@
 
 .flipOutX {
   animation-name: flipOutX;
-  animation-duration: .75s;
   backface-visibility: visible !important;
 }

@@ -18,3 +18,13 @@ Copyright (c) 2015 Daniel Eden
 .animated.hinge {
   animation-duration: 2s;
 }
+
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY {
+  animation-duration: .75s;
+}
