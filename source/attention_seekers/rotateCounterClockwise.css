@@ -1,0 +1,9 @@
+@keyframes rotateCounterClockwise {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotateCounterClockwise {
+  animation-name: rotateCounterClockwise;
+}

@@ -5,6 +5,7 @@
     "flash": true,
     "pulse": true,
     "rotateClockwise": true,
+    "rotateCounterClockwise": true,
     "rubberBand": true,
     "shake": true,
     "swing": true,
