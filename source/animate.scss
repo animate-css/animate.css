@@ -123,6 +123,18 @@ $AnimateDuration: 1s;
 @import "specials/rollIn";
 @import "specials/rollOut";
 
+// Sliding Entrances
+@import "sliding_entrances/slideInDown.scss";
+@import "sliding_entrances/slideInLeft.scss";
+@import "sliding_entrances/slideInRight.scss";
+@import "sliding_entrances/slideInUp.scss";
+
+// Sliding Exits
+@import "sliding_exits/slideOutDown.scss";
+@import "sliding_exits/slideOutLeft.scss";
+@import "sliding_exits/slideOutRight.scss";
+@import "sliding_exits/slideOutUp.scss";
+
 // Zooming entrances
 @import "zooming_entrances/zoomIn";
 @import "zooming_entrances/zoomInDown";
