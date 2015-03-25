@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.2.1",
+  "version": "4.0.0.alpha-1",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
