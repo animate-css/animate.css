@@ -484,6 +484,54 @@ Copyright (c) 2015 Daniel Eden
   animation-name: wobble;
 }
 
+@-webkit-keyframes zoomSpinOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: scale(0, 0) rotateZ(720deg);
+    transform: scale(0, 0) rotateZ(720deg);
+    opacity: 0
+  }
+}
+
+.zoomSpinOut {
+    -webkit-animation-name: zoomSpinOut;
+    animation-name: zoomSpinOut;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: 15%;
+    -webkit-transform-origin: 15%;
+  }
+
+@-webkit-keyframes zoomSpinIn {
+  0% {
+    -webkit-transform: scale(.1, .1) rotateZ(3600deg);
+    transform: scale(.1, .1) rotateZ(3600deg);
+  }
+  75% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+  
+  .zoomSpinIn {
+    -webkit-animation-name: zoomSpinIn;
+    animation-name: zoomSpinIn;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: 15%;
+    -webkit-transform-origin: 15%;
+  }
+
 @-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
