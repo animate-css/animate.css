@@ -163,6 +163,9 @@ Copyright (c) 2015 Daniel Eden
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+    transform-origin: 0%;
+    -webkit-transform-origin: 0%;
+  
 }
 
 @-webkit-keyframes rubberBand {
