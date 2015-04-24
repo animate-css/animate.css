@@ -502,8 +502,8 @@ Copyright (c) 2015 Daniel Eden
     animation-name: zoomSpinOut;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
-    transform-origin: 15%;
-    -webkit-transform-origin: 15%;
+    transform-origin: 0%;
+    -webkit-transform-origin: 0%;
   }
 
 @-webkit-keyframes zoomSpinIn {
