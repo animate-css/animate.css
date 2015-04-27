@@ -128,41 +128,42 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
-
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
   }
-
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
+
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
-
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
   }
-
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
+
 
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+    transform-origin: 0%;
+    -webkit-transform-origin: 0%;
+  
 }
 
 @-webkit-keyframes rubberBand {
@@ -483,6 +484,54 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: wobble;
   animation-name: wobble;
 }
+
+@-webkit-keyframes zoomSpinOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: scale(0, 0) rotateZ(720deg);
+    transform: scale(0, 0) rotateZ(720deg);
+    opacity: 0
+  }
+}
+
+.zoomSpinOut {
+    -webkit-animation-name: zoomSpinOut;
+    animation-name: zoomSpinOut;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: 0%;
+    -webkit-transform-origin: 0%;
+  }
+
+@-webkit-keyframes zoomSpinIn {
+  0% {
+    -webkit-transform: scale(.1, .1) rotateZ(3600deg);
+    transform: scale(.1, .1) rotateZ(3600deg);
+  }
+  75% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+
+  
+  .zoomSpinIn {
+    -webkit-animation-name: zoomSpinIn;
+    animation-name: zoomSpinIn;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform-origin: 15%;
+    -webkit-transform-origin: 15%;
+  }
 
 @-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
