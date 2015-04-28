@@ -1,36 +1,36 @@
 @keyframes rubberBand {
   0% {
-    -webkit-transform: scale(1, 1);
+    
     transform: scale(1, 1);
   }
 
   30% {
-    -webkit-transform: scale(1.25, 0.75);
+  
     transform: scale(1.25, 0.75);
   }
 
   40% {
-    -webkit-transform: scale(0.75, 1.25);
+   
     transform: scale(0.75, 1.25);
   }
 
   50% {
-    -webkit-transform: scale(1.15, 0.85);
+    
     transform: scale(1.15, 0.85);
   }
 
   65% {
-    -webkit-transform: scale(.95, 1.05);
+    
     transform: scale(.95, 1.05);
   }
 
   75% {
-    -webkit-transform: scale(1.05, .95);
+   
     transform: scale(1.05, .95);
   }
 
   100% {
-    -webkit-transform: scale(1, 1);
+    
     transform: scale(1, 1);
   }
 }
