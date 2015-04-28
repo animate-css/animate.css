@@ -2,24 +2,24 @@
 /* rewrote by Procodeing - https://github.com/procodeing */
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(1, 1);
+    
     transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: scale(1.05, 1.05);
+    
     transform: scale(1.05, 1.05);
   }
   100% {
-    -webkit-transform: scale(1, 1);
+    
     transform: scale(1, 1);
   }
 }
 
 
 .pulse {
-  -webkit-animation-name: pulse;
+  
   animation-name: pulse;
     transform-origin: 0%;
-    -webkit-transform-origin: 0%;
+    
   
 }
