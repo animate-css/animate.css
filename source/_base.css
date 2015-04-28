@@ -11,6 +11,10 @@ Copyright (c) 2015 Daniel Eden
   animation-fill-mode: both;
 }
 
+.animated.centerAnimation{
+    display:inline-block
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }
