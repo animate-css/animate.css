@@ -128,114 +128,114 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
+
   50% {
-    -webkit-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
   }
+
   100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
+
   50% {
-    -webkit-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
   }
+
   100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
 
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-
-  
 }
 
 @-webkit-keyframes rubberBand {
   0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   30% {
-    -webkit-transform: scale(1.25, 0.75);
-    transform: scale(1.25, 0.75);
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
 
   40% {
-    -webkit-transform: scale(0.75, 1.25);
-    transform: scale(0.75, 1.25);
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
 
   50% {
-    -webkit-transform: scale(1.15, 0.85);
-    transform: scale(1.15, 0.85);
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
   }
 
   65% {
-    -webkit-transform: scale(.95, 1.05);
-    transform: scale(.95, 1.05);
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
   }
 
   75% {
-    -webkit-transform: scale(1.05, .95);
-    transform: scale(1.05, .95);
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
   }
 
   100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes rubberBand {
   0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   30% {
-    -webkit-transform: scale(1.25, 0.75);
-    transform: scale(1.25, 0.75);
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
 
   40% {
-    -webkit-transform: scale(0.75, 1.25);
-    transform: scale(0.75, 1.25);
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
 
   50% {
-    -webkit-transform: scale(1.15, 0.85);
-    transform: scale(1.15, 0.85);
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
   }
 
   65% {
-    -webkit-transform: scale(.95, 1.05);
-    transform: scale(.95, 1.05);
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
   }
 
   75% {
-    -webkit-transform: scale(1.05, .95);
-    transform: scale(1.05, .95);
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
   }
 
   100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -483,8 +483,6 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: wobble;
   animation-name: wobble;
 }
-
-
 
 @-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
