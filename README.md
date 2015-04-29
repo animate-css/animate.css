@@ -12,7 +12,7 @@
   </head>
   ```
 2. Add the class `animated` to the element you want to animate.
- You may also want to include the class `infinite` for an infinite loop.
+ You may also want to include the class `infinite` for an infinite loop, and if the element has no width, add the `centerAnimation` class to it.
 
 3. Finally you need to add one of the following classes:
 
