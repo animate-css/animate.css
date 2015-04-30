@@ -2350,21 +2350,21 @@ Copyright (c) 2015 Daniel Eden
   0% {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible; }
+    visibility: visible;opacity: 1; }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);opacity: 1; } }
 
 @keyframes slideInDown {
   0% {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible; }
+    visibility: visible;opacity: 1; }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);opacity: 1; } }
 
 .slideInDown {
   -webkit-animation-name: slideInDown;
@@ -2374,21 +2374,26 @@ Copyright (c) 2015 Daniel Eden
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1;
+  }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  } 
+  }
 
 @keyframes slideInLeft {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
-    visibility: visible; }
+    visibility: visible;opacity: 1; }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);opacity: 1; } }
 
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
@@ -2398,21 +2403,21 @@ Copyright (c) 2015 Daniel Eden
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    visibility: visible; }
+    visibility: visible;opacity: 1; }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);opacity: 1; } }
 
 @keyframes slideInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-    visibility: visible; }
+    visibility: visible;opacity: 1; }
 
   100% {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);opacity: 1; } }
 
 .slideInRight {
   -webkit-animation-name: slideInRight;
