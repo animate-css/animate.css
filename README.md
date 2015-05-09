@@ -89,6 +89,7 @@
   * `slideOutLeft`
   * `slideOutRight`
   * `slideOutUp`
+  * `wipeInLeft`
 
 Full example:
 ```html
