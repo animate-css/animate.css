@@ -529,11 +529,9 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: none;
             transform: none
   }
-<<<<<<< HEAD
+
   22.2% {
-=======
-  30% {
->>>>>>> redid jello.css
+
     -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
             transform: skewX(-12.5deg) skewY(-12.5deg)
   }
