@@ -115,5 +115,9 @@
     "slideOutLeft": true,
     "slideOutRight": true,
     "slideOutUp": true
+  },
+
+  "wipe_entrances": {
+    "wipeInLeft": true
   }
 }
