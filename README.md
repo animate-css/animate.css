@@ -24,6 +24,7 @@
   * `swing`
   * `tada`
   * `wobble`
+  * `jello`
   * `bounceIn`
   * `bounceInDown`
   * `bounceInLeft`
@@ -156,7 +157,8 @@ Next, run `grunt watch` to watch for changes and compile your custom builds. For
   "shake": true,
   "swing": true,
   "tada": true,
-  "wobble": true
+  "wobble": true,
+  "jello":true
 }
 ```
 
