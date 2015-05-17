@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.2.5",
+  "version": "3.3.0",
   "main": "./animate.css",
   "ignore": [
     ".*",
