@@ -82,6 +82,12 @@ $AnimateDuration: 1s;
 @import "fading_entrances/fadeInRightBig";
 @import "fading_entrances/fadeInUpBig";
 
+// Fading short entrances
+@import "fading_entrances/fadeInDownShort";
+@import "fading_entrances/fadeInLeftShort";
+@import "fading_entrances/fadeInRightShort";
+@import "fading_entrances/fadeInUpShort";
+
 // Fading exits
 @import "fading_exits/fadeOut";
 @import "fading_exits/fadeOutDown";
@@ -92,6 +98,12 @@ $AnimateDuration: 1s;
 @import "fading_exits/fadeOutLeftBig";
 @import "fading_exits/fadeOutRightBig";
 @import "fading_exits/fadeOutUpBig";
+
+// Fading short exits
+@import "fading_exits/fadeOutDownShort";
+@import "fading_exits/fadeOutLeftShort";
+@import "fading_exits/fadeOutRightShort";
+@import "fading_exits/fadeOutUpShort";
 
 // Flippers
 @import "flippers/flip";
@@ -123,6 +135,18 @@ $AnimateDuration: 1s;
 @import "specials/rollIn";
 @import "specials/rollOut";
 
+// Sliding Entrances
+@import "sliding_entrances/slideInDown.scss";
+@import "sliding_entrances/slideInLeft.scss";
+@import "sliding_entrances/slideInRight.scss";
+@import "sliding_entrances/slideInUp.scss";
+
+// Sliding Exits
+@import "sliding_exits/slideOutDown.scss";
+@import "sliding_exits/slideOutLeft.scss";
+@import "sliding_exits/slideOutRight.scss";
+@import "sliding_exits/slideOutUp.scss";
+
 // Zooming entrances
 @import "zooming_entrances/zoomIn";
 @import "zooming_entrances/zoomInDown";
@@ -137,3 +161,6 @@ $AnimateDuration: 1s;
 @import "zooming_exits/zoomOutRight";
 @import "zooming_exits/zoomOutUp";
 
+// Delays and durations
+@import "delays/delays";
+@import "durations/durations";

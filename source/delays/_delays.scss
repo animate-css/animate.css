@@ -1,0 +1,89 @@
+@mixin delayAnimation($delay)
+{
+  $delay: $delay + '';
+  
+  @if (str-index($delay, s) == null) {
+    $delay: unquote($delay + 's');
+  }
+
+  animation-delay: $delay;
+}
+
+//miliseconds
+.delay-1ms {
+  @include delayAnimation(.1);
+}
+
+.delay-2ms {
+  @include delayAnimation(.2);
+}
+
+.delay-3ms {
+  @include delayAnimation(.3);
+}
+
+.delay-4ms {
+  @include delayAnimation(.4);
+}
+
+.delay-5ms {
+  @include delayAnimation(.5);
+}
+
+.delay-6ms {
+  @include delayAnimation(.6);
+}
+
+.delay-7ms {
+  @include delayAnimation(.7);
+}
+
+.delay-8ms {
+  @include delayAnimation(.8);
+}
+
+.delay-9ms {
+  @include delayAnimation(.9);
+}
+
+//seconds
+
+.delay-1s {
+  @include delayAnimation(1);
+}
+
+.delay-2s {
+  @include delayAnimation(2);
+}
+
+.delay-3s {
+  @include delayAnimation(3);
+}
+
+.delay-4s {
+  @include delayAnimation(4);
+}
+
+.delay-5s {
+  @include delayAnimation(5);
+}
+
+.delay-6s {
+  @include delayAnimation(6);
+}
+
+.delay-7s {
+  @include delayAnimation(7);
+}
+
+.delay-8s {
+  @include delayAnimation(8);
+}
+
+.delay-9s {
+  @include delayAnimation(9);
+}
+
+.delay-10s {
+  @include delayAnimation(10);
+}

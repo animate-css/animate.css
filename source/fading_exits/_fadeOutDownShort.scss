@@ -1,0 +1,14 @@
+@keyframes fadeOutDownShort {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 33%, 0);
+  }
+}
+
+.fadeOutDownShort {
+  animation-name: fadeOutDownShort;
+}

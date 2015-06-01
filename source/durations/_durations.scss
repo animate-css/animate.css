@@ -1,0 +1,88 @@
+@mixin durationAnimation($duration)
+{
+  $duration: $duration + '';
+  
+  @if (str-index($duration, s) == null) {
+    $duration: unquote($duration + 's');
+  }
+  //need to add the !important rule to overide existing duration
+  animation-duration: $duration !important;
+}
+
+//miliseconds
+.duration-1ms {
+  @include durationAnimation(.1);
+}
+
+.duration-2ms {
+  @include durationAnimation(.2);
+}
+
+.duration-3ms {
+  @include durationAnimation(.3);
+}
+
+.duration-4ms {
+  @include durationAnimation(.4);
+}
+
+.duration-5ms {
+  @include durationAnimation(.5);
+}
+
+.duration-6ms {
+  @include durationAnimation(.6);
+}
+
+.duration-7ms {
+  @include durationAnimation(.7);
+}
+
+.duration-8ms {
+  @include durationAnimation(.8);
+}
+
+.duration-9ms {
+  @include durationAnimation(.9);
+}
+
+//seconds
+.duration-1s {
+  @include durationAnimation(1);
+}
+
+.duration-2s {
+  @include durationAnimation(2);
+}
+
+.duration-3s {
+  @include durationAnimation(3);
+}
+
+.duration-4s {
+  @include durationAnimation(4);
+}
+
+.duration-5s {
+  @include durationAnimation(5);
+}
+
+.duration-6s {
+  @include durationAnimation(6);
+}
+
+.duration-7s {
+  @include durationAnimation(7);
+}
+
+.duration-8s {
+  @include durationAnimation(8);
+}
+
+.duration-9s {
+  @include durationAnimation(9);
+}
+
+.duration-10s {
+  @include durationAnimation(10);
+}
