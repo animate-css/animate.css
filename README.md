@@ -32,7 +32,20 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 **Note:** `jQuery#one` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
 
-You can change the duration of your animations, add a delay or change the number of times that it plays:
+You can add delay to your animation using the new class : `delay-{duration in ms or s}` where duration is a in seconds or miliseconds (from 1ms to 9ms and 1s to 10s)
+
+```html
+  <div class="animated bounceInLeft delay-1ms">...</div>
+  <div class="animated bounceInRight delay-4ms">...</div>
+  <div class="animated bounceInUp delay-7ms">...</div>
+  <div class="animated bounceInDown delay-1s">...</div>
+  <div class="animated fadeInLeftShort delay-1s duration-5ms">...</div>
+  <div class="animated fadeInRightShort delay-1s duration-2s">...</div>
+  <div class="animated fadeInUpShort delay-1s duration-3s">...</div>
+  <div class="animated fadeInDownShort delay-1s duration-3s">...</div>
+```
+
+Or you can change the duration of your animations, add a delay or change the number of times that it plays with your own css rules :
 
 ```css
 #yourElement {

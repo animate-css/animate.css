@@ -1,0 +1,15 @@
+@keyframes fadeInDownShort {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -33%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDownShort {
+  animation-name: fadeInDownShort;
+}
