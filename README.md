@@ -80,7 +80,14 @@ $(document).ready(function(){
 });
 ```
 ###Editing an animation effect
-You can 1) change the duration of your animations with the LESS varible `@animationLessTime`, 2) extend the delay, or 3) change the number of times that it plays. If you do edit an animation effect, make sure you change them cross-browser.
+You can
+
+1. change the duration of your animations with the LESS varible `@animationDurationTime`
+2. extend the delay with LESS varible `@animationDelayTime`
+3. change the animation fill mode with the LESS variable `@animationFillMode` or
+4. change the number of times that it plays.
+
+If you do edit an animation effect, make sure you change them cross-browser.
 
 ```css
 #logo {
@@ -104,7 +111,9 @@ Head over to http://daneden.me/animate/build/ to select which animations you nee
 You can also pick & choose which LESS files in your own LESS, just set the variables & import stuff (see animate.less for example):
 
 ```less
-@animationLessTime: 0.5s;
+@animationDurationTime: 0.5s;
+@animationDelayTime: 0s;
+@animationFillMode: both;
 @animationLessLocation: '../node_modules/animate.less/source';
 
 @import "@{animationLessLocation}/animated.less";
