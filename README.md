@@ -96,6 +96,29 @@ Full example:
 <h1 class="animated infinite bounce">Example</h1>
 ```
 
+##Angular example ng-repeat with filter
+  * Add ngAnimate to your app.
+
+```javascript
+var app = angular.module("animTodo", ["ngAnimate"]);
+```
+
+```css
+.your-class.ng-enter {
+  -webkit-animation: fadeOutDown 0.5s;
+  -moz-animation: fadeOutDown 0.5s;
+  -ms-animation: fadeOutDown 0.5s;
+  animation: fadeOutDown 0.5s;
+}
+
+.your-class.ng-leave {
+  -webkit-animation: fadeInUp 0.5s;
+  -moz-animation: fadeInUp 0.5s;
+  -ms-animation: fadeInUp 0.5s;
+  animation: fadeInUp 0.5s;
+}
+```
+
 ##Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
