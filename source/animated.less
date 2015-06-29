@@ -1,13 +1,18 @@
 body {
 	-webkit-backface-visibility: hidden;
 }
-.animated(@animationLessTime:1s) {
-	-webkit-animation-duration: @animationLessTime;
-	   -moz-animation-duration: @animationLessTime;
-	     -o-animation-duration: @animationLessTime;
-	        animation-duration: @animationLessTime;
-	-webkit-animation-fill-mode: both;
-	   -moz-animation-fill-mode: both;
-	     -o-animation-fill-mode: both;
-	        animation-fill-mode: both;
+
+.animated(@animationDurationTime: 1s; @animationDelayTime: 0s; @animationFillMode: both) {
+	 -webkit-animation-duration: @animationDurationTime;
+	    -moz-animation-duration: @animationDurationTime;
+	      -o-animation-duration: @animationDurationTime;
+	         animation-duration: @animationDurationTime;
+	    -webkit-animation-delay: @animationDelayTime;
+	       -moz-animation-delay: @animationDelayTime;
+	         -o-animation-delay: @animationDelayTime;
+	            animation-delay: @animationDelayTime;
+	-webkit-animation-fill-mode: @animationFillMode;
+	   -moz-animation-fill-mode: @animationFillMode;
+	     -o-animation-fill-mode: @animationFillMode;
+	        animation-fill-mode: @animationFillMode;
 }
