@@ -120,7 +120,7 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd onanimationend animationend', doSomething);
 ```
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here. 
