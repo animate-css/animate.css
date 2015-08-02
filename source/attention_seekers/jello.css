@@ -1,5 +1,5 @@
 @keyframes jello {
-  11.1% {
+  0%, 11.1%, 100% {
     transform: none
   }
   22.2% {
@@ -22,9 +22,6 @@
   }
   88.8% {
     transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
-  }
-  100% {
-    transform: none
   }
 }
 
