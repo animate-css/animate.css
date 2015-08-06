@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
@@ -11,7 +11,7 @@
     "directories": {
       "lib":"./"
     }
-  },  
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
