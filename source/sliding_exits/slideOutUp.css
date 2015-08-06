@@ -1,5 +1,5 @@
 @keyframes slideOutUp {
-  0% {
+  from {
     transform: translate3d(0, 0, 0);
   }
 

@@ -1,5 +1,5 @@
 @keyframes rotateOut {
-  0% {
+  from {
     transform-origin: center;
     opacity: 1;
   }

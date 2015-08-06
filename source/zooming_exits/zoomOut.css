@@ -1,5 +1,5 @@
 @keyframes zoomOut {
-  0% {
+  from {
     opacity: 1;
   }
 

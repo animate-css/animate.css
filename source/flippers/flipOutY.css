@@ -1,5 +1,5 @@
 @keyframes flipOutY {
-  0% {
+  from {
     transform: perspective(400px);
   }
 

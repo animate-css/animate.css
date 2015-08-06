@@ -1,5 +1,5 @@
 @keyframes rotateOutUpLeft {
-  0% {
+  from {
     transform-origin: left bottom;
     opacity: 1;
   }

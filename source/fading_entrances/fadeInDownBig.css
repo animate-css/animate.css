@@ -1,5 +1,5 @@
 @keyframes fadeInDownBig {
-  0% {
+  from {
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }

@@ -1,5 +1,5 @@
 @keyframes shake {
-  0%, 100% {
+  from, 100% {
     transform: translate3d(0, 0, 0);
   }
 

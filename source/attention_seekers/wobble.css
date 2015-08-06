@@ -1,7 +1,7 @@
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes wobble {
-  0% {
+  from {
     transform: none;
   }
 
