@@ -1,5 +1,5 @@
 @keyframes rotateIn {
-  0% {
+  from {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;

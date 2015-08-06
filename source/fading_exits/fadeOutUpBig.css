@@ -1,5 +1,5 @@
 @keyframes fadeOutUpBig {
-  0% {
+  from {
     opacity: 1;
   }
 
