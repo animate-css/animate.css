@@ -5,11 +5,12 @@
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
+  "license": "MIT",
   "jspm": {
-    "main":"animate.css!",
-    "format":"global",
+    "main": "animate.css!",
+    "format": "global",
     "directories": {
-      "lib":"./"
+      "lib": "./"
     }
   },
   "devDependencies": {
