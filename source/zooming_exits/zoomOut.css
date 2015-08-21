@@ -8,7 +8,7 @@
     transform: scale3d(.3, .3, .3);
   }
 
-  100% {
+  to {
     opacity: 0;
   }
 }

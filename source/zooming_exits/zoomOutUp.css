@@ -5,7 +5,7 @@
     animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
   }
 
-  100% {
+  to {
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     transform-origin: center bottom;

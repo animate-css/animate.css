@@ -8,7 +8,7 @@
     transform: translate3d(0, -20px, 0);
   }
 
-  100% {
+  to {
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }

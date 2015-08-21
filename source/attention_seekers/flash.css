@@ -1,5 +1,5 @@
 @keyframes flash {
-  from, 50%, 100% {
+  from, 50%, to {
     opacity: 1;
   }
 

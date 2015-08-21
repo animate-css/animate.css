@@ -14,7 +14,7 @@
     opacity: 1;
   }
 
-  100% {
+  to {
     transform: none;
     opacity: 1;
   }
