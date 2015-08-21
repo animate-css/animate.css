@@ -1382,7 +1382,8 @@ Copyright (c) 2015 Daniel Eden
 
   100% {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px); } }
+    transform: perspective(400px);
+    opacity: 1; } }
 
 .flipInX {
   -webkit-backface-visibility: visible !important;
@@ -1444,7 +1445,8 @@ Copyright (c) 2015 Daniel Eden
 
   100% {
     -webkit-transform: perspective(400px);
-    transform: perspective(400px); } }
+    transform: perspective(400px);
+    opacity: 1; } }
 
 .flipInY {
   -webkit-backface-visibility: visible !important;
