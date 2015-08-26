@@ -17,7 +17,7 @@
     opacity: 1;
   }
 
-  100% {
+  to {
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }
