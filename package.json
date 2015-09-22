@@ -1,10 +1,11 @@
 {
   "name": "animate.css",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
+  "style":"./animate.css",
   "license": "MIT",
   "jspm": {
     "main": "animate.css!",
