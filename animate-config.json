@@ -84,7 +84,8 @@
   "specials": {
     "hinge": true,
     "rollIn": true,
-    "rollOut": true
+    "rollOut": true,
+    "squash": true
   },
 
   "zooming_entrances": {

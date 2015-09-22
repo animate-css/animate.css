@@ -72,6 +72,7 @@
   * `hinge`
   * `rollIn`
   * `rollOut`
+  * `squash`
   * `zoomIn`
   * `zoomInDown`
   * `zoomInLeft`
