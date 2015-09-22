@@ -12,22 +12,26 @@
   }
   11% {
     transform:  translate(0%,-197%)  scaleX(0.41) scaleY(1.59) ;
-    opacity: 1;
+    opacity: .1;
   }
   30% {
     transform:  translate(0%,-18%)  scaleX(0.25) scaleY(1.75) ;
+    opacity: 1;
   }
   35% {
     transform:  translate(0%,-2%)  scaleX(1.70) scaleY(0.30) ;
+ 
   }
   46% {
     transform:  translate(0%,2%)  scaleX(1.80) scaleY(0.20) ;
+    
   }
   54% {
     transform:  translate(0%, 2%)  scaleX(0.80) scaleY(1.20) ;
   }
   66% {
     transform:  translate(0%,0%)  scaleX(1.20) scaleY(0.80) ;
+
   }
   78% {
     transform:  translate(0%,0%)  scaleX(0.95) scaleY(1.05) ;
@@ -36,9 +40,4 @@
     transform: inherit;
   }
 }
-
-.squash {
-  animation-name: squash; 
-}
-
 
