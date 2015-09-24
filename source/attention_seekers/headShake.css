@@ -5,23 +5,23 @@
     transform: translateX(0)
   }
 
-  12.5% {
+  6.5% {
     transform: translateX(-6px) rotateY(-9deg)
   }
 
-  37.5% {
+  18.5% {
     transform: translateX(5px) rotateY(7deg)
   }
 
-  62.5% {
+  31.5% {
     transform: translateX(-3px) rotateY(-5deg)
   }
 
-  87.5% {
+  43.5% {
     transform: translateX(2px) rotateY(3deg)
   }
 
-  100% {
+  50% {
     transform: translateX(0)
   }
 }
