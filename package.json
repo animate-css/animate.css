@@ -6,6 +6,7 @@
     "url": "https://github.com/daneden/animate.css.git"
   },
   "license": "MIT",
+  "style": "./animate.css",
   "jspm": {
     "main": "animate.css!",
     "format": "global",
