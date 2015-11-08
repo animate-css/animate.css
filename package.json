@@ -5,6 +5,9 @@
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
+  "author": {
+    "name": "Daniel Eden"
+  },
   "license": "MIT",
   "jspm": {
     "main": "animate.css!",
