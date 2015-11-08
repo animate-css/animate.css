@@ -24,6 +24,7 @@
   * `swing`
   * `tada`
   * `wobble`
+  * `squiggle`
   * `jello`
   * `bounceIn`
   * `bounceInDown`
