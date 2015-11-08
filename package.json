@@ -8,6 +8,7 @@
   "author": {
     "name": "Daniel Eden"
   },
+  "homepage": "http://daneden.me/animate",
   "license": "MIT",
   "jspm": {
     "main": "animate.css!",
