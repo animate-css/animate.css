@@ -17,6 +17,7 @@
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-contrib-watch": "~0.5.3",
+    "grunt-banner": "~0.6.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.8.0",
     "load-grunt-tasks": "~0.2.0"
