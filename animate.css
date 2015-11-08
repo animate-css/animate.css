@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 /*!
-Animate.css - http://daneden.me/animate
-Version - 3.4.0
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
+ * Animate.css -http://daneden.me/animate
+ * Version - 3.4.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2015 Daniel Eden
+ */
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -25,14 +25,10 @@ Copyright (c) 2015 Daniel Eden
   animation-duration: 2s;
 }
 
+.animated.flipOutX,
+.animated.flipOutY,
 .animated.bounceIn,
 .animated.bounceOut {
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
-}
-
-.animated.flipOutX,
-.animated.flipOutY {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
