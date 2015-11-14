@@ -1,6 +1,6 @@
 @keyframes jello {
   from, 11.1%, to {
-    transform: none
+    transform: translate3d(0, 0, 0)
   }
   22.2% {
     transform: skewX(-12.5deg) skewY(-12.5deg)
