@@ -11,7 +11,7 @@ $ bower install animate-css
 
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>` or 
-2. Using bower: `bower install animate-css`
+
 
   ```html
   <head>
