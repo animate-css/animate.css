@@ -14,5 +14,5 @@ animateCss.bounce = function (e) {
 
 animateCss.flash = function (e) {
     //CODE TO ANIMATE flash
-    alert("flash " + e);
+    $(e).fadeIn(200).fadeOut(200).fadeIn(200).fadeOut(200).fadeIn(200);
 }
