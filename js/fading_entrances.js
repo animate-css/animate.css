@@ -102,9 +102,33 @@ animateCss.fadeInRightBig = function (e){
 }
 
 animateCss.fadeInUp = function (e){
-    
+    var mb = $(e).css("marginBottom");
+    var pt = $(e).css("paddingTop");
+    $(e).fadeOut(1);
+    $(e).animate({
+        marginBottom: "-=200",
+        paddingTop: "+=200",
+    }, 5, "linear", function () {
+        $(e).fadeIn(1500).animate({
+            marginBottom: mb,
+            paddingTop: pt
+        }, {duration: 'slow',queue: false}, "swing",function(){
+    });
+    });
 }
 
 animateCss.fadeInUpBig = function (e){
-    
+        var mb = $(e).css("marginBottom");
+    var pt = $(e).css("paddingTop");
+    $(e).fadeOut(1);
+    $(e).animate({
+        marginBottom: "-=1200",
+        paddingTop: "+=1200",
+    }, 5, "linear", function () {
+        $(e).fadeIn(1500).animate({
+            marginBottom: mb,
+            paddingTop: pt
+        }, {duration: 'slow',queue: false}, "swing",function(){
+    });
+    });
 }
