@@ -80,33 +80,26 @@ function fadeOutRightReset(e,pl,mr){
     }
 }
 animateCss.fadeOutUp = function (e){
-    var mb = $(e).css("marginBottom");
-    var pt = $(e).css("paddingTop");
-    $(e).fadeOut(1);
-    $(e).animate({
-        marginBottom: "-=90",
-        paddingTop: "+=90",
-    }, 5, "linear", function () {
-        $(e).fadeIn(1500).animate({
-            marginBottom: mb,
-            paddingTop: pt
-        }, {duration: 1000,queue: false}, "swing",function(){
-    });
-    });
+    var pb = $(e).css("paddingBottom");
+    var mt = $(e).css("marginTop");
+    $(e).fadeOut(1000).animate({
+            paddingBottom: "+=100",
+            marginTop: "-=100"
+        }, {duration: 1000,queue: false, easing: "easeOutQuad", complete: fadeOutUpReset(e,pb,mt)});
 }
 
 animateCss.fadeOutUpBig = function (e){
-        var mb = $(e).css("marginBottom");
-    var pt = $(e).css("paddingTop");
-    $(e).fadeOut(1);
-    $(e).animate({
-        marginBottom: "-=2000",
-        paddingTop: "+=2000",
-    }, 5, "linear", function () {
-        $(e).fadeIn(1500).animate({
-            marginBottom: mb,
-            paddingTop: pt
-        }, {duration: 910,queue: false}, "swing",function(){
-    });
-    });
+    var pb = $(e).css("paddingBottom");
+    var mt = $(e).css("marginTop");
+    $(e).fadeOut(1000).animate({
+            paddingBottom: "+=1000",
+            marginTop: "-=1000"
+        }, {duration: 900,queue: false, easing: "swing", complete: fadeOutUpReset(e,pb,mt)});
+}
+function fadeOutUpReset(e,pb,mt){
+    return function(){
+                $(e).css('paddingBottom', pb);
+                $(e).css('marginTop',mt);
+                $(e).fadeIn(1);
+    }
 }
