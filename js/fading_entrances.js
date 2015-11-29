@@ -86,7 +86,19 @@ animateCss.fadeInRight = function (e){
 }
 
 animateCss.fadeInRightBig = function (e){
-    
+    var mr = $(e).css("marginRight");
+    var pl = $(e).css("paddingLeft");
+    $(e).fadeOut(1);
+    $(e).animate({
+        marginRight: "-=1200",
+        paddingLeft: "+=1200",
+    }, 1, "linear", function () {
+        $(e).fadeIn(1000).animate({
+            marginRight: mr,
+            paddingLeft: pl
+        }, {duration: 'slow',queue: false}, "swing",function(){
+    });
+    });
 }
 
 animateCss.fadeInUp = function (e){
