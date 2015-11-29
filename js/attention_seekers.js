@@ -4,15 +4,31 @@ animateCss.bounce = function (e) {
     $(e).animate({
         marginTop: "-=30",
         paddingBottom: "+=30",
-    }, 300, "easeInOutQuart", function () {
-        $(e).animate({
-            marginTop: mt,
-            paddingBottom: mb
-        }, 800, "easeOutBounce")
-    })
+    }, 250, "easeInOutQuart")
+    .animate({
+        marginTop: mt,
+        paddingBottom: mb
+    }, 750, "easeOutBounce")
 }
 
 animateCss.flash = function (e) {
-    //CODE TO ANIMATE flash
-    alert("flash " + e);
+    $(e).fadeOut(250)
+        .fadeIn(250)
+        .fadeOut(250)
+        .fadeIn(250);
+}
+
+animateCss.pulse = function (e) {
+    var mh  = $(e).css("height");
+    var mw = $(e).css("width");
+    console.log(mh);
+    console.log(mw);
+    $(e).animate({
+        height: mh * 0.5,
+        width: mw * 0.5
+    }, 500)
+    .animate({
+        height: mh,
+        width: mw
+    }, 500)
 }
