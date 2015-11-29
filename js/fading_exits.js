@@ -55,37 +55,30 @@ function fadeOutLeftReset(e,pr,ml){
 }
 
 animateCss.fadeOutRight = function (e){
-    var mr = $(e).css("marginRight");
     var pl = $(e).css("paddingLeft");
-    $(e).fadeOut(1);
-    $(e).animate({
-        marginRight: "-=200",
-        paddingLeft: "+=200",
-    }, 1, "linear", function () {
-        $(e).fadeIn(1000).animate({
-            marginRight: mr,
-            paddingLeft: pl
-        }, {duration: 900,queue: false}, "swing",function(){
-    });
-    });
+    var mr = $(e).css("marginRight");
+    $(e).fadeOut(1000).animate({
+            paddingLeft: "+=150",
+            marginRight: "-=150"
+        }, {duration: 800,queue: false, easing: "swing", complete: fadeOutRightReset(e,pl,mr)});
 }
 
 animateCss.fadeOutRightBig = function (e){
-    var mr = $(e).css("marginRight");
     var pl = $(e).css("paddingLeft");
-    $(e).fadeOut(1);
-    $(e).animate({
-        marginRight: "-=1500",
-        paddingLeft: "+=1500",
-    }, 1, "linear", function () {
-        $(e).fadeIn(1000).animate({
-            marginRight: mr,
-            paddingLeft: pl
-        }, {duration: 900,queue: false}, "swing",function(){
-    });
-    });
+    var mr = $(e).css("marginRight");
+    $(e).fadeOut(1000).animate({
+            paddingLeft: "+=1000",
+            marginRight: "-=1000"
+        }, {duration: 1000,queue: false, easing: "easeOutCubic", complete: fadeOutRightReset(e,pl,mr)});
 }
-
+function fadeOutRightReset(e,pl,mr){
+    return function(){
+                console.log(pl);
+                $(e).css('paddingLeft', pl);
+                $(e).css('marginRight',mr);
+                $(e).fadeIn(1);
+    }
+}
 animateCss.fadeOutUp = function (e){
     var mb = $(e).css("marginBottom");
     var pt = $(e).css("paddingTop");
