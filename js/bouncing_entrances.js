@@ -1,10 +1,10 @@
 animateCss.bounceIn = function (e) {
-    $(e).animate({ asdf: 0.8 },100)
+    $(e).animate({ asdf: 0 },0)
         .animate({asdf: 1}, {
         step: function (now, fx) {
             $(this).css('-webkit-transform', "scale(" + now + ")");
         },
-        duration: 900,
+        duration: 1000,
         easing: "easeOutElastic"
     }, "easeOutElastic")
 }
