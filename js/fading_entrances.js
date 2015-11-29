@@ -52,7 +52,18 @@ animateCss.fadeInLeft = function (e){
 }
 
 animateCss.fadeInLeftBig = function (e){
-    
+    var mt = $(e).css("marginLeft");
+    var mb = $(e).css("paddingRight");
+    $(e).animate({
+        marginLeft: "-=1200",
+        paddingRight: "+=1200",
+    }, 1, "linear", function () {
+        $(e).fadeOut(5).fadeIn(1000).animate({
+            marginLeft: mt,
+            paddingRight: mb
+        }, {duration: 'slow',queue: false}, "swing",function(){
+    });
+    });
 }
 
 animateCss.fadeInRight = function (e){
