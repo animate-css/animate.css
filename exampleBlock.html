@@ -16,21 +16,8 @@
 <body>
     <header class="site__header island">
         <div class="wrap">
-            <span id="animationSandbox" style="display: block;">
-                <div class="double">
-                    <div class="half">
-                        <span id="animatewithCss" style="display: block;">
-                            <h1 class="site__title mega">CSS</h1>
-                        </span>
-                    </div>
-                    <div class="half">
-                        <span id="animatewithJs" style="display: block;">
-                            <h1 class="site__title mega">JS</h1>
-                        </span>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </span>
+            <div id="animationSandbox" style="background-color: blue; height: 200px; width: 200px;">
+            </div>
             <span class="beta subhead">Just-add-water CSS animations</span>
         </div>
     </header>
@@ -160,8 +147,8 @@
       </select>
 
         <button class="butt js--triggerAnimation">Animate it</button>
-        <!--<input type="checkbox" id="useJs"/>
-        <label for="useJs"> Use Javascript</label>-->
+        <input type="checkbox" id="useJs"/>
+        <label for="useJs"> Use Javascript</label>
 
     </form>
     <hr />
@@ -174,26 +161,23 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/core.js"></script>
     <script src="js/attention_seekers.js"></script>
-    <script src="js/bouncing_entrances.js"></script>
-    <script src="js/bouncing_exits.js"></script>
     <script>
         $(document).ready(function () {
-            //$("#useJs").change(function () {
-            //    animateCss.useJs = $(this).prop("checked");
-            //});
+            $("#useJs").change(function () {
+                animateCss.useJs = $(this).prop("checked");
+            });
 
             $('.js--triggerAnimation').click(function (e) {
                 e.preventDefault();
                 var anim = $('.js--animations').val();
-                $("#animatewithCss").animateCss(anim, false);
-                $("#animatewithJs").animateCss(anim, true);
+                $("#animationSandbox").animateCss(anim);
             });
 
 
-            //$('.js--animations').change(function () {
-            //    var anim = $('.js--animations').val();
-            //    $("#animationSandbox").animateCss(anim);
-            //});
+            $('.js--animations').change(function () {
+                var anim = $('.js--animations').val();
+                $("#animationSandbox").animateCss(anim);
+            });
         });
 
     </script>
