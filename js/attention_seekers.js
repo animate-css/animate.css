@@ -13,6 +13,8 @@ animateCss.bounce = function (e) {
 }
 
 animateCss.flash = function (e) {
-    //CODE TO ANIMATE flash
-    $(e).fadeIn(200).fadeOut(200).fadeIn(200).fadeOut(200).fadeIn(200);
+    $(e).fadeOut(250)
+        .fadeIn(250)
+        .fadeOut(250)
+        .fadeIn(250);
 }

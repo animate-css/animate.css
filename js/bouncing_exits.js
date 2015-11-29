@@ -4,14 +4,14 @@ animateCss.bounceOut = function (e) {
             step: function (now, fx) {
                 $(this).css('-webkit-transform', "scale(" + now + ")");
             },
-            duration: 100,
+            duration: 70,
             easing: "swing",
         })
         .animate({ asdf: 0 }, {
             step: function (now, fx) {
                 $(this).css('-webkit-transform', "scale(" + now + ")");
             },
-            duration: 900,
+            duration: 650,
             easing: "easeInBack",
             complete: function () {
                 $(e).css('-webkit-transform', "scale(1)");
