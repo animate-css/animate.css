@@ -22,6 +22,26 @@ animateCss.useJs = !Modernizr.cssanimations;
 
 }(jQuery));
 
+//helpers
+animateCss.transform = function (e, o) {
+    if (Modernizr.csstransforms) {
+        var str = "";
+        if (typeof (o.length) !== "undefined") {
+            for (i = 0; i < o.length; i++) {
+                str += (o[i].property + "(" + o[i].value + ") ");
+            }
+        } else {
+            str += (o.property + "(" + o.value + ") ");
+        }
+        $(e).css('-webkit-transform', str);
+        $(e).css('-ms-transform', str);
+        $(e).css('transform', str);
+    } else {
+        //no transforms.. what to do..?
+        console.log("CRY");
+    }
+}
+
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *

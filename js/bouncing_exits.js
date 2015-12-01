@@ -2,19 +2,28 @@ animateCss.bounceOut = function (e) {
     $(e).animate({ asdf: 1 }, 0)
         .animate({ asdf: 0.9 }, {
             step: function (now, fx) {
-                $(this).css('-webkit-transform', "scale(" + now + ")");
+                animateCss.transform(this, {
+                    property: "scale",
+                    value:now
+                });
             },
             duration: 70,
             easing: "swing",
         })
         .animate({ asdf: 0 }, {
             step: function (now, fx) {
-                $(this).css('-webkit-transform', "scale(" + now + ")");
+                animateCss.transform(this, {
+                    property: "scale",
+                    value: now
+                });
             },
             duration: 650,
             easing: "easeInBack",
             complete: function () {
-                $(e).css('-webkit-transform', "scale(1)");
+                animateCss.transform(this, {
+                    property: "scale",
+                    value: 1
+                });
             }
         })
 }
