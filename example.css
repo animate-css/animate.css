@@ -210,12 +210,14 @@ html {
   -webkit-animation: bounceInUp 1s;
 }
 
-  .site__title {
+  .site__title,#animationSandbox,#animatewithCss,#animatewithJs {
     color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+        font-size: 6rem;
+    line-height: 1;
+    /*background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    -webkit-animation: hue 60s infinite linear;*/
   }
 
 .site__content {
