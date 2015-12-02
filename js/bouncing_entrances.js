@@ -1,12 +1,5 @@
 animateCss.bounceIn = function (e) {
-    $(e).animate({ asdf: 0 },0)
-        .animate({asdf: 1}, {
-        step: function (now, fx) {
-            $(this).css('-webkit-transform', "scale(" + now + ")");
-        },
-        duration: 1000,
-        easing: "easeOutElastic"
-    }, "easeOutElastic")
+    animateCss.transform(e, "scale", 0, 1, 1000, "easeOutElastic");
 }
 animateCss.bounceInDown = function (e) {
     var mt = $(e).css("marginTop");

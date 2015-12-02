@@ -3,7 +3,14 @@
 <head>
     <title>Animate.css</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, minimal-ui" />
+    <meta name="viewport" content="initial-scale=1, minimal-ui"/>
+    <!--[if lte IE 8]>
+        <style>
+            body {
+                margin-top: 200px;
+            }
+        </style>
+    <![endif]-->
 
     <!--<link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//code.jquery.com" />-->
@@ -16,8 +23,8 @@
 <body>
     <header class="site__header island">
         <div class="wrap">
-            <span id="animationSandbox" style="display: block;">
-                <h1 class="site__title mega">Animate.css</h1>
+            <span style="display: block;">
+                <h1 id="animationSandbox">Animate.css</h1>
             </span>
             <span class="beta subhead">Just-add-water CSS animations</span>
         </div>
@@ -152,7 +159,15 @@
         <label for="useJs"> Use Javascript</label>
 
     </form>
-    <hr />
+      <hr/>
+      <div id="browserInfo" style="font-weight: bold;">
+          <span id="cssanimations"></span><br/>
+          <span id="opacity"></span><br/>
+          <span id="csstransforms"></span><br/>
+          <span id="csstransforms3d"></span><br/>
+          <span id="canvas"></span><br/>
+      </div>
+      <hr/>
     <p class="meta"><a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> or <a href="//github.com/daneden/animate.css">View on GitHub</a></p>
     <p><small>Another thing from <a href="//daneden.me">Daniel Eden</a>.</small></p>
   </div>
@@ -160,7 +175,7 @@
     <!-- /.site__content -->
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/core.js"></script>
+    <script src="js/animate.js"></script>
     <script src="js/attention_seekers.js"></script>
     <script src="js/bouncing_entrances.js"></script>
     <script src="js/bouncing_exits.js"></script>
@@ -169,6 +184,11 @@
     <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>-->
     <script>
         $(document).ready(function () {
+            for (var a in Modernizr) {
+                $("#browserInfo #" + a).html(a + " : " + (Modernizr[a] ? "<span style='color:green;'>supported</span>" : "<span style='color:red;'>not supported</span>"));
+            }
+
+            $("#useJs").prop("checked", animateCss.useJs);
             $("#useJs").change(function () {
                 animateCss.useJs = $(this).prop("checked");
             });

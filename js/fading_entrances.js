@@ -115,7 +115,7 @@ animateCss.fadeInUp = function (e){
         }, {duration: 1000,queue: false}, "swing",function(){
     });
     });
-}
+} 
 
 animateCss.fadeInUpBig = function (e){
         var mb = $(e).css("marginBottom");

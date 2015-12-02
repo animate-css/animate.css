@@ -4,12 +4,21 @@
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##JS-Fallback
-###By Team18
+###Usage
 1. include jquery
-2. include js/core.js
+2. include js/animate.js
 3. include desired js/animation_selection.js
-4. set animateCss.useJs as true to use javascript and false to use css
-5. animate your elements by calling $(element).animateCss("animation name as string")
+4. animate your elements by calling $(element).animateCss("animation name as string")
+5. most optimal way will be called according to each browser.
+
+###Support
+All browsers :  Sliding animations will work on all elements (js)
+
+IE8+ : Opacity and Scale animations will work on "texts" (js)
+
+IE9+ : Opacity, Scale animations will work on all elements (js)
+
+IE10+ : All animations will work (css)
 
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
