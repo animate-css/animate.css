@@ -34,3 +34,82 @@ animateCss.pulse = function (e) {
             animateCss.transform(e, "scale", 1.05, 1, 500);
         });
 }
+
+animateCss.shake = function (e) {
+    var ml = $(e).css("marginLeft");
+    var pr = $(e).css("paddingRight")
+    var mr = $(e).css("marginRight");
+    var pl = $(e).css("paddingLeft")
+
+    $(e)
+    .animate({
+        marginLeft: "-=10",
+        paddingRight: "+=10",
+        }, 50).animate({
+            marginLeft: "+=10",
+            paddingRight: "-=10",
+        }, 50)
+    .animate({
+        marginRight: "-=10",
+        paddingLeft: "+=10",
+    }, 50).animate({
+        marginRight: "+=10",
+        paddingLeft: "-=10",
+    }, 50)
+    .animate({
+        marginLeft: "-=10",
+        paddingRight: "+=10",
+    }, 50).animate({
+        marginLeft: "+=10",
+        paddingRight: "-=10",
+    }, 50)
+    .animate({
+        marginRight: "-=10",
+        paddingLeft: "+=10",
+    }, 50).animate({
+        marginRight: "+=10",
+        paddingLeft: "-=10",
+    }, 50)
+    .animate({
+        marginLeft: "-=10",
+        paddingRight: "+=10",
+    }, 50).animate({
+        marginLeft: "+=10",
+        paddingRight: "-=10",
+    }, 50)
+    .animate({
+        marginRight: "-=10",
+        paddingLeft: "+=10",
+    }, 50).animate({
+        marginRight: "+=10",
+        paddingLeft: "-=10",
+    }, 50)
+    .animate({
+        marginLeft: "-=10",
+        paddingRight: "+=10",
+    }, 50).animate({
+        marginLeft: "+=10",
+        paddingRight: "-=10",
+    }, 50)
+    .animate({
+        marginRight: "-=10",
+        paddingLeft: "+=10",
+    }, 50).animate({
+        marginRight: "+=10",
+        paddingLeft: "-=10",
+    }, 50)
+    .animate({
+        marginLeft: "-=10",
+        paddingRight: "+=10",
+    }, 50).animate({
+        marginLeft: "+=10",
+        paddingRight: "-=10",
+    }, 50)
+    .animate({
+        marginRight: "-=10",
+        paddingLeft: "+=10",
+    }, 50).animate({
+        marginRight: "+=10",
+        paddingLeft: "-=10",
+    }, 50)
+}
