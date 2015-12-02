@@ -32,10 +32,9 @@ animateCss.transform = function (e, property, from, to, duration, easing, callba
     .animate({ tmp: to }, {
         step: function (now, fx) {
             if (Modernizr.csstransforms) {
-                var str = (property + "(" + now + ") ");
-                $(e).css('-webkit-transform', str);
-                $(e).css('-ms-transform', str);
-                $(e).css('transform', str);
+                var str = (property + "(" + now + (property == "rotate" ? "deg) " : ") "));
+                console.log(str);
+                animateCss.cssWithVendor(e, "transform", str);
             } else {
                 //no transforms.. what to do..?
 
@@ -52,15 +51,19 @@ animateCss.transform = function (e, property, from, to, duration, easing, callba
         easing: easing == null ? "swing" : easing,
         complete: function () {
             var str = (property + "(" + 1 + ") ");
-            $(e).css('-webkit-transform', str);
-            $(e).css('-ms-transform', str);
-            $(e).css('transform', str);
+            animateCss.cssWithVendor(e, "transform", str);
             $(e).css("fontSize", fs);
             if (typeof (callback) == "function") {
                 callback();
             }
         }
     })
+}
+
+animateCss.cssWithVendor = function (e, property, value) {
+    $(e).css('-webkit-' + property, value);
+    $(e).css('-ms-' + property, value);
+    $(e).css(property, value);
 }
 
 animateCss.fade = function (e, val, duration, easing, callback) {
