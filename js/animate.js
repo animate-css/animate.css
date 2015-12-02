@@ -4,7 +4,7 @@
 
 var animateCss = {}
 animateCss.useJs = !Modernizr.cssanimations;
-animateCss.bgcol = {r: 255,g: 255,b: 255};
+animateCss.bgcol = { r: 255, g: 255, b: 255 };
 
 (function ($) {
 
@@ -24,29 +24,50 @@ animateCss.bgcol = {r: 255,g: 255,b: 255};
 }(jQuery));
 
 //helpers
-animateCss.transform = function (e, o) {
-    if (Modernizr.csstransforms) {
-        var str = "";
-        if (typeof (o.length) !== "undefined") {
-            for (i = 0; i < o.length; i++) {
-                str += (o[i].property + "(" + o[i].value + ") ");
+animateCss.transform = function (e, property, from, to, duration, easing, callback) {
+    var fs = parseFloat($(e).css("fontSize"));
+    var fsUnit = $(e).css("fontSize").replace(/[0-9]/g, '');
+
+    $(e).animate({ tmp: from }, 0)
+    .animate({ tmp: to }, {
+        step: function (now, fx) {
+            if (Modernizr.csstransforms) {
+                var str = (property + "(" + now + ") ");
+                $(e).css('-webkit-transform', str);
+                $(e).css('-ms-transform', str);
+                $(e).css('transform', str);
+            } else {
+                //no transforms.. what to do..?
+
+                //if transform is scale, fall back to font size
+                if (property == "scale") {
+                    $(e).css("fontSize", (now * fs) + fsUnit)
+                    console.log(fs);
+                } else {
+                    console.log("CRY");
+                }
             }
-        } else {
-            str += (o.property + "(" + o.value + ") ");
+        },
+        duration: duration,
+        easing: easing == null ? "swing" : easing,
+        complete: function () {
+            var str = (property + "(" + 1 + ") ");
+            $(e).css('-webkit-transform', str);
+            $(e).css('-ms-transform', str);
+            $(e).css('transform', str);
+            $(e).css("fontSize", fs);
+            if (typeof (callback) == "function") {
+                callback();
+            }
         }
-        $(e).css('-webkit-transform', str);
-        $(e).css('-ms-transform', str);
-        $(e).css('transform', str);
-    } else {
-        //no transforms.. what to do..?
-        console.log("CRY");
-    }
+    })
 }
-animateCss.fade = function (e, val,duration,easing,callback) {
+
+animateCss.fade = function (e, val, duration, easing, callback) {
     if (Modernizr.opacity) {
         $(e).animate({
-            opacity:val
-        },duration,callback)
+            opacity: val
+        }, duration, callback)
     } else {
 
         //immitate opacity
@@ -56,13 +77,13 @@ animateCss.fade = function (e, val,duration,easing,callback) {
         var b = animateCss.bgcol;
         var bgcols = animateCss.toRgb($(e).css("backgroundColor"));
         var fgcols = animateCss.toRgb($(e).css("color"));
-        
+
         var ofc = $(e).css("color");
         var obc = $(e).css("backgroundColor");
 
         $(e).animate({ asdf: val == 1 ? 0 : 1 }, 0)
             .animate({ asdf: val }, {
-                step: function(now, fx) {
+                step: function (now, fx) {
                     var fc = animateCss.toHex(parseInt(fgcols.r * now + b.r * (1 - now)),
                         parseInt(fgcols.g * now + b.g * (1 - now)),
                         parseInt(fgcols.b * now + b.b * (1 - now)));
@@ -80,10 +101,10 @@ animateCss.fade = function (e, val,duration,easing,callback) {
                 },
                 duration: duration,
                 easing: easing,
-                complete: function() {
+                complete: function () {
                     $(e).css("color", ofc);
                     $(e).css("backgroundColor", obc);
-                    if(typeof callback=="function") {
+                    if (typeof callback == "function") {
                         callback();
                     }
                 }
@@ -111,7 +132,7 @@ animateCss.toRgb = function (a) {
         }
     }
 }
-animateCss.toHex = function (r,g,b) {
+animateCss.toHex = function (r, g, b) {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 

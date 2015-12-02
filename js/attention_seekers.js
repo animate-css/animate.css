@@ -13,18 +13,18 @@ animateCss.bounce = function (e) {
 }
 
 animateCss.flash = function (e) {
-    animateCss.fade(e, 0, 250,null, function() {
-        animateCss.fade(e, 1, 250, null, function () {
-            animateCss.fade(e, 0, 250, null, function () {
-                animateCss.fade(e, 1, 250, null, function () {
-                });
-            });
-        });
-    });
+    //animateCss.fade(e, 0, 250,null, function() {
+    //    animateCss.fade(e, 1, 250, null, function () {
+    //        animateCss.fade(e, 0, 250, null, function () {
+    //            animateCss.fade(e, 1, 250, null, function () {
+    //            });
+    //        });
+    //    });
+    //});
 
 
-    //$(e).fadeOut(250)
-    //    .fadeIn(250)
-    //    .fadeOut(250)
-    //    .fadeIn(250);
+    $(e).fadeOut(250)
+        .fadeIn(250)
+        .fadeOut(250)
+        .fadeIn(250);
 }
