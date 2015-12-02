@@ -33,7 +33,6 @@ animateCss.transform = function (e, property, from, to, duration, easing, callba
         step: function (now, fx) {
             if (Modernizr.csstransforms) {
                 var str = (property + "(" + now + (property == "rotate" ? "deg) " : ") "));
-                console.log(str);
                 animateCss.cssWithVendor(e, "transform", str);
             } else {
                 //no transforms.. what to do..?
@@ -41,7 +40,6 @@ animateCss.transform = function (e, property, from, to, duration, easing, callba
                 //if transform is scale, fall back to font size
                 if (property == "scale") {
                     $(e).css("fontSize", (now * fs) + fsUnit)
-                    console.log(fs);
                 } else {
                     console.log("CRY");
                 }
@@ -116,9 +114,6 @@ animateCss.fade = function (e, val, duration, easing, callback) {
 }
 
 animateCss.toRgb = function (a) {
-    console.log(a);
-    console.log(typeof (a));
-    console.log(a.indexOf("#"));
     if (a.indexOf("#") > -1) {
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(a);
         return {
