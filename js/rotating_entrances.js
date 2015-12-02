@@ -1,7 +1,4 @@
 animateCss.rotateIn = function (e) {
-    animateCss.cssWithVendor(e, "transform-origin", "center");
-    animateCss.cssWithVendor(e, "transform-origin", "rotateX(180deg)");
-
     $(e).fadeOut(
         {
             duration: 0,
@@ -12,7 +9,9 @@ animateCss.rotateIn = function (e) {
             queue: false
         });
     animateCss.transform(e, "rotate", 0, 180, 10, "linear", function() {
-        animateCss.transform(e, "rotate", 180, 360, 700, "linear");
+        animateCss.transform(e, "rotate", 180, 360, 700, "linear",function() {
+            animateCss.cssWithVendor(e, "transform-origin", "center");
+        });
     });
 }
 //need to first flip it then animate it back
@@ -29,7 +28,9 @@ animateCss.rotateInDownLeft = function(e){
             queue: false
         });
     animateCss.transform(e, "rotate", 0, 315, 10, "linear", function () {
-        animateCss.transform(e, "rotate", 315, 360, 700, "linear");
+        animateCss.transform(e, "rotate", 315, 360, 700, "linear", function () {
+            animateCss.cssWithVendor(e, "transform-origin", "center");
+        });
     });
 }
 
@@ -45,7 +46,9 @@ animateCss.rotateInDownRight = function(e){
             queue: false
         });
     animateCss.transform(e, "rotate", 0, -315, 10, "linear", function () {
-        animateCss.transform(e, "rotate", -315, -360, 700, "linear");
+        animateCss.transform(e, "rotate", -315, -360, 700, "linear", function () {
+            animateCss.cssWithVendor(e, "transform-origin", "center");
+        });
     });
 }
 
@@ -61,7 +64,9 @@ animateCss.rotateInUpLeft = function(e){
             queue: false
         });
     animateCss.transform(e, "rotate", 0, -315, 10, "linear", function () {
-        animateCss.transform(e, "rotate", -315, -360, 700, "linear");
+        animateCss.transform(e, "rotate", -315, -360, 700, "linear", function () {
+            animateCss.cssWithVendor(e, "transform-origin", "center");
+        });
     });
 }
 
@@ -77,6 +82,8 @@ animateCss.rotateInUpRight = function(e){
             queue: false
         });
     animateCss.transform(e, "rotate", 0, 315, 10, "linear", function () {
-        animateCss.transform(e, "rotate", 315, 360, 700, "linear");
+        animateCss.transform(e, "rotate", 315, 360, 700, "linear", function () {
+            animateCss.cssWithVendor(e, "transform-origin", "center");
+        });
     });
 }
