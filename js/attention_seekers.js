@@ -28,3 +28,9 @@ animateCss.flash = function (e) {
         .fadeOut(250)
         .fadeIn(250);
 }
+
+animateCss.pulse = function (e) {
+        animateCss.transform(e, "scale", 1, 1.05, 500,null, function() {
+            animateCss.transform(e, "scale", 1.05, 1, 500);
+        });
+}
