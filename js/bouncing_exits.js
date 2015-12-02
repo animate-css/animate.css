@@ -1,31 +1,7 @@
 animateCss.bounceOut = function (e) {
-    $(e).animate({ asdf: 1 }, 0)
-        .animate({ asdf: 0.9 }, {
-            step: function (now, fx) {
-                animateCss.transform(this, {
-                    property: "scale",
-                    value:now
-                });
-            },
-            duration: 70,
-            easing: "swing",
-        })
-        .animate({ asdf: 0 }, {
-            step: function (now, fx) {
-                animateCss.transform(this, {
-                    property: "scale",
-                    value: now
-                });
-            },
-            duration: 650,
-            easing: "easeInBack",
-            complete: function () {
-                animateCss.transform(this, {
-                    property: "scale",
-                    value: 1
-                });
-            }
-        })
+    animateCss.transform(e, "scale", 1, 0.9, 70, null, function() {
+        animateCss.transform(e, "scale", 0.9, 0, 650, "easeInBack");
+    });
 }
 animateCss.bounceOutDown = function (e) {
     var mt = $(e).css("marginBottom");
