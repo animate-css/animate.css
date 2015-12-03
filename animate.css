@@ -2572,6 +2572,35 @@ Copyright (c) 2015 Daniel Eden
   animation-name: hinge;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(2%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(2%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
+
+.float{
+  animation-name: float;
+  -webkit-animation-name: float;
+}
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
