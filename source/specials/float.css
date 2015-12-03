@@ -1,0 +1,29 @@
+.float{
+  animation-name: float;
+  -webkit-animation-name: float;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(2%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(2%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
