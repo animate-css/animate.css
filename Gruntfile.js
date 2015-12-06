@@ -31,6 +31,40 @@ module.exports = function(grunt) {
       }
     },
 
+    banner: [
+      '/*!',
+      ' * <%= _.capitalize(pkg.name) %> -<%= pkg.homepage %>',
+      ' * Version - <%= pkg.version %>',
+      ' * Licensed under the MIT license - http://opensource.org/licenses/MIT',
+      ' *',
+      ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>',
+      ' */',
+    ].join('\n'),
+
+    usebanner: {
+      options: {
+        position: 'replace',
+        linebreak: false,
+        replace: /\/\*!(\s+)?inject-banner(\s+)?\*\//
+      },
+      development: {
+        options: {
+          banner: '<%= banner %>'
+        },
+        files: {
+          src: [ 'animate.css']
+        }
+      },
+      production: {
+        options: {
+          banner: '\n<%= banner %>\n'
+        },
+        files: {
+          src: ['animate.min.css']
+        }
+      }
+    },
+
     watch: {
       css: {
         files: [ 'source/**/*', 'animate-config.json' ],
@@ -73,7 +107,7 @@ module.exports = function(grunt) {
 
   // register task
   grunt.registerTask('concat-anim', 'Concatenates activated animations', concatAnim); // custom task
-  grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin', 'usebanner']);
   grunt.registerTask('dev', ['watch']);
 
 };
