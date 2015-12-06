@@ -10,7 +10,8 @@
     "swing": true,
     "tada": true,
     "wobble": true,
-    "jello": true
+    "jello": true,
+    "squiggle": true
   },
 
   "bouncing_entrances": {

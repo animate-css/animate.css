@@ -61,6 +61,63 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+@keyframes squiggle {
+  
+  0%, 100% {
+    transition-time-function: ease-in;
+  }
+  
+  0% {
+    transform: scaleX(0.7) 
+      translate(0,-100%);
+      opacity: 0;
+  }
+  10% {
+    transform: scaleX(1.5) scaleY(1)
+              translate(0,0%);
+      opacity: 30;
+  }
+  20% {
+    transform: scaleX(0.8) scaleY(1)
+              translate(0%,-20%);
+      opacity: 60;
+  }
+  35% {
+    transform: scaleX(1.3) scaleY(1)
+      translate(0%,0%);
+    opacity: 70;
+  }
+  50% {
+    transform: scaleX(0.9) scaleY(1)
+      translate(0%,-5%);
+      opacity: 80;
+  }
+  70% {
+    transform: scaleX(1.1) scaleY(1)
+      translate(0%,0%);
+     opacity: 90;
+  }
+  90% {
+    transform: scaleX(1) scaleY(1)
+      translate(0%,0%);
+     opacity: 100;
+  }
+  100% {
+    transform: inherit;
+  }
+}
+
+.squiggle {
+  position: relative; 
+  margin: 250px auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #777777;
+  border-radius: 8px;
+  animation-name: squiggle; 
+}
+
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
