@@ -11,6 +11,7 @@
   },
   "homepage": "http://daneden.me/animate",
   "license": "MIT",
+  "style": "./animate.css",
   "jspm": {
     "main": "animate.css!",
     "format": "global",
