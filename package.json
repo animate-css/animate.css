@@ -1,14 +1,14 @@
 {
   "name": "animate.css",
   "version": "3.4.0",
-  "main": "animate.css",
+  "main": "dist/animate.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
   "license": "MIT",
   "jspm": {
-    "main": "animate.css!",
+    "main": "dist/animate.css!",
     "format": "global",
     "directories": {
       "lib": "./"
@@ -23,6 +23,6 @@
     "load-grunt-tasks": "~0.2.0"
   },
   "spm": {
-    "main": "./animate.css"
+    "main": "./dist/animate.css"
   }
 }
