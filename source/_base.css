@@ -21,3 +21,12 @@
 .animated.bounceOut{
   animation-duration: .75s;
 }
+
+.animated.float {
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
