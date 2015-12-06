@@ -6,6 +6,7 @@
     "pulse": true,
     "rubberBand": true,
     "shake": true,
+    "headShake": true,
     "swing": true,
     "tada": true,
     "wobble": true,

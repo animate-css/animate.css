@@ -21,6 +21,7 @@
   * `pulse`
   * `rubberBand`
   * `shake`
+  * `headShake`
   * `swing`
   * `tada`
   * `wobble`
@@ -158,6 +159,7 @@ Next, run `grunt watch` to watch for changes and compile your custom builds. For
   "flash": false,
   "pulse": false,
   "shake": true,
+  "headShake": true,
   "swing": true,
   "tada": true,
   "wobble": true,

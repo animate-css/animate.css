@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 /*!
-Animate.css - http://daneden.me/animate
-Version - 3.4.0
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
+ * Animate.css -http://daneden.me/animate
+ * Version - 3.4.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2015 Daniel Eden
+ */
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -25,12 +25,15 @@ Copyright (c) 2015 Daniel Eden
   animation-duration: 2s;
 }
 
+.animated.flipOutX,
+.animated.flipOutY,
 .animated.bounceIn,
 .animated.bounceOut {
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
 
+<<<<<<< HEAD
 .animated.flipOutX,
 .animated.flipOutY {
   -webkit-animation-duration: .75s;
@@ -45,6 +48,8 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-iteration-count: infinite;
 }
 
+=======
+>>>>>>> daneden/master
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -290,6 +295,77 @@ Copyright (c) 2015 Daniel Eden
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
+}
+
+@-webkit-keyframes headShake {
+  0 {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes headShake {
+  0 {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.headShake {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: headShake;
+  animation-name: headShake;
 }
 
 @-webkit-keyframes swing {
