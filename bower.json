@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "main": "./animate.css",
+  "main": "./dist/animate.css",
   "ignore": [
     ".*",
     "source",
