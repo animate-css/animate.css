@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 
     for ( category in categories ) {
       if ( categories.hasOwnProperty(category) ) {
-        files = categories[category]
+        files = categories[category];
         for (file in files) {
           if ( files.hasOwnProperty(file) && files[file] ) {
             target.push('source/' + category + '/' + file + '.css');
