@@ -1,11 +1,8 @@
 module.exports = function(grunt) {
-
   require('load-grunt-tasks')(grunt);
-
   var concatAnim;
 
   grunt.initConfig({
-
     pkg: grunt.file.readJSON('package.json'),
 
     concat: {
@@ -71,22 +68,21 @@ module.exports = function(grunt) {
         tasks: ['default']
       }
     }
-
   });
 
   // fuction to perform custom task
   concatAnim = function () {
-
     var categories = grunt.file.readJSON('animate-config.json'),
       category, files, file,
       target = [ 'source/_base.css' ],
       count = 0;
 
-    for ( category in categories ) {
-      if ( categories.hasOwnProperty(category) ) {
+    for (category in categories) {
+      if (categories.hasOwnProperty(category)) {
         files = categories[category];
+
         for (file in files) {
-          if ( files.hasOwnProperty(file) && files[file] ) {
+          if (files.hasOwnProperty(file) && files[file]) {
             target.push('source/' + category + '/' + file + '.css');
             count += 1;
           }
@@ -102,12 +98,10 @@ module.exports = function(grunt) {
 
     grunt.config('concat', { 'animate.css': target });
     grunt.task.run('concat');
-
   };
 
   // register task
   grunt.registerTask('concat-anim', 'Concatenates activated animations', concatAnim); // custom task
   grunt.registerTask('default', ['concat-anim', 'autoprefixer', 'cssmin', 'usebanner']);
   grunt.registerTask('dev', ['watch']);
-
 };

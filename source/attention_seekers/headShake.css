@@ -1,6 +1,4 @@
 @keyframes headShake {
-
-
   0 {
     transform: translateX(0);
   }
@@ -25,7 +23,6 @@
     transform: translateX(0);
   }
 }
-
 
 .headShake {
   animation-timing-function: ease-in-out;
