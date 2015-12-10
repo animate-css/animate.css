@@ -33,6 +33,13 @@
   animation-duration: .75s;
 }
 
+.animated.float {
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -2695,6 +2702,59 @@
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
+}
+
+.float {
+  animation-name: float;
+  -webkit-animation-name: float;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  50% {
+    -webkit-transform: translateY(3%);
+    transform: translateY(3%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  50% {
+    -webkit-transform: translateY(3%);
+    transform: translateY(3%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+
+  50% {
+    -webkit-transform: translateY(3%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 @-webkit-keyframes zoomIn {

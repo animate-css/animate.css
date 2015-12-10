@@ -54,6 +54,7 @@
   * `fadeOutRightBig`
   * `fadeOutUp`
   * `fadeOutUpBig`
+  * `float`
   * `flipInX`
   * `flipInY`
   * `flipOutX`
