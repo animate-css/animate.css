@@ -1,7 +1,3 @@
-@charset "UTF-8";
-
-/*! inject-banner */
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -18,6 +14,6 @@
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
-.animated.bounceOut{
+.animated.bounceOut {
   animation-duration: .75s;
 }

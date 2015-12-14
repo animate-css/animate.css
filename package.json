@@ -21,12 +21,16 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0"
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "run-sequence": "^1.1.5"
   },
   "spm": {
     "main": "./animate.css"
   },
   "dependencies": {
-    "gulp-header": "^1.7.1"
+    "gulp-header": "^1.7.1",
+    "gulp-rename": "^1.2.2"
   }
 }

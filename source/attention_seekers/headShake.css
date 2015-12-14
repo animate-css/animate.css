@@ -1,5 +1,5 @@
 @keyframes headShake {
-  0 {
+  0% {
     transform: translateX(0);
   }
 
