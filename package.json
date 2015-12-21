@@ -30,5 +30,8 @@
   },
   "spm": {
     "main": "./animate.css"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.7"
   }
 }
