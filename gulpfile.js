@@ -32,18 +32,12 @@ var activatedAnimations = activateAnimations();
 // ----------------------------
 
 gulp.task('default', function() {
-  runSequence('concatCSS', 'addHeader', 'prefixes', 'minifyCSS');
+  runSequence('concatCSS', 'prefixes', 'minifyCSS', 'addHeader');
 });
 
 gulp.task('concatCSS', function() {
   return gulp.src(activatedAnimations)
     .pipe(concat('animate.css'))
-    .pipe(gulp.dest('./'));
-});
-
-gulp.task('addHeader', function() {
-  return gulp.src('animate.css')
-    .pipe(header(banner, pkg))
     .pipe(gulp.dest('./'));
 });
 
@@ -60,6 +54,12 @@ gulp.task('minifyCSS', function() {
   return gulp.src('animate.css')
     .pipe(rename('animate.min.css'))
     .pipe(minify())
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('addHeader', function() {
+  return gulp.src('*.css')
+    .pipe(header(banner, pkg))
     .pipe(gulp.dest('./'));
 });
 
