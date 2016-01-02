@@ -1,120 +1,120 @@
 {
 
-  "attention_seekers": {
-    "bounce": true,
-    "flash": true,
-    "pulse": true,
-    "rubberBand": true,
-    "shake": true,
-    "headShake": true,
-    "swing": true,
-    "tada": true,
-    "wobble": true,
-    "jello": true
-  },
+  "attention_seekers": [
+    "bounce",
+    "flash",
+    "pulse",
+    "rubberBand",
+    "shake",
+    "headShake",
+    "swing",
+    "tada",
+    "wobble",
+    "jello"
+  ],
 
-  "bouncing_entrances": {
-    "bounceIn": true,
-    "bounceInDown": true,
-    "bounceInLeft": true,
-    "bounceInRight": true,
-    "bounceInUp": true
-  },
+  "bouncing_entrances": [
+    "bounceIn",
+    "bounceInDown",
+    "bounceInLeft",
+    "bounceInRight",
+    "bounceInUp"
+  ],
 
-  "bouncing_exits": {
-    "bounceOut": true,
-    "bounceOutDown": true,
-    "bounceOutLeft": true,
-    "bounceOutRight": true,
-    "bounceOutUp": true
-  },
+  "bouncing_exits": [
+    "bounceOut",
+    "bounceOutDown",
+    "bounceOutLeft",
+    "bounceOutRight",
+    "bounceOutUp"
+  ],
 
-  "fading_entrances": {
-    "fadeIn": true,
-    "fadeInDown": true,
-    "fadeInDownBig": true,
-    "fadeInLeft": true,
-    "fadeInLeftBig": true,
-    "fadeInRight": true,
-    "fadeInRightBig": true,
-    "fadeInUp": true,
-    "fadeInUpBig": true
-  },
+  "fading_entrances": [
+    "fadeIn",
+    "fadeInDown",
+    "fadeInDownBig",
+    "fadeInLeft",
+    "fadeInLeftBig",
+    "fadeInRight",
+    "fadeInRightBig",
+    "fadeInUp",
+    "fadeInUpBig"
+  ],
 
-  "fading_exits": {
-    "fadeOut": true,
-    "fadeOutDown": true,
-    "fadeOutDownBig": true,
-    "fadeOutLeft": true,
-    "fadeOutLeftBig": true,
-    "fadeOutRight": true,
-    "fadeOutRightBig": true,
-    "fadeOutUp": true,
-    "fadeOutUpBig": true
-  },
+  "fading_exits": [
+    "fadeOut",
+    "fadeOutDown",
+    "fadeOutDownBig",
+    "fadeOutLeft",
+    "fadeOutLeftBig",
+    "fadeOutRight",
+    "fadeOutRightBig",
+    "fadeOutUp",
+    "fadeOutUpBig"
+  ],
 
-  "flippers": {
-    "flip": true,
-    "flipInX": true,
-    "flipInY": true,
-    "flipOutX": true,
-    "flipOutY": true
-  },
+  "flippers": [
+    "flip",
+    "flipInX",
+    "flipInY",
+    "flipOutX",
+    "flipOutY"
+  ],
 
-  "lightspeed": {
-    "lightSpeedIn": true,
-    "lightSpeedOut": true
-  },
+  "lightspeed": [
+    "lightSpeedIn",
+    "lightSpeedOut"
+  ],
 
-  "rotating_entrances": {
-    "rotateIn": true,
-    "rotateInDownLeft": true,
-    "rotateInDownRight": true,
-    "rotateInUpLeft": true,
-    "rotateInUpRight": true
-  },
+  "rotating_entrances": [
+    "rotateIn",
+    "rotateInDownLeft",
+    "rotateInDownRight",
+    "rotateInUpLeft",
+    "rotateInUpRight"
+  ],
 
-  "rotating_exits": {
-    "rotateOut": true,
-    "rotateOutDownLeft": true,
-    "rotateOutDownRight": true,
-    "rotateOutUpLeft": true,
-    "rotateOutUpRight": true
-  },
+  "rotating_exits": [
+    "rotateOut",
+    "rotateOutDownLeft",
+    "rotateOutDownRight",
+    "rotateOutUpLeft",
+    "rotateOutUpRight"
+  ],
 
-  "specials": {
-    "hinge": true,
-    "rollIn": true,
-    "rollOut": true
-  },
+  "specials": [
+    "hinge",
+    "rollIn",
+    "rollOut"
+  ],
 
-  "zooming_entrances": {
-    "zoomIn": true,
-    "zoomInDown": true,
-    "zoomInLeft": true,
-    "zoomInRight": true,
-    "zoomInUp": true
-  },
+  "zooming_entrances": [
+    "zoomIn",
+    "zoomInDown",
+    "zoomInLeft",
+    "zoomInRight",
+    "zoomInUp"
+  ],
 
-  "zooming_exits": {
-    "zoomOut": true,
-    "zoomOutDown": true,
-    "zoomOutLeft": true,
-    "zoomOutRight": true,
-    "zoomOutUp": true
-  },
+  "zooming_exits": [
+    "zoomOut",
+    "zoomOutDown",
+    "zoomOutLeft",
+    "zoomOutRight",
+    "zoomOutUp"
+  ],
 
-  "sliding_entrances": {
-    "slideInDown": true,
-    "slideInLeft": true,
-    "slideInRight": true,
-    "slideInUp": true
-  },
+  "sliding_entrances": [
+    "slideInDown",
+    "slideInLeft",
+    "slideInRight",
+    "slideInUp"
+  ],
 
-  "sliding_exits": {
-    "slideOutDown": true,
-    "slideOutLeft": true,
-    "slideOutRight": true,
-    "slideOutUp": true
-  }
+  "sliding_exits": [
+    "slideOutDown",
+    "slideOutLeft",
+    "slideOutRight",
+    "slideOutUp"
+  ]
 }

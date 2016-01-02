@@ -10,7 +10,7 @@ var concat = require('gulp-concat');
 var header = require('gulp-header');
 var autoprefixer = require('gulp-autoprefixer');
 var runSequence = require('run-sequence');
-var minify = require('gulp-minify-css');
+var minify = require('gulp-cssnano');
 var rename = require('gulp-rename');
 
 // Misc/global vars
@@ -57,7 +57,7 @@ gulp.task('createCSS', function() {
     .pipe(autoprefixer(opts.autoprefixer))
     .pipe(gulp.dest(opts.destPath))
     .pipe(rename(opts.minRename))
-    .pipe(minify())
+    .pipe(minify({reduceIdents: {keyframes: false}}))
     .pipe(gulp.dest(opts.destPath));
 });
 
@@ -82,11 +82,9 @@ function activateAnimations() {
     if (categories.hasOwnProperty(category)) {
       files = categories[category];
 
-      for (file in files) {
-        if (files.hasOwnProperty(file) && files[file]) {
-          target.push('source/' + category + '/' + file + '.css');
-          count += 1;
-        }
+      for (var i = 0; i < files.length; ++i) {
+        target.push('source/' + category + '/' + files[i] + '.css');
+        count += 1;
       }
     }
   }
