@@ -23,7 +23,7 @@
     transform: scale3d(1.05, .95, 1);
   }
 
-  100% {
+  to {
     transform: scale3d(1, 1, 1);
   }
 }

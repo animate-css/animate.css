@@ -1,11 +1,17 @@
 {
   "name": "animate.css",
-  "version": "3.4.0",
+  "version": "3.5.0",
+  "main": "animate.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/daneden/animate.css.git"
   },
+  "author": {
+    "name": "Daniel Eden"
+  },
+  "homepage": "http://daneden.me/animate",
   "license": "MIT",
+  "style": "./animate.css",
   "jspm": {
     "main": "animate.css!",
     "format": "global",
@@ -14,12 +20,14 @@
     }
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-autoprefixer": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-cssmin": "~0.8.0",
-    "load-grunt-tasks": "~0.2.0"
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.5"
   },
   "spm": {
     "main": "./animate.css"

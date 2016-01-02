@@ -5,7 +5,7 @@
     opacity: 0;
   }
 
-  100% {
+  to {
     transform-origin: left bottom;
     transform: none;
     opacity: 1;
