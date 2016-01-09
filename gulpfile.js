@@ -78,7 +78,7 @@ gulp.task('addHeader', function() {
 // Read the config file and return an array of the animations to be activated
 function activateAnimations() {
   var categories = JSON.parse(fs.readFileSync('animate-config.json')),
-    category, files, file,
+    category, files,
     target = [ '_base.css' ],
     count = 0;
 
