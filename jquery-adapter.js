@@ -1,6 +1,21 @@
 /**
-* jQuery animate
-* //random in effect
+* jQuery adapter animate.css 
+* @autor Raphael Rego <raphaelcarlosr@gmail.com> (raphaelcarlosr)
+* @usage
+* //Random hide
+* .animate("hide", function(isVisible, className){
+*     //when animation end, random show
+*     $(this).animate("show", function(isVisible, className){
+*        //when animation end, random special
+*         $(this).animate("special", function(isVisible, className){
+*             //when animation end, bounce
+*            $(this).animate("bounce", function(isVisible, className){
+*                console.log('End animations');
+*             });
+*         });
+*     });
+* });
+* OR
 * $("form:first").animate("show" | "hide" | "special" | "[animateClassName]", function(isVisible, className){
 *     console.log(this, isVisible, className)
 * })
