@@ -34,7 +34,18 @@
 
         return this[num];
     });
-    
+    /**
+    * Array.prototype.contains
+    * needle is the item you are searching for
+    * this is a special variable that refers to 'this' instance of an Array.
+    * returns true if needle is in the array, and false otherwise
+    */
+    defineProperty(Array.prototype, 'contains', Array.prototype.contains || function (needle) {
+        for (var i in this) {
+            if (this[i] === needle){ return true; }
+        }
+        return false;
+    });
     
     var Animate = function (el, className, callback) {
         var element = this.$element = $(el),
