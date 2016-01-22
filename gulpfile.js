@@ -17,6 +17,8 @@ var rename = require('gulp-rename');
 var pkg = JSON.parse(fs.readFileSync('package.json'));
 var activatedAnimations = activateAnimations();
 
+var replace = require('gulp-replace');
+
 // Task options
 var opts = {
   destPath: './',
@@ -48,7 +50,7 @@ var opts = {
 // ----------------------------
 
 gulp.task('default', function() {
-  runSequence('createCSS', 'addHeader');
+  runSequence('createCSS', 'addHeader', 'setEffectsTojQueryAdpter');
 });
 
 gulp.task('createCSS', function() {
@@ -64,6 +66,28 @@ gulp.task('createCSS', function() {
 gulp.task('addHeader', function() {
   return gulp.src('*.css')
     .pipe(header(opts.banner, pkg))
+    .pipe(gulp.dest(opts.destPath));
+});
+
+
+// ----------------------------
+// Put all effects as array in source/jquery-adapter.js
+// ----------------------------
+gulp.task('setEffectsTojQueryAdpter', function(){
+  var categories = JSON.parse(fs.readFileSync('animate-config.json')),
+    category, files, effects = [];
+    
+  for (category in categories) {
+    if (categories.hasOwnProperty(category)) {
+      files = categories[category];
+      for (var i = 0; i < files.length; ++i) {
+        effects.push(files[i]);        
+      }
+    } 
+  }
+  gutil.log(JSON.stringify(effects));
+  gulp.src(['./source/jquery-adapter.js'])
+    .pipe(replace('[];/*all effects will be here*/', JSON.stringify(effects)))
     .pipe(gulp.dest(opts.destPath));
 });
 

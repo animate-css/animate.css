@@ -130,6 +130,34 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 **Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
 
+##Now you can use jquery.animate function using jquery.adpater file
+```html
+<body>
+    ...
+    <h2>Animate.css</h2>
+    <script src="animate.css/jquery-adapter.js"></script>
+    <script>
+        $('h2:first')
+        //random hide
+        .animate("hide", function(isVisible, className){
+            //when animation end, random show
+            $(this).animate("show", function(isVisible, className){
+                //when animation end, random special
+                $(this).animate("special", function(isVisible, className){
+                    //when animation end, bounce
+                    $(this).animate("bounce", function(isVisible, className){
+                        console.log('End animations');
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+```
+###See in action on [codepen](http://codepen.io/raphaelcarlosr/pen/RrQrOK)
+
+
 You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
