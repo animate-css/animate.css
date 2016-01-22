@@ -6,6 +6,36 @@
 * })
 */
 (function($, undefined){
+    //cross browser Object.defineProperty
+    var defineProperty = function (context, name, value, config) {
+        config = $.extend({ 'enumerable': false, 'configurable': false, 'writable': false, 'value': value }, config);
+        try { Object.defineProperty(context, name, config); } catch (e) { context[name] = value; }
+    };
+    /**
+    * Get a random element from array
+    * @method
+    * @param {string} last Last random value
+    * @return {mixed} Element of array
+    * @example
+    *   var pars = [0, 2, 4, 6, 8, 10, 12];
+    *   var el1 = pars.random();
+    *   var el2 = pars.random(el1); //not repeat el1 on search
+    * http://stackoverflow.com/questions/4550505/getting-random-value-from-an-array
+    */
+    defineProperty(Array.prototype, 'random', function (last) {
+        var num = 0, indexs = [0], len = this.length;
+        do {
+            if (indexs.length === len){ break; }
+
+            num = Math.floor(Math.random() * len);
+            indexs.push(num);
+
+        } while (this[num] === last);
+
+        return this[num];
+    });
+    
+    
     var Animate = function (el, className, callback) {
         var element = this.$element = $(el),
             animatedClass = "animated " + className,
