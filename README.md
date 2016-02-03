@@ -130,6 +130,25 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 **Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
 
+You can also extend jQuery to add a function that does it all for you:
+
+```javascript
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+```
+
+And use it like this:
+
+```javascript
+$('#yourElement').animateCss('bounce');
+```
+
 You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
