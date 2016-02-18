@@ -5,6 +5,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 1;
     transform: none;
   }

@@ -9,6 +9,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
   }
 }

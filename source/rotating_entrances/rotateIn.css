@@ -6,6 +6,7 @@
   }
 
   to {
+    will-change: auto;
     transform-origin: center;
     transform: none;
     opacity: 1;

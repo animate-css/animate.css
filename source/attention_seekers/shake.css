@@ -10,6 +10,10 @@
   20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0);
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .shake {

@@ -6,6 +6,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     transform-origin: center bottom;

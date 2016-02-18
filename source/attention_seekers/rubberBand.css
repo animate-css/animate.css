@@ -22,8 +22,9 @@
   75% {
     transform: scale3d(1.05, .95, 1);
   }
-
+  
   to {
+    will-change: auto;
     transform: scale3d(1, 1, 1);
   }
 }

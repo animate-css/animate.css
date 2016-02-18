@@ -22,6 +22,10 @@
   50% {
     transform: translateX(0);
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .headShake {

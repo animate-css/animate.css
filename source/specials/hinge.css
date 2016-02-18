@@ -18,6 +18,7 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }

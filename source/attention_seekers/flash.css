@@ -6,6 +6,10 @@
   25%, 75% {
     opacity: 0;
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .flash {

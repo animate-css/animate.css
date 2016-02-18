@@ -15,6 +15,7 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
     opacity: 1;
   }

@@ -5,6 +5,7 @@
   }
 
   to {
+    will-change: auto;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
