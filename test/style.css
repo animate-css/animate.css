@@ -283,3 +283,111 @@ html {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+
+/*-----------------------------------*\
+  $MODAL BUILDER
+\*-----------------------------------*/
+
+.modal__overlay {
+  background-color: rgba(0,0,0,.1);
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal__main {
+  -webkit-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
+  background-color: #fff;
+  box-shadow: 0 0 13px -5px rgba(0, 0, 0, .8);
+  display: none;
+  height: 80%;
+  padding: 30px;
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 70%;
+  z-index: 2;
+}
+
+.modal__code {
+  height: 90%;
+  text-align: left;
+  overflow: scroll;
+}
+
+.modal__button {
+  -webkit-animation: hue 60s linear;
+  -o-animation: hue 60s linear;
+  animation: hue 60s linear;
+  background-color: transparent;
+  border: 2px solid #f35626;
+  color: #f35626;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+  padding: 7px 22px;
+  -webkit-transition: background-color .4s, color .4s;
+  -o-transition: background-color .4s, color .4s;
+  transition: background-color .4s, color .4s;
+}
+
+.modal__button:hover {
+  background-color: #f35626;
+  color: #fff;
+}
+
+.js--trigger-minify {
+  position: absolute;
+  right: 8%;
+  z-index: 3;
+}
+
+.js--copy-build {
+  margin: 15px auto 0;
+}
+
+.modal__close {
+  -webkit-animation: hue 60s linear;
+  -o-animation: hue 60s linear;
+  animation: hue 60s linear;
+  border: 3px solid #fff;
+  background-color: #f35626;
+  border-radius: 50%;
+  height: 35px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 35px;
+}
+
+.modal__close:before, .modal__close:after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 15px;
+}
+.modal__close:before {
+  -webkit-transform: translateY(-1px) rotate(-45deg);
+  -moz-transform: translateY(-1px) rotate(-45deg);
+  -ms-transform: translateY(-1px) rotate(-45deg);
+  -o-transform: translateY(-1px) rotate(-45deg);
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.modal__close:after {
+  -webkit-transform: translateY(-1px) rotate(45deg);
+  -moz-transform: translateY(-1px) rotate(45deg);
+  -ms-transform: translateY(-1px) rotate(45deg);
+  -o-transform: translateY(-1px) rotate(45deg);
+  transform: translateY(-1px) rotate(45deg);
+}

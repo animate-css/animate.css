@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 		var unnecessaryAnimations = [];
 
-		var outputAnimateCSS = animateCSS;
+		outputAnimateCSS = animateCSS;
 
 		for ( var a in animations ) {
 			var animation = animations[a];
@@ -99,9 +99,7 @@ $(document).ready(function(){
 		outputAnimateCSSMin = outputAnimateCSS.replace(/(?:\r\n|\r|\n)/g, '');
 		outputAnimateCSSMin = outputAnimateCSSMin.replace(/\s{2,}/g, ' ');
 
-		//PopUp(outputAnimateCSS);
-		console.log(outputAnimateCSS);
-
+		Modal(outputAnimateCSS);
 
 
 	}
@@ -126,17 +124,95 @@ $(document).ready(function(){
 
 	}
 
-	function PopUp(code){
+	function Modal(code){
 
-		var newWindow = window.open("","Test","width=800,height=500,scrollbars=1,resizable=1");
+		var $overlay = $('<div class="modal__overlay animated fadeIn"/>');
+		var $modal = $('<div class="modal__main animated zoomIn"/>');
+		var $close = $('<a href="javascript:void(0);" class="modal__close"/>');
+		var $code = $('<pre class="modal__code js--code-build" data-status="normal"/>');
+		var $triggerMinify = $('<button class="modal__button js--trigger-minify" >Minified</button>');
+		var $copyButton = $('<button class="modal__button js--copy-build">Copy to Clipboard</button>');
 
-		//read code from textbox placed in parent window
-		var html = "<html><head></head><body><pre>" + code + "</pre></body></html>";
+		//Puting code
+		$code.html(code);
+
+		//Add Event OnClicks
+		$triggerMinify.click(function(){
+			TriggerMinify();
+		});
+
+		$copyButton.click(function(){
+			CopyToClipboard();
+		});
+
+		$close.click(function(){
+			$modal.removeClass('zoomIn').addClass('zoomOut');
+			$overlay.removeClass('fadeIn').addClass('fadeOut');
+			setTimeout(function(){
+				$modal.remove();
+				$overlay.remove();
+			}, 600);
+		});
+
+		//Grouping Elements
+		$modal.append($close);
+		$modal.append($triggerMinify);
+		$modal.append($code);
+		$modal.append($copyButton);
+
+		//Add to body document
+		$('body').append($overlay);
+		$('body').append($modal);
+
+		//Show effect
+		$overlay.css('display', 'block');
+		$modal.css('display', 'block');
 
 
-		newWindow .document.open();
-		newWindow .document.write(html);
-		newWindow .document.close;
     }
+
+    function TriggerMinify() {
+
+    	var statusAvailable = {
+    		normal: 'Normal',
+    		minified: 'Minified'
+    	};
+
+    	var status = $('.js--code-build').data('status');
+    	var triggerStatus = ( status == 'normal' ) ? 'minified' : 'normal';
+
+    	$('.js--trigger-minify').text( statusAvailable[status] );
+
+    	var code = ( triggerStatus == 'normal' ) ? outputAnimateCSS : outputAnimateCSSMin;
+
+    	$('.js--code-build').data('status', triggerStatus);
+
+    	$('.js--code-build').text(code);
+    }
+
+    function CopyToClipboard() {
+    	$('.js--code-build').click();	
+    	document.execCommand('copy');
+    }
+
+    // Click to ‘select all’ on the PRE element
+    $(document).on('click', 'pre', function () {
+		var doc = document
+            , text = this
+            , range, selection
+        ;
+        if (doc.body.createTextRange) { //ms
+            range = doc.body.createTextRange();
+            range.moveToElementText(text);
+            range.select();
+        } else if (window.getSelection) { //all others
+            selection = window.getSelection();
+            range = doc.createRange();
+            range.selectNodeContents(text);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+
+	});
 
 });
