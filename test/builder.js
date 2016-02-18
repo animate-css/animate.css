@@ -1,3 +1,6 @@
+/*
+	Originally wrote by Igorxp5
+ */
 $(document).ready(function(){
 	/*
 		Load all Animate.css effects 
