@@ -10,5 +10,6 @@
 }
 
 .zoomIn {
+  will-change: transform, opacity;
   animation-name: zoomIn;
 }

@@ -10,5 +10,6 @@
 }
 
 .slideOutRight {
+  will-change: transform, visibility;
   animation-name: slideOutRight;
 }

@@ -10,5 +10,6 @@
 }
 
 .slideInUp {
+  will-change: transform, visibility;
   animation-name: slideInUp;
 }

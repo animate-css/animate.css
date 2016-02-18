@@ -10,6 +10,7 @@
 }
 
 .lightSpeedOut {
+  will-change: transform, opacity;
   animation-name: lightSpeedOut;
   animation-timing-function: ease-in;
 }

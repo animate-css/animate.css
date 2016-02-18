@@ -21,5 +21,6 @@
 }
 
 .tada {
+  will-change: transform;
   animation-name: tada;
 }

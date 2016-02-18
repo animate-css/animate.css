@@ -15,5 +15,6 @@
 }
 
 .bounceOut {
+  will-change: transform, opacity;
   animation-name: bounceOut;
 }

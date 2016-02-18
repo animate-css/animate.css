@@ -9,5 +9,6 @@
 }
 
 .flash {
+  will-change: opacity;
   animation-name: flash;
 }

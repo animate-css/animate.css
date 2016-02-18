@@ -31,5 +31,6 @@
 }
 
 .wobble {
+  will-change: transform;
   animation-name: wobble;
 }

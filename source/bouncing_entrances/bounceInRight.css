@@ -27,5 +27,6 @@
 }
 
 .bounceInRight {
+  will-change: transform, opacity, animation-timing-function;
   animation-name: bounceInRight;
 }

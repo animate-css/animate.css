@@ -15,6 +15,7 @@
 }
 
 .flipOutX {
+  will-change: transform, opacity;
   animation-name: flipOutX;
   backface-visibility: visible !important;
 }

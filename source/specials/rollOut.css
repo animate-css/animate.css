@@ -12,5 +12,6 @@
 }
 
 .rollOut {
+  will-change: transform, opacity;
   animation-name: rollOut;
 }

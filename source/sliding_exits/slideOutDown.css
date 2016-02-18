@@ -10,5 +10,6 @@
 }
 
 .slideOutDown {
+  will-change: transform, visibility;
   animation-name: slideOutDown;
 }

@@ -24,5 +24,6 @@
 }
 
 .hinge {
+  will-change: transform, opacity, transform-origin, animation-timing-function;
   animation-name: hinge;
 }

@@ -11,5 +11,6 @@
 }
 
 .fadeInRightBig {
+  will-change: transform, opacity;
   animation-name: fadeInRightBig;
 }

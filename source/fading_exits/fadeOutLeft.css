@@ -10,5 +10,6 @@
 }
 
 .fadeOutLeft {
+  will-change: transform, opacity;
   animation-name: fadeOutLeft;
 }

@@ -13,5 +13,6 @@
 }
 
 .shake {
+  will-change: transform;
   animation-name: shake;
 }

@@ -25,6 +25,7 @@
 }
 
 .headShake {
+  will-change: transform;
   animation-timing-function: ease-in-out;
   animation-name: headShake;
 }

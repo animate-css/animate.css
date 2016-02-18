@@ -13,5 +13,6 @@
 }
 
 .zoomInUp {
+  will-change: transform, opacity, animation-timing-function;
   animation-name: zoomInUp;
 }

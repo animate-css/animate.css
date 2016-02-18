@@ -13,5 +13,6 @@
 }
 
 .rotateInDownRight {
+  will-change: transform, opacity;
   animation-name: rotateInDownRight;
 }

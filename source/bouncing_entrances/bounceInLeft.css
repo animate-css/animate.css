@@ -27,5 +27,6 @@
 }
 
 .bounceInLeft {
+  will-change: transform, opacity, animation-timing-function;
   animation-name: bounceInLeft;
 }

@@ -15,5 +15,6 @@
 }
 
 .pulse {
+  will-change: transform;
   animation-name: pulse;
 }

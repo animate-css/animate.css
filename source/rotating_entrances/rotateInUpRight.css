@@ -13,5 +13,6 @@
 }
 
 .rotateInUpRight {
+  will-change: transform, opacity;
   animation-name: rotateInUpRight;
 }

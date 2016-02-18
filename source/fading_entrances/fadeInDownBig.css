@@ -11,5 +11,6 @@
 }
 
 .fadeInDownBig {
+  will-change: transform, opacity;
   animation-name: fadeInDownBig;
 }

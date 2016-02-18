@@ -13,5 +13,6 @@
 }
 
 .zoomInLeft {
+  will-change: transform, opacity, animation-timing-function;
   animation-name: zoomInLeft;
 }
