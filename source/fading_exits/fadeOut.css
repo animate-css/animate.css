@@ -10,6 +10,8 @@
 }
 
 .fadeOut {
-  will-change: opacity;
   animation-name: fadeOut;
+}
+.fadeOutHint {
+  will-change: opacity;
 }

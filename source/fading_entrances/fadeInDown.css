@@ -12,6 +12,9 @@
 }
 
 .fadeInDown {
-  will-change: transform, opacity;
   animation-name: fadeInDown;
+}
+
+.fadeInDownHint {
+  will-change: transform, opacity;
 }

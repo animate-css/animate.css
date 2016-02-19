@@ -13,6 +13,9 @@
 }
 
 .zoomOutRight {
-  will-change: transform, opacity, transform-origin;
   animation-name: zoomOutRight;
+}
+
+.zoomOutRightHint {
+  will-change: transform, opacity, transform-origin;
 }

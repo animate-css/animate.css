@@ -26,7 +26,10 @@
 }
 
 .flipInX {
-  will-change: transform, opacity, animation-timing-function;
   backface-visibility: visible !important;
   animation-name: flipInX;
+}
+
+.flipInXHint {
+  will-change: transform, opacity, animation-timing-function;
 }

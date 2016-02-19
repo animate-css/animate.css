@@ -16,7 +16,10 @@
 }
 
 .flipOutY {
-  will-change: transform, opacity;
   backface-visibility: visible !important;
   animation-name: flipOutY;
+}
+
+.flipOutYHint {
+  will-change: transform, opacity;
 }

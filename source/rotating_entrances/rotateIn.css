@@ -14,6 +14,9 @@
 }
 
 .rotateIn {
-  will-change: transform, opacity;
   animation-name: rotateIn;
+}
+
+.rotateInHint {
+  will-change: transform, opacity;
 }

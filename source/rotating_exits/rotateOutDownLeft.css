@@ -13,6 +13,9 @@
 }
 
 .rotateOutDownLeft {
-  will-change: transform, opacity;
   animation-name: rotateOutDownLeft;
+}
+
+.rotateOutDownLeftHint {
+  will-change: transform, opacity;
 }

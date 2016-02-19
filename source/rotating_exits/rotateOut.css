@@ -13,6 +13,9 @@
 }
 
 .rotateOut {
-  will-change: transform, opacity;
   animation-name: rotateOut;
+}
+
+.rotateOutHint {
+  will-change: transform, opacity;
 }

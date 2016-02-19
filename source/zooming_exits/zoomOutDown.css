@@ -15,6 +15,9 @@
 }
 
 .zoomOutDown {
-  will-change: transform, opacity, transform-origin, animation-timing-function;
   animation-name: zoomOutDown;
+}
+
+.zoomOutDownHint {
+  will-change: transform, opacity, transform-origin, animation-timing-function;
 }

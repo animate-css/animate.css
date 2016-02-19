@@ -12,6 +12,9 @@
 }
 
 .fadeInRight {
-  will-change: transform, opacity;
   animation-name: fadeInRight;
+}
+
+.fadeInRightHint {
+  will-change: transform, opacity;
 }

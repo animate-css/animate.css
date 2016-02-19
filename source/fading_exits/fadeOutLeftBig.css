@@ -11,6 +11,9 @@
 }
 
 .fadeOutLeftBig {
-  will-change: transform, opacity;
   animation-name: fadeOutLeftBig;
+}
+
+.fadeOutLeftBigHint {
+  will-change: transform, opacity;
 }

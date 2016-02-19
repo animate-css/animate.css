@@ -22,6 +22,9 @@
 }
 
 .tada {
-  will-change: transform;
   animation-name: tada;
+}
+
+.tadaHint {
+  will-change: transform;
 }

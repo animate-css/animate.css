@@ -12,6 +12,9 @@
 }
 
 .bounceOutRight {
-  will-change: transform, opacity;
   animation-name: bounceOutRight;
+}
+
+.bounceOutRightHint {
+  will-change: transform, opacity;
 }

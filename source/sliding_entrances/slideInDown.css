@@ -11,6 +11,9 @@
 }
 
 .slideInDown {
-  will-change: transform, visibility;
   animation-name: slideInDown;
+}
+
+.slideInDownHint {
+  will-change: transform, visibility;
 }

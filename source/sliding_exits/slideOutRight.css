@@ -11,6 +11,9 @@
 }
 
 .slideOutRight {
-  will-change: transform, visibility;
   animation-name: slideOutRight;
+}
+
+.slideOutRightHint {
+  will-change: transform, visibility;
 }

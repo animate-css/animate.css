@@ -13,6 +13,9 @@
 }
 
 .rotateOutUpRight {
-  will-change: transform, opacity;
   animation-name: rotateOutUpRight;
+}
+
+.rotateOutUpRightHint {
+  will-change: transform, opacity;
 }

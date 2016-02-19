@@ -11,6 +11,9 @@
 }
 
 .slideOutLeft {
-  will-change: transform, visibility;
   animation-name: slideOutLeft;
+}
+
+.slideOutLeftHint {
+  will-change: transform, visibility;
 }

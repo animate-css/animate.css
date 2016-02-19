@@ -32,6 +32,9 @@
 }
 
 .wobble {
-  will-change: transform;
   animation-name: wobble;
+}
+
+.wobbleHint{
+  will-change: transform;  
 }

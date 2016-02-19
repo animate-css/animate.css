@@ -13,6 +13,9 @@
 }
 
 .flash {
-  will-change: opacity;
   animation-name: flash;
+}
+
+.flashHint {
+  will-change: opacity;
 }

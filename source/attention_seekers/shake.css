@@ -17,6 +17,9 @@
 }
 
 .shake {
-  will-change: transform;
   animation-name: shake;
+}
+
+.shakeHint {
+  will-change: transform;
 }

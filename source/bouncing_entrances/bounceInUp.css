@@ -28,6 +28,9 @@
 }
 
 .bounceInUp {
-  will-change: transform, opacity, animation-timing-function;
   animation-name: bounceInUp;
+}
+
+.bounceInUpHint {
+  will-change: transform, opacity, animation-timing-function;
 }

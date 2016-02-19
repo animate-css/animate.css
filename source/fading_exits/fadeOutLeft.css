@@ -11,6 +11,9 @@
 }
 
 .fadeOutLeft {
-  will-change: transform, opacity;
   animation-name: fadeOutLeft;
+}
+
+.fadeOutLeftHint {
+  will-change: transform, opacity;
 }

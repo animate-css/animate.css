@@ -24,7 +24,10 @@
 }
 
 .bounce {
-  will-change: transform;
   animation-name: bounce;
   transform-origin: center bottom;
+}
+
+.bounceHint {
+  will-change: transform;
 }

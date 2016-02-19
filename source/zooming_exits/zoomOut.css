@@ -15,6 +15,9 @@
 }
 
 .zoomOut {
-  will-change: transform, opacity;
   animation-name: zoomOut;
+}
+
+.zoomOutHint {
+  will-change: transform, opacity;
 }

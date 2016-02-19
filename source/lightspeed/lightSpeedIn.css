@@ -22,7 +22,10 @@
 }
 
 .lightSpeedIn {
-  will-change: transform, opacity;
   animation-name: lightSpeedIn;
   animation-timing-function: ease-out;
+}
+
+.lightSpeedInHint {
+  will-change: transform, opacity;
 }

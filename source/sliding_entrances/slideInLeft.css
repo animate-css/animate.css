@@ -11,6 +11,9 @@
 }
 
 .slideInLeft {
-  will-change: transform, visibility;
   animation-name: slideInLeft;
+}
+
+.slideInLeftHint {
+  will-change: transform, visibility;
 }

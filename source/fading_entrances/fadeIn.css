@@ -10,6 +10,9 @@
 }
 
 .fadeIn {
-  will-change: opacity;
   animation-name: fadeIn;
+}
+
+.fadeInHint {
+  will-change: opacity;
 }

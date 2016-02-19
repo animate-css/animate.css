@@ -12,6 +12,9 @@
 }
 
 .fadeInLeft {
-  will-change: transform, opacity;
   animation-name: fadeInLeft;
+}
+
+.fadeInLeftHint {
+  will-change: transform, opacity;
 }

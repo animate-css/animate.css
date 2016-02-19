@@ -17,6 +17,9 @@
 }
 
 .zoomInRight {
-  will-change: transform, opacity, animation-timing-function;
   animation-name: zoomInRight;
+}
+
+.zoomInRightHint {
+  will-change: transform, opacity, animation-timing-function;
 }

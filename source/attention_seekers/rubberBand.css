@@ -30,6 +30,9 @@
 }
 
 .rubberBand {
-  will-change: transform;
   animation-name: rubberBand;
+}
+
+.rubberBandHint {
+  will-change: transform;
 }

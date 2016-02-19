@@ -27,7 +27,10 @@
 }
 
 .animated.flip {
-  will-change: transform, animation-timing-function;
   backface-visibility: visible;
   animation-name: flip;
+}
+
+.flipHint {
+  will-change: transform, animation-timing-function;
 }
