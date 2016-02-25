@@ -1,13 +1,18 @@
 @keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
+  from, 30%, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
-  from {
+  0% {
     opacity: 0;
     transform: translate3d(3000px, 0, 0);
   }
 
+  30% {
+    opacity: 0;
+    transform: translate3d(1000px, 0, 0);
+  }
+  
   60% {
     opacity: 1;
     transform: translate3d(-25px, 0, 0);
