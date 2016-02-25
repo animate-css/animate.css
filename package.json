@@ -28,6 +28,8 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "gulp-connect": "^2.3.1",
+    "gulp-watch": "^4.3.5",
     "run-sequence": "^1.1.5"
   },
   "spm": {

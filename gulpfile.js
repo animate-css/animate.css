@@ -13,6 +13,8 @@ var header = require('gulp-header');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
+var connect = require('gulp-connect');
+var watch = require('gulp-watch');
 
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
@@ -71,6 +73,21 @@ gulp.task('addHeader', function() {
   return gulp.src('*.css')
     .pipe(header(opts.banner, pkg))
     .pipe(gulp.dest(opts.destPath));
+});
+
+gulp.task('demo', ['watch', 'connect']);
+
+gulp.task('watch', function(){
+	watch(['**/*', '!./animate.css', '!./animate.min.css'],function(){
+		gulp.start('default');
+		connect.reload();
+	});
+});
+
+gulp.task('connect', function() {
+	connect.server({
+		root: '.'
+	});
 });
 
 // ----------------------------
