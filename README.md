@@ -169,7 +169,7 @@ $ cd path/to/animate.css/
 $ sudo npm install
 ```
 
-Next, run `gulp` to compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
+Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
 
 ```javascript
 "attention_seekers": {
