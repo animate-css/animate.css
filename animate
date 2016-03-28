@@ -1,0 +1,70 @@
+#!/usr/bin/env node
+
+var questions = [
+  {
+    type: "confirm",
+    name: "custom",
+    message: "Do you want to compile the library with the only animations you need?"
+  }
+];
+
+var fs = require("fs");
+
+var animate = fs.readFileSync("animate.json");
+var animations = JSON.parse(animate);
+
+for (var animation in animations) {
+  questions.push({
+    type: "checkbox",
+    name: animation,
+    message: animation.charAt(0).toUpperCase() + animation.slice(1).replace("_", " "),
+    choices: animations[animation],
+    when: function (answer) {
+      return answer.custom;
+    }
+  });
+}
+
+var inquirer = require("inquirer");
+
+inquirer.prompt(questions, function (answers) {
+  if (answers.custom) {
+    var replacer = [];
+
+    var isValid = false;
+
+    for (var animation in answers) {
+      if (animation !== "custom" && answers[animation].length > 0) {
+        replacer.push(animation);
+
+        isValid = true;
+      }
+    }
+
+    if (isValid) {
+      var config = JSON.stringify(answers, replacer, 2);
+
+      console.log("\n" + config + "\n");
+
+      inquirer.prompt([{
+        type: "confirm",
+        name: "compile",
+        message: "Looks good?"
+      }], function (answer) {
+        if (answer.compile) {
+          fs.writeFileSync("animate-config.json", config);
+          process.exit();
+        }
+      });
+    }
+  } else {
+    fs.writeFileSync("animate-config.json", animate);
+    process.exit();
+  }
+
+  try {
+    fs.statSync("animate-config.json");
+  } catch (e) {
+    fs.writeFileSync("animate-config.json", animate);
+  }
+});
