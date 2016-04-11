@@ -122,8 +122,15 @@ Before you make changes to this file, you should know that $('#yourElement').one
 http://api.jquery.com/one/
 -->
 
+Because of some modern browsers, `animationend``will become the new standards, thus having both, their vendor event and the w3c event implemented.
+It is best to keep track with a variable if the event has ended as well to prevent double execution.
+
 ```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+var ended = false;
+$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	if(ended) return; ended = true;	
+	// doSomething
+});
 ```
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here. 
