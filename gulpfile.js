@@ -60,7 +60,6 @@ gulp.task('createCSS', function() {
     ]))
     .pipe(gulp.dest(opts.destPath))
     .pipe(postcss([
-      autoprefixer(opts.autoprefixer),
       cssnano({reduceIdents: {keyframes: false}})
     ]))
     .pipe(rename(opts.minRename))
