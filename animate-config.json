@@ -122,6 +122,7 @@
     "blurIn",
     "blurInDown",
     "blurInLeft",
-    "blurInRight"
+    "blurInRight",
+    "blurInUp"
   ]
 }
