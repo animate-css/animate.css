@@ -3661,3 +3661,38 @@
     -webkit-animation-name: blurOutRight;
     animation-name: blurOutRight;
 }
+
+@-webkit-keyframes blurOutUp {
+    from {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+@keyframes blurOutUp {
+    from {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.blurOutUp {
+    -webkit-animation-name: blurOutUp;
+    animation-name: blurOutUp;
+}

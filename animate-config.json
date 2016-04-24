@@ -130,6 +130,7 @@
     "blurOut",
     "blurOutDown",
     "blurOutLeft",
-    "blurOutRight"
+    "blurOutRight",
+    "blurOutUp"
   ]
 }
