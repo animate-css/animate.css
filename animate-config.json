@@ -116,5 +116,9 @@
     "slideOutLeft",
     "slideOutRight",
     "slideOutUp"
+  ],
+
+  "blur_entrances": [
+    "blurIn"
   ]
 }

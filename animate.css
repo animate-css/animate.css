@@ -3338,3 +3338,25 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+@-webkit-keyframes blurIn {
+	from {
+		-webkit-filter: blur(15px);
+		filter: blur(15px);
+	}
+	to {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+	}
+}
+
+@keyframes blurIn {
+	from {
+		-webkit-filter: blur(15px);
+		filter: blur(15px);
+	}
+	to {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+	}
+}
