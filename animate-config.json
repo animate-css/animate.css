@@ -119,6 +119,7 @@
   ],
 
   "blur_entrances": [
-    "blurIn"
+    "blurIn",
+    "blurInDown"
   ]
 }
