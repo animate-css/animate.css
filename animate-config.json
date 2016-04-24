@@ -129,6 +129,7 @@
   "blur_exits": [
     "blurOut",
     "blurOutDown",
-    "blurOutLeft"
+    "blurOutLeft",
+    "blurOutRight"
   ]
 }
