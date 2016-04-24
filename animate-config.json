@@ -121,6 +121,7 @@
   "blur_entrances": [
     "blurIn",
     "blurInDown",
-    "blurInLeft"
+    "blurInLeft",
+    "blurInRight"
   ]
 }
