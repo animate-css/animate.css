@@ -127,6 +127,7 @@
   ],
 
   "blur_exits": [
-    "blurOut"
+    "blurOut",
+    "blurOutDown"
   ]
 }
