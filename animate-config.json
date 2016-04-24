@@ -124,5 +124,9 @@
     "blurInLeft",
     "blurInRight",
     "blurInUp"
+  ],
+
+  "blur_exits": [
+    "blurOut"
   ]
 }

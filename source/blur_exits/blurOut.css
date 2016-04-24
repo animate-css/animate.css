@@ -1,0 +1,16 @@
+@keyframes blurOut {
+    from {
+        opacity: 1;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+    to {
+        opacity: 0;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+}
+
+.blurOut {
+    animation-name: blurOut;
+}
