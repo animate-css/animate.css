@@ -1,9 +1,9 @@
-@keyframes blurInDown {
+@keyframes blurInLeft {
     from {
         opacity: 0;
         -webkit-filter: blur(15px);
         filter: blur(15px);
-        transform: translate3d(0, -100%, 0);
+        transform: translate3d(-100%, 0, 0);
     }
     to {
         opacity: 1;
@@ -13,6 +13,6 @@
     }
 }
 
-.blurInDown {
-    animation-name: blurInDown;
+.blurInLeft {
+    animation-name: blurInLeft;
 }

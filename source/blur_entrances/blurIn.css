@@ -1,16 +1,16 @@
 @keyframes blurIn {
-	from {
-		opacity: 0;
-		-webkit-filter: blur(15px);
-		filter: blur(15px);
-	}
-	to {
-		opacity: 1;
-		-webkit-filter: blur(0);
-		filter: blur(0);
-	}
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
 }
 
 .blurIn {
-	animation-name: blurIn;
+    animation-name: blurIn;
 }

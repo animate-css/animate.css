@@ -3340,71 +3340,110 @@
 }
 
 @-webkit-keyframes blurIn {
-	from {
-		opacity: 0;
-		-webkit-filter: blur(15px);
-		filter: blur(15px);
-	}
-	to {
-		opacity: 1;
-		-webkit-filter: blur(0);
-		filter: blur(0);
-	}
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
 }
 
 @keyframes blurIn {
-	from {
-		opacity: 0;
-		-webkit-filter: blur(15px);
-		filter: blur(15px);
-	}
-	to {
-		opacity: 1;
-		-webkit-filter: blur(0);
-		filter: blur(0);
-	}
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
 }
 
 .blurIn {
-	-webkit-animation-name: blurIn;
-	animation-name: blurIn;
+    -webkit-animation-name: blurIn;
+    animation-name: blurIn;
 }
+
 @-webkit-keyframes blurInDown {
-  from {
-    opacity: 0;
-    -webkit-filter: blur(15px);
-	filter: blur(15px);
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-filter: blur(0);
-	filter: blur(0);
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-@keyframes blurInDown {
-  from {
-    opacity: 0;
-    -webkit-filter: blur(15px);
-	filter: blur(15px);
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
 
-  to {
-    opacity: 1;
-    -webkit-filter: blur(0);
-	filter: blur(0);
-    -webkit-transform: none;
-    transform: none;
-  }
+@keyframes blurInDown {
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 .blurInDown {
-  -webkit-animation-name: blurInDown;
-  animation-name: blurInDown;
+    -webkit-animation-name: blurInDown;
+    animation-name: blurInDown;
+}
+
+@-webkit-keyframes blurInLeft {
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes blurInLeft {
+    from {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.blurInLeft {
+    -webkit-animation-name: blurInLeft;
+    animation-name: blurInLeft;
 }
