@@ -1,4 +1,5 @@
 #Animate.css
+[![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate.css)
 *Just-add-water CSS animation*
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
