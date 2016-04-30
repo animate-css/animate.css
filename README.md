@@ -14,7 +14,7 @@
   or use the version hosted by [SmallCDN](http://smallcdn.rocks)
   ```html
   <head>
-    <link rel="stylesheet" href="http://c.smallcdn.rocks/animate.css">
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
   </head>
   ```
 2. Add the class `animated` to the element you want to animate.
@@ -116,7 +116,7 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 or use the version hosted by [SmallCDN](http://smallcdn.rocks)
 ```html
 <head>
-  <link rel="stylesheet" href="http://c.smallcdn.rocks/animate.css">
+  <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 </head>
 ```
 
