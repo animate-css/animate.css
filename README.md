@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="animate.min.css">
   </head>
   ```
+  or use the version hosted by [SmallCDN](http://smallcdn.rocks)
+  ```html
+  <head>
+    <link rel="stylesheet" href="http://cdn.smallcdn.rocks/animate.css">
+  </head>
+  ```
 2. Add the class `animated` to the element you want to animate.
  You may also want to include the class `infinite` for an infinite loop.
 
@@ -105,6 +111,12 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 ```html
 <head>
   <link rel="stylesheet" href="animate.min.css">
+</head>
+```
+or use the version hosted by SmallCDN
+```html
+<head>
+  <link rel="stylesheet" href="http://cdn.smallcdn.rocks/animate.css">
 </head>
 ```
 
