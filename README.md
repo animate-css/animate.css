@@ -113,7 +113,7 @@ To use animate.css in your website, simply drop the stylesheet into your documen
   <link rel="stylesheet" href="animate.min.css">
 </head>
 ```
-or use the version hosted by SmallCDN
+or use the version hosted by [SmallCDN](http://smallcdn.rocks)
 ```html
 <head>
   <link rel="stylesheet" href="http://cdn.smallcdn.rocks/animate.css">
