@@ -20,10 +20,11 @@
   animation-iteration-count: infinite;
 }
 
-.animated.hinge {
+.animated.hinge, .animated.advertise {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+
 
 .animated.flipOutX,
 .animated.flipOutY,
@@ -3337,4 +3338,40 @@
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+
+@keyframes advertise{
+  0% {
+    -webkit-transform: scale(0,0.1);
+    transform: scale(0,0.1);
+  }
+  15% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  30% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  50% {
+    -webkit-transform: scale(3,6);
+    transform: scale(3,6);
+  }
+  75% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  85% {
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.advertise{
+  text-align: center;
+  -webkit-animation-name: advertise;
+  animation-name: advertise;
 }
