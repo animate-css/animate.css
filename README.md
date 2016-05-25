@@ -3,8 +3,15 @@
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
+## Install
+Using bower: 
+```sh
+$ bower install animate-css
+```
+
 ##Basic Usage
-1. Include the stylesheet on your document's `<head>`
+1. Include the stylesheet on your document's `<head>` or 
+
 
   ```html
   <head>
