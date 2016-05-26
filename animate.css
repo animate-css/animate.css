@@ -17,7 +17,7 @@
   animation-iteration-count: infinite;
 }
 
-.animated.hinge, .animated.advertise {
+.animated.hinge {
   animation-duration: 2s;
 }
 
@@ -297,35 +297,6 @@
 .jello {
   animation-name: jello;
   transform-origin: center;
-}
-
-@keyframes advertise{
-  0% {
-    transform: scale(0,0.1);
-  }
-  15% {
-    transform: translateY(-15px);
-  }
-  30% {
-    transform: translateX(50px);
-  }
-  50% {
-    transform: scale(3,6);
-  }
-  75% {
-    transform: scale(0.5, 0.5);
-  }
-  85% {
-    transform: scale(2,2);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
-.advertise{
-  text-align: center;
-  animation-name: advertise;
 }
 
 @keyframes bounceIn {
