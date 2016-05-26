@@ -1,4 +1,4 @@
-@keyframes advertise{
+@keyframes parade{
   0% {
     transform: scale(0,0.1);
   }
@@ -22,7 +22,7 @@
   }
 }
 
-.advertise{
+.parade{
   text-align: center;
-  animation-name: advertise;
+  animation-name: parade;
 }
