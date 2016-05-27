@@ -4,7 +4,6 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
 import browserSync from 'browser-sync';
 const reload = browserSync.reload;
-
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var fs = require('fs');
@@ -22,7 +21,8 @@ var pkg = JSON.parse(fs.readFileSync('package.json'));
 var activatedAnimations = activateAnimations();
 // Task options
 var opts = {
-    destPath: './',
+    destPath: './app/styles/',
+    destPath1: './',
     concatName: 'animate.css',
     autoprefixer: {
         browsers: ['> 5%'],
@@ -94,7 +94,6 @@ gulp.task('styles', () => {
         .pipe($.sourcemaps.write('./'))
         .pipe(gulp.dest('dist/styles'));
 });
-
 gulp.task('scripts', () =>
         gulp.src([
             // Note: Since we are not using useref in the scripts build pipeline,
@@ -146,12 +145,14 @@ gulp.task('createCSS', function () {
             autoprefixer(opts.autoprefixer)
         ]))
         .pipe(gulp.dest(opts.destPath))
+        .pipe(gulp.dest(opts.destPath1))
         .pipe(postcss([
             autoprefixer(opts.autoprefixer),
             cssnano({reduceIdents: {keyframes: false}})
         ]))
         .pipe(rename(opts.minRename))
-        .pipe(gulp.dest(opts.destPath));
+        .pipe(gulp.dest(opts.destPath))
+        .pipe(gulp.dest(opts.destPath1));
 });
 gulp.task('addHeader', function () {
     return gulp.src('*.css')
