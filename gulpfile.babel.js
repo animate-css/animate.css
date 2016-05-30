@@ -4,20 +4,20 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
 import browserSync from 'browser-sync';
 const reload = browserSync.reload;
-var autoprefixer = require('autoprefixer');
-var cssnano = require('cssnano');
-var fs = require('fs');
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import fs from 'fs'
 // Gulp
-var gulp = require('gulp');
+import gulp from 'gulp'
 // Gulp plugins
-var concat = require('gulp-concat');
-var gutil = require('gulp-util');
-var header = require('gulp-header');
-var postcss = require('gulp-postcss');
-var rename = require('gulp-rename');
-var runSequence = require('run-sequence');
-// Misc/global vars
-var pkg = JSON.parse(fs.readFileSync('package.json'));
+import concat from 'gulp-concat'
+import gutil from 'gulp-util'
+import header from 'gulp-header'
+import postcss from 'gulp-postcss'
+import rename from 'gulp-rename'
+import runSequence from 'run-sequence'
+// Misc/global consts
+const pkg = JSON.parse(fs.readFileSync('package.json'));
 var activatedAnimations = activateAnimations();
 // Task options
 var opts = {
@@ -61,7 +61,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
     });
     gulp.watch(['app/**/*.html'], reload);
     gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-    gulp.watch(['app/scripts/**/*.js'], [/*'lint',*/ 'scripts']);
+    gulp.watch(['app/scripts/**/*.js'], [/*'lint',*/ 'scripts', reload]);
     gulp.watch(['app/images/**/*'], reload);
 });
 gulp.task('styles', () => {
@@ -99,13 +99,7 @@ gulp.task('scripts', () =>
             // Note: Since we are not using useref in the scripts build pipeline,
             //       you need to explicitly list your scripts here in the right order
             //       to be correctly concatenated
-            './app/scripts/main.js',
-            './app/scripts/test/es6.js',
-            './app/scripts/test/es6-string-template.js',
-            './app/scripts/test/map-collection.js',
-            './app/scripts/test/proxy.js',
-            './app/scripts/test/ClientService.js',
-            './app/scripts/test/main.js'
+            './app/index.js'
 
             // Other scripts
         ], {base: './app/scripts'})
