@@ -8,5 +8,8 @@
     "Gemfile",
     "Gemfile.lock",
     "*.md"
-  ]
+  ],
+  "dependencies": {
+    "zepto": "^1.1.6"
+  }
 }
