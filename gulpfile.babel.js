@@ -1,4 +1,3 @@
-'use strict';
 // Utilities
 import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
