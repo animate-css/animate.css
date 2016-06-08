@@ -25,6 +25,11 @@
   animation-duration: 2s;
 }
 
+.animated.persist {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
