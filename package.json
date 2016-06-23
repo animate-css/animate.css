@@ -35,7 +35,6 @@
     "main": "./animate.css"
   },
   "scripts": {
-    "postinstall": "./animate",
-    "animate": "npm run postinstall"
+    "postinstall": "node animate"
   }
 }
