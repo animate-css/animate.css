@@ -3,12 +3,26 @@
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
+## Installation
+
+To install via Bower, simply do the following:
+
+```bash
+$ bower install animate.css --save
+```
+
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
 
   ```html
   <head>
     <link rel="stylesheet" href="animate.min.css">
+  </head>
+  ```
+  or use the version hosted by [SmallCDN](http://smallcdn.rocks)
+  ```html
+  <head>
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
   </head>
   ```
 2. Add the class `animated` to the element you want to animate.
@@ -107,6 +121,12 @@ To use animate.css in your website, simply drop the stylesheet into your documen
   <link rel="stylesheet" href="animate.min.css">
 </head>
 ```
+or use the version hosted by [SmallCDN](http://smallcdn.rocks)
+```html
+<head>
+  <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+</head>
+```
 
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
 
@@ -169,7 +189,7 @@ $ cd path/to/animate.css/
 $ sudo npm install
 ```
 
-Next, run `gulp` to compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
+Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
 
 ```javascript
 "attention_seekers": {
