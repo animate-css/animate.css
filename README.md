@@ -19,7 +19,7 @@ $ bower install animate.css --save
     <link rel="stylesheet" href="animate.min.css">
   </head>
   ```
-  or use the version hosted by [cdnjs](https://cdnjs.com/libraries/animate.css)
+  or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
   ```html
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -121,10 +121,10 @@ To use animate.css in your website, simply drop the stylesheet into your documen
   <link rel="stylesheet" href="animate.min.css">
 </head>
 ```
-or use the version hosted by [SmallCDN](http://smallcdn.rocks)
+or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
 ```html
 <head>
-  <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 ```
 
