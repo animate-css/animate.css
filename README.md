@@ -19,10 +19,10 @@ $ bower install animate.css --save
     <link rel="stylesheet" href="animate.min.css">
   </head>
   ```
-  or use the version hosted by [SmallCDN](http://smallcdn.rocks)
+  or use the version hosted by [cdnjs](https://cdnjs.com/libraries/animate.css)
   ```html
   <head>
-    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   ```
 2. Add the class `animated` to the element you want to animate.
