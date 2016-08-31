@@ -87,6 +87,7 @@ $ bower install animate.css --save
   * `hinge`
   * `rollIn`
   * `rollOut`
+  * `jackInTheBox`
   * `zoomIn`
   * `zoomInDown`
   * `zoomInLeft`
