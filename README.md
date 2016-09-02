@@ -10,6 +10,11 @@ To install via Bower, simply do the following:
 ```bash
 $ bower install animate.css --save
 ```
+or you can install via npm:
+
+```bash
+$ npm install animate.css --save
+```
 
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
@@ -146,7 +151,7 @@ http://api.jquery.com/one/
 $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
 ```
 
-[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here. 
+[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
 
 **Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
 
