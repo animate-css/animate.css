@@ -22,10 +22,15 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
   }
 }
 
 .bounceInLeft {
   animation-name: bounceInLeft;
+}
+
+.bounceInLeftHint {
+  will-change: transform, opacity, animation-timing-function;
 }

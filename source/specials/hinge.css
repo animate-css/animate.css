@@ -18,6 +18,7 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }
@@ -25,4 +26,8 @@
 
 .hinge {
   animation-name: hinge;
+}
+
+.hingeHint {
+  will-change: transform, opacity, transform-origin, animation-timing-function;
 }

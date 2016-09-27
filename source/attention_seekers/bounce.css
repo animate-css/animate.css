@@ -17,9 +17,17 @@
   90% {
     transform: translate3d(0,-4px,0);
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .bounce {
   animation-name: bounce;
   transform-origin: center bottom;
+}
+
+.bounceHint {
+  will-change: transform;
 }

@@ -7,8 +7,16 @@
   50% {
     opacity: 1;
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .zoomIn {
   animation-name: zoomIn;
+}
+
+.zoomInHint {
+  will-change: transform, opacity;
 }

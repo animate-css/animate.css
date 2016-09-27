@@ -4,10 +4,15 @@
   }
 
   to {
+    will-change: auto;
     opacity: 1;
   }
 }
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+.fadeInHint {
+  will-change: opacity;
 }

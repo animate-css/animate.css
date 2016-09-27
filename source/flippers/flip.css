@@ -20,6 +20,7 @@
   }
 
   to {
+    will-change: auto;
     transform: perspective(400px);
     animation-timing-function: ease-in;
   }
@@ -28,4 +29,8 @@
 .animated.flip {
   backface-visibility: visible;
   animation-name: flip;
+}
+
+.flipHint {
+  will-change: transform, animation-timing-function;
 }

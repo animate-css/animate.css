@@ -22,10 +22,15 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
   }
 }
 
 .bounceInRight {
   animation-name: bounceInRight;
+}
+
+.bounceInRightHint {
+  will-change: transform, opacity, animation-timing-function;
 }

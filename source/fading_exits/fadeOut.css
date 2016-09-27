@@ -4,10 +4,14 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
   }
 }
 
 .fadeOut {
   animation-name: fadeOut;
+}
+.fadeOutHint {
+  will-change: opacity;
 }

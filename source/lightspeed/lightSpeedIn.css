@@ -15,6 +15,7 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
     opacity: 1;
   }
@@ -23,4 +24,8 @@
 .lightSpeedIn {
   animation-name: lightSpeedIn;
   animation-timing-function: ease-out;
+}
+
+.lightSpeedInHint {
+  will-change: transform, opacity;
 }

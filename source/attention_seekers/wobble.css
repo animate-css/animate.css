@@ -26,10 +26,15 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
   }
 }
 
 .wobble {
   animation-name: wobble;
+}
+
+.wobbleHint{
+  will-change: transform;  
 }

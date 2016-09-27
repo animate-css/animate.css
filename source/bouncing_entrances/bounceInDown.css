@@ -22,10 +22,15 @@
   }
 
   to {
+    will-change: auto;
     transform: none;
   }
 }
 
 .bounceInDown {
   animation-name: bounceInDown;
+}
+
+.bounceInDownHint {
+  will-change: transform, opacity, animation-timing-function;
 }

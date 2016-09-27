@@ -8,12 +8,18 @@
   50% {
     transform: scale3d(1.05, 1.05, 1.05);
   }
-
+  
   to {
+    will-change: auto;
     transform: scale3d(1, 1, 1);
   }
+  
 }
 
 .pulse {
   animation-name: pulse;
+}
+
+.pulseHint {
+  will-change: transform;
 }

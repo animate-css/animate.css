@@ -4,6 +4,7 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
   }
@@ -12,4 +13,8 @@
 .lightSpeedOut {
   animation-name: lightSpeedOut;
   animation-timing-function: ease-in;
+}
+
+.lightSpeedOutHint {
+  will-change: transform, opacity;
 }

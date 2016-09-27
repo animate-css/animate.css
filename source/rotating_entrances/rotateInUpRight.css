@@ -6,6 +6,7 @@
   }
 
   to {
+    will-change: auto;
     transform-origin: right bottom;
     transform: none;
     opacity: 1;
@@ -14,4 +15,8 @@
 
 .rotateInUpRight {
   animation-name: rotateInUpRight;
+}
+
+.rotateInUpRightHint {
+  will-change: transform, opacity;
 }

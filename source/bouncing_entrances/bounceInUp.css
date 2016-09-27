@@ -22,10 +22,15 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(0, 0, 0);
   }
 }
 
 .bounceInUp {
   animation-name: bounceInUp;
+}
+
+.bounceInUpHint {
+  will-change: transform, opacity, animation-timing-function;
 }

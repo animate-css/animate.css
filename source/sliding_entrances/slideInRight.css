@@ -5,10 +5,15 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(0, 0, 0);
   }
 }
 
 .slideInRight {
   animation-name: slideInRight;
+}
+
+.slideInRightHint {
+  will-change: transform, visibility;
 }

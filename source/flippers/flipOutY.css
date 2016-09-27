@@ -9,6 +9,7 @@
   }
 
   to {
+    will-change: auto;
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
@@ -17,4 +18,8 @@
 .flipOutY {
   backface-visibility: visible !important;
   animation-name: flipOutY;
+}
+
+.flipOutYHint {
+  will-change: transform, opacity;
 }

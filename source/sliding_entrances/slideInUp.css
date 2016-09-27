@@ -5,10 +5,15 @@
   }
 
   to {
+    will-change: auto;
     transform: translate3d(0, 0, 0);
   }
 }
 
 .slideInUp {
   animation-name: slideInUp;
+}
+
+.slideInUpHint {
+  will-change: transform, visibility;
 }

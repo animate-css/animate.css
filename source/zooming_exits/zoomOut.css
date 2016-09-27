@@ -9,10 +9,15 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
   }
 }
 
 .zoomOut {
   animation-name: zoomOut;
+}
+
+.zoomOutHint {
+  will-change: transform, opacity;
 }

@@ -5,6 +5,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
@@ -12,4 +13,8 @@
 
 .bounceOutLeft {
   animation-name: bounceOutLeft;
+}
+
+.bounceOutLeftHint {
+  will-change: transform, opacity;
 }

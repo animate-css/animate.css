@@ -26,6 +26,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
@@ -33,4 +34,8 @@
 
 .bounceIn {
   animation-name: bounceIn;
+}
+
+.bounceInHint{
+  will-change: transform, opacity, animation-timing-function;  
 }

@@ -4,6 +4,7 @@
   }
 
   to {
+    will-change: auto;
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
   }
@@ -11,4 +12,8 @@
 
 .slideOutDown {
   animation-name: slideOutDown;
+}
+
+.slideOutDownHint {
+  will-change: transform, visibility;
 }

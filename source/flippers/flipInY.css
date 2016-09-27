@@ -20,6 +20,7 @@
   }
 
   to {
+    will-change: auto;
     transform: perspective(400px);
   }
 }
@@ -27,4 +28,8 @@
 .flipInY {
   backface-visibility: visible !important;
   animation-name: flipInY;
+}
+
+.flipInYHint {
+  will-change: transform, opacity, animation-timing-function;
 }

@@ -7,6 +7,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 1;
     transform: none;
   }
@@ -14,4 +15,8 @@
 
 .rollIn {
   animation-name: rollIn;
+}
+
+.rollInHint {
+  will-change: transform, opacity;
 }

@@ -9,6 +9,7 @@
   }
 
   to {
+    will-change: auto;
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
@@ -16,4 +17,8 @@
 
 .bounceOut {
   animation-name: bounceOut;
+}
+
+.bounceOutHint {
+  will-change: transform, opacity;
 }

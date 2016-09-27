@@ -10,8 +10,16 @@
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
+
+  100% {
+    will-change: auto;
+  }
 }
 
 .zoomInRight {
   animation-name: zoomInRight;
+}
+
+.zoomInRightHint {
+  will-change: transform, opacity, animation-timing-function;
 }

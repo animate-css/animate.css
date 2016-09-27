@@ -22,9 +22,17 @@
   50% {
     transform: translateX(0);
   }
+  
+  100% {
+    will-change: auto;
+  }
 }
 
 .headShake {
   animation-timing-function: ease-in-out;
   animation-name: headShake;
+}
+
+.headShakeHint {
+  will-change: transform;
 }

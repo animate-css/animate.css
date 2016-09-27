@@ -5,6 +5,7 @@
   }
 
   to {
+    will-change: auto;
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
@@ -13,4 +14,8 @@
 
 .rotateOutUpRight {
   animation-name: rotateOutUpRight;
+}
+
+.rotateOutUpRightHint {
+  will-change: transform, opacity;
 }

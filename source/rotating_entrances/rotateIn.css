@@ -6,6 +6,7 @@
   }
 
   to {
+    will-change: auto;
     transform-origin: center;
     transform: none;
     opacity: 1;
@@ -14,4 +15,8 @@
 
 .rotateIn {
   animation-name: rotateIn;
+}
+
+.rotateInHint {
+  will-change: transform, opacity;
 }
