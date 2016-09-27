@@ -1,0 +1,17 @@
+@keyframes blurOutRight {
+    from {
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.blurOutRight {
+    animation-name: blurOutRight;
+}

@@ -116,5 +116,21 @@
     "slideOutLeft",
     "slideOutRight",
     "slideOutUp"
+  ],
+
+  "blur_entrances": [
+    "blurIn",
+    "blurInDown",
+    "blurInLeft",
+    "blurInRight",
+    "blurInUp"
+  ],
+
+  "blur_exits": [
+    "blurOut",
+    "blurOutDown",
+    "blurOutLeft",
+    "blurOutRight",
+    "blurOutUp"
   ]
 }
