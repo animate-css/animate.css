@@ -148,7 +148,7 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+$('#yourElement').one('webkitAnimationEnd animationend', doSomething);
 ```
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
@@ -160,7 +160,7 @@ You can also extend jQuery to add a function that does it all for you:
 ```javascript
 $.fn.extend({
     animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        var animationEnd = 'webkitAnimationEnd animationend';
         this.addClass('animated ' + animationName).one(animationEnd, function() {
             $(this).removeClass('animated ' + animationName);
         });
