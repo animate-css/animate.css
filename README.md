@@ -1,4 +1,4 @@
-#Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby)
+# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby)
 *Just-add-water CSS animation*
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
@@ -16,7 +16,7 @@ or you can install via npm:
 $ npm install animate.css --save
 ```
 
-##Basic Usage
+## Basic Usage
 1. Include the stylesheet on your document's `<head>`
 
   ```html
@@ -118,7 +118,7 @@ Full example:
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
 
-##Usage
+## Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
 ```html
@@ -185,6 +185,22 @@ You can change the duration of your animations, add a delay or change the number
 ```
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
+
+## NPM/Sass Usage
+
+Animate.css has eyeglass support and thus can be imported into sass projects via:
+
+```scss
+@import "animate/base"
+```
+
+Every animation type can be loaded on a case by case basis:
+
+```scss
+@import "animate/base";
+@import "animate/fading_entrances/fadeIn";
+@import "animate/zooming_entrances/zoomIn";
+```
 
 ## Custom Builds
 Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
