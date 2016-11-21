@@ -162,6 +162,113 @@
   animation-name: pulse;
 }
 
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  5% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+  10% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  15% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+
+  20% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+  }
+  65%{
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);	
+  }
+  70% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+              transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  80% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+
+  85% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  5% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+  10% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  15% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+
+  20% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+  }
+  65%{
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);	
+  }
+  70% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+              transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  80% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+
+  85% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+  }
+}
+
+.heartbeat {
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+}
+
 @-webkit-keyframes rubberBand {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -198,6 +305,8 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+
 
 @keyframes rubberBand {
   from {
