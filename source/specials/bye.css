@@ -1,0 +1,23 @@
+/* originally authored by aniket sharma- https://github.com/Aniket965 */
+
+@keyframes bye {
+  from {
+    transform: scale3d(1, 1, 1) rotate(0deg);
+  }
+
+  25% {
+    transform: scale3d(1.25, 1.25, 1.25) rotate(10deg);
+  }
+
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5) rotate(-10deg);
+  }
+  
+  to {
+    transform: scale3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+.bye {
+  animation-name: bye;
+}
