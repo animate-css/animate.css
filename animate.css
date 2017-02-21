@@ -2,7 +2,7 @@
 
 /*!
  * animate.css -http://daneden.me/animate
- * Version - 3.5.1
+ * Version - 3.5.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
  * Copyright (c) 2016 Daniel Eden
@@ -23,6 +23,92 @@
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+}
+
+.animated-duration-050s {
+  -webkit-animation-duration: .50s !important;
+  animation-duration: .50s !important;
+}
+.animated-duration-1s {
+  -webkit-animation-duration: 1s !important;
+  animation-duration: 1s !important;
+}
+.animated-duration-2s {
+  -webkit-animation-duration: 2s !important;
+  animation-duration: 2s !important;
+}
+.animated-duration-3s {
+  -webkit-animation-duration: 3s !important;
+  animation-duration: 3s !important;
+}
+.animated-duration-4s {
+  -webkit-animation-duration: 4s !important;
+  animation-duration: 4s !important;
+}
+.animated-duration-5s {
+  -webkit-animation-duration: 5s !important;
+  animation-duration: 5s !important;
+}
+.animated-duration-6s {
+  -webkit-animation-duration: 6s !important;
+  animation-duration: 6s !important;
+}
+.animated-duration-7s {
+  -webkit-animation-duration: 7s !important;
+  animation-duration: 7s !important;
+}
+.animated-duration-8s {
+  -webkit-animation-duration: 8s !important;
+  animation-duration: 8s !important;
+}
+.animated-duration-9s {
+  -webkit-animation-duration: 9s !important;
+  animation-duration: 9s !important;
+}
+.animated-duration-10s {
+  -webkit-animation-duration: 10s !important;
+  animation-duration: 10s !important;
+}
+
+.animated-delay {
+  -webkit-animation-delay: .50s;
+  -ms-animation-delay: .50s;
+  animation-delay: .50s;
+}
+.animated-delay-1s {
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.animated-delay-2s {
+  -webkit-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.animated-delay-3s {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.animated-delay-4s {
+  -webkit-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.animated-delay-5s {
+  -webkit-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.animated-delay-6s {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.animated-delay-7s {
+  -webkit-animation-delay: 7s;
+  -ms-animation-delay: 7s;
+  animation-delay: 7s;
 }
 
 .animated.flipOutX,
