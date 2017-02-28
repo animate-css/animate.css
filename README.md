@@ -159,12 +159,22 @@ You can also extend jQuery to add a function that does it all for you:
 
 ```javascript
 $.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
+  animateCss: function (animationNames, index) {
+    if (!Array.isArray(animationNames)){
+      animationNames = [animationNames];
     }
+    if (typeof(index)==='undefined') { index = 0; }
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';   
+    this.addClass('animated ' + animationNames[index]).one(animationEnd, index, function () {
+      $(this).removeClass(animationNames[index]);
+      if (index < animationNames.length - 1) {
+        $(this).animateCss(animationNames, index + 1);
+      }else{
+        $(this).removeClass('animated');
+        return this;
+      }
+    });
+  }
 });
 ```
 
@@ -172,6 +182,12 @@ And use it like this:
 
 ```javascript
 $('#yourElement').animateCss('bounce');
+```
+
+Or like this to chain multiple animations:
+
+```javascript
+$('#yourElement').animateCss(['flipOutX', 'flipInX']);
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
