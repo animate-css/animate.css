@@ -160,20 +160,20 @@ You can also extend jQuery to add a function that does it all for you:
 ```javascript
 $.fn.extend({
   animateCss: function (animationNames, index) {
-    if (!Array.isArray(animationNames)){
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    if (!Array.isArray(animationNames)) {
       animationNames = [animationNames];
     }
-    if (typeof(index)==='undefined') { index = 0; }
-    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';   
-    this.addClass('animated ' + animationNames[index]).one(animationEnd, index, function () {
-      $(this).removeClass(animationNames[index]);
-      if (index < animationNames.length - 1) {
-        $(this).animateCss(animationNames, index + 1);
-      }else{
-        $(this).removeClass('animated');
-        return this;
-      }
-    });
+    this.addClass('animated');
+    animationNames.forEach(function(e) {
+      this.queue(function (next) {
+        $(this).addClass(e).one(animationEnd, function () {
+          $(this).removeClass(e);
+          next();
+        });
+      });
+    }, this);
+    return this;
   }
 });
 ```
@@ -188,6 +188,17 @@ Or like this to chain multiple animations:
 
 ```javascript
 $('#yourElement').animateCss(['flipOutX', 'flipInX']);
+```
+or
+
+```javascript
+$('#yourElement').animateCss('flipOutX').animateCss('flipInX');
+```
+
+And you can chain with other jQuery methods as well:
+
+```javascript
+$('#yourElement').animateCss('flipOutX').animateCss('flipInX').delay(1000).fadeOut();
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
