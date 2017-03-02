@@ -159,16 +159,19 @@ You can also extend jQuery to add a function that does it all for you:
 
 ```javascript
 $.fn.extend({
-  animateCss: function (animationNames, index) {
+  animateCss: function (animationNames, callback) {
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     if (!Array.isArray(animationNames)) {
       animationNames = [animationNames];
     }
     this.addClass('animated');
-    animationNames.forEach(function(e) {
+    animationNames.forEach(function (e, index, array) {
       this.queue(function (next) {
         $(this).addClass(e).one(animationEnd, function () {
           $(this).removeClass(e);
+          if (typeof(callback) === 'function' && index === array.length - 1) {
+            callback();
+          }
           next();
         });
       });
@@ -199,6 +202,16 @@ And you can chain with other jQuery methods as well:
 
 ```javascript
 $('#yourElement').animateCss('flipOutX').animateCss('flipInX').delay(1000).fadeOut();
+```
+
+You can also pass in a callback that will execute once your animation(s) complete. 
+This can be useful if you want to sequence methods that don't use the jQuery effects 
+queue without resorting to something like `setTimeout`.
+
+```javascript
+//flip element out of view, then change it's html, then flip it back into view
+var myElement = $('#yourElement');
+myElement.animateCss('flipOutX', function(){ myElement.html('New html'); }).animateCss('flipInX');
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
