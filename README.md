@@ -42,81 +42,140 @@ $ npm install animate.css --save
 
 3. Finally you need to add one of the following classes:
 
-  * `bounce`
-  * `flash`
-  * `pulse`
-  * `rubberBand`
-  * `shake`
-  * `headShake`
-  * `swing`
-  * `tada`
-  * `wobble`
-  * `jello`
-  * `bounceIn`
-  * `bounceInDown`
-  * `bounceInLeft`
-  * `bounceInRight`
-  * `bounceInUp`
-  * `bounceOut`
-  * `bounceOutDown`
-  * `bounceOutLeft`
-  * `bounceOutRight`
-  * `bounceOutUp`
-  * `fadeIn`
-  * `fadeInDown`
-  * `fadeInDownBig`
-  * `fadeInLeft`
-  * `fadeInLeftBig`
-  * `fadeInRight`
-  * `fadeInRightBig`
-  * `fadeInUp`
-  * `fadeInUpBig`
-  * `fadeOut`
-  * `fadeOutDown`
-  * `fadeOutDownBig`
-  * `fadeOutLeft`
-  * `fadeOutLeftBig`
-  * `fadeOutRight`
-  * `fadeOutRightBig`
-  * `fadeOutUp`
-  * `fadeOutUpBig`
-  * `flipInX`
-  * `flipInY`
-  * `flipOutX`
-  * `flipOutY`
-  * `lightSpeedIn`
-  * `lightSpeedOut`
-  * `rotateIn`
-  * `rotateInDownLeft`
-  * `rotateInDownRight`
-  * `rotateInUpLeft`
-  * `rotateInUpRight`
-  * `rotateOut`
-  * `rotateOutDownLeft`
-  * `rotateOutDownRight`
-  * `rotateOutUpLeft`
-  * `rotateOutUpRight`
-  * `hinge`
-  * `rollIn`
-  * `rollOut`
-  * `zoomIn`
-  * `zoomInDown`
-  * `zoomInLeft`
-  * `zoomInRight`
-  * `zoomInUp`
-  * `zoomOut`
-  * `zoomOutDown`
-  * `zoomOutLeft`
-  * `zoomOutRight`
-  * `zoomOutUp`
-  * `slideInDown`
-  * `slideInLeft`
-  * `slideInRight`
-  * `slideInUp`
-  * `slideOutDown`
-  * `slideOutLeft`
-  * `slideOutRight`
-  * `slideOutUp`
+---
+
+### Entrances
+
+#### Bouncing
+
+* `bounceIn`
+* `bounceInDown`
+* `bounceInLeft`
+* `bounceInRight`
+* `bounceInUp`
+
+#### Fading
+
+* `fadeIn`
+* `fadeInDown`
+* `fadeInDownBig`
+* `fadeInLeft`
+* `fadeInLeftBig`
+* `fadeInRight`
+* `fadeInRightBig`
+* `fadeInUp`
+* `fadeInUpBig`
+
+#### Rotating
+
+* `rotateIn`
+* `rotateInDownLeft`
+* `rotateInDownRight`
+* `rotateInUpLeft`
+* `rotateInUpRight`
+
+#### Sliding
+
+* `slideInDown`
+* `slideInLeft`
+* `slideInRight`
+* `slideInUp`
+
+#### Zooming
+
+* `zoomIn`
+* `zoomInDown`
+* `zoomInLeft`
+* `zoomInRight`
+* `zoomInUp`
+
+---
+
+### Exits
+
+#### Bouncing
+
+* `bounceOut`
+* `bounceOutDown`
+* `bounceOutLeft`
+* `bounceOutRight`
+* `bounceOutUp`
+
+#### Fading
+
+* `fadeOut`
+* `fadeOutDown`
+* `fadeOutDownBig`
+* `fadeOutLeft`
+* `fadeOutLeftBig`
+* `fadeOutRight`
+* `fadeOutRightBig`
+* `fadeOutUp`
+* `fadeOutUpBig`
+
+#### Rotating
+
+* `rotateOut`
+* `rotateOutDownLeft`
+* `rotateOutDownRight`
+* `rotateOutUpLeft`
+* `rotateOutUpRight`
+
+#### Sliding
+
+* `slideOutDown`
+* `slideOutLeft`
+* `slideOutRight`
+* `slideOutUp`
+
+#### Zooming
+
+* `zoomOut`
+* `zoomOutDown`
+* `zoomOutLeft`
+* `zoomOutRight`
+* `zoomOutUp`
+
+---
+
+### Attention seekers
+
+* `bounce`
+* `flash`
+* `pulse`
+* `rubberBand`
+* `shake`
+* `headShake`
+* `swing`
+* `tada`
+* `wobble`
+* `jello`
+
+---
+
+### Flippers
+
+* `flipInX`
+* `flipInY`
+* `flipOutX`
+* `flipOutY`
+
+---
+
+### LightSpeed
+
+* `lightSpeedIn`
+* `lightSpeedOut`
+
+---
+
+### Specials
+
+* `hinge`
+* `rollIn`
+* `rollOut`
+
+---
 
 Full example:
 
@@ -235,12 +294,12 @@ I only have two rules for submitting a pull request: match the naming
 convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a
 [pen](http://codepen.io). That last one is important.
 
-[1]: https://github.com/daneden/animate.css/releases
-[1i]: https://img.shields.io/github/release/daneden/animate.css.svg
-[2]: https://travis-ci.org/WarenGonzaga/animate.css
-[2i]: https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master
-[3]: https://david-dm.org/WarenGonzaga/animate.css?type=dev
-[3i]: https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg
-[4]: https://gitter.im/animate-css/Lobby
-[4i]: https://img.shields.io/badge/chat-gitter-green.svg
-[sass-version]: https://github.com/ShahinSorkh/animate.sass
+[1]:             https://github.com/daneden/animate.css/releases
+[1i]:            https://img.shields.io/github/release/daneden/animate.css.svg
+[2]:             https://travis-ci.org/WarenGonzaga/animate.css
+[2i]:            https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master
+[3]:             https://david-dm.org/WarenGonzaga/animate.css?type=dev
+[3i]:            https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg
+[4]:             https://gitter.im/animate-css/Lobby
+[4i]:            https://img.shields.io/badge/chat-gitter-green.svg
+[sass-version]:  https://github.com/ShahinSorkh/animate.sass
