@@ -20,7 +20,7 @@ or you can install via npm:
 $ npm install animate.css --save
 ```
 
-##Basic Usage
+## Basic Usage
 1. Include the stylesheet on your document's `<head>`
 
 ```html
