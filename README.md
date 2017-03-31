@@ -1,7 +1,9 @@
-#Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby)
+# Animate.css [![GitHub release][1i]][1] [![Build Status][2i]][2] [![devDependencies Status][3i]][3] [![chat][4i]][4]
+
 *Just-add-water CSS animation*
 
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects.
+Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 There is a [SASS version][sass-version] available in the case you don't need all animations together.
 
@@ -21,17 +23,20 @@ $ npm install animate.css --save
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
 
-  ```html
-  <head>
-    <link rel="stylesheet" href="animate.min.css">
-  </head>
-  ```
+```html
+<head>
+  <link rel="stylesheet" href="animate.min.css">
+</head>
+```
+
   or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
-  ```html
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  </head>
-  ```
+  
+```html
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+```
+
 2. Add the class `animated` to the element you want to animate.
  You may also want to include the class `infinite` for an infinite loop.
 
@@ -114,28 +119,34 @@ $ npm install animate.css --save
   * `slideOutUp`
 
 Full example:
+
 ```html
 <h1 class="animated infinite bounce">Example</h1>
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
 
-##Usage
-To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+## Usage
+To use animate.css in your website, simply drop the stylesheet into your document's `<head>`,
+and add the class `animated` to an element, along with any of the animation names. That's it!
+You've got a CSS animated element. Super!
 
 ```html
 <head>
   <link rel="stylesheet" href="animate.min.css">
 </head>
 ```
+
 or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
+
 ```html
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 ```
 
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
+You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules.
+Dynamically add animations using jQuery with ease:
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
@@ -155,7 +166,8 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
 
-**Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
+**Note:** `jQuery.one()` is used when you want to execute the event handler at most *once*.
+More information [here](http://api.jquery.com/one/).
 
 You can also extend jQuery to add a function that does it all for you:
 
@@ -189,14 +201,16 @@ You can change the duration of your animations, add a delay or change the number
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
 ## Custom Builds
-Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
+Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all,
+you’ll need Gulp and all other dependencies:
 
 ```sh
 $ cd path/to/animate.css/
 $ sudo npm install
 ```
 
-Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
+Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”,
+simply edit the `animate-config.json` file to select only the animations you want to use.
 
 ```javascript
 "attention_seekers": {
@@ -216,6 +230,17 @@ Next, run `gulp` to compile your custom builds. For example, if you want only so
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
-Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
+Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues.
+I only have two rules for submitting a pull request: match the naming
+convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a
+[pen](http://codepen.io). That last one is important.
 
+[1]: https://github.com/daneden/animate.css/releases
+[1i]: https://img.shields.io/github/release/daneden/animate.css.svg
+[2]: https://travis-ci.org/WarenGonzaga/animate.css
+[2i]: https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master
+[3]: https://david-dm.org/WarenGonzaga/animate.css?type=dev
+[3i]: https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg
+[4]: https://gitter.im/animate-css/Lobby
+[4i]: https://img.shields.io/badge/chat-gitter-green.svg
 [sass-version]: https://github.com/ShahinSorkh/animate.sass
