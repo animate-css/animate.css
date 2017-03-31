@@ -3,6 +3,8 @@
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
+There is a [SASS version][sass-version] available in the case you don't need all animations together.
+
 ## Installation
 
 To install via Bower, simply do the following:
@@ -215,3 +217,5 @@ Animate.css is licensed under the MIT license. (http://opensource.org/licenses/M
 
 ## Contributing
 Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
+
+[sass-version]: https://github.com/ShahinSorkh/animate.sass
