@@ -61,6 +61,20 @@
     "flipOutY"
   ],
 
+  "folding_entrances": [
+    "foldInDown",
+    "foldInLeft",
+    "foldInRight",
+    "foldInUp"
+  ],
+
+  "foldin_exits": [
+    "foldOutDown",
+    "foldOutLeft",
+    "foldOutRight",
+    "foldOutUp"
+  ],
+  
   "lightspeed": [
     "lightSpeedIn",
     "lightSpeedOut"
