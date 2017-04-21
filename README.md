@@ -77,6 +77,14 @@ $ npm install animate.css --save
   * `flipInY`
   * `flipOutX`
   * `flipOutY`
+  * `foldInDown`
+  * `foldInLeft`
+  * `foldInRight`
+  * `foldInUp`
+  * `foldOutDown`
+  * `foldOutLeft`
+  * `foldOutRight`
+  * `foldOutUp`
   * `lightSpeedIn`
   * `lightSpeedOut`
   * `rotateIn`
