@@ -1,31 +1,3 @@
-.foldInUp {
-  transform-origin: bottom;
-  
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-name: foldInUp;
-  animation-name: foldInUp;
-
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes foldInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: perspective( 200px ) rotate3d(1,0,0,90deg);
-    transform: perspective( 200px ) rotate3d(1,0,0,90deg);
-  }
-  55% {opacity: 1;}
-  to {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
 @keyframes foldInUp {
   from {
     opacity: 0;
@@ -37,4 +9,15 @@
     -webkit-transform: none;
     transform: none;
   }
+}
+
+.foldInUp {
+  transform-origin: bottom;
+  
+  animation-timing-function: ease-out;
+  animation-name: foldInUp;
+
+  animation-duration: 1s;
+  
+  animation-iteration-count: infinite;
 }
