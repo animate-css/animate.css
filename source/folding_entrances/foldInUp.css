@@ -1,23 +1,16 @@
 @keyframes foldInUp {
   from {
     opacity: 0;
-    -webkit-transform: perspective( 200px ) rotate3d(1,0,0,90deg);
     transform: perspective( 200px ) rotate3d(1,0,0,90deg);
   }
   55% {opacity: 1;}
   to {
-    -webkit-transform: none;
     transform: none;
   }
 }
 
 .foldInUp {
-  transform-origin: bottom;
-  
-  animation-timing-function: ease-out;
   animation-name: foldInUp;
-
-  animation-duration: 1s;
-  
-  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  transform-origin: bottom;
 }
