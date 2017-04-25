@@ -1,11 +1,7 @@
 @keyframes foldInDown {
   from {
     opacity: 0;
-<<<<<<< HEAD
     transform: perspective(200px) rotate3d(1,0,0,90deg);
-=======
-    transform: perspective(200px) rotate3d(1,0,0,-90deg);
->>>>>>> 3680d329fc6fadf38cc5b419ef6dfcce6c279431
   }
   55% {opacity: 1;}
   to {
