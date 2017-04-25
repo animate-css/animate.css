@@ -3,7 +3,11 @@
     opacity: 0;
     transform: perspective(200px) rotate3d(0,1,0,-90deg);
   }
-  55% {opacity: 1;}
+  
+  55% {
+    opacity: 1;
+  }
+  
   to {
     transform: none;
   }
@@ -11,6 +15,6 @@
 
 .foldInRight {
   animation-name: foldInRight;
-  transform-origin: right;
   animation-timing-function: ease-out;
+  transform-origin: right;
 }
