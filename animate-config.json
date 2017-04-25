@@ -68,7 +68,7 @@
     "foldInUp"
   ],
 
-  "foldin_exits": [
+  "folding_exits": [
     "foldOutDown",
     "foldOutLeft",
     "foldOutRight",

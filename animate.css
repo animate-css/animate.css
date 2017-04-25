@@ -2,10 +2,10 @@
 
 /*!
  * animate.css -http://daneden.me/animate
- * Version - 3.5.1
+ * Version - 3.5.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2016 Daniel Eden
+ * Copyright (c) 2017 Daniel Eden
  */
 
 .animated {
@@ -2076,6 +2076,358 @@
   backface-visibility: visible !important;
   -webkit-animation-name: flipOutY;
   animation-name: flipOutY;
+}
+
+@-webkit-keyframes foldInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,90deg);
+    transform: perspective(200px) rotate3d(1,0,0,90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes foldInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,90deg);
+    transform: perspective(200px) rotate3d(1,0,0,90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.foldInDown {
+  -webkit-animation-name: foldInDown;
+  animation-name: foldInDown;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes foldInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,90deg);
+    transform: perspective(200px) rotate3d(0,1,0,90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes foldInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,90deg);
+    transform: perspective(200px) rotate3d(0,1,0,90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.foldInLeft {
+  -webkit-animation-name: foldInLeft;
+  animation-name: foldInLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+
+@-webkit-keyframes foldInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,-90deg);
+    transform: perspective(200px) rotate3d(0,1,0,-90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes foldInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,-90deg);
+    transform: perspective(200px) rotate3d(0,1,0,-90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.foldInRight {
+  -webkit-animation-name: foldInRight;
+  animation-name: foldInRight;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+@-webkit-keyframes foldInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,-90deg);
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes foldInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,-90deg);
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.foldInUp {
+  -webkit-animation-name: foldInUp;
+  animation-name: foldInUp;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+}
+
+@-webkit-keyframes foldOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,90deg);
+    transform: perspective(200px) rotate3d(1,0,0,90deg);
+  }
+}
+
+@keyframes foldOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,90deg);
+    transform: perspective(200px) rotate3d(1,0,0,90deg);
+  }
+}
+
+.foldOutDown {
+  -webkit-animation-name: foldOutDown;
+  animation-name: foldOutDown;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes foldOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,90deg);
+    transform: perspective(200px) rotate3d(0,1,0,90deg);
+  }
+}
+
+@keyframes foldOutLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,90deg);
+    transform: perspective(200px) rotate3d(0,1,0,90deg);
+  }
+}
+
+.foldOutLeft {
+  -webkit-animation-name: foldOutLeft;
+  animation-name: foldOutLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+
+@-webkit-keyframes foldOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,-90deg);
+    transform: perspective(200px) rotate3d(0,1,0,-90deg);
+  }
+}
+
+@keyframes foldOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(0,1,0,-90deg);
+    transform: perspective(200px) rotate3d(0,1,0,-90deg);
+  }
+}
+
+.foldOutRight {
+  -webkit-animation-name: foldOutRight;
+  animation-name: foldOutRight;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+@-webkit-keyframes foldOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,-90deg);
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
+  }
+}
+
+@keyframes foldOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(200px) rotate3d(1,0,0,-90deg);
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
+  }
+}
+
+.foldOutUp {
+  -webkit-animation-name: foldOutUp;
+  animation-name: foldOutUp;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: top;
+  transform-origin: top;
 }
 
 @-webkit-keyframes lightSpeedIn {
