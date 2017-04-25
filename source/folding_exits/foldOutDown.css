@@ -1,0 +1,16 @@
+@keyframes foldOutDown {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  55% {opacity: 1;}
+  to {
+    transform: perspective(200px) rotate3d(1,0,0,90deg);
+  }
+}
+
+.foldOutDown {
+  animation-name: foldOutDown;
+  animation-timing-function: ease-out;
+  transform-origin: bottom;
+}

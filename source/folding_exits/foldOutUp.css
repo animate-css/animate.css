@@ -1,0 +1,17 @@
+@keyframes foldOutUp {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  55% {opacity: 1;}
+  to {
+    opacity: 0;
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
+  }
+}
+
+.foldOutUp {
+  animation-name: foldOutUp;
+  animation-timing-function: ease-out;
+  transform-origin: top;
+}
