@@ -1,7 +1,7 @@
 @keyframes foldInDown {
   from {
     opacity: 0;
-    transform: perspective( 200px ) rotate3d(1,0,0,-90deg);
+    transform: perspective(200px) rotate3d(1,0,0,-90deg);
   }
   55% {opacity: 1;}
   to {
