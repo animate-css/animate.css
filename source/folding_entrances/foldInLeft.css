@@ -1,0 +1,20 @@
+@keyframes foldInLeft {
+  from {
+    opacity: 0;
+    transform: perspective(200px) rotate3d(0,1,0,90deg);
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    transform: none;
+  }
+}
+
+.foldInLeft {
+  animation-name: foldInLeft;
+  animation-timing-function: ease-out;
+  transform-origin: left;
+}

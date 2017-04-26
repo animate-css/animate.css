@@ -1,0 +1,21 @@
+@keyframes foldOutRight {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  
+  55% {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+    transform: perspective(200px) rotate3d(0,1,0,-90deg);
+  }
+}
+
+.foldOutRight {
+  animation-name: foldOutRight;
+  animation-timing-function: ease-out;
+  transform-origin: right;
+}
