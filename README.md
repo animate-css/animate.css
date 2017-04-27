@@ -122,6 +122,8 @@ Full example:
 ##Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
+##HTML
+
 ```html
 <head>
   <link rel="stylesheet" href="animate.min.css">
@@ -133,6 +135,28 @@ or use the version hosted by [CDNJS](https://cdnjs.com/libraries/animate.css)
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 ```
+```html
+<button class="animated fadeIn"> Button animated to fade in </button>
+```
+
+##HAML
+
+```haml
+.head
+	%link{href: "animate.min.css", rel: "stylesheet"}/
+```
+
+You can use animate.css in HAML by simply chaining the animated class and chosen animation class together:
+
+```haml
+.button.animated.fadeIn
+	Button animated to fade in
+```
+
+
+
+##Combining with jQuery
+
 
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
 
