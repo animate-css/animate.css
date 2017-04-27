@@ -93,6 +93,7 @@ $ npm install animate.css --save
   * `jackInTheBox`
   * `rollIn`
   * `rollOut`
+  * `jackInTheBox`
   * `zoomIn`
   * `zoomInDown`
   * `zoomInLeft`
