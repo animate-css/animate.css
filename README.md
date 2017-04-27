@@ -90,6 +90,7 @@ $ npm install animate.css --save
   * `rotateOutUpLeft`
   * `rotateOutUpRight`
   * `hinge`
+  * `jackInTheBox`
   * `rollIn`
   * `rollOut`
   * `zoomIn`
