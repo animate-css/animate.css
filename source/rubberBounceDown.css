@@ -1,0 +1,118 @@
+@-webkit-keyframes rubberBounceDown {
+	0% {
+		opacity: 0%;
+		-webkit-transform: translateY(-1000px) scaleX(1) scaleY(1);
+	}
+
+	65% {
+		opacity: 1;
+		-webkit-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+
+	70% {
+		-webkit-transform: translateY(20%) scaleX(1.4) scaleY(.6);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10%) scaleX(.8) scaleY(1.2);
+	}
+
+	90% {
+		-webkit-transform: translateY(5%) scaleX(1.1) scaleY(.9);
+	}
+
+	100% {
+		-webkit-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+}
+
+@-moz-keyframes rubberBounceDown {
+	0% {
+		opacity: 0%;
+		-moz-transform: translateY(-1000px) scaleX(1) scaleY(1);
+	}
+
+	65% {
+		opacity: 1;
+		-moz-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+
+	70% {
+		-moz-transform: translateY(20%) scaleX(1.4) scaleY(.6);
+	}
+
+	80% {
+		-moz-transform: translateY(-10%) scaleX(.8) scaleY(1.2);
+	}
+
+	90% {
+		-moz-transform: translateY(5%) scaleX(1.1) scaleY(.9);
+	}
+
+	100% {
+		-moz-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+}
+
+@-o-keyframes rubberBounceDown {
+	0% {
+		opacity: 0%;
+		-o-transform: translateY(-1000px) scaleX(1) scaleY(1);
+	}
+
+	65% {
+		opacity: 1;
+		-o-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+
+	70% {
+		-o-transform: translateY(20%) scaleX(1.4) scaleY(.6);
+	}
+
+	80% {
+		-o-transform: translateY(-10%) scaleX(.8) scaleY(1.2);
+	}
+
+	90% {
+		-o-transform: translateY(5%) scaleX(1.1) scaleY(.9);
+	}
+
+	100% {
+		-o-transform: translateY(0) scaleX(1) scaleY(1);
+	}
+}
+
+@keyframes rubberBounceDown {
+	0% {
+		opacity: 0%;
+		transform: translateY(-1000px) scaleX(1) scaleY(1);
+	}
+
+	65% {
+		opacity: 1;
+		transform: translateY(0) scaleX(1) scaleY(1);
+	}
+
+	70% {
+		transform: translateY(20%) scaleX(1.4) scaleY(.6);
+	}
+
+	80% {
+		transform: translateY(-10%) scaleX(.8) scaleY(1.2);
+	}
+
+	90% {
+		transform: translateY(5%) scaleX(1.1) scaleY(.9);
+	}
+
+	100% {
+		transform: translateY(0) scaleX(1) scaleY(1);
+	}
+}
+
+.rubberBounceDown {
+	-webkit-animation-name: rubberBounceDown;
+	-moz-animation-name: rubberBounceDown;
+	-o-animation-name: rubberBounceDown;
+	animation-name: rubberBounceDown;
+}
