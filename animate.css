@@ -1577,3 +1577,133 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+
+/**Originally Authored by Harsha Bhat 
+Feature: TurnOff
+*/
+
+@-webkit-keyframes turnOff {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+
+	100% {
+		
+		-webkit-transform: scale(0);
+	}
+}
+
+@-moz-keyframes turnOff {
+	
+	0% {
+		-moz-transform: scale(1);
+	}
+	
+	
+	100% {
+		
+		-moz-transform: scale(0);
+	}
+}
+
+@-o-keyframes turnOff {
+	
+	0% {
+		-o-transform: scale(1);
+	}
+	
+	
+	
+	100% {
+		
+		-o-transform: scale(0);
+	}
+}
+
+@keyframes turnOff {
+	
+	0% {
+		transform: scale(1);
+	}
+	
+	
+	100% {
+		
+		transform: scale(0);
+	}
+}
+
+
+.animated.turnOff{
+	-webkit-animation-name: turnOff;
+	-moz-animation-name: turnOff;
+	-o-animation-name: turnOff;
+	animation-name: turnOff;
+}
+
+/**Originally Authored by Harsha Bhat 
+Feature: bigBang
+
+*/
+
+@-webkit-keyframes bigBang {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+
+	100% {
+		-webkit-opacity: 0;
+		-webkit-transform: scale(100);
+	}
+}
+
+@-moz-keyframes bigBang {
+	
+	0% {
+		-moz-transform: scale(1);
+	}
+	
+	
+	100% {
+		-moz-opacity: 0;
+		-moz-transform: scale(100);
+	}
+}
+
+@-o-keyframes bigBang {
+	
+	0% {
+		-o-transform: scale(1);
+	}
+	
+	
+	
+	100% {
+		-o-opacity: 0;
+		-o-transform: scale(100);
+	}
+}
+
+@keyframes bigBang {
+	
+	0% {
+		transform: scale(1);
+	}
+	
+	
+	100% {
+		opacity: 0;
+		transform: scale(100);
+	}
+}
+
+
+.animated.bigBang{
+	-webkit-animation-name: bigBang;
+	-moz-animation-name: bigBang;
+	-o-animation-name: bigBang;
+	animation-name: bigBang;
+}
+
