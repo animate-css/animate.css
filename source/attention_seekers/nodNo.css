@@ -1,0 +1,23 @@
+@include keyframes(nodNo) {
+  0% {
+    @include transform(rotate3d(0, 1, 0, -30deg));
+  }
+  24% {
+    @include transform(rotate3d(0, 1, 0, 30deg));
+  }
+  48% {
+    @include transform(rotate3d(0, 1, 0, -20deg));
+  }
+  72% {
+    @include transform(rotate3d(0, 1, 0, 20deg));
+  }
+  100% {
+    @include transform(rotate3d(0, 1, 0, 0));
+  }
+}
+
+.nodNo {
+  @include transform-origin(50% 50% -10px);
+  @include animation(nodNo 2s);
+  @include animation-fill-mode(forwards);
+}
