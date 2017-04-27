@@ -187,6 +187,8 @@ You can change the duration of your animations, add a delay or change the number
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
+If you're using [Browserify](http://browserify.org), you may want to look at [animatify](https://www.npmjs.com/package/animatify) which supports setting duration, delay, animation count and callbacks.
+
 ## Custom Builds
 Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
