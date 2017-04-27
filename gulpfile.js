@@ -1,3 +1,10 @@
+//polyfill for old node version
+if (process.versions.node <= '0.12.0') {
+
+    console.warn('animate.css-gulp: recommand node version 0.12.x or later ') ;
+    require('es6-promise').polyfill() ;
+}
+
 // Utilities
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
