@@ -1,0 +1,172 @@
+// Bounces
+@import "animations/bounce.scss"; 
+@import "animations/bounceIn.scss"; 
+@import "animations/bounceInDown.scss"; 
+@import "animations/bounceInLeft.scss"; 
+@import "animations/bounceInRight.scss"; 
+@import "animations/bounceInUp.scss"; 
+@import "animations/bounceOut.scss"; 
+@import "animations/bounceOutDown.scss"; 
+@import "animations/bounceOutRight.scss"; 
+@import "animations/bounceOutLeft.scss"; 
+@import "animations/bounceOutUp.scss"; 
+
+// Fades
+@import "animations/fadeInDown.scss"; 
+@import "animations/fadeInDownBig.scss"; 
+@import "animations/fadeIn.scss"; 
+@import "animations/fadeInLeft.scss"; 
+@import "animations/fadeInRightBig.scss"; 
+@import "animations/fadeInUpBig.scss"; 
+@import "animations/fadeOut.scss"; 
+@import "animations/fadeInRight.scss"; 
+@import "animations/fadeOutDownBig.scss"; 
+@import "animations/fadeOutDown.scss"; 
+@import "animations/fadeInLeftBig.scss"; 
+@import "animations/fadeOutRightBig.scss"; 
+@import "animations/fadeOutRight.scss"; 
+@import "animations/fadeOutLeft.scss"; 
+@import "animations/fadeOutLeftBig.scss"; 
+@import "animations/fadeInUp.scss"; 
+@import "animations/fadeOutUp.scss"; 
+@import "animations/fadeOutUpBig.scss"; 
+
+// Flashes
+@import "animations/flash.scss"; 
+
+// Flips
+@import "animations/flip.scss"; 
+@import "animations/flipInX.scss"; 
+@import "animations/flipInY.scss"; 
+@import "animations/flipOutX.scss"; 
+@import "animations/flipOutY.scss"; 
+
+// Hinges
+@import "animations/hinge.scss"; 
+
+// LigthSpeeds
+@import "animations/lightSpeedIn.scss"; 
+@import "animations/lightSpeedOut.scss"; 
+
+// Pulses
+@import "animations/pulse.scss"; 
+
+// Rolls
+@import "animations/rollIn.scss"; 
+@import "animations/rollOut.scss"; 
+
+// Rotates
+@import "animations/rotateIn.scss"; 
+@import "animations/rotateInDownRight.scss"; 
+@import "animations/rotateInDownLeft.scss"; 
+@import "animations/rotateInUpLeft.scss"; 
+@import "animations/rotateInUpRight.scss"; 
+@import "animations/rotateOut.scss"; 
+@import "animations/rotateOutDownLeft.scss"; 
+@import "animations/rotateOutUpLeft.scss"; 
+@import "animations/rotateOutDownRight.scss"; 
+@import "animations/rubberBand.scss"; 
+@import "animations/rotateOutUpRight.scss"; 
+
+// Shakes
+@import "animations/shake.scss"; 
+
+// Swings
+@import "animations/swing.scss"; 
+
+// Tadas
+@import "animations/tada.scss"; 
+
+// Wobbles
+@import "animations/wobble.scss"; 
+
+// Zooms
+@import "animations/zoomIn.scss"; 
+@import "animations/zoomInDown.scss"; 
+@import "animations/zoomInLeft.scss"; 
+@import "animations/zoomInRight.scss"; 
+@import "animations/zoomInUp.scss"; 
+@import "animations/zoomOutDown.scss"; 
+@import "animations/zoomOut.scss"; 
+@import "animations/zoomOutLeft.scss"; 
+@import "animations/zoomOutRight.scss"; 
+@import "animations/zoomOutUp.scss";
+
+// Mixin to select custom settings for animations and to select animations
+// ae = Animation embed
+@mixin ae($name, $duration: 1s, $fill-mode: both) {
+  -webkit-animation-name:             $name;
+  animation-name:                     $name;
+  -webkit-animation-duration:         $duration;
+  -moz-animation-duration:            $duration;
+  animation-duration:                 $duration;
+  -webkit-animation-fill-mode:        $fill-mode;
+  -moz-animation-fill-mode:           $fill-mode;
+  animation-fill-mode:                $fill-mode;
+  @if $name == "bounce" {
+    @include transform-origin(bottom center);
+  } @else if $name == "swing" {
+    @include transform-origin(top center);
+  } @else if $name == "bounceIn" {
+    -webkit-animation-duration:         .75s;
+    -moz-animation-duration:            .75s;
+    animation-duration:                 .75s;
+  } @else if $name == "bounceOut" {
+    -webkit-animation-duration:         .75s;
+    -moz-animation-duration:            .75s;
+    animation-duration:                 .75s;
+  } @else if $name == "flip" {
+    -webkit-backface-visibility:        visible !important;
+    -moz-backface-visibility:           visible !important;
+    -ms-backface-visibility:            visible !important;
+    backface-visibility:                visible !important;
+  } @else if $name == "flipInX" {
+    -webkit-backface-visibility:        visible !important;
+    -moz-backface-visibility:           visible !important;
+    -ms-backface-visibility:            visible !important;
+    backface-visibility:                visible !important;
+  } @else if $name == "flipInY" {
+    -webkit-backface-visibility:        visible !important;
+    -moz-backface-visibility:           visible !important;
+    -ms-backface-visibility:            visible !important;
+    backface-visibility:                visible !important;
+  } @else if $name == "flipOutX" {
+    -webkit-backface-visibility:        visible !important;
+    -moz-backface-visibility:           visible !important;
+    -ms-backface-visibility:            visible !important;
+    backface-visibility:                visible !important;
+    -webkit-animation-duration:         .75s;
+    -moz-animation-duration:            .75s;
+    animation-duration:                 .75s;
+  } @else if $name == "flipOutY" {
+    -webkit-backface-visibility:        visible !important;
+    -moz-backface-visibility:           visible !important;
+    -ms-backface-visibility:            visible !important;
+    backface-visibility:                visible !important;
+    -webkit-animation-duration:         .75s;
+    -moz-animation-duration:            .75s;
+    animation-duration:                 .75s;
+  } @else if $name == "lightSpeedIn" {
+    -webkit-animation-timing-function:  ease-out;
+    -moz-animation-timing-function:     ease-out;
+    animation-timing-function:          ease-out;
+  } @else if $name == "lightSpeedOut" {
+    -webkit-animation-timing-function:  ease-in;
+    -moz-animation-timing-function:     ease-in;
+    animation-timing-function:          ease-in;
+  }
+}
+
+@import "used-animations";
+
+//hack to overwrite ae function
+body .infinite {
+  -webkit-animation-iteration-count:  infinite;
+  -moz-animation-iteration-count:     infinite;
+  animation-iteration-count:          infinite;
+}
+body .hinge {
+  -webkit-animation-duration:         2s;
+  -moz-animation-duration:            2s;
+  animation-duration:                 2s;
+}

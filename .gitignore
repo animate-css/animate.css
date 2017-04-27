@@ -2,3 +2,5 @@
 node_modules/
 .DS_Store
 test/
+scss/index.js
+scss/animationNames.scss
