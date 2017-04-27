@@ -1,0 +1,18 @@
+.skewX {
+	animation-name: skewX;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes skewX  {
+	0%, 100% {
+		transform: skewX(0deg);
+	}
+	
+	25%, 75% {
+		transform: skewX(30deg);
+	}
+	
+	50% {
+		transform: skewX(-30deg);
+	}
+}

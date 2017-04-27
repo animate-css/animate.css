@@ -1,0 +1,18 @@
+.skewY {
+	animation-name: skewY;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes skewY  {
+	0%, 100% {
+		transform: skewY(0deg);
+	}
+	
+	25%, 75% {
+		transform: skewY(30deg);
+	}
+	
+	50% {
+		transform: skewY(-30deg);
+	}
+}
