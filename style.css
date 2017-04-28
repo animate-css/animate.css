@@ -11,7 +11,7 @@
           box-sizing: border-box;
 }
 
-input, select, button, textarea {
+select, button, textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -55,6 +55,10 @@ input, select, button, textarea {
     color: #fff;
   }
 
+  .butt--build {
+    margin-top: 20px;
+  }
+
 .input {
   border: 1px solid #c0c8c9;
   border-radius: 4px;
@@ -70,56 +74,19 @@ input, select, button, textarea {
 
 .checkbox-group {
   display: inline-block;
-  margin: 10px;
+  margin: 15px;
   position: relative;
   width: 160px;
 }
 
 .checkbox-group .input--checkbox {
-  visibility: hidden;
-}
-
-.checkbox--check {
-  background: inherit;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  height: 20px;
   position: absolute;
   top: 0; left: 0;
-  width: 20px;
-}
-
-.checkbox--check:after {
-    content: '';
-    background: transparent;
-    border: 3px solid #4D4C41;
-    border-top: none;
-    border-right: none;
-    height: 5px;
-    opacity: 0.2;
-    position: absolute;
-    top: 6px; left: 5px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: hue 60s infinite linear;
-    animation: hue 60s infinite linear;
-    width: 9px;
-}
-
-
-.checkbox-group .input--checkbox:checked + .checkbox--check:after {
-  border: 3px solid #f35626;
-  border-top: none;
-  border-right: none;
-  opacity: 1;
 }
 
 .checkbox--label {
   position: absolute;
-  top: -1px; left: 25px;
+  top: -5px; left: 25px;
 }
 
 /*-----------------------------------*\
@@ -203,7 +170,6 @@ a {
 
 /* prevent fast down animation */
 .section__builder.fadeOutDown {
-  -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
@@ -302,8 +268,6 @@ html {
 }
 
 .modal__main {
-  -webkit-animation-duration: .5s;
-  -o-animation-duration: .5s;
   animation-duration: .5s;
   background-color: #fff;
   box-shadow: 0 0 13px -5px rgba(0, 0, 0, .8);
@@ -324,8 +288,6 @@ html {
 }
 
 .modal__button {
-  -webkit-animation: hue 60s linear;
-  -o-animation: hue 60s linear;
   animation: hue 60s linear;
   background-color: transparent;
   border: 2px solid #f35626;
@@ -334,8 +296,6 @@ html {
   font-size: 15px;
   outline: none;
   padding: 7px 22px;
-  -webkit-transition: background-color .4s, color .4s;
-  -o-transition: background-color .4s, color .4s;
   transition: background-color .4s, color .4s;
 }
 
@@ -355,8 +315,6 @@ html {
 }
 
 .modal__close {
-  -webkit-animation: hue 60s linear;
-  -o-animation: hue 60s linear;
   animation: hue 60s linear;
   border: 3px solid #fff;
   background-color: #f35626;
@@ -379,17 +337,9 @@ html {
   width: 15px;
 }
 .modal__close:before {
-  -webkit-transform: translateY(-1px) rotate(-45deg);
-  -moz-transform: translateY(-1px) rotate(-45deg);
-  -ms-transform: translateY(-1px) rotate(-45deg);
-  -o-transform: translateY(-1px) rotate(-45deg);
   transform: translateY(-1px) rotate(-45deg);
 }
 
 .modal__close:after {
-  -webkit-transform: translateY(-1px) rotate(45deg);
-  -moz-transform: translateY(-1px) rotate(45deg);
-  -ms-transform: translateY(-1px) rotate(45deg);
-  -o-transform: translateY(-1px) rotate(45deg);
   transform: translateY(-1px) rotate(45deg);
 }

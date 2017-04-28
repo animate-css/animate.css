@@ -26,11 +26,9 @@ $(document).ready(function(){
 		var $checkGroup = $('<div class="checkbox-group"/>');
 
 		var $checkbox = $('<input id="chk-' + animation + '" type="checkbox" name="' + animation + '" value="' + animation + '" class="input--checkbox">');
-		var $label = $('<label for="chk-' + animation + '" class="checkbox--check"/>');
 		var $span = $('<label for="chk-' + animation + '" class="checkbox--label">' + animation + '</label>');
 
 		$checkGroup.append($checkbox);
-		$checkGroup.append($label);
 		$checkGroup.append($span);
 
 		$('.js--builder button').before($checkGroup);
