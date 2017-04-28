@@ -159,13 +159,14 @@
   <header class="site__header">
     <div class="wrap">
      <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Animate.css Builder</h1></span>
-      <a href="javascript:void(0);" class="js--triggerSection">Back</a>
+      <a id="js--select-all-checkbox" href="javascript:void(0);" data-checked="false">Select all</a>
     </div>
   </header><!-- /.site__header -->
 
   <main class="site__content island" role="content">
     <div class="wrap">
       <form class="js--builder">
+        <button class="butt butt--build js--triggerSection">Back</button>
         <button class="butt butt--build">Build</button>
       </form>
       <hr />
@@ -193,6 +194,19 @@
     $('.js--animations').change(function(){
       var anim = $(this).val();
       testAnim(anim);
+    });
+
+    $('#js--select-all-checkbox').click(function(){
+      if( $(this).attr('data-checked') == 'false' ) {
+        $('.input--checkbox').prop( "checked", true );
+        $(this).attr('data-checked', 'true');
+        $(this).text('Deselect all');
+      } else {
+        $('.input--checkbox').prop( "checked", false );
+        $(this).attr('data-checked', 'false');
+        $(this).text('Select all');
+      }
+
     });
 
     /*

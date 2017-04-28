@@ -31,7 +31,7 @@ $(document).ready(function(){
 		$checkGroup.append($checkbox);
 		$checkGroup.append($span);
 
-		$('.js--builder button').before($checkGroup);
+		$('.js--builder').prepend($checkGroup);
 
 	}
 
