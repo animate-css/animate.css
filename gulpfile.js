@@ -88,8 +88,7 @@ function activateAnimations() {
       files = categories[category];
 
       for (file in files) {
-        var isActive = files[file];
-        if (isActive) {
+        if (files[file]) { // marked as true
           target.push('source/' + category + '/' + file + '.css');
           count += 1;
         }
