@@ -1,0 +1,14 @@
+@keyframes zoomInFront {
+  from {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomInFront {
+  animation-name: zoomInFront;
+}

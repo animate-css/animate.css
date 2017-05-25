@@ -1313,6 +1313,20 @@
   animation-name: zoomInDown;
 }
 
+@keyframes zoomInFront {
+  from {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomInFront {
+  animation-name: zoomInFront;
+}
 @keyframes zoomInLeft {
   from {
     opacity: 0;
@@ -1405,6 +1419,25 @@
   animation-name: zoomOutDown;
 }
 
+@keyframes zoomOutFront {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+    pointer-events: none;
+  }
+}
+
+.zoomOutFront {
+  animation-name: zoomOutFront;
+}
 @keyframes zoomOutLeft {
   40% {
     opacity: 1;
