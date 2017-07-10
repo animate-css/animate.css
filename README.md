@@ -201,26 +201,32 @@ You can change the duration of your animations, add a delay or change the number
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
 ## Custom Builds
-Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
+Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. 
+
+### Step #1:
+Git clone this repo.
+
+```bash
+git clone https://github.com/daneden/animate.css.git
+```
+### Step #2:
+Then you’ll need Gulp and all other dependencies:
 
 ```sh
-$ cd path/to/animate.css/
-$ sudo npm install
+cd path/to/animate.css/
+sudo npm install
 ```
+### Step #3:
+Next, run `gulp` to compile your custom builds. 
 
-Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
+For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to keep only the animations you want to use.
 
-```javascript
-"attention_seekers": {
-  "bounce": true,
-  "flash": false,
-  "pulse": false,
-  "shake": true,
-  "headShake": true,
-  "swing": true,
-  "tada": true,
-  "wobble": true,
-  "jello":true
+```json
+{
+  "attention_seekers": [
+    "bounce",
+    "pulse"
+  ]
 }
 ```
 
