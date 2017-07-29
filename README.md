@@ -172,20 +172,29 @@ You can also extend jQuery to add a function that does it all for you:
 
 ```javascript
 $.fn.extend({
-    animateCss: function (animationName) {
+    animateCss: function (animationName, onFinish) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         this.addClass('animated ' + animationName).one(animationEnd, function() {
             $(this).removeClass('animated ' + animationName);
+            if (typeof onFinish === 'function') onFinish.call(this);
         });
         return this;
     }
 });
 ```
 
-And use it like this:
+And use that function to trigger animations like this:
 
 ```javascript
 $('#yourElement').animateCss('bounce');
+```
+
+You may also use it to make animation chains like this:
+
+```javascript
+$('#yourElement').animateCss('bounce', function() {
+    $(this).animateCss('shake');
+});
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
