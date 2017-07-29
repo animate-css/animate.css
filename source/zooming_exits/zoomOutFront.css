@@ -1,0 +1,19 @@
+@keyframes zoomOutFront {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+    pointer-events: none;
+  }
+}
+
+.zoomOutFront {
+  animation-name: zoomOutFront;
+}

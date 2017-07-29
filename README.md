@@ -107,11 +107,13 @@ $ npm install animate.css --save
 | `rollOut` |
 | `zoomIn` |
 | `zoomInDown` |
+| `zoomInFront` |
 | `zoomInLeft` |
 | `zoomInRight` |
 | `zoomInUp` |
 | `zoomOut` |
 | `zoomOutDown` |
+| `zoomOutFront` |
 | `zoomOutLeft` |
 | `zoomOutRight` |
 | `zoomOutUp` |

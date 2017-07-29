@@ -92,6 +92,7 @@
   "zooming_entrances": [
     "zoomIn",
     "zoomInDown",
+    "zoomInFront",
     "zoomInLeft",
     "zoomInRight",
     "zoomInUp"
@@ -100,6 +101,7 @@
   "zooming_exits": [
     "zoomOut",
     "zoomOutDown",
+    "zoomOutFront",
     "zoomOutLeft",
     "zoomOutRight",
     "zoomOutUp"
