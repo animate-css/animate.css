@@ -8,10 +8,36 @@
  * Copyright (c) 2017 Daniel Eden
  */
 
+
+/*Change the animation speed with Xx*/
 .animated {
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+.animated-2x{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated-3x{
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated-4x{
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*Change finished*/
 
 .animated.infinite {
   animation-iteration-count: infinite;
