@@ -2,6 +2,10 @@
   $RESET
 \*-----------------------------------*/
 
+body {
+  overflow-x: hidden;
+}
+
 *, :before, :after {
   margin: 0;
   padding: 0;
