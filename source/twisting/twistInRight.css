@@ -1,0 +1,17 @@
+@keyframes twistInRight {
+  0% {
+    opacity: 1;
+    transform-origin: 100% 200%;
+    transform: scale(1, 1) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 200% 500%;
+    transform: scale(0, 0) rotate(270deg);
+  }
+}
+
+.twistInRight {
+  animation-name: twistInRight;
+}

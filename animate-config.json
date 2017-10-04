@@ -117,5 +117,26 @@
     "slideOutLeft",
     "slideOutRight",
     "slideOutUp"
+  ],
+
+  "twisting": [
+    "twistInDown",
+    "twistInLeft",
+    "twistInRight",
+    "twistInUp"
+  ],
+
+  "back_entrances": [
+    "backInDown",
+    "backInLeft",
+    "backInRight",
+    "backInUp"
+  ],
+
+  "back_exits": [
+    "backOutDown",
+    "backOutLeft",
+    "backOutRight",
+    "backOutUp"
   ]
 }

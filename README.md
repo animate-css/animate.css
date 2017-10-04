@@ -123,6 +123,18 @@ $ npm install animate.css --save
 | `slideOutLeft` |
 | `slideOutRight` |
 | `slideOutUp` |
+| `backInDown` |
+| `backInLeft` |
+| `backInRight` |
+| `backInUp` |
+| `backOutDown` |
+| `backOutLeft` |
+| `backOutRight` |
+| `backOutUp` |
+| `twistInDown` |
+| `twistInLeft` |
+| `twistInRight` |
+| `twistInUp` |
 
 Full example:
 ```html

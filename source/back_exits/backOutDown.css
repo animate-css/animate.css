@@ -1,0 +1,20 @@
+@keyframes backOutDown {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(0px) scale(.7);
+    opacity: .7;
+  }
+
+  100%   {
+    transform: translateY(1200px) scale(.7);
+    opacity: .7;
+  }
+}
+
+.backOutDown {
+  animation-name: backOutDown;
+}
