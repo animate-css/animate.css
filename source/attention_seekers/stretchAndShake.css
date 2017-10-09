@@ -1,0 +1,26 @@
+@keyframes stretchAndShake {
+    from {
+      transform: skewX(-90deg);
+      opacity: 0;
+    }
+
+    60% {
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+
+    80% {
+      transform: skewX(-55deg);
+      opacity: 1;
+    }
+
+    to {
+      transform: none;
+      opacity: 1;
+    }
+}
+
+.stretchAndShake {
+    animation-name: stretchAndShake;
+    animation-timing-function: ease-in-out;
+}
