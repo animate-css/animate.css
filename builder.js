@@ -8,13 +8,17 @@ $(document).ready(function(){
 
 	var animations = [];
 
-	$('.js--animations option').each(function(){
+	$('.js--animations option').each(function(index, item){
 		//Get option[value]
 		var name = $(this).attr('value');
 
 		animations.push(name);
 
 	});
+
+	//Sort animation items alphabetically (A-Z)
+	animations.sort();
+	animations.reverse();
 
 	/*
 		Create checkbox for each animation
