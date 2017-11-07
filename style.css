@@ -2,6 +2,10 @@
   $RESET
 \*-----------------------------------*/
 
+body {
+  overflow-x: hidden;
+}
+
 *, :before, :after {
   margin: 0;
   padding: 0;
@@ -249,9 +253,6 @@ html {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-
-
-
 
 /*-----------------------------------*\
   $MODAL BUILDER
