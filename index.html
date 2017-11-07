@@ -15,6 +15,7 @@
 </head>
 <body>
 <section class="site__section "><!-- Section: Animations Exbihition -->
+
   <header class="site__header island">
     <div class="wrap">
      <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Animate.css</h1></span>
@@ -112,15 +113,16 @@
             <option value="slideInDown">slideInDown</option>
             <option value="slideInLeft">slideInLeft</option>
             <option value="slideInRight">slideInRight</option>
-          </optgroup>
 
+          </optgroup>
           <optgroup label="Sliding Exits">
             <option value="slideOutUp">slideOutUp</option>
             <option value="slideOutDown">slideOutDown</option>
             <option value="slideOutLeft">slideOutLeft</option>
             <option value="slideOutRight">slideOutRight</option>
+            
           </optgroup>
-
+          
           <optgroup label="Zoom Entrances">
             <option value="zoomIn">zoomIn</option>
             <option value="zoomInDown">zoomInDown</option>
@@ -128,7 +130,7 @@
             <option value="zoomInRight">zoomInRight</option>
             <option value="zoomInUp">zoomInUp</option>
           </optgroup>
-
+          
           <optgroup label="Zoom Exits">
             <option value="zoomOut">zoomOut</option>
             <option value="zoomOutDown">zoomOutDown</option>
@@ -139,6 +141,7 @@
 
           <optgroup label="Specials">
             <option value="hinge">hinge</option>
+            <option value="jackInTheBox">jackInTheBox</option>
             <option value="rollIn">rollIn</option>
             <option value="rollOut">rollOut</option>
           </optgroup>
@@ -153,7 +156,6 @@
   </main><!-- /.site__content -->
 </section><!-- /Section: Animations Exbihition -->
 
-
 <section class="site__section section__builder island" style="display:none;"><!-- Section: Builder -->
 
   <header class="site__header">
@@ -167,7 +169,7 @@
     <div class="wrap">
       <form class="js--builder">
         <button class="butt butt--build js--triggerSection">Back</button>
-        <button class="butt butt--build">Build</button>
+      <button class="butt butt--build">Build</button>
       </form>
       <hr />
       <p class="meta"><a class="js--triggerSection" href="javascript:void(0);">Animate.css</a> or <a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> or <a href="//github.com/daneden/animate.css">View on GitHub</a></p>
@@ -176,25 +178,57 @@
   </main><!-- /.site__content -->
 </section><!-- /Section: Builder -->
 
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script>
   function testAnim(x) {
     $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass();
     });
   };
-
   $(document).ready(function(){
     $('.js--triggerAnimation').click(function(e){
       e.preventDefault();
       var anim = $('.js--animations').val();
       testAnim(anim);
     });
-
     $('.js--animations').change(function(){
       var anim = $(this).val();
       testAnim(anim);
     });
+
+
+    /*
+      Section Trigger
+    */
+   
+    var triggerSection = 0;
+   
+    $('.js--triggerSection').click(function(e){
+      var nextTrigger = ( triggerSection == 0 ) ? 1 : 0;
+      var $currentSection = $('.site__section').eq(triggerSection);
+      var $nextSection = $('.site__section').eq(nextTrigger);
+      //prevent scroll page
+      $('body').css({
+        maxHeight: $(window).height(),
+        overflow: 'hidden'
+      });
+      $currentSection.addClass('animated fadeOutDown');
+      setTimeout(function(){
+        $currentSection.hide(0);
+        $currentSection.removeClass('animated fadeOutDown');
+        $nextSection.show('fade', function(){
+          setTimeout(function(){
+            $('body').removeAttr('style');
+          }, 500);
+        });
+      }, 1000);
+      triggerSection = nextTrigger;
+      e.preventDefault();
+    });
+
+    /*
+      Download Pop-up: Select All Animations Checkbox
+    */
 
     $('#js--select-all-checkbox').click(function(){
       if( $(this).attr('data-checked') == 'false' ) {
@@ -206,46 +240,6 @@
         $(this).attr('data-checked', 'false');
         $(this).text('Select all');
       }
-
-    });
-
-    /*
-      Section Trigger
-    */
-   
-    var triggerSection = 0;
-   
-    $('.js--triggerSection').click(function(e){
-
-      var nextTrigger = ( triggerSection == 0 ) ? 1 : 0;
-
-      var $currentSection = $('.site__section').eq(triggerSection);
-      var $nextSection = $('.site__section').eq(nextTrigger);
-
-      //prevent scroll page
-      $('body').css({
-        maxHeight: $(window).height(),
-        overflow: 'hidden'
-      });
-
-      $currentSection.addClass('animated fadeOutDown');
-
-      setTimeout(function(){
-        $currentSection.hide(0);
-        $currentSection.removeClass('animated fadeOutDown');
-
-        $nextSection.show('fade', function(){
-          setTimeout(function(){
-            $('body').removeAttr('style');
-          }, 500);
-        });
-
-
-      }, 1000);
-
-      triggerSection = nextTrigger;
-
-      e.preventDefault();
     });
 
   });
