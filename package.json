@@ -9,7 +9,18 @@
   "author": {
     "name": "Daniel Eden"
   },
+  "eyeglass": {
+    "exports": "eyeglass-exports.js",
+    "name": "animate",
+    "needs": "*"
+  },
   "homepage": "http://daneden.me/animate",
+  "keywords": [
+    "eyeglass-module",
+    "css",
+    "sass",
+    "scss"
+  ],
   "license": "MIT",
   "style": "./animate.css",
   "jspm": {

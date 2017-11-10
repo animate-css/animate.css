@@ -151,6 +151,22 @@ You can change the duration of your animations, add a delay or change the number
 
 *Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
 
+## NPM/Sass Usage
+
+Animate.css has eyeglass support and thus can be imported into sass projects via:
+
+```scss
+@import "animate/base"
+```
+
+Every animation type can be loaded on a case by case basis:
+
+```scss
+@import "animate/base";
+@import "animate/fading_entrances/fadeIn";
+@import "animate/zooming_entrances/zoomIn";
+```
+
 ## Custom Builds
 Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
