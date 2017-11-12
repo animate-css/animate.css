@@ -18,8 +18,8 @@ for (var animation in animations) {
     type: "checkbox",
     name: animation,
     message: animation.charAt(0).toUpperCase() + animation.slice(1).replace("_", " "),
-    choices: animations[animation],
-    when: function (answer) {
+    choices: Object.keys(animations[animation]),
+    when: answer => {
       return answer.custom;
     }
   });
@@ -27,22 +27,22 @@ for (var animation in animations) {
 
 var inquirer = require("inquirer");
 
-inquirer.prompt(questions, function (answers) {
+inquirer.prompt(questions).then(answers => {
   if (answers.custom) {
-    var replacer = [];
+    var config = {};
 
-    var isValid = false;
+    for (var answer in answers) {
+      if (answer !== "custom" && answers[answer].length > 0) {
+        config[answer] = answers[answer].reduce((accumulator, currentValue) => {
+          accumulator[currentValue] = true;
 
-    for (var animation in answers) {
-      if (animation !== "custom" && answers[animation].length > 0) {
-        replacer.push(animation);
-
-        isValid = true;
+          return accumulator;
+        }, {});
       }
     }
 
-    if (isValid) {
-      var config = JSON.stringify(answers, replacer, 2);
+    if (config) {
+      config = JSON.stringify(config, null, 2);
 
       console.log("\n" + config + "\n");
 
@@ -50,21 +50,11 @@ inquirer.prompt(questions, function (answers) {
         type: "confirm",
         name: "compile",
         message: "Looks good?"
-      }], function (answer) {
+      }]).then(answer => {
         if (answer.compile) {
           fs.writeFileSync("animate-config.json", config);
-          process.exit();
         }
       });
     }
-  } else {
-    fs.writeFileSync("animate-config.json", animate);
-    process.exit();
-  }
-
-  try {
-    fs.statSync("animate-config.json");
-  } catch (e) {
-    fs.writeFileSync("animate-config.json", animate);
   }
 });
