@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+var questions = [
+  {
+    type: "confirm",
+    name: "custom",
+    message: "Do you want to compile the library with the only animations you need?"
+  }
+];
+
+var fs = require("fs");
+
+var animate = fs.readFileSync("animate.json");
+var animations = JSON.parse(animate);
+
+for (var animation in animations) {
+  questions.push({
+    type: "checkbox",
+    name: animation,
+    message: animation.charAt(0).toUpperCase() + animation.slice(1).replace("_", " "),
+    choices: Object.keys(animations[animation]),
+    when: answer => {
+      return answer.custom;
+    }
+  });
+}
+
+var inquirer = require("inquirer");
+
+inquirer.prompt(questions).then(answers => {
+  if (answers.custom) {
+    var config = {};
+
+    for (var answer in answers) {
+      if (answer !== "custom" && answers[answer].length > 0) {
+        config[answer] = answers[answer].reduce((accumulator, currentValue) => {
+          accumulator[currentValue] = true;
+
+          return accumulator;
+        }, {});
+      }
+    }
+
+    if (config) {
+      config = JSON.stringify(config, null, 2);
+
+      console.log("\n" + config + "\n");
+
+      inquirer.prompt([{
+        type: "confirm",
+        name: "compile",
+        message: "Looks good?"
+      }]).then(answer => {
+        if (answer.compile) {
+          fs.writeFileSync("animate-config.json", config);
+        }
+      });
+    }
+  }
+});

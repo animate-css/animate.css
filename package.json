@@ -28,9 +28,13 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "inquirer": "^4.0.0",
     "run-sequence": "^1.1.5"
   },
   "spm": {
     "main": "./animate.css"
+  },
+  "bin": {
+    "animate-css": "./bin/animate-css"
   }
 }
