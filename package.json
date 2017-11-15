@@ -22,13 +22,22 @@
   "devDependencies": {
     "autoprefixer": "^6.3.2",
     "cssnano": "^3.5.1",
+    "eslint": "^4.11.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.7.1",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "prettier": "^1.8.2",
     "run-sequence": "^1.1.5"
+  },
+  "lint-staged": {
+    "*.{js,json,md,css}": ["prettier --print-width=200 --write", "git add"]
+  },
+  "scripts": {
+    "fix": "prettier --ignore-path .gitignore --write '**/*.{js,json,md,css}'",
+    "precommit": "lint-staged"
   },
   "spm": {
     "main": "./animate.css"
