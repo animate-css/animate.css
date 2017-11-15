@@ -37,14 +37,14 @@
   },
   "prettier": {
     "bracketSpacing": false,
-    "printWidth": 80,
+    "printWidth": 120,
     "proseWrap": false,
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "all"
   },
   "scripts": {
-    "fix": "prettier --ignore-path .gitignore --write '**/*.{js,json,md,css}'",
+    "fix": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
   },
   "spm": {
