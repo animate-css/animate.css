@@ -33,7 +33,15 @@
     "run-sequence": "^1.1.5"
   },
   "lint-staged": {
-    "*.{js,json,md,css}": ["prettier --print-width=200 --write", "git add"]
+    "*.{js,json,md,css}": ["prettier --write", "git add"]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "printWidth": 80,
+    "proseWrap": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   },
   "scripts": {
     "fix": "prettier --ignore-path .gitignore --write '**/*.{js,json,md,css}'",
