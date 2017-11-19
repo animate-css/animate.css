@@ -28,12 +28,20 @@ $ npm install animate.css --save
   ```html
   <head>
     <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   ```
   You may [generate a SRI hash](https://www.srihash.org/) of that particular version and then use it to ensure the file's integrity; also you can make anonymous requests to CDN by setting the corresponding [`crossorigin`](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes) attribute:
   ```html
   <head>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">
+    <!-- or -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
@@ -45,96 +53,30 @@ $ npm install animate.css --save
 
 3. Finally you need to add one of the following classes:
 
-| ﻿Class Name |
-|--------------------|
-| `bounce` |
-| `flash` |
-| `pulse` |
-| `rubberBand` |
-| `shake` |
-| `headShake` |
-| `swing` |
-| `tada` |
-| `wobble` |
-| `jello` |
-| `bounceIn` |
-| `bounceInDown` |
-| `bounceInLeft` |
-| `bounceInRight` |
-| `bounceInUp` |
-| `bounceOut` |
-| `bounceOutDown` |
-| `bounceOutLeft` |
-| `bounceOutRight` |
-| `bounceOutUp` |
-| `fadeIn` |
-| `fadeInDown` |
-| `fadeInDownBig` |
-| `fadeInLeft` |
-| `fadeInLeftBig` |
-| `fadeInRight` |
-| `fadeInRightBig` |
-| `fadeInUp` |
-| `fadeInUpBig` |
-| `fadeOut` |
-| `fadeOutDown` |
-| `fadeOutDownBig` |
-| `fadeOutLeft` |
-| `fadeOutLeftBig` |
-| `fadeOutRight` |
-| `fadeOutRightBig` |
-| `fadeOutUp` |
-| `fadeOutUpBig` |
-| `flipInX` |
-| `flipInY` |
-| `flipOutX` |
-| `flipOutY` |
-| `lightSpeedIn` |
-| `lightSpeedOut` |
-| `rotateIn` |
-| `rotateInDownLeft` |
-| `rotateInDownRight` |
-| `rotateInUpLeft` |
-| `rotateInUpRight` |
-| `rotateOut` |
-| `rotateOutDownLeft` |
-| `rotateOutDownRight` |
-| `rotateOutUpLeft` |
-| `rotateOutUpRight` |
-| `hinge` |
-| `jackInTheBox` |
-| `rollIn` |
-| `rollOut` |
-| `zoomIn` |
-| `zoomInDown` |
-| `zoomInLeft` |
-| `zoomInRight` |
-| `zoomInUp` |
-| `zoomOut` |
-| `zoomOutDown` |
-| `zoomOutLeft` |
-| `zoomOutRight` |
-| `zoomOutUp` |
-| `slideInDown` |
-| `slideInLeft` |
-| `slideInRight` |
-| `slideInUp` |
-| `slideOutDown` |
-| `slideOutLeft` |
-| `slideOutRight` |
-| `slideOutUp` |
-| `backInDown` |
-| `backInLeft` |
-| `backInRight` |
-| `backInUp` |
-| `backOutDown` |
-| `backOutLeft` |
-| `backOutRight` |
-| `backOutUp` |
-| `twistInDown` |
-| `twistInLeft` |
-| `twistInRight` |
-| `twistInUp` |
+| ﻿Class Name | | | |
+|--------------------|--------------------|--------------------|--------------------|
+| `bounce` |`flash` |`pulse` |`rubberBand` |
+| `shake` |`headShake` |`swing` |`tada` |
+| `wobble` |`jello` |`bounceIn` |`bounceInDown` |
+| `bounceInLeft` |`bounceInRight` |`bounceInUp` |`bounceOut` |
+| `bounceOutDown` |`bounceOutLeft` |`bounceOutRight` |`bounceOutUp` |
+| `fadeIn` |`fadeInDown` |`fadeInDownBig` |`fadeInLeft` |
+| `fadeInLeftBig` |`fadeInRight` |`fadeInRightBig` |`fadeInUp` |
+| `fadeInUpBig` |`fadeOut` |`fadeOutDown` |`fadeOutDownBig` |
+| `fadeOutLeft` |`fadeOutLeftBig` |`fadeOutRight` |`fadeOutRightBig` |
+| `fadeOutUp` |`fadeOutUpBig` |`flipInX` |`flipInY` |
+| `flipOutX` |`flipOutY` |`lightSpeedIn` |`lightSpeedOut` |
+| `rotateIn` |`rotateInDownLeft` |`rotateInDownRight` |`rotateInUpLeft` |
+| `rotateInUpRight` |`rotateOut` |`rotateOutDownLeft` |`rotateOutDownRight` |
+| `rotateOutUpLeft` |`rotateOutUpRight` |`hinge` |`jackInTheBox` |
+| `rollIn` |`rollOut` |`zoomIn` |`zoomInDown` |
+| `zoomInLeft` |`zoomInRight` |`zoomInUp` |`zoomOut` |
+| `zoomOutDown` |`zoomOutLeft` |`zoomOutRight` |`zoomOutUp` |
+| `slideInDown` |`slideInLeft` |`slideInRight` |`slideInUp` |
+| `slideOutDown` |`slideOutLeft` |`slideOutRight` |`slideOutUp` |
+| `backInDown` | `backInLeft` | `backInRight` | `backInUp` |
+| `backOutDown` | `backOutRight` | `backOutRight` | `backOutUp` |
+| `twistInDown` | `twistInRight` | `twistInRight` | `twistInUp` |
 
 Full example:
 ```html
@@ -184,10 +126,13 @@ You can also extend jQuery to add a function that does it all for you:
 
 ```javascript
 $.fn.extend({
-    animateCss: function (animationName) {
+    animateCss: function (animationName, callback) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         this.addClass('animated ' + animationName).one(animationEnd, function() {
             $(this).removeClass('animated ' + animationName);
+            if (callback) {
+              callback();
+            }
         });
         return this;
     }
@@ -198,6 +143,10 @@ And use it like this:
 
 ```javascript
 $('#yourElement').animateCss('bounce');
+or
+$('#yourElement').animateCss('bounce', function () {
+  // Do somthing after animation
+});
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:

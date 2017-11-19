@@ -7,7 +7,7 @@
 
   100% {
     opacity: 0;
-    transform-origin: 200% 500%;
+    transform-origin: 100% -100%;
     transform: scale(0, 0) rotate(270deg);
   }
 }
