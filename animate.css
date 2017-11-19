@@ -1577,3 +1577,70 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+@keyframes stretch {
+  from {
+    transform: translate3d(1, 1, 1);
+  }
+  5% {
+   transform: translate3d(1.1, 1, 1.1); 
+  }
+  10% {
+   transform: translate3d(1.2, 1, 1.2); 
+  }
+  15% {
+    transform: translate3d(1.3, 1, 1.3);
+  }
+  20% {
+   transform: translate3d(1.4, 1, 1.4); 
+  }
+  25% {
+    transform: translate3d(1.5, 1, 1.5);
+  }
+  30% {
+    transform: translate3d(1.6, 1, 1.6);
+  }
+  35% {
+    transform: translate3d(1.7, 1, 1.7);
+  }
+  40% {
+    transform: translate3d(1.8, 1, 1.8);
+  }
+  45% {
+    transform: translate3d(1.9, 1, 1.9);
+  }
+  50% {
+    transform: translate3d(2, 1, 2);
+  }
+  55% {
+    transform: translate3d(1.9, 1, 1.9);
+  }
+  60% {
+    transform: translate3d(1.8, 1, 1.8);
+  }
+  65% {
+    transform: translate3d(1.7, 1, 1.7);
+  }
+  70% {
+    transform: translate3d(1.6, 1, 1.6);
+  }
+  75% {
+    transform: translate3d(1.5, 1, 1.5);
+  }
+  80% {
+    transform: translate3d(1.4, 1, 1.4);
+  }
+  85% {
+    transform: translate3d(1.3, 1, 1.3);
+  }
+  90% {
+    transform: translate3d(1.2, 1, 1.2);
+  }
+  95% {
+    transform: translate3d(1.1, 1, 1.1);
+  }
+  100% {
+    transform: translate3d(1, 1, 1);
+  }
+  .stretch {
+   animation-name: stretch; 
+  }
