@@ -108,7 +108,10 @@
   65% {
     transform: scale3d(.95, 1.05, 1);
   }
-
+70% {
+  transform: scale3d(.95, 1.15, 1);
+  }
+  
   75% {
     transform: scale3d(1.05, .95, 1);
   }
