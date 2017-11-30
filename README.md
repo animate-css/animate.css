@@ -37,6 +37,11 @@ $ npm install animate.css --save
   You may [generate a SRI hash](https://www.srihash.org/) of that particular version and then use it to ensure the file's integrity; also you can make anonymous requests to CDN by setting the corresponding [`crossorigin`](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes) attribute:
   ```html
   <head>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">
+    <!-- or -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
     integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
@@ -53,7 +58,7 @@ $ npm install animate.css --save
 
 3. Finally you need to add one of the following classes:
 
-| ﻿Class Name | | | |
+| ﻿Class Name | | | | 
 |--------------------|--------------------|--------------------|--------------------|
 | `bounce` |`flash` |`pulse` |`rubberBand` |
 | `shake` |`headShake` |`swing` |`tada` |
