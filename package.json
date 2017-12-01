@@ -22,7 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.5.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.7.1",
     "gulp-postcss": "^7.0.0",
