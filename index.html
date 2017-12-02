@@ -113,14 +113,13 @@
             <option value="slideInDown">slideInDown</option>
             <option value="slideInLeft">slideInLeft</option>
             <option value="slideInRight">slideInRight</option>
-
           </optgroup>
+          
           <optgroup label="Sliding Exits">
             <option value="slideOutUp">slideOutUp</option>
             <option value="slideOutDown">slideOutDown</option>
             <option value="slideOutLeft">slideOutLeft</option>
             <option value="slideOutRight">slideOutRight</option>
-            
           </optgroup>
           
           <optgroup label="Zoom Entrances">
@@ -181,6 +180,7 @@
 </section><!-- /Section: Builder -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
 <script>
   function testAnim(x) {
     $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
