@@ -2,6 +2,10 @@
   $RESET
 \*-----------------------------------*/
 
+body {
+  overflow-x: hidden;
+}
+
 *, :before, :after {
   margin: 0;
   padding: 0;
@@ -11,7 +15,7 @@
           box-sizing: border-box;
 }
 
-input, select, button, textarea {
+select, button, textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -55,6 +59,10 @@ input, select, button, textarea {
     color: #fff;
   }
 
+  .butt--build {
+    margin-top: 20px;
+  }
+
 .input {
   border: 1px solid #c0c8c9;
   border-radius: 4px;
@@ -67,6 +75,23 @@ input, select, button, textarea {
     background-size: 1.5rem 1rem;
     background-position: right center;
   }
+
+.checkbox-group {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  width: 160px;
+}
+
+.checkbox-group .input--checkbox {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.checkbox--label {
+  position: absolute;
+  top: -5px; left: 25px;
+}
 
 /*-----------------------------------*\
   $TYPOGRAPHY
@@ -136,7 +161,7 @@ a {
 }
 
 .island {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .isle {
@@ -145,6 +170,11 @@ a {
 
 .spit {
   padding: .375rem;
+}
+
+/* prevent fast down animation */
+.section__builder.fadeOutDown {
+  animation-duration: 2.5s;
 }
 
 /*-----------------------------------*\
@@ -222,4 +252,95 @@ html {
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
+}
+
+/*-----------------------------------*\
+  $MODAL BUILDER
+\*-----------------------------------*/
+
+.modal__overlay {
+  background-color: rgba(0,0,0,.1);
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal__main {
+  animation-duration: .5s;
+  background-color: #fff;
+  box-shadow: 0 0 13px -5px rgba(0, 0, 0, .8);
+  display: none;
+  height: 80%;
+  padding: 30px;
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 70%;
+  z-index: 2;
+}
+
+.modal__code {
+  height: 90%;
+  text-align: left;
+  overflow: scroll;
+}
+
+.modal__button {
+  animation: hue 60s linear;
+  background-color: transparent;
+  border: 2px solid #f35626;
+  color: #f35626;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+  padding: 7px 22px;
+  transition: background-color .4s, color .4s;
+}
+
+.modal__button:hover {
+  background-color: #f35626;
+  color: #fff;
+}
+
+.js--trigger-minify {
+  position: absolute;
+  right: 8%;
+  z-index: 3;
+}
+
+.js--copy-build {
+  margin: 15px auto 0;
+}
+
+.modal__close {
+  animation: hue 60s linear;
+  border: 3px solid #fff;
+  background-color: #f35626;
+  border-radius: 50%;
+  height: 35px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 35px;
+}
+
+.modal__close:before, .modal__close:after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 15px;
+}
+.modal__close:before {
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.modal__close:after {
+  transform: translateY(-1px) rotate(45deg);
 }
