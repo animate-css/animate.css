@@ -39,10 +39,8 @@
   },
   "prettier": {
     "bracketSpacing": false,
-    "printWidth": 120,
     "proseWrap": "never",
     "singleQuote": true,
-    "tabWidth": 2,
     "trailingComma": "all"
   },
   "scripts": {
