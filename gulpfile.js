@@ -24,7 +24,7 @@ var opts = {
   concatName: 'animate.css',
 
   autoprefixer: {
-    browsers: ['> 1%, last 2 versions, Firefox ESR'],
+    browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
     cascade: false,
   },
 

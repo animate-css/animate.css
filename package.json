@@ -20,17 +20,19 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.2",
+    "autoprefixer": "^7.1.6",
     "cssnano": "^3.5.1",
     "eslint": "^4.11.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.7.1",
-    "gulp-postcss": "^6.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "prettier": "^1.8.2",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^2.2.0"
   },
   "lint-staged": {
     "*.{js,json,md,css}": ["prettier --write", "git add"]
