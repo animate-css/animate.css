@@ -143,7 +143,7 @@ $.fn.extend({
       }
     });
     return this;
-  }
+  },
 });
 ```
 
