@@ -44,6 +44,7 @@
     "trailingComma": "all"
   },
   "scripts": {
+    "start": "gulp",
     "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
   },
