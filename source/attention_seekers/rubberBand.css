@@ -16,11 +16,11 @@
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
   to {

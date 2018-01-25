@@ -1,5 +1,7 @@
 @keyframes jello {
-  from, 11.1%, to {
+  from,
+  11.1%,
+  to {
     transform: none;
   }
 
