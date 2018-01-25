@@ -2,7 +2,7 @@
   from,
   11.1%,
   to {
-    transform: none;
+    transform: translate3d(0, 0, 0);
   }
 
   22.2% {

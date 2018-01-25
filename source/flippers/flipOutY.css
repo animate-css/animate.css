@@ -15,7 +15,7 @@
 }
 
 .flipOutY {
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   backface-visibility: visible !important;
   animation-name: flipOutY;
 }
