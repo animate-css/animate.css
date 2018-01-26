@@ -7,7 +7,7 @@
 
   to {
     transform-origin: center;
-    transform: none;
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }

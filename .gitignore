@@ -2,3 +2,5 @@
 node_modules/
 .DS_Store
 test/
+npm-debug.log
+.idea

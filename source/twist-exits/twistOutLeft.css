@@ -1,0 +1,21 @@
+@keyframes twistOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px) rotate(360deg) scale(.7);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0.3) translateX(-300%);
+  }
+}
+
+.twistOutLeft {
+  animation-name: twistOutLeft;
+}

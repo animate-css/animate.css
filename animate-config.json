@@ -1,5 +1,4 @@
 {
-
   "attention_seekers": {
     "bounce": true,
     "flash": true,
@@ -119,6 +118,13 @@
     "slideOutUp": true
   },
 
+  "back_entrances": {
+    "backInDown": true,
+    "backInLeft": true,
+    "backInRight": true,
+    "backInUp": true
+  },
+
   "back_exits": {
     "backOutDown": true,
     "backOutLeft": true,
@@ -126,18 +132,18 @@
     "backOutUp": true
   },
 
-  "back_entrances": {
-    "backInDown": true,
-    "backInLeft": true,
-    "backInRight": true,
-    "backInUp": true
-  },
-  
-  "twisting": {
+  "twist-entrances": {
     "twistInDown": true,
     "twistInLeft": true,
     "twistInRight": true,
     "twistInUp": true
+  },
+
+  "twist-exits": {
+    "twistOutDown": true,
+    "twistOutLeft": true,
+    "twistOutRight": true,
+    "twistOutUp": true
   }
 
 }
