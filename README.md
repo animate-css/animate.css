@@ -123,10 +123,23 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one(
-  'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-  doSomething,
-);
+// See https://github.com/daneden/animate.css/issues/644
+var animationEnd = (function(el) {
+  var animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'mozAnimationEnd',
+    WebkitAnimation: 'webkitAnimationEnd',
+  };
+
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+})(document.createElement('div'));
+
+$('#yourElement').one(animationEnd, doSomething);
 ```
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
@@ -138,14 +151,27 @@ You can also extend jQuery to add a function that does it all for you:
 ```javascript
 $.fn.extend({
   animateCss: function(animationName, callback) {
-    var animationEnd =
-      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd',
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement('div'));
+
     this.addClass('animated ' + animationName).one(animationEnd, function() {
       $(this).removeClass('animated ' + animationName);
-      if (callback) {
-        callback();
-      }
+
+      if (typeof callback === 'function') callback();
     });
+
     return this;
   },
 });
