@@ -187,6 +187,75 @@ $('#yourElement').animateCss('bounce', function() {
 });
 ```
 
+You can use pure javascript to add a function that does it all for you:
+
+```javascript
+HTMLElement.prototype.animateCss = function(animationName, callback) {
+  var element = this;
+
+  // Method to add animation class in element
+  var addClass = function(el, cn) {
+    if (el.classList) {
+      el.classList.add(cn);
+    } else {
+      el.className += ' ' + cn;
+    }
+  };
+
+  // Method to remove animation class in element
+  var removeClass = function(el, cn) {
+    if (el.classList) {
+      el.classList.remove(cn);
+    } else {
+      var removeClassPattern = new RegExp('(' + cn.split(' ').join('|') + ')', 'gi');
+      el.className = el.className.replace(removeClassPattern, '');
+    }
+  };
+
+  // Get animation event
+  var animationEnd = (function(el) {
+    var animations = {
+      animation: 'animationend',
+      OAnimation: 'oAnimationEnd',
+      MozAnimation: 'mozAnimationEnd',
+      WebkitAnimation: 'webkitAnimationEnd',
+    };
+
+    for (var t in animations) {
+      if (el.style[t] !== undefined) {
+        return animations[t];
+      }
+    }
+  })(document.createElement('div'));
+
+  // Add animate class
+  addClass(element, 'animated');
+  addClass(element, animationName);
+
+  // Add animation event end
+  var animationEndCallback = function() {
+    removeClass(element, animationName);
+    removeClass(element, 'animated');
+
+    // Remove event
+    element.removeEventListener(animationEnd, animationEndCallback);
+
+    if (typeof callback === 'function') callback();
+  };
+  element.addEventListener(animationEnd, animationEndCallback);
+
+  return this;
+};
+```
+
+And use it like this:
+
+```javascript
+document.querySelector('#yourElement').animateCss('bounce');
+or;
+document.getElementById('yourElement').animateCss('bounce');
+```
+
 You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
