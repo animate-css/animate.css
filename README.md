@@ -253,7 +253,15 @@ And use it like this:
 ```javascript
 document.querySelector('#yourElement').animateCss('bounce');
 or;
+document.querySelector('#yourElement').animateCss('bounce', function() {
+  // do something after animation
+});
+or;
 document.getElementById('yourElement').animateCss('bounce');
+or;
+document.getElementById('yourElement').animateCss('bounce', function() {
+  // do something after animation
+});
 ```
 
 You can change the duration of your animations, add a delay or change the number of times that it plays:
