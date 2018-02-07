@@ -1,6 +1,8 @@
 .sass-cache
 node_modules/
-.DS_Store
-test/
 npm-debug.log
+test/
 .idea
+.DS_Store
+Thumbs.db
+Desktop.ini
