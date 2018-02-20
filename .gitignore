@@ -1,12 +1,8 @@
+.db
+.DS_Store
+.idea
+.ini
+.log
 .sass-cache
 node_modules/
-npm-debug.log
 test/
-<<<<<<< HEAD
-npm-debug.log
-=======
-.idea
-.DS_Store
-Thumbs.db
-Desktop.ini
->>>>>>> upstream/master
