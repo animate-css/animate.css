@@ -1,6 +1,6 @@
 @keyframes backInLeft {
   0% {
-    transform: translateX(2000px) scale(.7);
+    transform: translateX(-2000px) scale(.7);
     opacity: .7;
   }
 

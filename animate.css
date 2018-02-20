@@ -3497,12 +3497,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateY(100%);
+    transform: scale(1) translateY(300%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
@@ -3515,12 +3515,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateY(100%);
+    transform: scale(1) translateY(300%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
@@ -3538,12 +3538,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateX(-100%);
+    transform: scale(1) translateX(-100%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
@@ -3556,12 +3556,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateX(-100%);
+    transform: scale(1) translateX(-100%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
@@ -3579,12 +3579,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateX(100%);
+    transform: scale(1) translateX(100%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
@@ -3597,12 +3597,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateX(100%);
+    transform: scale(1) translateX(100%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
@@ -3620,12 +3620,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateY(-100%);
+    transform: scale(1) translateY(-300%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
@@ -3638,12 +3638,12 @@
   0% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(.7) translateY(-100%);
+    transform: scale(1) translateY(-300%);
   }
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
@@ -3665,13 +3665,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateY(300%);
+    transform: scale(1) translateY(300%);
   }
 }
 
@@ -3683,37 +3683,19 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateY(300%);
+    transform: scale(1) translateY(300%);
   }
 }
 
 .twistOutDown {
   -webkit-animation-name: twistOutDown;
   animation-name: twistOutDown;
-}
-
-@-webkit-keyframes twistOutUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0px) rotate(0deg) scale(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
-  }
-
-  100% {
-    opacity: 0;
-    transform-origin: 50% 50%;
-    transform: scale(0.3) translateY(-300%);
-  }
 }
 
 @-webkit-keyframes twistOutLeft {
@@ -3724,13 +3706,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateX(-300%);
+    transform: scale(1) translateX(-300%);
   }
 }
 
@@ -3742,13 +3724,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateX(-300%);
+    transform: scale(1) translateX(-300%);
   }
 }
 
@@ -3765,13 +3747,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateX(300%);
+    transform: scale(1) translateX(300%);
   }
 }
 
@@ -3783,19 +3765,37 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(-360deg) scale(.7);
+    transform: translateY(0px) rotate(-360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateX(300%);
+    transform: scale(1) translateX(300%);
   }
 }
 
 .twistOutRight {
   -webkit-animation-name: twistOutRight;
   animation-name: twistOutRight;
+}
+
+@-webkit-keyframes twistOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px) rotate(360deg) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1) translateY(-300%);
+  }
 }
 
 @keyframes twistOutUp {
@@ -3806,13 +3806,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateY(-300%);
+    transform: scale(1) translateY(-300%);
   }
 }
 
@@ -3865,7 +3865,7 @@
 
 @-webkit-keyframes backInLeft {
   0% {
-    transform: translateX(2000px) scale(.7);
+    transform: translateX(-2000px) scale(.7);
     opacity: .7;
   }
 
@@ -3882,7 +3882,7 @@
 
 @keyframes backInLeft {
   0% {
-    transform: translateX(2000px) scale(.7);
+    transform: translateX(-2000px) scale(.7);
     opacity: .7;
   }
 
@@ -3906,7 +3906,7 @@
 
 @-webkit-keyframes backInRight {
   0% {
-    transform: translateX(-2000px) scale(.7);
+    transform: translateX(2000px) scale(.7);
     opacity: .7;
   }
 
@@ -3923,7 +3923,7 @@
 
 @keyframes backInRight {
   0% {
-    transform: translateX(-2000px) scale(.7);
+    transform: translateX(2000px) scale(.7);
     opacity: .7;
   }
 

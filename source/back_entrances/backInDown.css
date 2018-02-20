@@ -8,7 +8,7 @@
     transform: translateY(0px) scale(.7);
     opacity: .7;
   }
-  
+
   100% {
     transform: scale(1);
     opacity: 1;

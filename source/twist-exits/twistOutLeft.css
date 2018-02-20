@@ -6,13 +6,13 @@
 
   50% {
     opacity: 1;
-    transform: translateY(0px) rotate(360deg) scale(.7);
+    transform: translateY(0px) rotate(360deg) scale(1);
   }
 
   100% {
     opacity: 0;
     transform-origin: 50% 50%;
-    transform: scale(0.3) translateX(-300%);
+    transform: scale(1) translateX(-300%);
   }
 }
 
