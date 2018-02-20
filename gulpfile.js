@@ -25,15 +25,11 @@ var opts = {
 
   autoprefixer: {
     browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
-<<<<<<< HEAD
     cascade: false
-=======
-    cascade: false,
->>>>>>> upstream/master
   },
 
   minRename: {
-    suffix: '.min',
+    suffix: '.min'
   },
 
   banner: [
@@ -45,7 +41,7 @@ var opts = {
     ' *',
     ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
     ' */\n\n',
-  ].join('\n'),
+  ].join('\n')
 };
 
 // ----------------------------
