@@ -1,6 +1,10 @@
 @keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   from {

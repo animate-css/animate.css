@@ -2,7 +2,7 @@
 
 @keyframes wobble {
   from {
-    transform: none;
+    transform: translate3d(0, 0, 0);
   }
 
   15% {
@@ -26,7 +26,7 @@
   }
 
   to {
-    transform: none;
+    transform: translate3d(0, 0, 0);
   }
 }
 

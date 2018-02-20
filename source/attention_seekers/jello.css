@@ -1,6 +1,8 @@
 @keyframes jello {
-  from, 11.1%, to {
-    transform: none;
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
   }
 
   22.2% {
