@@ -22,19 +22,13 @@
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.5.1",
-<<<<<<< HEAD
-=======
     "eslint": "^4.11.0",
->>>>>>> upstream/master
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.7.1",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
-<<<<<<< HEAD
-    "run-sequence": "^2.2.0"
-=======
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.1",
@@ -53,7 +47,6 @@
     "start": "gulp",
     "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
->>>>>>> upstream/master
   },
   "spm": {
     "main": "./animate.css"
