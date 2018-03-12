@@ -83,8 +83,6 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 | `slideOutDown`    | `slideOutLeft`     | `slideOutRight`     | `slideOutUp`         |
 | `backInDown`      | `backInLeft`       | `backInRight`       | `backInUp`           |
 | `backOutDown`     | `backOutLeft`      | `backOutRight`      | `backOutUp`          |
-| `twistInDown`     | `twistInLeft`      | `twistInRight`      | `twistInUp`          |
-| `twistOutDown`    | `twistOutLeft`     | `twistOutRight`     | `twistOutUp`         |
 
 Full example:
 
