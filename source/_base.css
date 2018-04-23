@@ -6,3 +6,9 @@
 .animated.infinite {
   animation-iteration-count: infinite;
 }
+.slower {
+  animation-duration: 2s !important;  
+}
+.slow {
+  animation-duration: 3s !important;
+}
