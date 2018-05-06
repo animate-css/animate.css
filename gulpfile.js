@@ -42,6 +42,8 @@ var opts = {
     ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
     ' */\n\n',
   ].join('\n'),
+
+  scssDestPath: './SCSS',
 };
 
 // ----------------------------
@@ -68,6 +70,20 @@ gulp.task('addHeader', function() {
     .src('*.css')
     .pipe(header(opts.banner, pkg))
     .pipe(gulp.dest(opts.destPath));
+});
+
+gulp.task('createSCSS', function() {
+  return gulp
+    .src('source/**/**.css')
+    .pipe(
+      rename(function(path) {
+        path.extname = '.scss';
+        if (path.basename !== '_base') {
+          path.basename = '_' + path.basename;
+        }
+      }),
+    )
+    .pipe(gulp.dest(opts.scssDestPath));
 });
 
 // ----------------------------
