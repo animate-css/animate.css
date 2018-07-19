@@ -11,12 +11,10 @@
 
   80% {
     transform: skewX(-5deg);
-    opacity: 1;
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
