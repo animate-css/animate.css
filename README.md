@@ -20,7 +20,7 @@ $ npm install animate.css --save
 
 ## Basic Usage
 
-1. Include the stylesheet on your document's `<head>`
+1.  Include the stylesheet on your document's `<head>`
 
 ```html
 <head>
@@ -56,9 +56,9 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 </head>
 ```
 
-2. Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop.
+2.  Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop.
 
-3. Finally you need to add one of the following classes:
+3.  Finally you need to add one of the following classes:
 
 | Class Name        |                    |                     |                      |
 | ----------------- | ------------------ | ------------------- | -------------------- |
@@ -85,7 +85,7 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 Full example:
 
 ```html
-<h1 class="animated infinite bounce">Example</h1>
+<h1 class="animated infinite bounce delay-2s">Example</h1>
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
@@ -198,6 +198,14 @@ You can change the duration of your animations, add a delay or change the number
 ```
 
 _Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)_
+
+You can also add delays directly on the element's class attribute, just like this:
+
+```html
+<div class="animated bounce delay-2s">Example</div>
+```
+
+_Note: the default delays are from 1 seconds to 5 seconds only. If you want to add customized delays, you can add it directly to your css_
 
 ## Custom Builds
 

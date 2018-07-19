@@ -1,8 +1,8 @@
+.db
+.DS_Store
+.idea
+.ini
+.log
 .sass-cache
 node_modules/
-npm-debug.log
 test/
-.idea
-.DS_Store
-Thumbs.db
-Desktop.ini
