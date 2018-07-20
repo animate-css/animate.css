@@ -20,9 +20,9 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.18.0",
+    "autoprefixer": "^9.0.0",
+    "cssnano": "^4.0.3",
+    "eslint": "^5.1.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.1",
