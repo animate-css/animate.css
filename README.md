@@ -81,6 +81,7 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 | `zoomOutDown`     | `zoomOutLeft`      | `zoomOutRight`      | `zoomOutUp`          |
 | `slideInDown`     | `slideInLeft`      | `slideInRight`      | `slideInUp`          |
 | `slideOutDown`    | `slideOutLeft`     | `slideOutRight`     | `slideOutUp`         |
+| `heartBeat`       |
 
 Full example:
 
