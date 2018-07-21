@@ -211,6 +211,13 @@ You can also add delays directly on the element's class attribute, just like thi
 <div class="animated bounce delay-2s">Example</div>
 ```
 
+| Reference  | Delay Time |
+| ---------- | ---------- |
+| `delay-2s` | `2s`       |
+| `delay-3s` | `3s`       |
+| `delay-4s` | `4s`       |
+| `delay-5s` | `5s`       |
+
 _Note: The default delays are from 1 second to 5 seconds only. If you want to add customized delays, you can add it directly to your css_
 
 #### Slow, Slower, Fast, and Faster Class
@@ -223,12 +230,12 @@ You can control the speed of the animation by adding these classes, as a sample 
 <div class="animated bounce faster">Example</div>
 ```
 
-| Reference: | Time    |
-| ---------- | ------- |
-| `slow`     | `2s`    |
-| `slower`   | `3s`    |
-| `fast`     | `800ms` |
-| `faster`   | `500ms` |
+| Reference | Speed Time |
+| --------- | ---------- |
+| `slow`    | `2s`       |
+| `slower`  | `3s`       |
+| `fast`    | `800ms`    |
+| `faster`  | `500ms`    |
 
 _Note: The default speed is `1s` which is you don't need to put any class. If you want to add a custom duration, you can add it directly to your css instead_
 
