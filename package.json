@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.6.1",
+  "version": "3.6.2",
   "main": "animate.css",
   "repository": {
     "type": "git",
@@ -20,19 +20,19 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "cssnano": "^3.5.1",
-    "eslint": "^4.11.0",
+    "autoprefixer": "^8.0.0",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.18.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-header": "^1.7.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.1",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.7",
+    "gulp-util": "^3.0.8",
     "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.9.1",
-    "run-sequence": "^2.2.0"
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2",
+    "run-sequence": "^2.2.1"
   },
   "lint-staged": {
     "*.{js,json,md,css}": [
