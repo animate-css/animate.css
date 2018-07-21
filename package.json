@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.6.2",
+  "version": "3.7.0",
   "main": "animate.css",
   "repository": {
     "type": "git",
@@ -35,7 +35,10 @@
     "run-sequence": "^2.2.1"
   },
   "lint-staged": {
-    "*.{js,json,md,css}": ["prettier --write", "git add"]
+    "*.{js,json,md,css}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "bracketSpacing": false,
