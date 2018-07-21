@@ -203,7 +203,7 @@ _Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixe
 
 #### Delay Class
 
-======
+---
 
 You can also add delays directly on the element's class attribute, just like this:
 
@@ -215,7 +215,7 @@ _Note: The default delays are from 1 second to 5 seconds only. If you want to ad
 
 #### Slow, Slower, Fast, and Faster Class
 
-======
+---
 
 You can control the speed of the animation by adding these classes, as a sample below:
 
