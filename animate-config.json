@@ -130,20 +130,6 @@
     "backOutLeft": true,
     "backOutRight": true,
     "backOutUp": true
-  },
-
-  "twist-entrances": {
-    "twistInDown": true,
-    "twistInLeft": true,
-    "twistInRight": true,
-    "twistInUp": true
-  },
-
-  "twist-exits": {
-    "twistOutDown": true,
-    "twistOutLeft": true,
-    "twistOutRight": true,
-    "twistOutUp": true
   }
 
 }

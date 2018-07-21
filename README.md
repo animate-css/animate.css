@@ -1,4 +1,4 @@
-# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![CDNJS](https://img.shields.io/cdnjs/v/animate.css.svg)](https://cdnjs.com/libraries/animate.css) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby)
+# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![CDNJS](https://img.shields.io/cdnjs/v/animate.css.svg)](https://cdnjs.com/libraries/animate.css) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby) [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate.css)
 
 _Just-add-water CSS animation_
 
@@ -84,10 +84,11 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 | `backInDown`      | `backInLeft`       | `backInRight`       | `backInUp`           |
 | `backOutDown`     | `backOutLeft`      | `backOutRight`      | `backOutUp`          |
 
+
 Full example:
 
 ```html
-<h1 class="animated infinite bounce">Example</h1>
+<h1 class="animated infinite bounce delay-2s">Example</h1>
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
@@ -125,10 +126,23 @@ http://api.jquery.com/one/
 -->
 
 ```javascript
-$('#yourElement').one(
-  'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-  doSomething,
-);
+// See https://github.com/daneden/animate.css/issues/644
+var animationEnd = (function(el) {
+  var animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'mozAnimationEnd',
+    WebkitAnimation: 'webkitAnimationEnd',
+  };
+
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+})(document.createElement('div'));
+
+$('#yourElement').one(animationEnd, doSomething);
 ```
 
 [View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
@@ -140,14 +154,27 @@ You can also extend jQuery to add a function that does it all for you:
 ```javascript
 $.fn.extend({
   animateCss: function(animationName, callback) {
-    var animationEnd =
-      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    var animationEnd = (function(el) {
+      var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd',
+      };
+
+      for (var t in animations) {
+        if (el.style[t] !== undefined) {
+          return animations[t];
+        }
+      }
+    })(document.createElement('div'));
+
     this.addClass('animated ' + animationName).one(animationEnd, function() {
       $(this).removeClass('animated ' + animationName);
-      if (callback) {
-        callback();
-      }
+
+      if (typeof callback === 'function') callback();
     });
+
     return this;
   },
 });
@@ -174,6 +201,14 @@ You can change the duration of your animations, add a delay or change the number
 ```
 
 _Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)_
+
+You can also add delays directly on the element's class attribute, just like this:
+
+```html
+<div class="animated bounce delay-2s">Example</div>
+```
+
+_Note: the default delays are from 1 seconds to 5 seconds only. If you want to add customized delays, you can add it directly to your css_
 
 ## Custom Builds
 
