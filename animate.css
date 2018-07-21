@@ -45,6 +45,26 @@
   animation-delay: 5s;
 }
 
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
 @-webkit-keyframes bounce {
   from,
   20%,
@@ -2210,13 +2230,11 @@
   80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
-    opacity: 1;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
@@ -2236,13 +2254,11 @@
   80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
-    opacity: 1;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
