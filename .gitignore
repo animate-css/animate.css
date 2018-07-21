@@ -1,6 +1,8 @@
+.db
+.DS_Store
+.idea
+.ini
+.log
 .sass-cache
 node_modules/
-.DS_Store
 test/
-npm-debug.log
-.idea

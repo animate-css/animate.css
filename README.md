@@ -20,7 +20,7 @@ $ npm install animate.css --save
 
 ## Basic Usage
 
-1. Include the stylesheet on your document's `<head>`
+1.  Include the stylesheet on your document's `<head>`
 
 ```html
 <head>
@@ -56,9 +56,9 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 </head>
 ```
 
-2. Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop.
+2.  Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop.
 
-3. Finally you need to add one of the following classes:
+3.  Finally you need to add one of the following classes:
 
 | Class Name        |                    |                     |                      |
 | ----------------- | ------------------ | ------------------- | -------------------- |
