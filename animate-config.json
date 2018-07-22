@@ -9,7 +9,8 @@
     "swing": true,
     "tada": true,
     "wobble": true,
-    "jello": true
+    "jello": true,
+    "heartBeat": true
   },
 
   "bouncing_entrances": {
