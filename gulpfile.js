@@ -25,11 +25,11 @@ var opts = {
 
   autoprefixer: {
     browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
-    cascade: false
+    cascade: false,
   },
 
   minRename: {
-    suffix: '.min'
+    suffix: '.min',
   },
 
   banner: [
@@ -41,16 +41,12 @@ var opts = {
     ' *',
     ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
     ' */\n\n',
-  ].join('\n')
+  ].join('\n'),
 };
 
 // ----------------------------
 // Gulp task definitions
 // ----------------------------
-
-gulp.task('default', function() {
-  runSequence('createCSS', 'addHeader');
-});
 
 gulp.task('createCSS', function() {
   return gulp
@@ -69,6 +65,8 @@ gulp.task('addHeader', function() {
     .pipe(header(opts.banner, pkg))
     .pipe(gulp.dest(opts.destPath));
 });
+
+gulp.task('default', gulp.series('createCSS', 'addHeader'));
 
 // ----------------------------
 // Helpers/functions
