@@ -20,10 +20,10 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.0.1",
     "cssnano": "^4.0.3",
-    "eslint": "^5.1.0",
-    "gulp": "^3.9.1",
+    "eslint": "^5.2.0",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.1",
     "gulp-postcss": "^7.0.1",
