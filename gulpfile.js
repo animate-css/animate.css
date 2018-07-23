@@ -48,10 +48,6 @@ var opts = {
 // Gulp task definitions
 // ----------------------------
 
-gulp.task('default', function() {
-  runSequence('createCSS', 'addHeader');
-});
-
 gulp.task('createCSS', function() {
   return gulp
     .src(activatedAnimations)
@@ -69,6 +65,8 @@ gulp.task('addHeader', function() {
     .pipe(header(opts.banner, pkg))
     .pipe(gulp.dest(opts.destPath));
 });
+
+gulp.task('default', gulp.series('createCSS', 'addHeader'));
 
 // ----------------------------
 // Helpers/functions

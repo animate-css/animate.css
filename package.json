@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "3.6.2",
+  "version": "3.7.0",
   "main": "animate.css",
   "repository": {
     "type": "git",
@@ -20,10 +20,10 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^8.0.0",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.18.0",
-    "gulp": "^3.9.1",
+    "autoprefixer": "^9.0.1",
+    "cssnano": "^4.0.3",
+    "eslint": "^5.2.0",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.1",
     "gulp-postcss": "^7.0.1",
@@ -47,6 +47,7 @@
     "trailingComma": "all"
   },
   "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
     "start": "gulp",
     "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
