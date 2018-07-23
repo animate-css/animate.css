@@ -26,3 +26,10 @@
 .animated.delay-5s {
   animation-delay: 5s;
 }
+
+@media (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}

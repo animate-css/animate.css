@@ -13,7 +13,6 @@ var header = require('gulp-header');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
-var tap = require('gulp-tap');
 
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
@@ -53,30 +52,9 @@ gulp.task('default', function() {
   runSequence('createCSS', 'addHeader');
 });
 
-function addMotionMediaQuery(input, fileInfo) {
-  const hasQuery = input.includes('prefers-reduced-motion');
-  if (hasQuery) return input;
-
-  var reduceMotion = function(className = '.animated') {
-    return `@media (prefers-reduced-motion) {
-      ${className} {
-        animation-name: unset;
-        transform: none !important;
-      }
-    }`;
-  };
-  const classNames = input.match(/\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*/);
-  return input.concat(reduceMotion(classNames[0]));
-}
-
 gulp.task('createCSS', function() {
   return gulp
     .src(activatedAnimations)
-    .pipe(
-      tap(function(file) {
-        file.contents = Buffer.from(addMotionMediaQuery(file.contents.toString()));
-      }),
-    )
     .pipe(concat(opts.concatName))
     .pipe(postcss([autoprefixer(opts.autoprefixer)]))
     .pipe(gulp.dest(opts.destPath))
@@ -102,7 +80,7 @@ function activateAnimations() {
     category,
     files,
     file,
-    target = ['source/_base.css'],
+    target = [],
     count = 0;
 
   for (category in categories) {
@@ -118,6 +96,8 @@ function activateAnimations() {
       }
     }
   }
+  // prepend base CSS
+  target.push('source/_base.css');
 
   if (!count) {
     gutil.log('No animations activated.');
