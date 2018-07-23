@@ -32,7 +32,7 @@
 }
 
 .animated.faster {
-  animation-duration: 500ms; 
+  animation-duration: 500ms;
 }
 
 .animated.slow {
@@ -41,4 +41,11 @@
 
 .animated.slower {
   animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
 }

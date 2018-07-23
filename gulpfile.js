@@ -78,7 +78,7 @@ function activateAnimations() {
     category,
     files,
     file,
-    target = ['source/_base.css'],
+    target = [],
     count = 0;
 
   for (category in categories) {
@@ -94,6 +94,8 @@ function activateAnimations() {
       }
     }
   }
+  // prepend base CSS
+  target.push('source/_base.css');
 
   if (!count) {
     gutil.log('No animations activated.');
