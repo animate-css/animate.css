@@ -53,7 +53,7 @@ gulp.task('default', function() {
   runSequence('createCSS', 'addHeader');
 });
 
-function addMotionMediaQuery (input, fileInfo) {
+function addMotionMediaQuery(input, fileInfo) {
   const hasQuery = input.includes('prefers-reduced-motion');
   if (hasQuery) return input;
 
@@ -64,7 +64,7 @@ function addMotionMediaQuery (input, fileInfo) {
         transform: none !important;
       }
     }`;
-  }
+  };
   const classNames = input.match(/\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*/);
   return input.concat(reduceMotion(classNames[0]));
 }
@@ -72,9 +72,11 @@ function addMotionMediaQuery (input, fileInfo) {
 gulp.task('createCSS', function() {
   return gulp
     .src(activatedAnimations)
-    .pipe(tap(function(file) {
-      file.contents = Buffer.from(addMotionMediaQuery(file.contents.toString()))
-    }))
+    .pipe(
+      tap(function(file) {
+        file.contents = Buffer.from(addMotionMediaQuery(file.contents.toString()));
+      }),
+    )
     .pipe(concat(opts.concatName))
     .pipe(postcss([autoprefixer(opts.autoprefixer)]))
     .pipe(gulp.dest(opts.destPath))
