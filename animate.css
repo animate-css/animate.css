@@ -2,7 +2,7 @@
 
 /*!
  * animate.css -http://daneden.me/animate
- * Version - 3.6.2
+ * Version - 3.7.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
  * Copyright (c) 2018 Daniel Eden
@@ -43,6 +43,26 @@
 .animated.delay-5s {
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes bounce {
