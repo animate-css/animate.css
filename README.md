@@ -6,13 +6,7 @@ _Just-add-water CSS animation_
 
 ## Installation
 
-To install via Bower, simply do the following:
-
-```bash
-$ bower install animate.css --save
-```
-
-or you can install via npm:
+To install via npm:
 
 ```bash
 $ npm install animate.css --save
