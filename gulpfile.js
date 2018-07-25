@@ -25,11 +25,11 @@ var opts = {
 
   autoprefixer: {
     browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
-    cascade: false
+    cascade: false,
   },
 
   minRename: {
-    suffix: '.min'
+    suffix: '.min',
   },
 
   banner: [
@@ -41,16 +41,12 @@ var opts = {
     ' *',
     ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
     ' */\n\n',
-  ].join('\n')
+  ].join('\n'),
 };
 
 // ----------------------------
 // Gulp task definitions
 // ----------------------------
-
-gulp.task('default', function() {
-  runSequence('createCSS', 'addHeader');
-});
 
 gulp.task('createCSS', function() {
   return gulp
@@ -70,6 +66,8 @@ gulp.task('addHeader', function() {
     .pipe(gulp.dest(opts.destPath));
 });
 
+gulp.task('default', gulp.series('createCSS', 'addHeader'));
+
 // ----------------------------
 // Helpers/functions
 // ----------------------------
@@ -80,7 +78,7 @@ function activateAnimations() {
     category,
     files,
     file,
-    target = ['source/_base.css'],
+    target = [],
     count = 0;
 
   for (category in categories) {
@@ -96,6 +94,8 @@ function activateAnimations() {
       }
     }
   }
+  // prepend base CSS
+  target.push('source/_base.css');
 
   if (!count) {
     gutil.log('No animations activated.');

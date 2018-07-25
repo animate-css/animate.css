@@ -1,4 +1,4 @@
-# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![CDNJS](https://img.shields.io/cdnjs/v/animate.css.svg)](https://cdnjs.com/libraries/animate.css) [![Build Status](https://travis-ci.org/WarenGonzaga/animate.css.svg?branch=master)](https://travis-ci.org/WarenGonzaga/animate.css) [![devDependencies Status](https://david-dm.org/WarenGonzaga/animate.css/dev-status.svg)](https://david-dm.org/WarenGonzaga/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby) [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate.css)
+# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![CDNJS](https://img.shields.io/cdnjs/v/animate.css.svg)](https://cdnjs.com/libraries/animate.css) [![Build Status](https://travis-ci.com/daneden/animate.css.svg?branch=master)](https://travis-ci.com/daneden/animate.css) [![devDependencies Status](https://david-dm.org/daneden/animate.css/dev-status.svg)](https://david-dm.org/daneden/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby) [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate.css)
 
 _Just-add-water CSS animation_
 
@@ -203,13 +203,41 @@ You can change the duration of your animations, add a delay or change the number
 
 _Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)_
 
+## Define _Delay_ and _Speed_ using Class
+
+#### Delay Class
+
 You can also add delays directly on the element's class attribute, just like this:
 
 ```html
 <div class="animated bounce delay-2s">Example</div>
 ```
 
-_Note: the default delays are from 1 seconds to 5 seconds only. If you want to add customized delays, you can add it directly to your css_
+| Class Name | Delay Time |
+| ---------- | ---------- |
+| `delay-2s` | `2s`       |
+| `delay-3s` | `3s`       |
+| `delay-4s` | `4s`       |
+| `delay-5s` | `5s`       |
+
+> _**Note**: The default delays are from 1 second to 5 seconds only. If you want to add customized delays, you can add it directly to your css_
+
+#### Slow, Slower, Fast, and Faster Class
+
+You can control the speed of the animation by adding these classes, as a sample below:
+
+```html
+<div class="animated bounce faster">Example</div>
+```
+
+| Class Name | Speed Time |
+| ---------- | ---------- |
+| `slow`     | `2s`       |
+| `slower`   | `3s`       |
+| `fast`     | `800ms`    |
+| `faster`   | `500ms`    |
+
+> _**Note**: The default speed is `1s` which is you don't need to put any class. If you want to add a custom duration, you can add it directly to your css instead_
 
 ## Custom Builds
 
@@ -235,6 +263,10 @@ Next, run `gulp` to compile your custom builds. For example, if you want only so
   "jello":true
 }
 ```
+
+## Accessibility
+
+Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently only OSX Safari and iOS Safari), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
 ## License
 
