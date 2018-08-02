@@ -56,7 +56,7 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 </head>
 ```
 
-2.  Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop.
+2.  Add the class `animated` to the element you want to animate. You may also want to include the class `infinite` for an infinite loop, and/or the class `reverse` to reverse the animation.
 
 3.  Finally you need to add one of the following classes:
 

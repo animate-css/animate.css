@@ -3,6 +3,10 @@
   animation-fill-mode: both;
 }
 
+.animated.reverse {
+  animation-direction: reverse;
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }

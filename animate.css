@@ -3563,6 +3563,11 @@
   animation-fill-mode: both;
 }
 
+.animated.reverse {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
