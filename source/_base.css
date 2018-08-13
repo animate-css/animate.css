@@ -49,3 +49,9 @@
     transition: none !important;
   }
 }
+
+@media print {
+  .animated {
+    animation: none!important;
+  }
+}
