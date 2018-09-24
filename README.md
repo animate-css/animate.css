@@ -191,10 +191,10 @@ $('#yourElement').animateCss('bounce', function() {
 You can change the duration of your animations, add a delay or change the number of times that it plays:
 
 ```css
-#yourElement {
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
+.yourElement {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 ```
 
