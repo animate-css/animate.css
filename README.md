@@ -4,7 +4,7 @@ _Just-add-water CSS animation_
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
-## Installation
+# Installation
 
 To install via Bower, simply do the following:
 
@@ -18,7 +18,7 @@ or you can install via npm:
 $ npm install animate.css --save
 ```
 
-## Basic Usage
+#Basic Usage
 
 1.  Include the stylesheet on your document's `<head>`
 
@@ -86,12 +86,12 @@ You may [generate a SRI hash](https://www.srihash.org/) of that particular versi
 Full example:
 
 ```html
-<h1 class="animated infinite bounce delay-2s">Example</h1>
+<h1 class="animated infinite bounce delay-2s">Examples</h1>
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
 
-## Usage
+#Usage
 
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
 
@@ -202,7 +202,7 @@ _Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixe
 
 ## Define _Delay_ and _Speed_ using Class
 
-#### Delay Class
+# Delay Class
 
 You can also add delays directly on the element's class attribute, just like this:
 
@@ -224,7 +224,7 @@ You can also add delays directly on the element's class attribute, just like thi
 You can control the speed of the animation by adding these classes, as a sample below:
 
 ```html
-<div class="animated bounce faster">Example</div>
+<div class="animated bounce faster">Examples</div>
 ```
 
 | Class Name | Speed Time |
@@ -236,7 +236,7 @@ You can control the speed of the animation by adding these classes, as a sample 
 
 > _**Note**: The default speed is `1s` which is you don't need to put any class. If you want to add a custom duration, you can add it directly to your css instead_
 
-## Custom Builds
+# Custom Builds
 
 Animate.css is powered by [gulp.js](http://gulpjs.com/), and you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
