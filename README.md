@@ -39,7 +39,7 @@ Instead of installing you may use the remote version (hosted by [CDNJS](https://
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 ```
-For Webpack 4
+### For Webpack 4
 
 Import animate.css by adding this line to your app’s entry point (usually index.js or app.js):
 
