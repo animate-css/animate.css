@@ -18,6 +18,13 @@ or you can install via npm:
 $ npm install animate.css --save
 ```
 
+or you can install via yarn:
+
+```bash
+$ yarn add animate.css
+```
+
+
 ## Basic Usage
 
 1.  Include the stylesheet on your document's `<head>`
