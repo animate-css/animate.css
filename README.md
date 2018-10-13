@@ -191,7 +191,7 @@ And use it like this:
 $('#yourElement').animateCss('bounce');
 or;
 $('#yourElement').animateCss('bounce', function() {
-  // Do somthing after animation
+  // Do something after animation
 });
 ```
 
