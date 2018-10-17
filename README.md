@@ -84,9 +84,6 @@ It's possible to change the duration of your animations, add a delay or change t
 }
 ```
 
-_Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)._
-
-
 ## Usage with jQuery
 
 You can do a whole bunch of other stuff with animate.css when you combine it with jQuery. A simple example:
