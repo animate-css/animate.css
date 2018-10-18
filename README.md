@@ -70,6 +70,8 @@ Full example:
 
 ```html
 <h1 class="animated infinite bounce delay-2s">Example</h1>
+
+<h2 class="animated bounce delay-2s">Example</h2>
 ```
 
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
