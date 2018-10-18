@@ -9,7 +9,7 @@
   "author": {
     "name": "Daniel Eden"
   },
-  "homepage": "http://daneden.me/animate",
+  "homepage": "https://daneden.github.io/animate.css/",
   "license": "MIT",
   "style": "./animate.css",
   "jspm": {
