@@ -120,11 +120,11 @@ var animationEnd = (function(el) {
 $('#yourElement').one(animationEnd, doSomething);
 ```
 
-[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
+[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use animate.css with jQuery here.
 
 **Note:** `jQuery.one()` is used when you want to execute the event handler at most _once_. More information [here](http://api.jquery.com/one/).
 
-It's possible to extend jQuery and add a function that does it all for you:
+It is possible to extend jQuery and add a function that does it all for you:
 
 ```javascript
 $.fn.extend({
@@ -169,7 +169,7 @@ $('#yourElement').animateCss('bounce', function() {
 
 ### Delay Class
 
-It's possible to add delays directly on the element's class attribute, just like this:
+It is possible to add delays directly on the element's class attribute, just like this:
 
 ```html
 <div class="animated bounce delay-2s">Example</div>
@@ -186,7 +186,7 @@ It's possible to add delays directly on the element's class attribute, just like
 
 ### Slow, Slower, Fast, and Faster Class
 
-It's possible to control the speed of the animation by adding these classes, as a sample below:
+It is possible to control the speed of the animation by adding these classes, as a sample below:
 
 ```html
 <div class="animated bounce faster">Example</div>
@@ -203,7 +203,7 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 ## Custom Builds
 
-Animate.css is powered by [gulp.js](http://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
+animate.css is powered by [gulp.js](http://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
 ```sh
 $ cd path/to/animate.css/
@@ -228,11 +228,11 @@ Next, run `gulp` to compile your custom builds. For example, if you want only so
 
 ## Accessibility
 
-Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently only OSX Safari and iOS Safari), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
+animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently only OSX Safari and iOS Safari), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
 ## License
 
-Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
 
