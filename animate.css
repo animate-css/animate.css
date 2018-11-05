@@ -2914,6 +2914,39 @@
   animation-name: rollOut;
 }
 
+@-webkit-keyframes stamp { 
+  0% {
+    transform: scale(100);
+  }
+  
+  50% {
+    transform: scale(10);
+  }  
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes stamp {
+  0% {
+    transform: scale(100);
+  }
+  
+  50% {
+    transform: scale(10);
+  }  
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+.stamp {
+  -webkit-animation-name: stamp;
+  animation-name: stamp;
+}
+
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
