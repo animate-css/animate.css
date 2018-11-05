@@ -59,12 +59,12 @@ To animate an element, add the class `animated` to an element. You can include t
 | `rotateIn`        | `rotateInDownLeft` | `rotateInDownRight` | `rotateInUpLeft`     |
 | `rotateInUpRight` | `rotateOut`        | `rotateOutDownLeft` | `rotateOutDownRight` |
 | `rotateOutUpLeft` | `rotateOutUpRight` | `hinge`             | `jackInTheBox`       |
-| `rollIn`          | `rollOut`          | `zoomIn`            | `zoomInDown`         |
-| `zoomInLeft`      | `zoomInRight`      | `zoomInUp`          | `zoomOut`            |
-| `zoomOutDown`     | `zoomOutLeft`      | `zoomOutRight`      | `zoomOutUp`          |
-| `slideInDown`     | `slideInLeft`      | `slideInRight`      | `slideInUp`          |
-| `slideOutDown`    | `slideOutLeft`     | `slideOutRight`     | `slideOutUp`         |
-| `heartBeat`       |
+| `rollIn`          | `rollOut`          | `stamp`             | `zoomIn`             |
+| `zoomInDown`      | `zoomInLeft`       | `zoomInRight`       | `zoomInUp`           |
+| `zoomOut`         | `zoomOutDown`      | `zoomOutLeft`       | `zoomOutRight`       |
+| `zoomOutUp`       | `slideInDown`      | `slideInLeft`       | `slideInRight`       |
+| `slideInUp`       | `slideOutDown`     | `slideOutLeft`      | `slideOutRight`      |
+| `slideOutUp`      | `heartBeat`        |                     |                      |
 
 Full example:
 
