@@ -49,10 +49,14 @@
   "scripts": {
     "gulp": "./node_modules/gulp/bin/gulp.js",
     "start": "gulp",
-    "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged"
+    "prettier": "prettier --write \"**/*.{js,json,md,css}\""
   },
   "spm": {
     "main": "./animate.css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

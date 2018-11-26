@@ -1,50 +1,62 @@
-.animated {
+.animated,
+.a-animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-.animated.infinite {
+.animated.infinite,
+.a-animated.infinite {
   animation-iteration-count: infinite;
 }
 
-.animated.delay-1s {
+.animated.delay-1s,
+.a-animated.delay-1s {
   animation-delay: 1s;
 }
 
-.animated.delay-2s {
+.animated.delay-2s,
+.a-animated.delay-2s {
   animation-delay: 2s;
 }
 
-.animated.delay-3s {
+.animated.delay-3s,
+.a-animated.delay-3s {
   animation-delay: 3s;
 }
 
-.animated.delay-4s {
+.animated.delay-4s,
+.a-animated.delay-4s {
   animation-delay: 4s;
 }
 
-.animated.delay-5s {
+.animated.delay-5s,
+.a-animated.delay-5s {
   animation-delay: 5s;
 }
 
-.animated.fast {
+.animated.fast,
+.a-animated.fast {
   animation-duration: 800ms;
 }
 
-.animated.faster {
+.animated.faster,
+.a-animated.faster {
   animation-duration: 500ms;
 }
 
-.animated.slow {
+.animated.slow,
+.a-animated.slow {
   animation-duration: 2s;
 }
 
-.animated.slower {
+.animated.slower,
+.a-animated.slower {
   animation-duration: 3s;
 }
 
 @media (print), (prefers-reduced-motion) {
-  .animated {
+  .animated,
+  .a-animated {
     animation: unset !important;
     transition: none !important;
   }
