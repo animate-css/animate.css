@@ -20,6 +20,7 @@
     }
   },
   "devDependencies": {
+    "ansi-colors": "^3.2.1",
     "autoprefixer": "^9.0.1",
     "cssnano": "^4.0.3",
     "eslint": "^5.2.0",

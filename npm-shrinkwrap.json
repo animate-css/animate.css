@@ -141,13 +141,10 @@
       "dev": true
     },
     "ansi-colors": {
-      "version": "1.1.0",
-      "resolved": "http://registry.npmjs.org/ansi-colors/-/ansi-colors-1.1.0.tgz",
-      "integrity": "sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==",
-      "dev": true,
-      "requires": {
-        "ansi-wrap": "^0.1.0"
-      }
+      "version": "3.2.1",
+      "resolved": "https://registry.npmjs.org/ansi-colors/-/ansi-colors-3.2.1.tgz",
+      "integrity": "sha512-Xt+zb6nqgvV9SWAVp0EG3lRsHcbq5DDgqjPPz6pwgtj6RKz65zGXMNa82oJfOSBA/to6GmRP7Dr+6o+kbApTzQ==",
+      "dev": true
     },
     "ansi-cyan": {
       "version": "0.1.1",
@@ -2806,6 +2803,17 @@
             "semver-greatest-satisfied-range": "^1.1.0",
             "v8flags": "^3.0.1",
             "yargs": "^7.1.0"
+          },
+          "dependencies": {
+            "ansi-colors": {
+              "version": "1.1.0",
+              "resolved": "http://registry.npmjs.org/ansi-colors/-/ansi-colors-1.1.0.tgz",
+              "integrity": "sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==",
+              "dev": true,
+              "requires": {
+                "ansi-wrap": "^0.1.0"
+              }
+            }
           }
         }
       }
@@ -4598,6 +4606,17 @@
         "arr-diff": "^4.0.0",
         "arr-union": "^3.1.0",
         "extend-shallow": "^3.0.2"
+      },
+      "dependencies": {
+        "ansi-colors": {
+          "version": "1.1.0",
+          "resolved": "http://registry.npmjs.org/ansi-colors/-/ansi-colors-1.1.0.tgz",
+          "integrity": "sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==",
+          "dev": true,
+          "requires": {
+            "ansi-wrap": "^0.1.0"
+          }
+        }
       }
     },
     "pluralize": {
