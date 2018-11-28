@@ -28,7 +28,6 @@
     "gulp-header": "^2.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.10.2",
