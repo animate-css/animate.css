@@ -8,11 +8,14 @@ var gulp = require('gulp');
 
 // Gulp plugins
 var concat = require('gulp-concat');
-var log = require('fancy-log');
 var header = require('gulp-header');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
+
+// Other plugins
+var log = require('fancy-log');
+var c = require('ansi-colors');
 
 // Misc/global vars
 var pkg = JSON.parse(fs.readFileSync('package.json'));
@@ -98,9 +101,9 @@ function activateAnimations() {
   target.push('source/_base.css');
 
   if (!count) {
-    log.info('No animations activated.');
+    log.warn(c.red('No animations activated.'));
   } else {
-    log.info(count + (count > 1 ? ' animations' : ' animation') + ' activated.');
+    log.info(c.green(count + (count > 1 ? ' animations' : ' animation') + ' activated.'));
   }
 
   return target;
