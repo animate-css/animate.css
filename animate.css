@@ -3613,7 +3613,7 @@
   animation-duration: 3s;
 }
 
-@media (prefers-reduced-motion) {
+@media (print), (prefers-reduced-motion) {
   .animated {
     -webkit-animation: unset !important;
     animation: unset !important;
