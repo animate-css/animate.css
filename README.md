@@ -84,86 +84,54 @@ It's possible to change the duration of your animations, add a delay or change t
 }
 ```
 
-## Usage with jQuery
+## Usage with Javascript
 
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery. A simple example:
+You can do a whole bunch of other stuff with animate.css when you combine it with Javascript. A simple example:
 
 ```javascript
-$('#yourElement').addClass('animated bounceOutLeft');
+const element =  document.querySelector('.my-element')
+element.classList.add('animated', 'bounceOutLeft')
 ```
 
 You can also detect when an animation ends:
 
-<!--
-Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
-
-http://api.jquery.com/one/
--->
-
 ```javascript
-// See https://github.com/daneden/animate.css/issues/644
-var animationEnd = (function(el) {
-  var animations = {
-    animation: 'animationend',
-    OAnimation: 'oAnimationEnd',
-    MozAnimation: 'mozAnimationEnd',
-    WebkitAnimation: 'webkitAnimationEnd',
-  };
+const element =  document.querySelector('.my-element')
+element.classList.add('animated', 'bounceOutLeft')
 
-  for (var t in animations) {
-    if (el.style[t] !== undefined) {
-      return animations[t];
-    }
-  }
-})(document.createElement('div'));
-
-$('#yourElement').one(animationEnd, doSomething);
+element.addEventListener('animationend', function() { doSomething() })
 ```
 
-[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use Animate.css with jQuery here.
-
-**Note:** `jQuery.one()` is used when you want to execute the event handler at most _once_. More information [here](http://api.jquery.com/one/).
-
-It's possible to extend jQuery and add a function that does it all for you:
+You can use this simple function to add and remove the animations:
 
 ```javascript
-$.fn.extend({
-  animateCss: function(animationName, callback) {
-    var animationEnd = (function(el) {
-      var animations = {
-        animation: 'animationend',
-        OAnimation: 'oAnimationEnd',
-        MozAnimation: 'mozAnimationEnd',
-        WebkitAnimation: 'webkitAnimationEnd',
-      };
+function animateCss(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
 
-      for (var t in animations) {
-        if (el.style[t] !== undefined) {
-          return animations[t];
-        }
-      }
-    })(document.createElement('div'));
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
 
-    this.addClass('animated ' + animationName).one(animationEnd, function() {
-      $(this).removeClass('animated ' + animationName);
+        if (typeof callback === 'function') callback()
+    }
 
-      if (typeof callback === 'function') callback();
-    });
-
-    return this;
-  },
-});
+    node.addEventListener('animationend', handleAnimationEnd)
+}
 ```
 
 And use it like this:
 
 ```javascript
-$('#yourElement').animateCss('bounce');
-or;
-$('#yourElement').animateCss('bounce', function() {
+animateCSS('.my-element', 'bounce')
+
+// or
+animateCSS('.my-element', 'bounce', function() {
   // Do something after animation
-});
+})
 ```
+
+Notice that the examples are using ES6's `const` declaration, dropping support for IE10 and some aging browsers. If you prefer, switch the `const` to `var` declarations and IE10 and some old browsers will get support (they still have to provide [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) support, so do your [research](https://caniuse.com/#feat=classlist)).
 
 ## Setting _Delay_ and _Speed_
 
