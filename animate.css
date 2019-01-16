@@ -1,12 +1,79 @@
 @charset "UTF-8";
-
 /*!
- * animate.css -http://daneden.me/animate
+ * animate.css - https://daneden.github.io/animate.css/
  * Version - 3.7.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2018 Daniel Eden
+ * Copyright (c) 2019 Daniel Eden
  */
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animate__animated.animate__infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animate__animated.animate__delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animate__animated.animate__delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animate__animated.animate__delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animate__animated.animate__delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animate__animated.animate__fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animate__animated.animate__faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animate__animated.animate__slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animate__animated.animate__slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (print), (prefers-reduced-motion) {
+  .animate__animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+/* Attention seekers  */
 
 @-webkit-keyframes bounce {
   from,
@@ -74,7 +141,7 @@
   }
 }
 
-.bounce {
+.animate__bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-transform-origin: center bottom;
@@ -107,7 +174,7 @@
   }
 }
 
-.flash {
+.animate__flash {
   -webkit-animation-name: flash;
   animation-name: flash;
 }
@@ -148,7 +215,7 @@
   }
 }
 
-.pulse {
+.animate__pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
@@ -227,7 +294,7 @@
   }
 }
 
-.rubberBand {
+.animate__rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
@@ -282,7 +349,7 @@
   }
 }
 
-.shake {
+.animate__shake {
   -webkit-animation-name: shake;
   animation-name: shake;
 }
@@ -351,7 +418,7 @@
   }
 }
 
-.headShake {
+.animate__headShake {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-name: headShake;
@@ -412,7 +479,7 @@
   }
 }
 
-.swing {
+.animate__swing {
   -webkit-transform-origin: top center;
   transform-origin: top center;
   -webkit-animation-name: swing;
@@ -485,7 +552,7 @@
   }
 }
 
-.tada {
+.animate__tada {
   -webkit-animation-name: tada;
   animation-name: tada;
 }
@@ -566,7 +633,7 @@
   }
 }
 
-.wobble {
+.animate__wobble {
   -webkit-animation-name: wobble;
   animation-name: wobble;
 }
@@ -659,7 +726,7 @@
   }
 }
 
-.jello {
+.animate__jello {
   -webkit-animation-name: jello;
   animation-name: jello;
   -webkit-transform-origin: center;
@@ -720,7 +787,7 @@
   }
 }
 
-.heartBeat {
+.animate__heartBeat {
   -webkit-animation-name: heartBeat;
   animation-name: heartBeat;
   -webkit-animation-duration: 1.3s;
@@ -728,6 +795,8 @@
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+
+/* Bouncing entrances  */
 
 @-webkit-keyframes bounceIn {
   from,
@@ -819,7 +888,7 @@
   }
 }
 
-.bounceIn {
+.animate__bounceIn {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-name: bounceIn;
@@ -902,7 +971,7 @@
   }
 }
 
-.bounceInDown {
+.animate__bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
@@ -983,7 +1052,7 @@
   }
 }
 
-.bounceInLeft {
+.animate__bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
 }
@@ -1064,7 +1133,7 @@
   }
 }
 
-.bounceInRight {
+.animate__bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
 }
@@ -1145,10 +1214,12 @@
   }
 }
 
-.bounceInUp {
+.animate__bounceInUp {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
+
+/* Bouncing exits  */
 
 @-webkit-keyframes bounceOut {
   20% {
@@ -1190,7 +1261,7 @@
   }
 }
 
-.bounceOut {
+.animate__bounceOut {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-name: bounceOut;
@@ -1237,7 +1308,7 @@
   }
 }
 
-.bounceOutDown {
+.animate__bounceOutDown {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
@@ -1270,7 +1341,7 @@
   }
 }
 
-.bounceOutLeft {
+.animate__bounceOutLeft {
   -webkit-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft;
 }
@@ -1303,7 +1374,7 @@
   }
 }
 
-.bounceOutRight {
+.animate__bounceOutRight {
   -webkit-animation-name: bounceOutRight;
   animation-name: bounceOutRight;
 }
@@ -1348,10 +1419,12 @@
   }
 }
 
-.bounceOutUp {
+.animate__bounceOutUp {
   -webkit-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
+
+/* Fading entrances  */
 
 @-webkit-keyframes fadeIn {
   from {
@@ -1373,7 +1446,7 @@
   }
 }
 
-.fadeIn {
+.animate__fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -1406,7 +1479,7 @@
   }
 }
 
-.fadeInDown {
+.animate__fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
@@ -1439,7 +1512,7 @@
   }
 }
 
-.fadeInDownBig {
+.animate__fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
@@ -1472,7 +1545,7 @@
   }
 }
 
-.fadeInLeft {
+.animate__fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
@@ -1505,7 +1578,7 @@
   }
 }
 
-.fadeInLeftBig {
+.animate__fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
@@ -1538,7 +1611,7 @@
   }
 }
 
-.fadeInRight {
+.animate__fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
@@ -1571,7 +1644,7 @@
   }
 }
 
-.fadeInRightBig {
+.animate__fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
 }
@@ -1604,7 +1677,7 @@
   }
 }
 
-.fadeInUp {
+.animate__fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
@@ -1637,10 +1710,12 @@
   }
 }
 
-.fadeInUpBig {
+.animate__fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
 }
+
+/* Fading exits */
 
 @-webkit-keyframes fadeOut {
   from {
@@ -1662,7 +1737,7 @@
   }
 }
 
-.fadeOut {
+.animate__fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
@@ -1691,7 +1766,7 @@
   }
 }
 
-.fadeOutDown {
+.animate__fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
@@ -1720,7 +1795,7 @@
   }
 }
 
-.fadeOutDownBig {
+.animate__fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
 }
@@ -1749,7 +1824,7 @@
   }
 }
 
-.fadeOutLeft {
+.animate__fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }
@@ -1778,7 +1853,7 @@
   }
 }
 
-.fadeOutLeftBig {
+.animate__fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
 }
@@ -1807,7 +1882,7 @@
   }
 }
 
-.fadeOutRight {
+.animate__fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
@@ -1836,7 +1911,7 @@
   }
 }
 
-.fadeOutRightBig {
+.animate__fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig;
 }
@@ -1865,7 +1940,7 @@
   }
 }
 
-.fadeOutUp {
+.animate__fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
@@ -1894,10 +1969,12 @@
   }
 }
 
-.fadeOutUpBig {
+.animate__fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
 }
+
+/* Flippers */
 
 @-webkit-keyframes flip {
   from {
@@ -1989,7 +2066,7 @@
   }
 }
 
-.animated.flip {
+.animate__animated.animate__flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2062,7 +2139,7 @@
   }
 }
 
-.flipInX {
+.animate__flipInX {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
@@ -2135,7 +2212,7 @@
   }
 }
 
-.flipInY {
+.animate__flipInY {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInY;
@@ -2180,7 +2257,7 @@
   }
 }
 
-.flipOutX {
+.animate__flipOutX {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-name: flipOutX;
@@ -2227,7 +2304,7 @@
   }
 }
 
-.flipOutY {
+.animate__flipOutY {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-backface-visibility: visible !important;
@@ -2235,6 +2312,8 @@
   -webkit-animation-name: flipOutY;
   animation-name: flipOutY;
 }
+
+/* Lightspeed */
 
 @-webkit-keyframes lightSpeedIn {
   from {
@@ -2284,7 +2363,7 @@
   }
 }
 
-.lightSpeedIn {
+.animate__lightSpeedIn {
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
@@ -2315,12 +2394,14 @@
   }
 }
 
-.lightSpeedOut {
+.animate__lightSpeedOut {
   -webkit-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
+
+/* Rotating entrances */
 
 @-webkit-keyframes rotateIn {
   from {
@@ -2358,7 +2439,7 @@
   }
 }
 
-.rotateIn {
+.animate__rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
@@ -2399,7 +2480,7 @@
   }
 }
 
-.rotateInDownLeft {
+.animate__rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft;
 }
@@ -2440,7 +2521,7 @@
   }
 }
 
-.rotateInDownRight {
+.animate__rotateInDownRight {
   -webkit-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight;
 }
@@ -2481,7 +2562,7 @@
   }
 }
 
-.rotateInUpLeft {
+.animate__rotateInUpLeft {
   -webkit-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
 }
@@ -2522,10 +2603,12 @@
   }
 }
 
-.rotateInUpRight {
+.animate__rotateInUpRight {
   -webkit-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight;
 }
+
+/* Rotating exits */
 
 @-webkit-keyframes rotateOut {
   from {
@@ -2559,7 +2642,7 @@
   }
 }
 
-.rotateOut {
+.animate__rotateOut {
   -webkit-animation-name: rotateOut;
   animation-name: rotateOut;
 }
@@ -2596,7 +2679,7 @@
   }
 }
 
-.rotateOutDownLeft {
+.animate__rotateOutDownLeft {
   -webkit-animation-name: rotateOutDownLeft;
   animation-name: rotateOutDownLeft;
 }
@@ -2633,7 +2716,7 @@
   }
 }
 
-.rotateOutDownRight {
+.animate__rotateOutDownRight {
   -webkit-animation-name: rotateOutDownRight;
   animation-name: rotateOutDownRight;
 }
@@ -2670,7 +2753,7 @@
   }
 }
 
-.rotateOutUpLeft {
+.animate__rotateOutUpLeft {
   -webkit-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft;
 }
@@ -2707,10 +2790,12 @@
   }
 }
 
-.rotateOutUpRight {
+.animate__rotateOutUpRight {
   -webkit-animation-name: rotateOutUpRight;
   animation-name: rotateOutUpRight;
 }
+
+/* Specials */
 
 @-webkit-keyframes hinge {
   0% {
@@ -2784,7 +2869,7 @@
   }
 }
 
-.hinge {
+.animate__hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-name: hinge;
@@ -2843,7 +2928,7 @@
   }
 }
 
-.jackInTheBox {
+.animate__jackInTheBox {
   -webkit-animation-name: jackInTheBox;
   animation-name: jackInTheBox;
 }
@@ -2878,7 +2963,7 @@
   }
 }
 
-.rollIn {
+.animate__rollIn {
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
@@ -2909,10 +2994,12 @@
   }
 }
 
-.rollOut {
+.animate__rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+/* Zooming entrances */
 
 @-webkit-keyframes zoomIn {
   from {
@@ -2938,7 +3025,7 @@
   }
 }
 
-.zoomIn {
+.animate__zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
@@ -2979,7 +3066,7 @@
   }
 }
 
-.zoomInDown {
+.animate__zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
 }
@@ -3020,7 +3107,7 @@
   }
 }
 
-.zoomInLeft {
+.animate__zoomInLeft {
   -webkit-animation-name: zoomInLeft;
   animation-name: zoomInLeft;
 }
@@ -3061,7 +3148,7 @@
   }
 }
 
-.zoomInRight {
+.animate__zoomInRight {
   -webkit-animation-name: zoomInRight;
   animation-name: zoomInRight;
 }
@@ -3102,10 +3189,12 @@
   }
 }
 
-.zoomInUp {
+.animate__zoomInUp {
   -webkit-animation-name: zoomInUp;
   animation-name: zoomInUp;
 }
+
+/* Zooming exits */
 
 @-webkit-keyframes zoomOut {
   from {
@@ -3139,7 +3228,7 @@
   }
 }
 
-.zoomOut {
+.animate__zoomOut {
   -webkit-animation-name: zoomOut;
   animation-name: zoomOut;
 }
@@ -3184,7 +3273,7 @@
   }
 }
 
-.zoomOutDown {
+.animate__zoomOutDown {
   -webkit-animation-name: zoomOutDown;
   animation-name: zoomOutDown;
 }
@@ -3221,7 +3310,7 @@
   }
 }
 
-.zoomOutLeft {
+.animate__zoomOutLeft {
   -webkit-animation-name: zoomOutLeft;
   animation-name: zoomOutLeft;
 }
@@ -3258,7 +3347,7 @@
   }
 }
 
-.zoomOutRight {
+.animate__zoomOutRight {
   -webkit-animation-name: zoomOutRight;
   animation-name: zoomOutRight;
 }
@@ -3303,10 +3392,12 @@
   }
 }
 
-.zoomOutUp {
+.animate__zoomOutUp {
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
+
+/* Sliding entrances */
 
 @-webkit-keyframes slideInDown {
   from {
@@ -3334,7 +3425,7 @@
   }
 }
 
-.slideInDown {
+.animate__slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
@@ -3365,7 +3456,7 @@
   }
 }
 
-.slideInLeft {
+.animate__slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
@@ -3396,7 +3487,7 @@
   }
 }
 
-.slideInRight {
+.animate__slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
 }
@@ -3427,10 +3518,12 @@
   }
 }
 
-.slideInUp {
+.animate__slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
+
+/* Sliding exits */
 
 @-webkit-keyframes slideOutDown {
   from {
@@ -3458,7 +3551,7 @@
   }
 }
 
-.slideOutDown {
+.animate__slideOutDown {
   -webkit-animation-name: slideOutDown;
   animation-name: slideOutDown;
 }
@@ -3489,7 +3582,7 @@
   }
 }
 
-.slideOutLeft {
+.animate__slideOutLeft {
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
 }
@@ -3520,7 +3613,7 @@
   }
 }
 
-.slideOutRight {
+.animate__slideOutRight {
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
 }
@@ -3551,73 +3644,9 @@
   }
 }
 
-.slideOutUp {
+.animate__slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.animated.delay-1s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.animated.delay-2s {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-.animated.delay-3s {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-.animated.delay-4s {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
-.animated.delay-5s {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.animated.fast {
-  -webkit-animation-duration: 800ms;
-  animation-duration: 800ms;
-}
-
-.animated.faster {
-  -webkit-animation-duration: 500ms;
-  animation-duration: 500ms;
-}
-
-.animated.slow {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-.animated.slower {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-}
-
-@media (print), (prefers-reduced-motion) {
-  .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
+/*# sourceMappingURL=animate.css.map */

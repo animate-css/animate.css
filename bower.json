@@ -1,5 +1,0 @@
-{
-  "name": "animate.css",
-  "main": "./animate.css",
-  "ignore": [".*", "*.yml", "Gemfile", "Gemfile.lock", "*.md"]
-}
