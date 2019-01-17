@@ -1,8 +1,7 @@
 const fs = require('fs');
 const {homepage, version, author} = JSON.parse(fs.readFileSync('package.json'));
 
-const header =
-  `
+const header = `
 @charset "UTF-8";
 
 /*!
@@ -12,7 +11,9 @@ const header =
  *
  * Copyright (c) ${new Date().getFullYear()} ${author.name}
  */
- ` + '\n \n';
+
+
+ `;
 
 module.exports = ctx => ({
   map: ctx.options.map,
