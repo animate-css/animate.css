@@ -119,9 +119,9 @@
           <option value="slideOutDown">slideOutDown</option>
           <option value="slideOutLeft">slideOutLeft</option>
           <option value="slideOutRight">slideOutRight</option>
-          
+
         </optgroup>
-        
+
         <optgroup label="Zoom Entrances">
           <option value="zoomIn">zoomIn</option>
           <option value="zoomInDown">zoomInDown</option>
@@ -129,7 +129,7 @@
           <option value="zoomInRight">zoomInRight</option>
           <option value="zoomInUp">zoomInUp</option>
         </optgroup>
-        
+
         <optgroup label="Zoom Exits">
           <option value="zoomOut">zoomOut</option>
           <option value="zoomOutDown">zoomOutDown</option>
@@ -173,6 +173,24 @@
       var anim = $(this).val();
       testAnim(anim);
     });
+
+    var allOptions = $('.js--animations').find('option');
+    var selectIndex = $('.js--animations').find(':selected').index();
+    $(document).keydown(function (e) {
+      var keycode = e.keyCode;
+      if (keycode !== 38 && keycode !== 40) {
+        return;
+      }
+
+      var nextIndex = keycode === 40 ? selectIndex + 1 : selectIndex - 1;
+      var nextOption = allOptions[nextIndex];
+      if (nextOption) {
+        var anim = $(nextOption).val();
+        $('.js--animations').val(anim);
+        testAnim(anim);
+        selectIndex = nextIndex;
+      }
+    })
   });
 
 </script>
