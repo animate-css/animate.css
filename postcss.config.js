@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {homepage, version, author} = JSON.parse(fs.readFileSync('package.json'));
+const {homepage, version, author, animateConfig} = JSON.parse(fs.readFileSync('package.json'));
 
 const header = `
 @charset "UTF-8";
@@ -13,7 +13,7 @@ const header = `
  */
 
 
- `;
+  `;
 
 module.exports = ctx => ({
   map: ctx.options.map,
@@ -21,7 +21,7 @@ module.exports = ctx => ({
   plugins: {
     'postcss-import': {root: ctx.file.dirname},
     'postcss-prefixer': {
-      prefix: 'animate__',
+      prefix: animateConfig.prefix,
     },
     autoprefixer: {
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
