@@ -202,6 +202,10 @@ Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.o
 
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
+## Code of Conduct
+
+This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [callmeelton@gmail.com](mailto:callmeelton@gmail.com).
+
 ## Contributing
 
 Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.
