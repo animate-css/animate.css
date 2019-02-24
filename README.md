@@ -105,7 +105,7 @@ element.addEventListener('animationend', function() { doSomething() })
 You can use this simple function to add and remove the animations:
 
 ```javascript
-function animateCss(element, animationName, callback) {
+function animateCSS(element, animationName, callback) {
     const node = document.querySelector(element)
     node.classList.add('animated', animationName)
 
