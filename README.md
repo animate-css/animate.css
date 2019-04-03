@@ -106,17 +106,24 @@ You can use this simple function to add and remove the animations:
 
 ```javascript
 function animateCSS(element, animationName, callback) {
-    const node = document.querySelector(element)
-    node.classList.add('animated', animationName)
+    const node = document.querySelector(element);
+    let classes = animationName.split(" ");
+
+    classes.forEach((v,i)=>{
+        node.classList.add('animated', v);
+    });
 
     function handleAnimationEnd() {
-        node.classList.remove('animated', animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
+        classes.forEach((v,i)=>{
+            node.classList.remove('animated', v);
+        });
 
-        if (typeof callback === 'function') callback()
+        node.removeEventListener('animationend', handleAnimationEnd);
+
+        if (typeof callback === 'function') callback(element);
     }
 
-    node.addEventListener('animationend', handleAnimationEnd)
+    node.addEventListener('animationend', handleAnimationEnd);
 }
 ```
 
