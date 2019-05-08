@@ -45,7 +45,7 @@
 
 @media (print), (prefers-reduced-motion) {
   .animated {
-    animation: unset !important;
-    transition: none !important;
+    animation-duration: 0s;
+    transition-duration: 0s;
   }
 }
