@@ -43,7 +43,7 @@
   animation-duration: 3s;
 }
 
-@media (print), (prefers-reduced-motion) {
+@media (print), (prefers-reduced-motion: reduce) {
   .animated {
     animation-duration: 0s !important;
     transition-duration: 0s !important;
