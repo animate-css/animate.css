@@ -43,9 +43,10 @@
   animation-duration: 3s;
 }
 
-@media (print), (prefers-reduced-motion) {
+@media (print), (prefers-reduced-motion: reduce) {
   .animated {
-    animation: unset !important;
-    transition: none !important;
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    animation-iteration-count: 1 !important; 
   }
 }
