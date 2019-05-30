@@ -6,3 +6,4 @@
 .sass-cache
 node_modules/
 test/
+package-lock.json
