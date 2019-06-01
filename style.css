@@ -6,19 +6,24 @@ body {
   overflow-x: hidden;
 }
 
-*, :before, :after {
+*,
+:before,
+:after {
   margin: 0;
   padding: 0;
   position: relative;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-input, select, button, textarea {
+input,
+select,
+button,
+textarea {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   font: inherit;
   color: inherit;
@@ -28,7 +33,8 @@ input, select, button, textarea {
   $OBJECTS
 \*-----------------------------------*/
 
-.butt, .input {
+.butt,
+.input {
   padding: .75rem;
   margin: .375rem;
 
@@ -36,9 +42,10 @@ input, select, button, textarea {
   border-radius: 4px;
 }
 
-  .butt:focus, .input:focus {
-    outline: none;
-  }
+.butt:focus,
+.input:focus {
+  outline: none;
+}
 
 .butt {
   border: 2px solid #f35626;
@@ -51,32 +58,34 @@ input, select, button, textarea {
   color: #f35626;
 
   cursor: pointer;
+  animation: hue 60s infinite linear;
   -webkit-animation: hue 60s infinite linear;
 }
 
-  .butt--primary {
-    background-color: #f35626;
-    color: #fff;
-  }
+.butt--primary {
+  background-color: #f35626;
+  color: #fff;
+}
 
 .input {
   border: 1px solid #c0c8c9;
   border-radius: 4px;
 }
 
-  .input--dropdown {
-    background-image: url("images/ddown.png");
-    background-image: url("images/ddown.svg?3"), none;
-    background-repeat: no-repeat;
-    background-size: 1.5rem 1rem;
-    background-position: right center;
-  }
+.input--dropdown {
+  background-image: url("images/ddown.png");
+  background-image: url("images/ddown.svg?3"), none;
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1rem;
+  background-position: right center;
+}
 
 /*-----------------------------------*\
   $TYPOGRAPHY
 \*-----------------------------------*/
 
-h1, .alpha {
+h1,
+.alpha {
   margin-bottom: 1.5rem;
 
   font-size: 3rem;
@@ -85,7 +94,8 @@ h1, .alpha {
   letter-spacing: -.05em;
 }
 
-h2, .beta {
+h2,
+.beta {
   margin-bottom: .75rem;
 
   font-weight: 400;
@@ -100,7 +110,8 @@ h2, .beta {
   }
 }
 
-.subhead, .meta {
+.subhead,
+.meta {
   color: #7b8993;
 }
 
@@ -108,7 +119,9 @@ h2, .beta {
   text-align: center;
 }
 
-p, hr, form {
+p,
+hr,
+form {
   margin-bottom: 1.5rem;
 }
 
@@ -123,12 +136,13 @@ hr {
 a {
   color: inherit;
   text-decoration: underline;
+  animation: hue 60s infinite linear;
   -webkit-animation: hue 60s infinite linear;
 }
 
-  a:hover {
-    color: #f35626;
-  }
+a:hover {
+  color: #f35626;
+}
 
 /*-----------------------------------*\
   $LAYOUT
@@ -193,30 +207,46 @@ html {
 \*-----------------------------------*/
 
 .site__header {
+  animation: bounceInUp 1s;
   -webkit-animation: bounceInUp 1s;
 }
 
-  .site__title {
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
-  }
+.site__title {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 60s infinite linear;
+  -webkit-animation: hue 60s infinite linear;
+}
 
 .site__content {
+  animation: bounceInUp 1s;
   -webkit-animation: bounceInUp 1s;
+  animation-delay: .1s;
   -webkit-animation-delay: .1s;
 }
 
-  .site__content form {
-    -webkit-animation: bounceInUp 1s;
-    -webkit-animation-delay: .1s;
-  }
+.site__content form {
+  animation: bounceInUp 1s;
+  -webkit-animation: bounceInUp 1s;
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+}
 
 /*-----------------------------------*\
   $ANIMATIONS
 \*-----------------------------------*/
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
 
 @-webkit-keyframes hue {
   from {
