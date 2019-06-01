@@ -23,7 +23,7 @@
     "autoprefixer": "^9.0.1",
     "cssnano": "^4.0.3",
     "eslint": "^5.2.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.1",
     "gulp-postcss": "^8.0.0",
