@@ -23,9 +23,12 @@ module.exports = ctx => ({
     'postcss-prefixer': {
       prefix: animateConfig.prefix,
     },
-    autoprefixer: {
-      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
-      cascade: false,
+    'postcss-preset-env': {
+      browsers: ['> 1%', 'last 2 versions'],
+      browsers: '> 0.5%',
+      autoprefixer: {
+        cascade: false,
+      },
     },
     cssnano: ctx.env === 'production' ? {} : false,
     'postcss-header': {
