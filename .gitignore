@@ -6,3 +6,5 @@
 .sass-cache
 node_modules/
 test/
+npm-shrinkwrap.json
+package-lock.json
