@@ -26,6 +26,6 @@
 }
 
 .hinge {
-  animation-duration: 2s;
+  animation-duration: calc(var(--animate-duration) * 2);
   animation-name: hinge;
 }

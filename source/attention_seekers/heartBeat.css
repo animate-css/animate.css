@@ -22,6 +22,6 @@
 
 .heartBeat {
   animation-name: heartBeat;
-  animation-duration: 1.3s;
+  animation-duration: calc(var(--animate-duration) * 1.3);
   animation-timing-function: ease-in-out;
 }
