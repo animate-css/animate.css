@@ -51,9 +51,10 @@
     "trailingComma": "all"
   },
   "scripts": {
-    "start": "npm-run-all dev prod",
+    "start": "npm-run-all dev prod mod",
     "dev": "cross-env NODE_ENV=development npx postcss source/animate.css -o animate.css --no-map",
     "prod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.min.css --no-map",
+    "mod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.module.css --no-map",
     "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
   },
