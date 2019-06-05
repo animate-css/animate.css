@@ -37,7 +37,7 @@ var opts = {
     '/*!',
     ' * <%= name %> -<%= homepage %>',
     ' * Version - <%= version %>',
-    ' * Licensed under the MIT license - http://opensource.org/licenses/MIT',
+    ' * Licensed under the MIT license - https://opensource.org/licenses/MIT',
     ' *',
     ' * Copyright (c) <%= new Date().getFullYear() %> <%= author.name %>',
     ' */\n\n',
