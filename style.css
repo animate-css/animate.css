@@ -10,14 +10,11 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input, select, button, textarea {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 
   font: inherit;
@@ -51,7 +48,7 @@ input, select, button, textarea {
   color: #f35626;
 
   cursor: pointer;
-  -webkit-animation: hue 60s infinite linear;
+  animation: hue 60s infinite linear;
 }
 
   .butt--primary {
@@ -65,8 +62,7 @@ input, select, button, textarea {
 }
 
   .input--dropdown {
-    background-image: url("images/ddown.png");
-    background-image: url("images/ddown.svg?3"), none;
+    background-image: url("images/ddown.svg"), none;
     background-repeat: no-repeat;
     background-size: 1.5rem 1rem;
     background-position: right center;
@@ -117,13 +113,13 @@ hr {
   margin-top: -1px;
   height: 1px;
   background-color: #c0c8c9;
-  background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+  background-image: linear-gradient(to right, #ffffff 0%,#c0c8c9 50%,#ffffff 100%);
 }
 
 a {
   color: inherit;
   text-decoration: underline;
-  -webkit-animation: hue 60s infinite linear;
+  animation: hue 60s infinite linear;
 }
 
   a:hover {
@@ -193,37 +189,38 @@ html {
 \*-----------------------------------*/
 
 .site__header {
-  -webkit-animation: bounceInUp 1s;
+  animation: bounceInUp 1s;
 }
 
   .site__title {
     color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    animation: hue 60s infinite linear;
   }
 
 .site__content {
-  -webkit-animation: bounceInUp 1s;
-  -webkit-animation-delay: .1s;
+  animation: bounceInUp 1s;
+  animation-delay: .1s;
 }
 
   .site__content form {
-    -webkit-animation: bounceInUp 1s;
-    -webkit-animation-delay: .1s;
+    animation: bounceInUp 1s;
+    animation-delay: .1s;
   }
 
 /*-----------------------------------*\
   $ANIMATIONS
 \*-----------------------------------*/
 
-@-webkit-keyframes hue {
+@keyframes hue {
   from {
-    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
 
   to {
-    -webkit-filter: hue-rotate(-360deg);
+    filter: hue-rotate(-360deg);
   }
 }
