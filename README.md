@@ -6,15 +6,15 @@ _Just-add-water CSS animation_
 
 ## Installation
 
-Install via npm:
+Install with npm:
 
-```bash
+```shell
 $ npm install animate.css --save
 ```
 
-or yarn:
+Install with yarn:
 
-```bash
+```shell
 $ yarn add animate.css
 ```
 
