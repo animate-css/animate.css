@@ -24,7 +24,6 @@ module.exports = ctx => ({
       prefix: animateConfig.prefix,
     },
     'postcss-preset-env': {
-      browsers: ['> 3%', 'last 2 versions'],
       autoprefixer: {
         cascade: false,
       },
