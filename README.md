@@ -34,7 +34,7 @@ or use a CDN hosted version by [CDNJS](https://cdnjs.com/libraries/animate.css)
 
 ```html
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 ```
 
