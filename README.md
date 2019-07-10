@@ -90,13 +90,13 @@ Since version 4, animate.css makes use of custom properties (also known as CSS v
 
 ```javascript
 // All animations will take twice the time to acomplish
-document.documentElement.style.setProperty('---animate-duration', '2s');
+document.documentElement.style.setProperty('--animate-duration', '2s');
 
 // All animations will take half the time to acomplish
-document.documentElement.style.setProperty('---animate-duration', '.5s');
+document.documentElement.style.setProperty('--animate-duration', '.5s');
 ```
 
-It's possible to overwrite the variables with css only:
+It's possible to overwrite the variables with pure CSS too:
 
 ```css
 /* This will overide all animations duration */
