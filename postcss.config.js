@@ -1,8 +1,7 @@
 const fs = require('fs');
-const {homepage, version, author} = JSON.parse(fs.readFileSync('package.json'));
+const {homepage, version, author, animateConfig} = JSON.parse(fs.readFileSync('package.json'));
 
-const header =
-  `
+const header = `
 @charset "UTF-8";
 
 /*!
@@ -12,7 +11,9 @@ const header =
  *
  * Copyright (c) ${new Date().getFullYear()} ${author.name}
  */
- ` + '\n \n';
+
+
+  `;
 
 module.exports = ctx => ({
   map: ctx.options.map,
@@ -20,11 +21,15 @@ module.exports = ctx => ({
   plugins: {
     'postcss-import': {root: ctx.file.dirname},
     'postcss-prefixer': {
-      prefix: 'animate__',
+      prefix: animateConfig.prefix,
     },
-    autoprefixer: {
-      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
-      cascade: false,
+    'postcss-preset-env': {
+      autoprefixer: {
+        cascade: false,
+      },
+      features: {
+        'custom-properties': true,
+      },
     },
     cssnano: ctx.env === 'production' ? {} : false,
     'postcss-header': {
