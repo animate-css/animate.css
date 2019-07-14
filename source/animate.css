@@ -14,6 +14,18 @@
 @import 'attention_seekers/jello.css';
 @import 'attention_seekers/heartBeat.css';
 
+/* Back entrances */
+@import 'back_entrances/backInDown.css';
+@import 'back_entrances/backInLeft.css';
+@import 'back_entrances/backInRight.css';
+@import 'back_entrances/backInUp.css';
+
+/* Back exists */
+@import 'back_exits/backOutDown.css';
+@import 'back_exits/backOutLeft.css';
+@import 'back_exits/backOutRight.css';
+@import 'back_exits/backOutUp.css';
+
 /* Bouncing entrances  */
 @import 'bouncing_entrances/bounceIn.css';
 @import 'bouncing_entrances/bounceInDown.css';
