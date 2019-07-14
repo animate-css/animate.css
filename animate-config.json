@@ -117,5 +117,19 @@
     "slideOutLeft": true,
     "slideOutRight": true,
     "slideOutUp": true
+  },
+
+  "back_entrances": {
+    "backInDown": true,
+    "backInLeft": true,
+    "backInRight": true,
+    "backInUp": true
+  },
+
+  "back_exits": {
+    "backOutDown": true,
+    "backOutLeft": true,
+    "backOutRight": true,
+    "backOutUp": true
   }
 }
