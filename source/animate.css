@@ -50,6 +50,10 @@
 @import 'fading_entrances/fadeInRightBig.css';
 @import 'fading_entrances/fadeInUp.css';
 @import 'fading_entrances/fadeInUpBig.css';
+@import 'fading_entrances/fadeInTopLeft.css';
+@import 'fading_entrances/fadeInTopRight.css';
+@import 'fading_entrances/fadeInBottomLeft.css';
+@import 'fading_entrances/fadeInBottomRight.css';
 
 /* Fading exits */
 @import 'fading_exits/fadeOut.css';
@@ -61,6 +65,10 @@
 @import 'fading_exits/fadeOutRightBig.css';
 @import 'fading_exits/fadeOutUp.css';
 @import 'fading_exits/fadeOutUpBig.css';
+@import 'fading_exits/fadeOutTopLeft.css';
+@import 'fading_exits/fadeOutTopRight.css';
+@import 'fading_exits/fadeOutBottomRight.css';
+@import 'fading_exits/fadeOutBottomLeft.css';
 
 /* Flippers */
 @import 'flippers/flip.css';
