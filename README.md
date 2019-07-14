@@ -66,6 +66,8 @@ To animate an element, add the class `animate__animated` to an element. You can 
 | `zoomOutDown`     | `zoomOutLeft`      | `zoomOutRight`      | `zoomOutUp`          |
 | `slideInDown`     | `slideInLeft`      | `slideInRight`      | `slideInUp`          |
 | `slideOutDown`    | `slideOutLeft`     | `slideOutRight`     | `slideOutUp`         |
+| `backInDown`      | `backInLeft`       | `backInRight`       | `backInUp`           |
+| `backOutDown`     | `backOutLeft`      | `backOutRight`      | `backOutUp`          |
 | `heartBeat`       |
 
 Full example:
