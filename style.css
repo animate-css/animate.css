@@ -219,8 +219,36 @@ html {
   from {
     filter: hue-rotate(0deg);
   }
-
+  
   to {
     filter: hue-rotate(-360deg);
+  }
+}
+
+/*-----------------------------------*\
+  $REDUCED MOTION BANNER
+\*-----------------------------------*/
+
+.motionless__banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 1rem;
+
+  background: #333;
+  color: #fff;
+  border-top: 2px solid #FF5722;
+}
+
+.motionless__paragraph {
+  margin-bottom: 0;
+}
+
+@media (print), (prefers-reduced-motion: reduce) {
+  .motionless__banner {
+    display: block;
   }
 }
