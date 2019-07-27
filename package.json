@@ -4,12 +4,11 @@
   "main": "animate.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daneden/animate.css.git"
+    "url": "css"
   },
   "author": {
     "name": "Daniel Eden"
   },
-  "homepage": "https://daneden.github.io/animate.css/",
   "license": "MIT",
   "style": "./animate.css",
   "jspm": {
