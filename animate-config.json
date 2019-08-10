@@ -83,6 +83,8 @@
   },
 
   "specials": {
+    "featherFloatIn": true,
+    "featherFloatOut": true,
     "hinge": true,
     "jackInTheBox": true,
     "rollIn": true,

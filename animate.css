@@ -2712,6 +2712,116 @@
   animation-name: rotateOutUpRight;
 }
 
+@-webkit-keyframes featherFloatIn {
+  from {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -20px, 0) rotate3d(0, 0, 1, -10deg);
+  }
+
+  20%,
+  25% {
+    animation-timing-function: cubic-bezier(0.54, 0.29, 0.71, 0.57);
+    transform: translate3d(-20px, -10px, 0) rotate3d(0, 0, 1, 5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -5px, 0) rotate3d(0, 0, 1, -5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes featherFloatIn {
+  from {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -20px, 0) rotate3d(0, 0, 1, -10deg);
+  }
+
+  20%,
+  25% {
+    animation-timing-function: cubic-bezier(0.54, 0.29, 0.71, 0.57);
+    transform: translate3d(-20px, -10px, 0) rotate3d(0, 0, 1, 5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -5px, 0) rotate3d(0, 0, 1, -5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.featherFloatIn {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: featherFloatIn;
+  animation-name: featherFloatIn;
+}
+
+@-webkit-keyframes featherFloatOut {
+  from {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -20px, 0) rotate3d(0, 0, 1, -10deg);
+  }
+
+  20% {
+    animation-timing-function: cubic-bezier(0.54, 0.29, 0.71, 0.57);
+    transform: translate3d(-20px, -10px, 0) rotate3d(0, 0, 1, 5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  70%,
+  75% {
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, -5px, 0) rotate3d(0, 0, 1, -5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes featherFloatOut {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  20% {
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, 5px, 0) rotate3d(0, 0, 1, -5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  70%,
+  75% {
+    animation-timing-function: cubic-bezier(0.54, 0.29, 0.71, 0.57);
+    transform: translate3d(-20px, 10px, 0) rotate3d(0, 0, 1, 5deg) scale3d(1.1, 0.7, 1);
+  }
+
+  to {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.23, 0.43, 0.49, 0.76);
+    transform: translate3d(15px, 20px, 0) rotate3d(0, 0, 1, -10deg);
+  }
+}
+
+.featherFloatOut {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: featherFloatOut;
+  animation-name: featherFloatOut;
+}
+
 @-webkit-keyframes hinge {
   0% {
     -webkit-transform-origin: top left;
