@@ -8,23 +8,23 @@
 }
 
 .animated.delay-1s {
-  animation-delay: var(--animation-delay);
+  animation-delay: var(--animate-delay);
 }
 
 .animated.delay-2s {
-  animation-delay: calc(var(--animation-delay) * 2);
+  animation-delay: calc(var(--animate-delay) * 2);
 }
 
 .animated.delay-3s {
-  animation-delay: calc(var(--animation-delay) * 3);
+  animation-delay: calc(var(--animate-delay) * 3);
 }
 
 .animated.delay-4s {
-  animation-delay: calc(var(--animation-delay) * 4);
+  animation-delay: calc(var(--animate-delay) * 4);
 }
 
 .animated.delay-5s {
-  animation-delay: calc(var(--animation-delay) * 5);
+  animation-delay: calc(var(--animate-delay) * 5);
 }
 
 .animated.faster {
