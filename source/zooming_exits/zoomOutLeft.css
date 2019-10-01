@@ -7,10 +7,10 @@
   to {
     opacity: 0;
     transform: scale(0.1) translate3d(-2000px, 0, 0);
-    transform-origin: left center;
   }
 }
 
 .zoomOutLeft {
   animation-name: zoomOutLeft;
+  transform-origin: left center;
 }
