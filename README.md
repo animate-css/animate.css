@@ -148,6 +148,7 @@ It's possible to add delays directly on the element's class attribute, just like
 
 | Class Name | Delay Time |
 | ---------- | ---------- |
+| `delay-1s` | `1s`       |
 | `delay-2s` | `2s`       |
 | `delay-3s` | `3s`       |
 | `delay-4s` | `4s`       |
