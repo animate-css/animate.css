@@ -3614,7 +3614,7 @@
 }
 
 @media (print), (prefers-reduced-motion: reduce) {
-  .animated {
+  body{
     -webkit-animation-duration: 1ms !important;
     animation-duration: 1ms !important;
     -webkit-transition-duration: 1ms !important;
