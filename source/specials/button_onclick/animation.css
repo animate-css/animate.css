@@ -1,0 +1,70 @@
+.btns{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.efeito{
+	border: none;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	font-size: 24px;
+	line-height: 24px;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 400ms ease;
+}
+
+.efeito-1{
+	background-color: red;
+}
+
+.efeito-1:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 64px;
+	background: rgba(255,255, 255,0.3);
+	border-radius: 10px;
+	transition: all 2s ease;
+}
+
+.efeito-1:hover:before {
+	width: 100%;
+}
+
+.efeito-2{
+	background-color: green;
+}
+
+.efeito-2:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	background: rgba(255,255, 255,0.3);
+	border-radius: 10px;
+	transition: all 2s ease;
+}
+
+.efeito-2:hover:before {
+	height: 64px;
+}
+
+.efeito-3{
+	background: brown;
+}
+
+.efeito-3:hover {
+	background: rgba(0,0,0,0);
+	color: brown;
+	box-shadow: inset 0 0 0 3px white;
+
+}
+
