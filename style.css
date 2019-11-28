@@ -26,7 +26,7 @@ input, select, button, textarea {
 \*-----------------------------------*/
 
 .butt, .input {
-  padding: .75rem;
+  padding: 0.75rem  1.25rem;
   margin: .375rem;
 
   background-color: transparent;
@@ -67,6 +67,16 @@ input, select, button, textarea {
     background-size: 1.5rem 1rem;
     background-position: right center;
   }
+
+  .activeOptGroup{
+    display: initial;
+  }
+  
+optgroup {
+  display: none;
+}
+
+
 
 /*-----------------------------------*\
   $TYPOGRAPHY

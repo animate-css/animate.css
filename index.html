@@ -24,11 +24,31 @@
 <main class="site__content island" role="content">
   <div class="wrap">
     <form>
+      <select class="js--animationGroups input input--dropdown">
+        <option value="Select Animation">Select Animation Group</option>
+        <option value="Attention Seekers">Attention Seekers</option>
+        <option value="Bouncing Entrances">Bouncing Entrances</option>
+        <option value="Bouncing Exits">Bouncing Exits</option>
+        <option value="Fading Entrances">Fading Entrances</option>
+        <option value="Fading Exits">Fading Exits</option>
+        <option value="Flippers">Flippers</option>
+        <option value="Lightspeed">Lightspeed</option>
+        <option value="Rotating Entrances">Rotating Entrances</option>
+        <option value="Rotating Exits">Rotating Exits</option>
+        <option value="Sliding Entrances">Sliding Entrances</option>
+        <option value="Sliding Exits">Sliding Exits</option>
+        <option value="Zoom Entrances">Zoom Entrances</option>
+        <option value="Zoom Exits">Zoom Exits</option>
+        <option value="SpatStSeekersecials">Specials</option>
+      </select>
       <select class="input input--dropdown js--animations">
-        <optgroup label="Attention Seekers">
+
+        <option value="Select Animation">Select Animation</option>
+        
+        <optgroup id='Attention Seekers' label="Attention Seekers">
           <option value="bounce">bounce</option>
           <option value="flash">flash</option>
-          <option value="pulse">pulse</option>
+          <option value="pulse">pulse</o/ption>
           <option value="rubberBand">rubberBand</option>
           <option value="shake">shake</option>
           <option value="swing">swing</option>
@@ -38,7 +58,7 @@
           <option value="heartBeat">heartBeat</option>
         </optgroup>
 
-        <optgroup label="Bouncing Entrances">
+        <optgroup id="Bouncing Entrances" label="Bouncing Entrances">
           <option value="bounceIn">bounceIn</option>
           <option value="bounceInDown">bounceInDown</option>
           <option value="bounceInLeft">bounceInLeft</option>
@@ -46,7 +66,7 @@
           <option value="bounceInUp">bounceInUp</option>
         </optgroup>
 
-        <optgroup label="Bouncing Exits">
+        <optgroup id="Bouncing Exits" label="Bouncing Exits">
           <option value="bounceOut">bounceOut</option>
           <option value="bounceOutDown">bounceOutDown</option>
           <option value="bounceOutLeft">bounceOutLeft</option>
@@ -54,7 +74,7 @@
           <option value="bounceOutUp">bounceOutUp</option>
         </optgroup>
 
-        <optgroup label="Fading Entrances">
+        <optgroup id="Fading Entrances" label="Fading Entrances">
           <option value="fadeIn">fadeIn</option>
           <option value="fadeInDown">fadeInDown</option>
           <option value="fadeInDownBig">fadeInDownBig</option>
@@ -66,7 +86,7 @@
           <option value="fadeInUpBig">fadeInUpBig</option>
         </optgroup>
 
-        <optgroup label="Fading Exits">
+        <optgroup id="Fading Exits" label="Fading Exits">
           <option value="fadeOut">fadeOut</option>
           <option value="fadeOutDown">fadeOutDown</option>
           <option value="fadeOutDownBig">fadeOutDownBig</option>
@@ -78,7 +98,7 @@
           <option value="fadeOutUpBig">fadeOutUpBig</option>
         </optgroup>
 
-        <optgroup label="Flippers">
+        <optgroup id="Flippers" label="Flippers">
           <option value="flip">flip</option>
           <option value="flipInX">flipInX</option>
           <option value="flipInY">flipInY</option>
@@ -86,12 +106,12 @@
           <option value="flipOutY">flipOutY</option>
         </optgroup>
 
-        <optgroup label="Lightspeed">
+        <optgroup id="Lightspeed" label="Lightspeed">
           <option value="lightSpeedIn">lightSpeedIn</option>
           <option value="lightSpeedOut">lightSpeedOut</option>
         </optgroup>
 
-        <optgroup label="Rotating Entrances">
+        <optgroup id="Rotating Entrances" label="Rotating Entrances">
           <option value="rotateIn">rotateIn</option>
           <option value="rotateInDownLeft">rotateInDownLeft</option>
           <option value="rotateInDownRight">rotateInDownRight</option>
@@ -99,7 +119,7 @@
           <option value="rotateInUpRight">rotateInUpRight</option>
         </optgroup>
 
-        <optgroup label="Rotating Exits">
+        <optgroup id="Rotating Exits" label="Rotating Exits">
           <option value="rotateOut">rotateOut</option>
           <option value="rotateOutDownLeft">rotateOutDownLeft</option>
           <option value="rotateOutDownRight">rotateOutDownRight</option>
@@ -107,14 +127,14 @@
           <option value="rotateOutUpRight">rotateOutUpRight</option>
         </optgroup>
 
-        <optgroup label="Sliding Entrances">
+        <optgroup id="Sliding Entrances" label="Sliding Entrances">
           <option value="slideInUp">slideInUp</option>
           <option value="slideInDown">slideInDown</option>
           <option value="slideInLeft">slideInLeft</option>
           <option value="slideInRight">slideInRight</option>
 
         </optgroup>
-        <optgroup label="Sliding Exits">
+        <optgroup id="Sliding Exits" label="Sliding Exits">
           <option value="slideOutUp">slideOutUp</option>
           <option value="slideOutDown">slideOutDown</option>
           <option value="slideOutLeft">slideOutLeft</option>
@@ -122,7 +142,7 @@
           
         </optgroup>
         
-        <optgroup label="Zoom Entrances">
+        <optgroup id="Zoom Entrances" label="Zoom Entrances">
           <option value="zoomIn">zoomIn</option>
           <option value="zoomInDown">zoomInDown</option>
           <option value="zoomInLeft">zoomInLeft</option>
@@ -130,7 +150,7 @@
           <option value="zoomInUp">zoomInUp</option>
         </optgroup>
         
-        <optgroup label="Zoom Exits">
+        <optgroup id="Zoom Exits" label="Zoom Exits">
           <option value="zoomOut">zoomOut</option>
           <option value="zoomOutDown">zoomOutDown</option>
           <option value="zoomOutLeft">zoomOutLeft</option>
@@ -138,7 +158,7 @@
           <option value="zoomOutUp">zoomOutUp</option>
         </optgroup>
 
-        <optgroup label="Specials">
+        <optgroup id="Specials" label="Specials">
           <option value="hinge">hinge</option>
           <option value="jackInTheBox">jackInTheBox</option>
           <option value="rollIn">rollIn</option>
@@ -176,6 +196,11 @@
 
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script>
+  //DEFAULT PAGE RELOAD SET TO INITIAL
+  $('.js--animationGroups').val('Select Animation');
+  $('.js--animations').val('Select Animation');
+
+
   function testAnim(x) {
     $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass();
@@ -193,8 +218,15 @@
       var anim = $(this).val();
       testAnim(anim);
     });
-  });
 
+    $('.js--animationGroups').change(function(){
+      $('optgroup').removeClass("activeOptGroup");
+      var groupName = $(this).val();
+      document.getElementById(groupName).classList.add("activeOptGroup");
+      $('.js--animations').val('Select Animation');
+    })
+
+  });
 </script>
 
 </body>
