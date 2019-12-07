@@ -175,7 +175,7 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 ## Custom Builds
 
-Animate.css is powered by [gulp.js](http://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
+Animate.css is powered by [gulp.js](https://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
 ```sh
 $ cd path/to/animate.css/
@@ -204,7 +204,7 @@ Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.o
 
 ## License
 
-Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Animate.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
 
 ## Code of Conduct
 
@@ -212,4 +212,4 @@ This project and everyone participating in it is governed by the [Contributor Co
 
 ## Contributing
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.
+Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.
