@@ -3568,6 +3568,46 @@
   animation-iteration-count: infinite;
 }
 
+/* Delay in milliseconds starts here*/
+
+.animated.delay-1h-ms {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.animated.delay-2h-ms {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.animated.delay-3h-ms {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.animated.delay-4h-ms {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.animated.delay-5h-ms {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.animated.delay-6h-ms {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.animated.delay-7h-ms {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.animated.delay-8h-ms {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.animated.delay-9h-ms {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+/* Delay in milliseconds ends here*/
+
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
