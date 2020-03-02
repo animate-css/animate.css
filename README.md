@@ -108,8 +108,9 @@ element.addEventListener('animationend', function() { doSomething() })
 You can use this simple function to add and remove the animations:
 
 ```javascript
-function animateCSS(node, animationName, callback) {
+function animateCSS(element, animationName, callback) {
         let animatedArr = animationName.split(" ");
+        const node = document.querySelector(element)
         node.classList.add('animated', ...animatedArr)
         function handleAnimationEnd() {
             node.classList.remove('animated', ...animatedArr);
