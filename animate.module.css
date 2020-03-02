@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*!
  * animate.css - https://daneden.github.io/animate.css/
- * Version - 3.7.2
+ * Version - 4.0.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2019 Daniel Eden
+ * Copyright (c) 2020 Daniel Eden
  */
 :root {
   --animate-duration: 1s;
@@ -21,6 +21,18 @@
 .animate__animated.animate__infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+.animate__animated.animate__loop-1 {
+  -webkit-animation-iteration-count: var(--animate-loop);
+  animation-iteration-count: var(--animate-loop);
+}
+.animate__animated.animate__loop-2 {
+  -webkit-animation-iteration-count: calc(var(--animate-loop) * 2);
+  animation-iteration-count: calc(var(--animate-loop) * 2);
+}
+.animate__animated.animate__loop-3 {
+  -webkit-animation-iteration-count: calc(var(--animate-loop) * 3);
+  animation-iteration-count: calc(var(--animate-loop) * 3);
 }
 .animate__animated.animate__delay-1s {
   -webkit-animation-delay: 1s;
