@@ -88,7 +88,7 @@
   -webkit-animation-duration: calc(var(--animate-duration) * 3);
   animation-duration: calc(var(--animate-duration) * 3);
 }
-@media (prefers-reduced-motion: reduce), (print) {
+@media (prefers-reduced-motion: reduce), print {
   .animate__animated {
     -webkit-animation-duration: 1ms !important;
     animation-duration: 1ms !important;
