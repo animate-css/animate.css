@@ -86,7 +86,9 @@
     "hinge": true,
     "jackInTheBox": true,
     "rollIn": true,
-    "rollOut": true
+    "rollOut": true,
+    "rotationLeft": true,
+    "rotationRight": true
   },
 
   "zooming_entrances": {
