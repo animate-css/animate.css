@@ -1,0 +1,17 @@
+@keyframes rotateCounterClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-180deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+.rotateCounterClockwise {
+  animation-name: rotateCounterClockwise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
