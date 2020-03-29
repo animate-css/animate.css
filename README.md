@@ -70,7 +70,7 @@ To animate an element, add the class `animate__animated` to an element. You can 
 | `slideOutDown`       | `slideOutLeft`      | `slideOutRight`     | `slideOutUp`         |
 | `backInDown`         | `backInLeft`        | `backInRight`       | `backInUp`           |
 | `backOutDown`        | `backOutLeft`       | `backOutRight`      | `backOutUp`          |
-| `heartBeat`          | `rotationLeft`      | `rotationRight`     |
+| `heartBeat`          |
 
 Full example:
 
