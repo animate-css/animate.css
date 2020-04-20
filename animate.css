@@ -104,6 +104,14 @@
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
+
+  .animate__bounceOut,
+  .animate__fadeOut,
+  .animate__rotateOut,
+  .animate__rollOut,
+  .animate__zoomOut {
+    opacity: 0;
+  }
 }
 /* Attention seekers  */
 @-webkit-keyframes bounce {

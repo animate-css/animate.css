@@ -104,6 +104,13 @@
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
+  .animate__bounceOut,
+  .animate__fadeOut,
+  .animate__rollOut,
+  .animate__rotateOut,
+  .animate__zoomOut {
+    opacity: 0;
+  }
 }
 @-webkit-keyframes bounce {
   0%,
