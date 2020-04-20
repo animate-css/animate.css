@@ -14,6 +14,18 @@
 @import 'attention_seekers/jello.css';
 @import 'attention_seekers/heartBeat.css';
 
+/* Back entrances */
+@import 'back_entrances/backInDown.css';
+@import 'back_entrances/backInLeft.css';
+@import 'back_entrances/backInRight.css';
+@import 'back_entrances/backInUp.css';
+
+/* Back exists */
+@import 'back_exits/backOutDown.css';
+@import 'back_exits/backOutLeft.css';
+@import 'back_exits/backOutRight.css';
+@import 'back_exits/backOutUp.css';
+
 /* Bouncing entrances  */
 @import 'bouncing_entrances/bounceIn.css';
 @import 'bouncing_entrances/bounceInDown.css';
@@ -38,6 +50,10 @@
 @import 'fading_entrances/fadeInRightBig.css';
 @import 'fading_entrances/fadeInUp.css';
 @import 'fading_entrances/fadeInUpBig.css';
+@import 'fading_entrances/fadeInTopLeft.css';
+@import 'fading_entrances/fadeInTopRight.css';
+@import 'fading_entrances/fadeInBottomLeft.css';
+@import 'fading_entrances/fadeInBottomRight.css';
 
 /* Fading exits */
 @import 'fading_exits/fadeOut.css';
@@ -49,6 +65,10 @@
 @import 'fading_exits/fadeOutRightBig.css';
 @import 'fading_exits/fadeOutUp.css';
 @import 'fading_exits/fadeOutUpBig.css';
+@import 'fading_exits/fadeOutTopLeft.css';
+@import 'fading_exits/fadeOutTopRight.css';
+@import 'fading_exits/fadeOutBottomRight.css';
+@import 'fading_exits/fadeOutBottomLeft.css';
 
 /* Flippers */
 @import 'flippers/flip.css';
@@ -58,8 +78,10 @@
 @import 'flippers/flipOutY.css';
 
 /* Lightspeed */
-@import 'lightspeed/lightSpeedIn.css';
-@import 'lightspeed/lightSpeedOut.css';
+@import 'lightspeed/lightSpeedInRight.css';
+@import 'lightspeed/lightSpeedInLeft.css';
+@import 'lightspeed/lightSpeedOutRight.css';
+@import 'lightspeed/lightSpeedOutLeft.css';
 
 /* Rotating entrances */
 @import 'rotating_entrances/rotateIn.css';

@@ -45,28 +45,32 @@ or use a CDN hosted version by [CDNJS](https://cdnjs.com/libraries/animate.css)
 
 To animate an element, add the class `animate__animated` to an element. You can include the class `animate__infinite` for an infinite loop. Finally you need to add one of the following classes to the element (adding the `animate__` prefix before it):
 
-| Class Name        |                    |                     |                      |
-| ----------------- | ------------------ | ------------------- | -------------------- |
-| `bounce`          | `flash`            | `pulse`             | `rubberBand`         |
-| `shake`           | `headShake`        | `swing`             | `tada`               |
-| `wobble`          | `jello`            | `bounceIn`          | `bounceInDown`       |
-| `bounceInLeft`    | `bounceInRight`    | `bounceInUp`        | `bounceOut`          |
-| `bounceOutDown`   | `bounceOutLeft`    | `bounceOutRight`    | `bounceOutUp`        |
-| `fadeIn`          | `fadeInDown`       | `fadeInDownBig`     | `fadeInLeft`         |
-| `fadeInLeftBig`   | `fadeInRight`      | `fadeInRightBig`    | `fadeInUp`           |
-| `fadeInUpBig`     | `fadeOut`          | `fadeOutDown`       | `fadeOutDownBig`     |
-| `fadeOutLeft`     | `fadeOutLeftBig`   | `fadeOutRight`      | `fadeOutRightBig`    |
-| `fadeOutUp`       | `fadeOutUpBig`     | `flipInX`           | `flipInY`            |
-| `flipOutX`        | `flipOutY`         | `lightSpeedIn`      | `lightSpeedOut`      |
-| `rotateIn`        | `rotateInDownLeft` | `rotateInDownRight` | `rotateInUpLeft`     |
-| `rotateInUpRight` | `rotateOut`        | `rotateOutDownLeft` | `rotateOutDownRight` |
-| `rotateOutUpLeft` | `rotateOutUpRight` | `hinge`             | `jackInTheBox`       |
-| `rollIn`          | `rollOut`          | `zoomIn`            | `zoomInDown`         |
-| `zoomInLeft`      | `zoomInRight`      | `zoomInUp`          | `zoomOut`            |
-| `zoomOutDown`     | `zoomOutLeft`      | `zoomOutRight`      | `zoomOutUp`          |
-| `slideInDown`     | `slideInLeft`      | `slideInRight`      | `slideInUp`          |
-| `slideOutDown`    | `slideOutLeft`     | `slideOutRight`     | `slideOutUp`         |
-| `heartBeat`       |
+| Class Name           |                     |                     |                      |
+| -------------------- | ------------------- | ------------------- | -------------------- |
+| `bounce`             | `flash`             | `pulse`             | `rubberBand`         |
+| `shake`              | `headShake`         | `swing`             | `tada`               |
+| `wobble`             | `jello`             | `bounceIn`          | `bounceInDown`       |
+| `bounceInLeft`       | `bounceInRight`     | `bounceInUp`        | `bounceOut`          |
+| `bounceOutDown`      | `bounceOutLeft`     | `bounceOutRight`    | `bounceOutUp`        |
+| `fadeIn`             | `fadeInDown`        | `fadeInDownBig`     | `fadeInLeft`         |
+| `fadeInLeftBig`      | `fadeInRight`       | `fadeInRightBig`    | `fadeInUp`           |
+| `fadeInUpBig`        | `fadeOut`           | `fadeOutDown`       | `fadeOutDownBig`     |
+| `fadeOutLeft`        | `fadeOutLeftBig`    | `fadeOutRight`      | `fadeOutRightBig`    |
+| `fadeOutUp`          | `fadeOutUpBig`      | `fadeInTopLeft`     | `fadeInTopRight`     |
+| `fadeInBottomLeft`   | `fadeInBottomRight` | `fadeOutTopLeft`    | `fadeOutTopRight`    |
+| `fadeOutBottomRight` | `fadeOutBottomLeft` | `flipInX`           | `flipInY`            |
+| `flipOutX`           | `flipOutY`          | `lightSpeedIn`      | `lightSpeedOut`      |
+| `rotateIn`           | `rotateInDownLeft`  | `rotateInDownRight` | `rotateInUpLeft`     |
+| `rotateInUpRight`    | `rotateOut`         | `rotateOutDownLeft` | `rotateOutDownRight` |
+| `rotateOutUpLeft`    | `rotateOutUpRight`  | `hinge`             | `jackInTheBox`       |
+| `rollIn`             | `rollOut`           | `zoomIn`            | `zoomInDown`         |
+| `zoomInLeft`         | `zoomInRight`       | `zoomInUp`          | `zoomOut`            |
+| `zoomOutDown`        | `zoomOutLeft`       | `zoomOutRight`      | `zoomOutUp`          |
+| `slideInDown`        | `slideInLeft`       | `slideInRight`      | `slideInUp`          |
+| `slideOutDown`       | `slideOutLeft`      | `slideOutRight`     | `slideOutUp`         |
+| `backInDown`         | `backInLeft`        | `backInRight`       | `backInUp`           |
+| `backOutDown`        | `backOutLeft`       | `backOutRight`      | `backOutUp`          |
+| `heartBeat`          |
 
 Full example:
 
@@ -201,6 +205,22 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 > _**Note**: The `animate__animated` class has a default speed of `1s`. If you need custom duration, add it directly to your own CSS code._
 
+### Loop Class
+
+It's possible to control the iteration count of the animation by adding these classes, like below:
+
+```html
+<div class="animate__animated animate__bounce animate__loop-2">Example</div>
+```
+
+| Class Name        | Iteration Count |
+| ----------------- | --------------- |
+| `animate__loop-1` | `1`             |
+| `animate__loop-2` | `2`             |
+| `animate__loop-3` | `3`             |
+
+> _**Note**: The `animate__loop` class has a default iteration count of `1`. If you need custom iteration count, add it directly to your own CSS code._
+
 ## Custom Builds
 
 Animate.css is powered by npm/npx, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS features safely. First of all, you’ll need Node and all other dependencies:
@@ -236,11 +256,11 @@ It's possible to change animate's prefix on your custom build. Just change the `
 
 ## Accessibility
 
-Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently Firefox, OSX Safari and iOS Safari), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
+Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
 ## License
 
-Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Animate.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
 
 ## Code of Conduct
 
@@ -248,4 +268,4 @@ This project and everyone participating in it is governed by the [Contributor Co
 
 ## Contributing
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.
+Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.
