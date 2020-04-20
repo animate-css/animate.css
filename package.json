@@ -52,14 +52,12 @@
   },
   "lint-staged": {
     "*.{js,json,md,css}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm-run-all start precommit"
     }
-  },
-  "dependencies": {}
+  }
 }
