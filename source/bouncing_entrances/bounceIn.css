@@ -37,6 +37,6 @@
 }
 
 .bounceIn {
-  animation-duration: 0.75s;
+  animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: bounceIn;
 }

@@ -11,6 +11,13 @@
   },
   "homepage": "https://daneden.github.io/animate.css/",
   "license": "MIT",
+  "animateConfig": {
+    "prefix": "animate__"
+  },
+  "browserslist": [
+    "> 3%",
+    "last 2 versions"
+  ],
   "style": "./animate.css",
   "jspm": {
     "main": "animate.css!",
@@ -20,19 +27,20 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
-    "cssnano": "^4.0.3",
-    "eslint": "^5.2.0",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.10.2",
-    "run-sequence": "^2.2.1"
+    "autoprefixer": "^9.6.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2",
+    "postcss-header": "^1.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-prefixer": "^2.1.1",
+    "postcss-preset-env": "^6.6.0",
+    "prettier": "^1.18.2"
   },
   "lint-staged": {
     "*.{js,json,md,css}": [
@@ -47,8 +55,10 @@
     "trailingComma": "all"
   },
   "scripts": {
-    "gulp": "./node_modules/gulp/bin/gulp.js",
-    "start": "gulp",
+    "start": "npm-run-all dev prod mod",
+    "dev": "cross-env NODE_ENV=development npx postcss source/animate.css -o animate.css --no-map",
+    "prod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.min.css --no-map",
+    "mod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.module.css --no-map",
     "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged"
   },
