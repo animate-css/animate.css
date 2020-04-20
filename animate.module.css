@@ -4,11 +4,12 @@
  * Version - 3.7.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2019 Daniel Eden
+ * Copyright (c) 2020 Daniel Eden
  */
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
+  --animate-loop: 1;
 }
 .animate__animated {
   -webkit-animation-duration: 1s;
@@ -21,6 +22,24 @@
 .animate__animated.animate__infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+.animate__animated.animate__loop-1 {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: var(--animate-loop);
+  animation-iteration-count: var(--animate-loop);
+}
+.animate__animated.animate__loop-2 {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  -webkit-animation-iteration-count: calc(var(--animate-loop) * 2);
+  animation-iteration-count: calc(var(--animate-loop) * 2);
+}
+.animate__animated.animate__loop-3 {
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -webkit-animation-iteration-count: calc(var(--animate-loop) * 3);
+  animation-iteration-count: calc(var(--animate-loop) * 3);
 }
 .animate__animated.animate__delay-1s {
   -webkit-animation-delay: 1s;
@@ -76,7 +95,7 @@
   -webkit-animation-duration: calc(var(--animate-duration) * 3);
   animation-duration: calc(var(--animate-duration) * 3);
 }
-@media (prefers-reduced-motion: reduce), (print) {
+@media (prefers-reduced-motion: reduce), print {
   .animate__animated {
     -webkit-animation-duration: 1ms !important;
     animation-duration: 1ms !important;
@@ -2474,7 +2493,7 @@
   -webkit-animation-name: flipOutY;
   animation-name: flipOutY;
 }
-@-webkit-keyframes lightSpeedIn {
+@-webkit-keyframes lightSpeedInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -2494,7 +2513,7 @@
     transform: translateZ(0);
   }
 }
-@keyframes lightSpeedIn {
+@keyframes lightSpeedInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -2514,13 +2533,59 @@
     transform: translateZ(0);
   }
 }
-.animate__lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
+.animate__lightSpeedInRight {
+  -webkit-animation-name: lightSpeedInRight;
+  animation-name: lightSpeedInRight;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
-@-webkit-keyframes lightSpeedOut {
+@-webkit-keyframes lightSpeedInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(30deg);
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(5deg);
+    transform: skewX(5deg);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes lightSpeedInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(30deg);
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(5deg);
+    transform: skewX(5deg);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+.animate__lightSpeedInLeft {
+  -webkit-animation-name: lightSpeedInLeft;
+  animation-name: lightSpeedInLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes lightSpeedOutRight {
   0% {
     opacity: 1;
   }
@@ -2530,7 +2595,7 @@
     opacity: 0;
   }
 }
-@keyframes lightSpeedOut {
+@keyframes lightSpeedOutRight {
   0% {
     opacity: 1;
   }
@@ -2540,9 +2605,35 @@
     opacity: 0;
   }
 }
-.animate__lightSpeedOut {
-  -webkit-animation-name: lightSpeedOut;
-  animation-name: lightSpeedOut;
+.animate__lightSpeedOutRight {
+  -webkit-animation-name: lightSpeedOutRight;
+  animation-name: lightSpeedOutRight;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+@-webkit-keyframes lightSpeedOutLeft {
+  0% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+}
+@keyframes lightSpeedOutLeft {
+  0% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    transform: translate3d(-100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+}
+.animate__lightSpeedOutLeft {
+  -webkit-animation-name: lightSpeedOutLeft;
+  animation-name: lightSpeedOutLeft;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }

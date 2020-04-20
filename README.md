@@ -205,6 +205,22 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 > _**Note**: The `animate__animated` class has a default speed of `1s`. If you need custom duration, add it directly to your own CSS code._
 
+### Loop Class
+
+It's possible to control the iteration count of the animation by adding these classes, like below:
+
+```html
+<div class="animate__animated animate__bounce animate__loop-2">Example</div>
+```
+
+| Class Name        | Iteration Count |
+| ----------------- | --------------- |
+| `animate__loop-1` | `1`             |
+| `animate__loop-2` | `2`             |
+| `animate__loop-3` | `3`             |
+
+> _**Note**: The `animate__loop` class has a default iteration count of `1`. If you need custom iteration count, add it directly to your own CSS code._
+
 ## Custom Builds
 
 Animate.css is powered by npm/npx, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS features safely. First of all, you’ll need Node and all other dependencies:
