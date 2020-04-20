@@ -1,4 +1,4 @@
-@keyframes lightSpeedOut {
+@keyframes lightSpeedOutRight {
   from {
     opacity: 1;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-.lightSpeedOut {
-  animation-name: lightSpeedOut;
+.lightSpeedOutRight {
+  animation-name: lightSpeedOutRight;
   animation-timing-function: ease-in;
 }

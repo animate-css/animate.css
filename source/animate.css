@@ -78,8 +78,10 @@
 @import 'flippers/flipOutY.css';
 
 /* Lightspeed */
-@import 'lightspeed/lightSpeedIn.css';
-@import 'lightspeed/lightSpeedOut.css';
+@import 'lightspeed/lightSpeedInRight.css';
+@import 'lightspeed/lightSpeedInLeft.css';
+@import 'lightspeed/lightSpeedOutRight.css';
+@import 'lightspeed/lightSpeedOutLeft.css';
 
 /* Rotating entrances */
 @import 'rotating_entrances/rotateIn.css';
