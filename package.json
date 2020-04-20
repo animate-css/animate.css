@@ -14,6 +14,15 @@
   "animateConfig": {
     "prefix": "animate__"
   },
+  "scripts": {
+    "start": "npm-run-all raw prod compat",
+    "compat": "npx postcss source/animate.css -o animate.compat.css --no-map --env compat",
+    "dev": "npx postcss source/animate.css -o animate.css --no-map --env development -w",
+    "raw": "npx postcss source/animate.css -o animate.css --no-map --env development",
+    "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
+    "format": "prettier --write \"**/*.{js,json,md,css}\"",
+    "precommit": "lint-staged"
+  },
   "browserslist": [
     "> 3%",
     "last 2 versions"
@@ -48,21 +57,9 @@
       "git add"
     ]
   },
-  "prettier": {
-    "bracketSpacing": false,
-    "proseWrap": "never",
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
-  "scripts": {
-    "start": "npm-run-all dev prod mod",
-    "dev": "cross-env NODE_ENV=development npx postcss source/animate.css -o animate.css --no-map",
-    "prod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.min.css --no-map",
-    "mod": "cross-env NODE_ENV=production npx postcss source/animate.css -o animate.module.css --no-map",
-    "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged"
-  },
-  "spm": {
-    "main": "./animate.css"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run start"
+    }
   }
 }
