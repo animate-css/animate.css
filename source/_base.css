@@ -61,4 +61,12 @@
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .bounceOut,
+  .fadeOut,
+  .rotateOut,
+  .rollOut,
+  .zoomOut {
+    opacity: 0;
+  }
 }
