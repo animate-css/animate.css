@@ -15,7 +15,7 @@ const header = `
 
   `;
 
-module.exports = ctx => {
+module.exports = (ctx) => {
   const prefix = ctx.env === 'compat' ? '' : animateConfig.prefix;
   const devMessage = `🎉🎉🎉🎉 \nanimate.css ${ctx.env} build was compiled sucessfully! \n`;
 
@@ -28,6 +28,7 @@ module.exports = ctx => {
       'postcss-import': {root: ctx.file.dirname},
       'postcss-prefixer': {
         prefix,
+        ignore: [/\[class\*=.*\]/],
       },
       'postcss-preset-env': {
         autoprefixer: {
