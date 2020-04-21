@@ -1,8 +1,10 @@
-# Animate.css [![GitHub release](https://img.shields.io/github/release/daneden/animate.css.svg)](https://github.com/daneden/animate.css/releases) [![CDNJS](https://img.shields.io/cdnjs/v/animate.css.svg)](https://cdnjs.com/libraries/animate.css) [![Build Status](https://travis-ci.com/daneden/animate.css.svg?branch=master)](https://travis-ci.com/daneden/animate.css) [![devDependencies Status](https://david-dm.org/daneden/animate.css/dev-status.svg)](https://david-dm.org/daneden/animate.css?type=dev) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animate-css/Lobby) [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate.css)
+# Animate.css
+
+[![GitHub Version](https://img.shields.io/github/release/daneden/animate.css.svg?style=for-the-badge)](https://github.com/daneden/animate.css) [![Github Star](https://img.shields.io/github/stars/daneden/animate.css.svg?style=for-the-badge)](https://github.com/daneden/animate.css) [![Github Fork](https://img.shields.io/github/forks/daneden/animate.css.svg?style=for-the-badge)](https://github.com/daneden/animate.css) [![License](https://img.shields.io/github/license/daneden/animate.css.svg?style=for-the-badge)](https://github.com/daneden/animate.css)
 
 > **We need your help!** animate.css v4 is in the work with lots of improvements and some breaking changes, including CSS custom properties support (aka CSS variables) and classes prefix for a safer use. We need **your feedback**! You can follow the development on the [`dev`](https://github.com/daneden/animate.css/tree/dev) branch and give your feedback on the [issue tracker](https://github.com/daneden/animate.css/issues). **Every feedback is welcome!**
 
-_Just-add-water CSS animation_
+## _Just-add-water CSS animation_
 
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
@@ -11,13 +13,13 @@ _Just-add-water CSS animation_
 Install with npm:
 
 ```shell
-$ npm install animate.css --save
+npm install animate.css --save
 ```
 
 Install with yarn:
 
 ```shell
-$ yarn add animate.css
+yarn add animate.css
 ```
 
 ## Usage
@@ -226,8 +228,8 @@ It's possible to control the iteration count of the animation by adding these cl
 Animate.css is powered by npm/npx, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS features safely. First of all, you’ll need Node and all other dependencies:
 
 ```sh
-$ cd path/to/animate.css/
-$ npm install
+cd path/to/animate.css/
+npm install
 ```
 
 Next, run `npm start` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `./source/animate.css` file and keep only the animations `@import` you want to use.
@@ -260,7 +262,7 @@ Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.o
 
 ## License
 
-Animate.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
+Animate.css is licensed under the MIT license. <https://opensource.org/licenses/MIT>
 
 ## Code of Conduct
 
