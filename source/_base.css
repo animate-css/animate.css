@@ -61,4 +61,8 @@
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .animated[class*='Out'] {
+    opacity: 0;
+  }
 }
