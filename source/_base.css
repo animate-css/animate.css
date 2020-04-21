@@ -62,11 +62,7 @@
     animation-iteration-count: 1 !important;
   }
 
-  .bounceOut,
-  .fadeOut,
-  .rotateOut,
-  .rollOut,
-  .zoomOut {
+  .animated[class*='Out'] {
     opacity: 0;
   }
 }
