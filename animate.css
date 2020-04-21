@@ -105,11 +105,7 @@
     animation-iteration-count: 1 !important;
   }
 
-  .animate__bounceOut,
-  .animate__fadeOut,
-  .animate__rotateOut,
-  .animate__rollOut,
-  .animate__zoomOut {
+  .animate__animated[class*='animate__Out'] {
     opacity: 0;
   }
 }

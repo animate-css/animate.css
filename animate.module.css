@@ -104,11 +104,7 @@
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
-  .animate__bounceOut,
-  .animate__fadeOut,
-  .animate__rollOut,
-  .animate__rotateOut,
-  .animate__zoomOut {
+  .animate__animated[class*='animate__Out'] {
     opacity: 0;
   }
 }
