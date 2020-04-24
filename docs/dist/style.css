@@ -1,0 +1,200 @@
+/*-----------------------------------*\
+  $BASE
+\*-----------------------------------*/
+
+:root {
+  --c-main: #351c75;
+  --c-secondary: #e69138;
+  --c-background: #fce5cd;
+  --c-background-dark: #f7d7b5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 85%;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.2;
+}
+
+@media (min-windth: 700px) {
+  html {
+    font-size: 100%;
+    line-height: 1.35;
+  }
+}
+
+*,
+* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+a {
+  color: var(--c-main);
+  text-decoration: none;
+}
+
+/*-----------------------------------*\
+  $TYPOGRAPHY
+\*-----------------------------------*/
+
+p,
+ul,
+ol,
+hr,
+table,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.414em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--c-main);
+}
+
+h1 {
+  font-size: 3.998rem;
+}
+
+h2 {
+  font-size: 2.827rem;
+}
+
+h3 {
+  font-size: 1.999rem;
+}
+
+h4 {
+  font-size: 1.414rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/*-----------------------------------*\
+  $INTRO
+\*-----------------------------------*/
+
+.intro {
+  display: grid;
+  grid-template-columns: [callout] 1fr [sidebar] 250px;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1rem;
+  gap: 1rem;
+
+  grid-template-areas:
+    'callout animation-list'
+    'footer aimation-list';
+
+  max-height: 80vh;
+
+  background-color: var(--c-background);
+}
+
+@media (min-width: 700px) {
+  .intro {
+  }
+}
+
+.callout {
+  grid-area: callout;
+  align-self: center;
+  justify-self: center;
+
+  text-align: center;
+}
+
+.animation-list {
+  grid-area: animation-list;
+  grid-row: 1 / 3;
+
+  overflow-y: auto;
+  padding: 2rem;
+  background-color: var(--c-background-dark);
+}
+
+.intro-footer {
+  grid-area: footer;
+  justify-self: center;
+}
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+/*-----------------------------------*\
+  $REDUCED MOTION BANNER
+\*-----------------------------------*/
+
+.motionless__banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 1rem;
+
+  background: #333;
+  color: #fff;
+  border-top: 2px solid #ff5722;
+}
+
+.motionless__paragraph {
+  margin-bottom: 0;
+}
+
+@media (print), (prefers-reduced-motion: reduce) {
+  .motionless__banner {
+    display: block;
+  }
+}
+
+.docs {
+  text-align: left;
+}
+
+.animation-list {
+  text-align: left;
+}
