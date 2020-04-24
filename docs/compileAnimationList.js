@@ -1,6 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * Get and categorize all the animation names and compile
+ * to HTML lists
+ * @param {string} dir - directory containing the css file
+ * @param {string} file - css file name
+ */
+
 function compileAnimationlist(dir = '../source', file = 'animate.css') {
   const filePath = path.join(__dirname, dir, file);
   const content = fs.readFileSync(filePath, 'utf8');

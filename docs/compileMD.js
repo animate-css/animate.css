@@ -1,10 +1,10 @@
 const path = require('path');
 const fs = require('fs');
 const md = require('markdown-it')();
-/*
-  Gets all the markdown files on pages, compile them to html
-  and injects into the template.html file
-*/
+/**
+ * Gets all the markdown files on a folder, compile them to html and returns
+ * @param {string} dir - folder containing all the .md files
+ */
 
 function compileMD(dir = 'pages') {
   const directory = path.join(__dirname, dir);
@@ -13,7 +13,7 @@ function compileMD(dir = 'pages') {
   const sectionTemplate = (file, content) => {
     const message = 'Edit this on Github';
     const fileName = file.replace('.md', '').match(/([a-z])\w+/)[0];
-    const editURL = `https://github.com/daneden/animate.css/tree/master/source/docs/${fileName}`;
+    const editURL = `https://github.com/daneden/animate.css/tree/master/source/docs/${file}`;
     const parsedContent = md.render(content);
 
     return `
