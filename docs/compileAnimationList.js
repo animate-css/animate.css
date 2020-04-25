@@ -32,7 +32,10 @@ function compileAnimationlist(dir = '../source', file = 'animate.css') {
     return list[currentGroup].push(item[2]);
   }, {});
 
-  const itemTemplate = (item) => `<li class="animation-item" data-animation="${item}">${item}</li>`;
+  const itemTemplate = (item) => `
+    <li class="animation-item" data-animation="${item}">
+      ${item}
+    </li>`;
 
   const listTemplate = (title, items) => {
     const parsedTitle = title.toLowerCase().replace(' ', '_');

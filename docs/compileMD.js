@@ -19,7 +19,7 @@ function compileMD(dir = 'pages') {
     return `
       <section class="docSection-${fileName}" id="${fileName}">
         ${parsedContent}
-        <a href="${editURL}" title="${message}">${message}</a>
+        <p class="edit-github"><a href="${editURL}" title="${message}">${message}</a></p>
       </section>
     `;
   };
