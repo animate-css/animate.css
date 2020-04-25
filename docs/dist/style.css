@@ -338,7 +338,7 @@ blockquote {
   .container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: calc(100% - 270px) 300px;
+    grid-template-columns: calc(100% - 300px - 1rem) 300px;
   }
 }
 
