@@ -22,7 +22,9 @@
     "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
     "format": "prettier --write \"**/*.{js,json,md,css}\"",
     "precommit": "lint-staged",
-    "docs": "node ./docs/index.js"
+    "docs:library": "npx postcss source/animate.css -o ./docs/dist/animate.min.css --no-map --env production",
+    "docs:pages": "node ./docs/index.js",
+    "docs": "npm-run-all docs:library docs:pages"
   },
   "browserslist": [
     "> 3%",

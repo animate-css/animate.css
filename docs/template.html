@@ -15,41 +15,63 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+    <link rel="stylesheet" href="animate.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <article class="intro">
       <section class="callout">
-        <h1>Animate.css</h1>
-        <h2>Just-add-water CSS animations</h2>
+        <h1 class="callout-title">Animate.css</h1>
+        <h2 class="callout-subtitle">Just-add-water CSS animations</h2>
+        <button class="callout-showList">See animations</button>
       </section>
 
       <section class="animation-list">
         {{list}}
       </section>
 
-      <section class="intro-footer">
+      <footer class="intro-footer">
         <p>
           Another thing from
           <a href="" target="_blank" title="Daniel Eden">Daniel Eden</a> and
           <a href="#" title="Contributors">friends</a>
         </p>
-      </section>
+      </footer>
     </article>
 
-    <article class="docs" id="documentation">
-      {{docs}}
-    </article>
+    <main>
+      <header class="docs-header">
+        <div class="container">
+          <h2 class="docs-mainTitle">Documentation</h2>
+          <span class="icon-github"></span>
+          <span class="animate-version">v{{version}}</span>
+        </div>
+      </header>
+
+      <article class="docs" id="documentation">
+        <div class="container">
+          <div class="content">
+            {{docs}}
+          </div>
+          <aside class="sidebar">
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        Another thing from
+        <a href="" target="_blank" title="Daniel Eden">Daniel Eden</a> and
+        <a href="#" title="Contributors">friends</a>
+      </p>
+    </footer>
 
     <aside class="motionless__banner">
       <p class="motionless__paragraph">
-        <b>Hey!</b> It seems that you have animations disabled on your OS,
-        turning Animate.css off.<br />
-        From v3.7.0 and up Animate.css supports the
+        <b>Hey!</b> It seems that you have animations disabled on your OS, turning Animate.css
+        off.<br />
+        Animate.css supports the
         <a
           title="prefers-reduced-motion CSS media feature on MDN"
           target="_blank"
@@ -68,5 +90,6 @@
         >.
       </p>
     </aside>
+    <script src="main.mjs"></script>
   </body>
 </html>

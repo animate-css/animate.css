@@ -1,5 +1,7 @@
 const path = require('path');
 const fs = require('fs');
+
+const {version} = JSON.parse(fs.readFileSync('package.json'));
 const compileMD = require('./compileMD');
 const compileAnimationList = require('./compileAnimationList');
 
@@ -15,8 +17,9 @@ const output = path.join(__dirname, outputPath, outputFile);
 
 const withDocs = template.replace('{{docs}}', docs);
 const withListAndDocs = withDocs.replace('{{list}}', list);
+const withVersion = withListAndDocs.replace('{{version}}', version);
 
-fs.writeFile(output, withListAndDocs, 'utf8', (err) => {
+fs.writeFile(output, withVersion, 'utf8', (err) => {
   if (err) console.error(err);
   console.log('Template compiled succesfully.');
 });

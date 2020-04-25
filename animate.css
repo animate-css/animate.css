@@ -2838,8 +2838,10 @@
   }
 }
 .animate__flipOutY {
-  -webkit-animation-duration: calc(var(--animation-duration) * 0.75);
-  animation-duration: calc(var(--animation-duration) * 0.75);
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipOutY;
