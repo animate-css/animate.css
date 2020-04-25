@@ -2,7 +2,7 @@
 
 Animate.css is powered by npm/npx, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS features safely. First of all, you’ll need Node and all other dependencies:
 
-```sh
+```shell
 $ cd path/to/animate.css/
 $ npm install
 ```

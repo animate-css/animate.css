@@ -5,7 +5,7 @@
 It's possible to add delays directly on the element's class attribute, just like this:
 
 ```html
-<div class="animate__animated bounce delay-2s">Example</div>
+<div class="animate__animated animate__bounce animate__delay-2s">Example</div>
 ```
 
 | Class Name          | Delay Time |
