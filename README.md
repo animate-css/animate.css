@@ -94,6 +94,9 @@ You can do a whole bunch of other stuff with animate.css when you combine it wit
 ```javascript
 const element =  document.querySelector('.my-element')
 element.classList.add('animated', 'bounceOutLeft')
+
+//when using plain js you might need to dispatch the change event yourself if the element was created with any relevant class property to begin with
+element.dispatchEvent(new Event('change', {'bubbles': true}))
 ```
 
 You can also detect when an animation ends:
@@ -111,6 +114,7 @@ You can use this simple function to add and remove the animations:
 function animateCSS(element, animationName, callback) {
     const node = document.querySelector(element)
     node.classList.add('animated', animationName)
+    node.dispatchEvent(new Event('change', {'bubbles': true}))
 
     function handleAnimationEnd() {
         node.classList.remove('animated', animationName)
