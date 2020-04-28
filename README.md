@@ -95,7 +95,7 @@ You can do a whole bunch of other stuff with animate.css when you combine it wit
 const element =  document.querySelector('.my-element')
 element.classList.add('animated', 'bounceOutLeft')
 
-//when using plain js you might need to dispatch the change event yourself if the element was created with any relevant class property to begin with
+//when using plain js you might need to dispatch the change event yourself if the element was created without any relevant class attribute to begin with
 element.dispatchEvent(new Event('change', {'bubbles': true}))
 ```
 
