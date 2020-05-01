@@ -9,7 +9,7 @@
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
-  --animate-loop: 1;
+  --animate-repeat: 1;
 }
 .animated {
   -webkit-animation-duration: 1s;
@@ -23,23 +23,23 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-.animated.loop-1 {
+.animated.repeat-1 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-iteration-count: var(--animate-loop);
-  animation-iteration-count: var(--animate-loop);
+  -webkit-animation-iteration-count: var(--animate-repeat);
+  animation-iteration-count: var(--animate-repeat);
 }
-.animated.loop-2 {
+.animated.repeat-2 {
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
-  -webkit-animation-iteration-count: calc(var(--animate-loop) * 2);
-  animation-iteration-count: calc(var(--animate-loop) * 2);
+  -webkit-animation-iteration-count: calc(var(--animate-repeat) * 2);
+  animation-iteration-count: calc(var(--animate-repeat) * 2);
 }
-.animated.loop-3 {
+.animated.repeat-3 {
   -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
-  -webkit-animation-iteration-count: calc(var(--animate-loop) * 3);
-  animation-iteration-count: calc(var(--animate-loop) * 3);
+  -webkit-animation-iteration-count: calc(var(--animate-repeat) * 3);
+  animation-iteration-count: calc(var(--animate-repeat) * 3);
 }
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
