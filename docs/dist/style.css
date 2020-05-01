@@ -477,6 +477,28 @@ blockquote {
   text-align: right;
 }
 
+[class*='docSection'] {
+  border-bottom: 1px solid #eaeaea;
+}
+
+[class*='docSection']:last-of-type {
+  border-bottom: 0px;
+}
+
+.docSection-contributors table {
+  text-align: center;
+}
+
+.docSection-contributors table th,
+.docSection-contributors table td {
+  padding: 0 1rem;
+}
+
+.docSection-contributors table img {
+  width: 150px;
+  border-radius: 100%;
+}
+
 /*-----------------------------------*\
   $FOOTER
 \*-----------------------------------*/
@@ -500,28 +522,19 @@ blockquote {
 }
 
 /*-----------------------------------*\
-  $ANIMATIONS
-\*-----------------------------------*/
-
-@keyframes hue {
-  from {
-    filter: hue-rotate(0deg);
-  }
-
-  to {
-    filter: hue-rotate(-360deg);
-  }
-}
-
-/*-----------------------------------*\
   $REDUCED MOTION BANNER
 \*-----------------------------------*/
+
+.motionless__banner a {
+  color: #fff;
+}
 
 .motionless__banner {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 150;
 
   width: 100%;
   padding: 1rem;
@@ -529,10 +542,12 @@ blockquote {
   background: #333;
   color: #fff;
   border-top: 2px solid #ff5722;
+
+  text-align: center;
 }
 
 .motionless__paragraph {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 @media (print), (prefers-reduced-motion: reduce) {

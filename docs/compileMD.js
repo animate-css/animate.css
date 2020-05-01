@@ -1,6 +1,9 @@
 const path = require('path');
 const fs = require('fs');
-const md = require('markdown-it')();
+const md = require('markdown-it')({
+  html: true,
+  linkify: true,
+});
 /**
  * Gets all the markdown files on a folder, compile them to html and returns
  * @param {string} dir - folder containing all the .md files
