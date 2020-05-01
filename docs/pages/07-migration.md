@@ -1,3 +1,0 @@
-## Migration from v3.x and under
-
-You should migrate, blah, blah, blah...

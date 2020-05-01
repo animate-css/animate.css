@@ -1,3 +1,0 @@
-## Usage with React and other js libraries
-
-Blah blah blah...

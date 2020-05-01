@@ -1,5 +1,3 @@
-_Just-add-water CSS animation_
+> Animate.css v4 brought some **breaking changes**, please refer to the [migration guide](#migration) before updating from v3.x and under.
 
-> WARNNING WITH MIGRATION GUIDE LINK HERE
-
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+**Animate.css** is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
