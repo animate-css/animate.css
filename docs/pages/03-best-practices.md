@@ -14,9 +14,17 @@ It doesn't mean that you should avoid adding playfulness to the interface, just 
 
 Avoid it as it won't bring much value to the user and will probably only cause confusion. Besides that, there is a good chance that the animations will be junky, culminating in bad UX.
 
-### Never animate root elements
+### Don't animate root elements
 
-Animate the `<html/>` or `<body/>` tags is a no go as you'll just go through some browser weirdness.
+Animating the `<html/>` or `<body/>` tags is possible, but you should avoid it. There were some reports pointing out that this could trigger some weird browser bugs. Besides, making the whole page bounce would hardly provide good value to your UX. If you indeed need this sort of effect, wrap your page in an element and animate it, like this:
+
+```html
+<body>
+  <main class="animate__animated animate__fadeInLeft">
+    <-- Your code -->
+  </main>
+</body>
+```
 
 ### Infinite animations should be avoided
 
@@ -24,7 +32,7 @@ Even tough Animate.css provides utility classes for repeating animations, includ
 
 ### Mind the initial and final state of your elements
 
-All the Animate.css animations include a CSS property called `animation-fill-mode` which controls the states of an element before and after animation. You can read more about it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode). Animate.css defaults to `animation-fill-mode: both`, but you can change it to suits your need.
+All the Animate.css animations include a CSS property called `animation-fill-mode` which controls the states of an element before and after animation. You can read more about it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode). Animate.css defaults to `animation-fill-mode: both`, but you can change it to suit your needs.
 
 ### Don't disable the `prefers-reduced-motion` media query
 

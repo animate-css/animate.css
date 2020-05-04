@@ -40,7 +40,7 @@ It's pretty straight forward to change animate's prefix on your custom build. Ch
 ```json
 /* on Animate.css package.json */
 "animateConfig": {
-  "prefix": "ani__"
+  "prefix": "myCustomPrefix__"
 },
 ```
 
