@@ -1,5 +1,5 @@
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
-  --animate-loop: 1;
+  --animate-repeat: 1;
 }

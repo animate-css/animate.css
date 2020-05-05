@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 /*!
  * animate.css - https://daneden.github.io/animate.css/
@@ -9,7 +10,7 @@
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
-  --animate-loop: 1;
+  --animate-repeat: 1;
 }
 .animate__animated {
   -webkit-animation-duration: 1s;
@@ -23,23 +24,23 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-.animate__animated.animate__loop-1 {
+.animate__animated.animate__repeat-1 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-iteration-count: var(--animate-loop);
-  animation-iteration-count: var(--animate-loop);
+  -webkit-animation-iteration-count: var(--animate-repeat);
+  animation-iteration-count: var(--animate-repeat);
 }
-.animate__animated.animate__loop-2 {
+.animate__animated.animate__repeat-2 {
   -webkit-animation-iteration-count: calc(1 * 2);
   animation-iteration-count: calc(1 * 2);
-  -webkit-animation-iteration-count: calc(var(--animate-loop) * 2);
-  animation-iteration-count: calc(var(--animate-loop) * 2);
+  -webkit-animation-iteration-count: calc(var(--animate-repeat) * 2);
+  animation-iteration-count: calc(var(--animate-repeat) * 2);
 }
-.animate__animated.animate__loop-3 {
+.animate__animated.animate__repeat-3 {
   -webkit-animation-iteration-count: calc(1 * 3);
   animation-iteration-count: calc(1 * 3);
-  -webkit-animation-iteration-count: calc(var(--animate-loop) * 3);
-  animation-iteration-count: calc(var(--animate-loop) * 3);
+  -webkit-animation-iteration-count: calc(var(--animate-repeat) * 3);
+  animation-iteration-count: calc(var(--animate-repeat) * 3);
 }
 .animate__animated.animate__delay-1s {
   -webkit-animation-delay: 1s;
@@ -2523,8 +2524,7 @@
 /* Flippers */
 @-webkit-keyframes flip {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
@@ -2558,8 +2558,7 @@
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -2567,8 +2566,7 @@
 }
 @keyframes flip {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
@@ -2602,8 +2600,7 @@
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -2838,8 +2835,10 @@
   }
 }
 .animate__flipOutY {
-  -webkit-animation-duration: calc(var(--animation-duration) * 0.75);
-  animation-duration: calc(var(--animation-duration) * 0.75);
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipOutY;

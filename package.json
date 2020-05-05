@@ -21,7 +21,10 @@
     "raw": "npx postcss source/animate.css -o animate.css --no-map --env development",
     "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
     "format": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "docs:library": "npx postcss source/animate.css -o ./docs/dist/animate.min.css --no-map --env production",
+    "docs:pages": "node ./docs/index.js",
+    "docs": "npm-run-all docs:library docs:pages"
   },
   "browserslist": [
     "> 3%",
@@ -41,6 +44,7 @@
     "eslint": "^6.8.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.6",
+    "markdown-it": "^10.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
