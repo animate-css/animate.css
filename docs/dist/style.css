@@ -300,15 +300,14 @@ blockquote {
 
 .tooltip {
   position: absolute;
-  bottom: calc(100% + 0.56em);
+  bottom: calc(100% + 0.76em);
   right: -1em;
-  padding: 0.28em 0.5em;
+  padding: 0.5em 0.75em;
 
   background-color: var(--c-main);
   color: #fff;
   border-radius: 4px;
 
-  font-size: 0.9em;
   line-height: 1;
   white-space: nowrap;
 
@@ -319,13 +318,13 @@ blockquote {
   content: '';
   position: absolute;
   top: 100%;
-  right: 1.28em;
+  right: 1.1em;
 
   width: 0;
   height: 0;
 
   border-style: solid;
-  border-width: 4px 2px 0 2px;
+  border-width: 6px 4px 0 4px;
   border-color: var(--c-main) transparent transparent transparent;
 }
 
