@@ -61,7 +61,7 @@ table {
 }
 
 code {
-  font-size: 1.2em;
+  font-size: 1em;
   background: var(--c-background);
 }
 
@@ -69,11 +69,13 @@ pre {
   padding: 1rem;
 
   background-color: var(--c-dark);
+  border-radius: 0.25em;
   color: #fff;
 }
 
 pre code {
   background-color: transparent;
+  font-size: 0.8rem !important;
 }
 
 /*-----------------------------------*\
@@ -142,6 +144,7 @@ h5 {
   background: transparent;
 
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 blockquote {
@@ -166,7 +169,7 @@ blockquote {
     'footer aimation-list';
 
   max-width: 100%;
-  height: 85vh;
+  height: calc(100vh - 2.55rem);
   overflow: hidden;
 
   background-color: var(--c-background);
@@ -174,6 +177,7 @@ blockquote {
 
 @media (min-width: 700px) {
   .intro {
+    height: calc(100vh - 2.8rem);
     grid-template-columns: [callout] 1fr [sidebar] 250px;
   }
 }
@@ -204,6 +208,8 @@ blockquote {
 .callout-subtitle {
   margin-top: 0;
 
+  animation-delay: 0.3s;
+
   color: var(--c-secondary);
   font-size: 1.3333rem;
   font-size: min(10vw, 1.3333rem);
@@ -211,7 +217,7 @@ blockquote {
 
 .callout-showList {
   margin-top: 2rem;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
 }
 
 @media (min-width: 700px) {
@@ -237,7 +243,7 @@ blockquote {
 }
 
 .animationList-active .callout-hideList {
-  transform: translateX(-260px);
+  transform: translateX(-270px);
 }
 
 @media (min-width: 1000px) {
@@ -258,8 +264,10 @@ blockquote {
   overflow-y: auto;
   padding: 2rem;
 
+  animation-delay: 0.7s;
   animation-fill-mode: backwards;
   transition: transform 0.2s ease-out;
+
   background-color: var(--c-background-dark);
 }
 
@@ -269,7 +277,8 @@ blockquote {
 
 @media (min-width: 700px) {
   .animation-list {
-    position: static;
+    position: relative;
+    left: auto;
     transform: none !important;
   }
 }
@@ -285,22 +294,64 @@ blockquote {
 
 .animation-item {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.56em);
+  right: -1em;
+  padding: 0.28em 0.5em;
+
+  background-color: var(--c-main);
+  color: #fff;
+  border-radius: 4px;
+
+  font-size: 0.9em;
+  line-height: 1;
+  white-space: nowrap;
+
+  visibility: hidden;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 1.28em;
+
+  width: 0;
+  height: 0;
+
+  border-style: solid;
+  border-width: 4px 2px 0 2px;
+  border-color: var(--c-main) transparent transparent transparent;
 }
 
 .copy-icon {
-  float: right;
-  width: 10px;
-  height: 18px;
+  position: relative;
+  width: 6px;
+  height: 10px;
+  align-self: center;
 
+  background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 477.867 477.867'%3E%3Cpath d='M341.333 85.333H51.2c-28.277 0-51.2 22.923-51.2 51.2v290.133c0 28.277 22.923 51.2 51.2 51.2h290.133c28.277 0 51.2-22.923 51.2-51.2V136.533c0-28.277-22.923-51.2-51.2-51.2zM358.4 426.667c0 9.426-7.641 17.067-17.067 17.067H51.2c-9.426 0-17.067-7.641-17.067-17.067V136.533c0-9.426 7.641-17.067 17.067-17.067h290.133c9.426 0 17.067 7.641 17.067 17.067v290.134z'/%3E%3Cpath d='M426.667 0h-307.2c-28.277 0-51.2 22.923-51.2 51.2 0 9.426 7.641 17.067 17.067 17.067S102.4 60.626 102.4 51.2s7.641-17.067 17.067-17.067h307.2c9.426 0 17.067 7.641 17.067 17.067v307.2c0 9.426-7.641 17.067-17.067 17.067s-17.067 7.641-17.067 17.067 7.641 17.067 17.067 17.067c28.277 0 51.2-22.923 51.2-51.2V51.2c0-28.277-22.923-51.2-51.2-51.2z'/%3E%3C/svg%3E");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 10px;
 
   visibility: hidden;
+  cursor: pointer;
+  border: 0;
+  box-shadow: none;
 }
 
 .animation-item:hover .copy-icon {
+  visibility: visible;
+}
+
+.copy-icon:hover .tooltip {
   visibility: visible;
 }
 
@@ -366,8 +417,12 @@ blockquote {
   padding-left: 1rem;
   margin-top: 0;
 
-  color: var(--c-secondary);
   font-size: 1.3333rem;
+}
+
+.docs-mainTitle a {
+  color: var(--c-secondary);
+  text-decoration: none;
 }
 
 @media (min-width: 1520px) {

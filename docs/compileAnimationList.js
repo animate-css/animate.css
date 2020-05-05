@@ -34,8 +34,10 @@ function compileAnimationlist(dir = '../source', file = 'animate.css') {
 
   const itemTemplate = (item) => `
     <li class="animation-item" data-animation="${item}">
-      ${item}
-      <span class="copy-icon"></span>
+      <span class="animation-item--title">${item}</span>
+      <button class="copy-icon" type="button">
+        <span class="tooltip">Copy class name to clipboard</span>
+      </button>
     </li>`;
 
   const listTemplate = (title, items) => {
