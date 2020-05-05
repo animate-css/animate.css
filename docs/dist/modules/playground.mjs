@@ -25,15 +25,19 @@ const playground = (
   setEndListener(targetEl, target.replace('.', ''));
 
   containerEl.addEventListener('click', (e) => {
-    clearAll(items);
-    const animation = `animate__${e.target.getAttribute('data-animation')}`;
+    const el = e.target
 
-    targetEl.classList.add('animate__animated', animation);
-    document.documentElement.classList.add('isPlaying');
-    document.documentElement.classList.remove('animationList-active');
+    if(el.classList.contains('animation-item--title')) {
+      clearAll(items);
+      const animation = `animate__${el.parentElement.getAttribute('data-animation')}`;
 
-    if (e.target.classList.contains('copy-icon')) {
-      const animation = `animate__${e.target.parentElement.getAttribute('data-animation')}`;
+      targetEl.classList.add('animate__animated', animation);
+      document.documentElement.classList.add('isPlaying');
+      document.documentElement.classList.remove('animationList-active');
+    }
+
+    if (el.classList.contains('copy-icon')) {
+      const animation = `animate__${el.parentElement.getAttribute('data-animation')}`;
       navigator.clipboard.writeText(animation);
     }
   });
