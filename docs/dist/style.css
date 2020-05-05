@@ -143,6 +143,7 @@ h5 {
   border: 2px solid var(--c-main);
   background: transparent;
 
+  font-family: inherit;
   font-size: 0.9rem;
   text-decoration: none;
 }
@@ -162,8 +163,10 @@ blockquote {
   display: grid;
   grid-template-columns: [callout] 1fr;
   grid-template-rows: 1fr auto;
-  grid-gap: 1rem;
-  gap: 1rem;
+  grid-column-gap: 0;
+  grid-row-gap: 1rem;
+  column-gap: 0;
+  row-gap: 1rem;
   grid-template-areas:
     'callout animation-list'
     'footer aimation-list';
@@ -178,6 +181,8 @@ blockquote {
 @media (min-width: 700px) {
   .intro {
     height: calc(100vh - 2.8rem);
+    grid-column-gap: 1rem;
+    column-gap: 1rem;
     grid-template-columns: [callout] 1fr [sidebar] 250px;
   }
 }
@@ -224,26 +229,6 @@ blockquote {
   .callout-showList {
     display: none;
   }
-}
-
-.callout-hideList {
-  position: absolute;
-  top: 1rem;
-  right: -25px;
-  width: 25px;
-  height: 25px;
-  background-color: var(--c-secondary);
-
-  color: var(--c-main);
-  border-radius: 100%;
-  transition: transform 0.2s ease-out;
-
-  text-align: center;
-  line-height: 1.7;
-}
-
-.animationList-active .callout-hideList {
-  transform: translateX(-270px);
 }
 
 @media (min-width: 1000px) {
