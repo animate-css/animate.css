@@ -35,7 +35,7 @@ After installing Animate.css, add the class `animate__animated` to an element, a
 
 That's it! You've got a CSS animated element. Super!
 
-> Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the [best practices](#best-practices) and [caveats](#caveats) sections to bring your web-things to life in the best way possible.
+> Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the [best practices](#best-practices) and [gotchas](#gotchas) sections to bring your web-things to life in the best way possible.
 
 #### Using `@keyframes`
 

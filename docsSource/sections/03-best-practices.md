@@ -21,14 +21,14 @@ Animating the `<html/>` or `<body/>` tags is possible, but you should avoid it. 
 ```html
 <body>
   <main class="animate__animated animate__fadeInLeft">
-    <-- Your code -->
+    <!-- Your code -->
   </main>
 </body>
 ```
 
 ### Infinite animations should be avoided
 
-Even tough Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of your them. So use it wisely!
+Even tough Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!
 
 ### Mind the initial and final state of your elements
 
@@ -45,7 +45,7 @@ Since version 3.7.0 Animate.css supports the `prefers-reduced-motion` media quer
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-## Gotchas
+<h2 id="gotchas">Gotchas</h2>
 
 ### You can't animate inline elements
 

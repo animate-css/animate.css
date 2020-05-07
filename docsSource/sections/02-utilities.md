@@ -12,14 +12,14 @@ You can add delays directly on the element's class attribute, just like this:
 
 Animate.css provides the following delays:
 
-| Class Name          | Delay Time |
-| ------------------- | ---------- |
-| `animate__delay-2s` | `2s`       |
-| `animate__delay-3s` | `3s`       |
-| `animate__delay-4s` | `4s`       |
-| `animate__delay-5s` | `5s`       |
+| Class name          | Default delay time |
+| ------------------- | ------------------ |
+| `animate__delay-2s` | `2s`               |
+| `animate__delay-3s` | `3s`               |
+| `animate__delay-4s` | `4s`               |
+| `animate__delay-5s` | `5s`               |
 
-The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:
+The provided delays are from 1 to 5 seconds. You can customize them setting the `--animate-delay` property to a longer or a shorter duration:
 
 ```css
 /* All delay classes will take 2x longer to start */
@@ -41,12 +41,12 @@ You can control the speed of the animation by adding these classes, as below:
 <div class="animate__animated animate__bounce animate__faster">Example</div>
 ```
 
-| Class Name        | Speed Time |
-| ----------------- | ---------- |
-| `animate__slow`   | `2s`       |
-| `animate__slower` | `3s`       |
-| `animate__fast`   | `800ms`    |
-| `animate__faster` | `500ms`    |
+| Class name        | Default speed time |
+| ----------------- | ------------------ |
+| `animate__slow`   | `2s`               |
+| `animate__slower` | `3s`               |
+| `animate__fast`   | `800ms`            |
+| `animate__faster` | `500ms`            |
 
 The `animate__animated` class has a default speed of `1s`. You can also customize the animations duration through the `--animate-duration` property, globaly or locally. This will affect both the animations and the utility classes. Example:
 
@@ -72,18 +72,18 @@ You can control the iteration count of the animation by adding these classes, li
 <div class="animate__animated animate__bounce animate__repeat-2">Example</div>
 ```
 
-| Class Name          | Iteration Count |
-| ------------------- | --------------- |
-| `animate__repeat-1` | `1`             |
-| `animate__repeat-2` | `2`             |
-| `animate__repeat-3` | `3`             |
+| Class Name          | Default iteration count |
+| ------------------- | ----------------------- |
+| `animate__repeat-1` | `1`                     |
+| `animate__repeat-2` | `2`                     |
+| `animate__repeat-3` | `3`                     |
 
 As with the repeat and speed classes, the `animate__repeat` class is based on the `--animate-repeat` property and has a default iteration count of `1`. You can customize them setting the `--animate-repeat` property to a longer or a shorter value:
 
 ```css
 /* The element will repeat the animation 2x
    It's better to set this property only locally and not globally or
-   you'll end up with a messy situation */
+   you might end up with a messy situation */
 .my-element {
   --animation-repeat: 2;
 }

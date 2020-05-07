@@ -863,7 +863,7 @@
 </code></pre>
 <p>That's it! You've got a CSS animated element. Super!</p>
 <blockquote>
-<p>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the <a href="#best-practices">best practices</a> and <a href="#caveats">caveats</a> sections to bring your web-things to life in the best way possible.</p>
+<p>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the <a href="#best-practices">best practices</a> and <a href="#gotchas">gotchas</a> sections to bring your web-things to life in the best way possible.</p>
 </blockquote>
 <h4>Using <code>@keyframes</code></h4>
 <p>Even though the library provides you a few helper classes like the <code>animated</code> class to get you up running quickly, you can use the provided animations <code>keyframes</code> directly. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
@@ -915,8 +915,8 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <table>
 <thead>
 <tr>
-<th>Class Name</th>
-<th>Delay Time</th>
+<th>Class name</th>
+<th>Default delay time</th>
 </tr>
 </thead>
 <tbody>
@@ -938,7 +938,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 </tr>
 </tbody>
 </table>
-<p>The provided delays are from 1 to 5 seconds. You can customize them setting the --animate-delay property to a longer or a shorter duration:</p>
+<p>The provided delays are from 1 to 5 seconds. You can customize them setting the <code>--animate-delay</code> property to a longer or a shorter duration:</p>
 <pre><code class="language-css">/* All delay classes will take 2x longer to start */
 :root {
   --animate-delay: 2s;
@@ -956,8 +956,8 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <table>
 <thead>
 <tr>
-<th>Class Name</th>
-<th>Speed Time</th>
+<th>Class name</th>
+<th>Default speed time</th>
 </tr>
 </thead>
 <tbody>
@@ -999,7 +999,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <thead>
 <tr>
 <th>Class Name</th>
-<th>Iteration Count</th>
+<th>Default iteration count</th>
 </tr>
 </thead>
 <tbody>
@@ -1020,7 +1020,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>As with the repeat and speed classes, the <code>animate__repeat</code> class is based on the <code>--animate-repeat</code> property and has a default iteration count of <code>1</code>. You can customize them setting the <code>--animate-repeat</code> property to a longer or a shorter value:</p>
 <pre><code class="language-css">/* The element will repeat the animation 2x
    It's better to set this property only locally and not globally or
-   you'll end up with a messy situation */
+   you might end up with a messy situation */
 .my-element {
   --animation-repeat: 2;
 }
@@ -1043,12 +1043,12 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>Animating the <code>&lt;html/&gt;</code> or <code>&lt;body/&gt;</code> tags is possible, but you should avoid it. There were some reports pointing out that this could trigger some weird browser bugs. Besides, making the whole page bounce would hardly provide good value to your UX. If you indeed need this sort of effect, wrap your page in an element and animate it, like this:</p>
 <pre><code class="language-html">&lt;body&gt;
   &lt;main class=&quot;animate__animated animate__fadeInLeft&quot;&gt;
-    &lt;-- Your code --&gt;
+    &lt;!-- Your code --&gt;
   &lt;/main&gt;
 &lt;/body&gt;
 </code></pre>
 <h3>Infinite animations should be avoided</h3>
-<p>Even tough Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of your them. So use it wisely!</p>
+<p>Even tough Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
 <h3>Mind the initial and final state of your elements</h3>
 <p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code> which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">here</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
 <h3>Don't disable the <code>prefers-reduced-motion</code> media query</h3>
@@ -1059,7 +1059,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-<h2>Gotchas</h2>
+<h2 id="gotchas">Gotchas</h2>
 <h3>You can't animate inline elements</h3>
 <p>Even though some browsers can animate inline elements, this goes against the CSS animation specs and will break on some browsers or eventually cease to work. Always animate block or inline-block level elements (grid and flex containers and children are block-level elements too). You can set an element to <code>display: inline-block</code> when animating an inline-level element.</p>
 <h3>Overflow</h3>
