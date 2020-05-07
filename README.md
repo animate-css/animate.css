@@ -20,7 +20,7 @@ yarn add animate.css
 
 ## Getting started
 
-You can find the Animate.css documentation on the [website](http://daneden.github.io/animate.css).
+You can find the Animate.css documentation on the [website](https://animate.style/).
 
 ## Accessibility
 
