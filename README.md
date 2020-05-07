@@ -26,6 +26,10 @@ You can find the Animate.css documentation on the [website](https://animate.styl
 
 Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
+## Community & Updates
+
+[![Community](https://discordapp.com/api/guilds/708094777572327436/widget.png?style=banner3)](https://discord.gg/c4fjVk)
+
 ## Core team
 
 | ![](https://avatars2.githubusercontent.com/u/439365?s=460&u=512b4cc5324938ae40bbb8f3b7769d335953cd3a&v=4) | ![](https://avatars2.githubusercontent.com/u/5007208?s=460&u=418401ee605824272e5dcb955fd64ea24546a857&v=4) | ![](https://avatars1.githubusercontent.com/u/15052701?s=460&u=9e58364978379536d3f26c4ce5cae1a2a449a0e4&v=4) |
