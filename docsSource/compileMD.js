@@ -4,12 +4,13 @@ const md = require('markdown-it')({
   html: true,
   linkify: true,
 });
+
 /**
  * Gets all the markdown files on a folder, compile them to html and returns
  * @param {string} dir - folder containing all the .md files
  */
 
-function compileMD(dir = 'pages') {
+function compileMD(dir = 'sections') {
   const directory = path.join(__dirname, dir);
   const files = fs.readdirSync(directory).sort();
 
@@ -28,13 +29,13 @@ function compileMD(dir = 'pages') {
   };
 
   const readMD = (file) => {
-    const filePath = path.join(__dirname, 'pages', file);
+    const filePath = path.join(__dirname, dir, file);
     const content = fs.readFileSync(filePath, 'utf8');
 
     return sectionTemplate(file, content);
   };
 
-  const filesContent = files.map((page) => readMD(page));
+  const filesContent = files.map((section) => readMD(section));
 
   return filesContent.join('\n');
 }
