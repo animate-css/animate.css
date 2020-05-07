@@ -4,12 +4,12 @@
   "main": "animate.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daneden/animate.css.git"
+    "url": "https://github.com/animate-css/animate.css.git"
   },
   "author": {
-    "name": "Daniel Eden"
+    "name": "Animate.css"
   },
-  "homepage": "https://daneden.github.io/animate.css/",
+  "homepage": "https://animate.style/",
   "license": "MIT",
   "animateConfig": {
     "prefix": "animate__"
