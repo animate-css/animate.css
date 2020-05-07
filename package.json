@@ -11,6 +11,25 @@
   },
   "homepage": "https://daneden.github.io/animate.css/",
   "license": "MIT",
+  "animateConfig": {
+    "prefix": "animate__"
+  },
+  "scripts": {
+    "start": "npm-run-all raw prod compat",
+    "compat": "npx postcss source/animate.css -o animate.compat.css --no-map --env compat",
+    "dev": "npx postcss source/animate.css -o animate.css --no-map --env development -w",
+    "raw": "npx postcss source/animate.css -o animate.css --no-map --env development",
+    "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
+    "format": "prettier --write \"**/*.{js,json,md,css}\"",
+    "precommit": "lint-staged",
+    "docs:library": "npx postcss source/animate.css -o ./docs/animate.min.css --no-map --env production",
+    "docs:pages": "node ./docsSource/index.js",
+    "docs": "npm-run-all docs:library docs:pages"
+  },
+  "browserslist": [
+    "> 3%",
+    "last 2 versions"
+  ],
   "style": "./animate.css",
   "jspm": {
     "main": "animate.css!",
@@ -20,39 +39,29 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
-    "cssnano": "^4.0.3",
-    "eslint": "^5.2.0",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.10.2",
-    "run-sequence": "^2.2.1"
+    "autoprefixer": "^9.7.6",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.6",
+    "markdown-it": "^10.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-header": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-prefixer": "^2.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.4"
   },
   "lint-staged": {
     "*.{js,json,md,css}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
-  "prettier": {
-    "bracketSpacing": false,
-    "proseWrap": "never",
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
-  "scripts": {
-    "gulp": "./node_modules/gulp/bin/gulp.js",
-    "start": "gulp",
-    "prettier": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged"
-  },
-  "spm": {
-    "main": "./animate.css"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm-run-all start precommit"
+    }
   }
 }

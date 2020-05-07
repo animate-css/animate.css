@@ -1,7 +1,9 @@
 # Contributing to Animate.css
+
 Thanks for your interest in contributing to Animate.css! Before contributing, please make sure you understand the guidelines provided here. Animate.css is widely used, so it’s important to maintain a high level of quality and to contribute with the interests of the community in mind.
 
 ## Design Guidelines
+
 Animations, like many facets of visual and interaction design, can be highly subjective. Maintaining a consistent library of animations in an active community can be difficult; these design guidelines are designed to help encourage thoughtful criticism of new animations that are proposed for Animate.css.
 
 The animations in Animate.css should follow a few key principles:

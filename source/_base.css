@@ -1,5 +1,5 @@
 .animated {
-  animation-duration: 1s;
+  animation-duration: var(--animate-duration);
   animation-fill-mode: both;
 }
 
@@ -7,46 +7,62 @@
   animation-iteration-count: infinite;
 }
 
+.animated.repeat-1 {
+  animation-iteration-count: var(--animate-repeat);
+}
+
+.animated.repeat-2 {
+  animation-iteration-count: calc(var(--animate-repeat) * 2);
+}
+
+.animated.repeat-3 {
+  animation-iteration-count: calc(var(--animate-repeat) * 3);
+}
+
 .animated.delay-1s {
-  animation-delay: 1s;
+  animation-delay: var(--animate-delay);
 }
 
 .animated.delay-2s {
-  animation-delay: 2s;
+  animation-delay: calc(var(--animate-delay) * 2);
 }
 
 .animated.delay-3s {
-  animation-delay: 3s;
+  animation-delay: calc(var(--animate-delay) * 3);
 }
 
 .animated.delay-4s {
-  animation-delay: 4s;
+  animation-delay: calc(var(--animate-delay) * 4);
 }
 
 .animated.delay-5s {
-  animation-delay: 5s;
-}
-
-.animated.fast {
-  animation-duration: 800ms;
+  animation-delay: calc(var(--animate-delay) * 5);
 }
 
 .animated.faster {
-  animation-duration: 500ms;
+  animation-duration: calc(var(--animate-duration) / 2);
+}
+
+.animated.fast {
+  animation-duration: calc(var(--animate-duration) * 0.8);
 }
 
 .animated.slow {
-  animation-duration: 2s;
+  animation-duration: calc(var(--animate-duration) * 2);
 }
 
 .animated.slower {
-  animation-duration: 3s;
+  animation-duration: calc(var(--animate-duration) * 3);
 }
 
-@media (print), (prefers-reduced-motion: reduce) {
+@media print, (prefers-reduced-motion: reduce) {
   .animated {
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
-    animation-iteration-count: 1 !important; 
+    animation-iteration-count: 1 !important;
+  }
+
+  .animated[class*='Out'] {
+    opacity: 0;
   }
 }
