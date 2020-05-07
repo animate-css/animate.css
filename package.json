@@ -24,7 +24,9 @@
     "precommit": "lint-staged",
     "docs:library": "npx postcss source/animate.css -o ./docs/animate.min.css --no-map --env production",
     "docs:pages": "node ./docsSource/index.js",
-    "docs": "npm-run-all docs:library docs:pages"
+    "docs": "npm-run-all docs:library docs:pages",
+    "version": "npm-run-all start docs && git add -A docs animate.css animate.min.css animate.compat.css",
+    "postversion": "git push && git push --tags"
   },
   "browserslist": [
     "> 3%",
