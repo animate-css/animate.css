@@ -28,7 +28,7 @@ Animating the `<html/>` or `<body/>` tags is possible, but you should avoid it. 
 
 ### Infinite animations should be avoided
 
-Even tough Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!
+Even though Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!
 
 ### Mind the initial and final state of your elements
 
