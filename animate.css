@@ -1034,7 +1034,7 @@
   -webkit-animation-name: backInUp;
   animation-name: backInUp;
 }
-/* Back exists */
+/* Back exits */
 @-webkit-keyframes backOutDown {
   0% {
     -webkit-transform: scale(1);

@@ -21,7 +21,7 @@
 @import 'back_entrances/backInRight.css';
 @import 'back_entrances/backInUp.css';
 
-/* Back exists */
+/* Back exits */
 @import 'back_exits/backOutDown.css';
 @import 'back_exits/backOutLeft.css';
 @import 'back_exits/backOutRight.css';
