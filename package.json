@@ -65,5 +65,11 @@
     "hooks": {
       "pre-commit": "npm-run-all start precommit"
     }
-  }
+  },
+  "files": [
+    "animate.compat.css",
+    "animate.min.css",
+    "animate.css",
+    "source/**/*.css"
+  ]
 }
