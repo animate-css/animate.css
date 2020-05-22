@@ -53,12 +53,12 @@ The `animate__animated` class has a default speed of `1s`. You can also customiz
 ```css
 /* All animations will take twice as long to finish */
 :root {
-  --animation-duration: 2s;
+  --animate-duration: 2s;
 }
 
 /* Only this element will take half the time to finish */
 .my-element {
-  --animation-duration: 0.5s;
+  --animate-duration: 0.5s;
 }
 ```
 
@@ -85,6 +85,6 @@ As with the repeat and speed classes, the `animate__repeat` class is based on th
    It's better to set this property only locally and not globally or
    you might end up with a messy situation */
 .my-element {
-  --animation-repeat: 2;
+  --animate-repeat: 2;
 }
 ```
