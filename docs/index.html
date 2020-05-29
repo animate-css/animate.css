@@ -982,12 +982,12 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>The <code>animate__animated</code> class has a default speed of <code>1s</code>. You can also customize the animations duration through the <code>--animate-duration</code> property, globaly or locally. This will affect both the animations and the utility classes. Example:</p>
 <pre><code class="language-css">/* All animations will take twice as long to finish */
 :root {
-  --animation-duration: 2s;
+  --animate-duration: 2s;
 }
 
 /* Only this element will take half the time to finish */
 .my-element {
-  --animation-duration: 0.5s;
+  --animate-duration: 0.5s;
 }
 </code></pre>
 <p>Notice that some animations have a duration of less than 1 second. As we used the CSS <code>calc()</code> function, setting the duration through the <code>--animation-duration</code> property will respect these ratios. So, when you change the global duration all the animations will respond to that change!</p>
@@ -1022,7 +1022,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
    It's better to set this property only locally and not globally or
    you might end up with a messy situation */
 .my-element {
-  --animation-repeat: 2;
+  --animate-repeat: 2;
 }
 </code></pre>
 
