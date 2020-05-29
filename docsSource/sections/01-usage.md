@@ -70,7 +70,7 @@ Example:
 /* This changes all the animations globaly */
 :root {
   --animate-duration: 800ms;
-  --animation-delay: 0.9s;
+  --animate-delay: 0.9s;
 }
 ```
 
