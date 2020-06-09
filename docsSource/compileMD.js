@@ -6,6 +6,15 @@ const md = require('markdown-it')({
 });
 
 /**
+ * Converts string to slug. This is as simple as can be and doesn't handle much usecases on purpose.
+ * @param {string} text  - string to be converted to slug
+ */
+
+function convertFileNameToId(text) {
+  return text.toLowerCase().match(/([a-z]+[-]*[a-z])\w+/)[0];
+}
+
+/**
  * Gets all the markdown files on a folder, compile them to html and returns
  * @param {string} dir - folder containing all the .md files
  */
@@ -16,7 +25,7 @@ function compileMD(dir = 'sections') {
 
   const sectionTemplate = (file, content) => {
     const message = 'Edit this on Github';
-    const fileName = file.replace('.md', '').match(/([a-z])\w+/)[0];
+    const fileName = convertFileNameToId(file);
     const editURL = `https://github.com/daneden/animate.css/blob/master/docsSource/sections/${file}`;
     const parsedContent = md.render(content);
 
