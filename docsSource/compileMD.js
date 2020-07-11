@@ -26,7 +26,7 @@ function compileMD(dir = 'sections') {
   const sectionTemplate = (file, content) => {
     const message = 'Edit this on GitHub';
     const fileName = convertFileNameToId(file);
-    const editURL = `https://github.com/daneden/animate.css/blob/master/docsSource/sections/${file}`;
+    const editURL = `https://github.com/animate-css/animate.css/blob/master/docsSource/sections/${file}`;
     const parsedContent = md.render(content);
 
     return `
