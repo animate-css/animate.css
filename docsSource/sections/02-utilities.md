@@ -79,7 +79,7 @@ You can control the iteration count of the animation by adding these classes, li
 | `animate__repeat-3` | `3`                     |
 | `animate__infinite` | `infinite`              |
 
-As with the delay and speed classes, the `animate__repeat` class is based on the `--animate-repeat` property and has a default iteration count of `1`. You can customize them setting the `--animate-repeat` property to a longer or a shorter value:
+As with the delay and speed classes, the `animate__repeat` class is based on the `--animate-repeat` property and has a default iteration count of `1`. You can customize them by setting the `--animate-repeat` property to a longer or a shorter value:
 
 ```css
 /* The element will repeat the animation 2x
