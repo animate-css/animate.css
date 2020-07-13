@@ -836,7 +836,7 @@
 </blockquote>
 <p><strong>Animate.css</strong> is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/00-intro.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/00-intro.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -900,7 +900,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 </code></pre>
 <p>Even though custom properties are not supported by some aging browsers, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/01-usage.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/01-usage.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1015,18 +1015,23 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <td><code>animate__repeat-3</code></td>
 <td><code>3</code></td>
 </tr>
+<tr>
+<td><code>animate__infinite</code></td>
+<td><code>infinite</code></td>
+</tr>
 </tbody>
 </table>
-<p>As with the repeat and speed classes, the <code>animate__repeat</code> class is based on the <code>--animate-repeat</code> property and has a default iteration count of <code>1</code>. You can customize them setting the <code>--animate-repeat</code> property to a longer or a shorter value:</p>
+<p>As with the delay and speed classes, the <code>animate__repeat</code> class is based on the <code>--animate-repeat</code> property and has a default iteration count of <code>1</code>. You can customize them by setting the <code>--animate-repeat</code> property to a longer or a shorter value:</p>
 <pre><code class="language-css">/* The element will repeat the animation 2x
-   It's better to set this property only locally and not globally or
+   It's better to set this property locally and not globally or
    you might end up with a messy situation */
 .my-element {
   --animate-repeat: 2;
 }
 </code></pre>
+<p>Notice that <code>animate__infinite</code> doesn't use any custom property and changes to <code>--animate-repeat</code> will have no effect on it. Don't forget to read the <a href="#best-practices">best practices</a> section to make the best use of repeating animations.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/02-utilities.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/02-utilities.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1067,7 +1072,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <h3>Intervals between repeats</h3>
 <p>Unfortunately, this isn't possible with pure CSS right now. You have to use Javascript to achieve this result.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/03-best-practices.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/03-best-practices.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1119,7 +1124,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 </code></pre>
 <p>If you had a hard time understanding the previous function, have a look at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow functions</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/04-javascript.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/04-javascript.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1154,7 +1159,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 </code></pre>
 <p>In the case of a new project, it's highly recommended to use the default prefixed version as it'll make sure that you'll hardly have classes conflicting with your project. Besides, in later versions, we might decide to discontinue the <code>animate.compat.css</code> file.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/06-migration.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/06-migration.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1197,7 +1202,7 @@ $ npm install
 </code></pre>
 <p>Easy peasy!</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/07-custom-builds.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/07-custom-builds.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1205,7 +1210,7 @@ $ npm install
         <h2>Accessibility</h2>
 <p>Animate.css supports the <a href="https://webkit.org/blog/7551/responsive-design-for-motion/"><code>prefers-reduced-motion</code> media query</a> so that users with motion sensitivity can opt-out of animations. On supported platforms (currently all the major browsers and OS, including mobile), users can select &quot;reduce motion&quot; on their operating system preferences and it will turn off CSS transitions for them without any further work required.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/08-accessibility.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/08-accessibility.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1233,7 +1238,7 @@ $ npm install
 </tbody>
 </table>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/09-contributors.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/09-contributors.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1245,7 +1250,7 @@ $ npm install
 <h3>Code of Conduct</h3>
 <p>This project and everyone participating in it are governed by the <a href="https://github.com/animate-css/animate.css/blob/master/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to <a href="mailto:callmeelton@gmail.com">callmeelton@gmail.com</a>.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/09-license-contributing.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/09-license-contributing.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
           </div>
