@@ -1,0 +1,21 @@
+.ios-shake {
+  animation-name: ios-shake;
+}
+
+@keyframes ios-shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: rotate3d(0, 0, 1, 0.8deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate3d(0, 0, 1, -0.8deg);
+  }
+}

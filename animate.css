@@ -3376,6 +3376,48 @@
   -webkit-transform-origin: top left;
   transform-origin: top left;
 }
+.animate__ios-shake {
+  -webkit-animation-name: ios-shake;
+  animation-name: ios-shake;
+}
+@-webkit-keyframes ios-shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0.8deg);
+    transform: rotate3d(0, 0, 1, 0.8deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: rotate3d(0, 0, 1, -0.8deg);
+    transform: rotate3d(0, 0, 1, -0.8deg);
+  }
+}
+@keyframes ios-shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0.8deg);
+    transform: rotate3d(0, 0, 1, 0.8deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: rotate3d(0, 0, 1, -0.8deg);
+    transform: rotate3d(0, 0, 1, -0.8deg);
+  }
+}
 @-webkit-keyframes jackInTheBox {
   from {
     opacity: 0;
