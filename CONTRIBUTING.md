@@ -14,3 +14,17 @@ The animations in Animate.css should follow a few key principles:
 - **Animations should be helpful.** They should be designed to guide users to a point of interest, ease natural reading order, or to communicate relationships between elements.
 - **Animations should feel familial.** Avoid introducing animations that feel out-of-place compared to the existing set.
 - **Animations should feel natural.** Animations should reflect, as much as is reasonable, motion that occurs in natural physics. Avoid extreme timing functions, and model animations on real-world events.
+
+## Code Styling
+
+1. Match the naming convention (camelCase, categorized [fades, bounces, etc])
+2. Indent with two spaces
+3. End each file with a blank line
+
+## How To Contribute
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the project
+2. Create a new topic branch on your local forked copy
+3. Push your topic branch up to your fork
+4. Create a [pen](https://codepen.io/) demonstrating what yor change will do.
+5. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/) with a clear title and description against the `master` branch.
