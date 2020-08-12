@@ -8,4 +8,4 @@ Pull requests are the way to go here. We only have two rules for submitting a pu
 
 ### Code of Conduct
 
-This project and everyone participating in it are governed by the [Contributor Covenant Code of Conduct](https://github.com/animate-css/animate.css/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [callmeelton@gmail.com](mailto:callmeelton@gmail.com).
+This project and everyone participating in it are governed by the [Contributor Covenant Code of Conduct](https://github.com/animate-css/animate.css/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [callmeelton@gmail.com](mailto:callmeelton@gmail.com).
