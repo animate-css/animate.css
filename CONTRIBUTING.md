@@ -28,4 +28,4 @@ The animations in Animate.css should follow a few key principles:
 2. Create a new topic branch on your local forked copy
 3. Push your topic branch up to your fork
 4. Create a [pen](https://codepen.io/) demonstrating what yor change will do.
-5. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/) with a clear title and description against the `master` branch.
+5. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/) with a clear title and description against the `main` branch.
