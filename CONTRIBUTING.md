@@ -20,7 +20,7 @@ The animations in Animate.css should follow a few key principles:
 1. Match the naming convention (camelCase, categorized [fades, bounces, etc])
 2. Indent with two spaces
 3. End each file with a blank line
-4. Please use the configurations in .editorconfig and .prettierrc to help keeps styling consistant.
+4. Make sure you have an editorconfig plugin/extension enabled in your editor and all the dependencies installed so editorconfig and prettier can automatically format your code when committing.
 
 ## How To Contribute
 
