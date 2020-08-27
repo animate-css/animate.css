@@ -1,6 +1,6 @@
 {
   "name": "animate.css",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "main": "animate.css",
   "repository": {
     "type": "git",
@@ -43,10 +43,10 @@
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
-    "eslint": "^6.8.0",
+    "eslint": "^7.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.6",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^11.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
@@ -65,5 +65,11 @@
     "hooks": {
       "pre-commit": "npm-run-all start precommit"
     }
-  }
+  },
+  "files": [
+    "animate.compat.css",
+    "animate.min.css",
+    "animate.css",
+    "source/**/*.css"
+  ]
 }

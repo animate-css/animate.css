@@ -20,7 +20,7 @@ or add it directly to your webpage using a CDN:
 <head>
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
 </head>
 ```
@@ -70,7 +70,7 @@ Example:
 /* This changes all the animations globaly */
 :root {
   --animate-duration: 800ms;
-  --animation-delay: 0.9s;
+  --animate-delay: 0.9s;
 }
 ```
 

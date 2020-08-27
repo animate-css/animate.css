@@ -157,8 +157,8 @@
       </section>
     
 
-      <section class="back_exists" id="back_exists">
-        <h3 class="animation-title">Back exists</h3>
+      <section class="back_exits" id="back_exits">
+        <h3 class="animation-title">Back exits</h3>
         <ul class="animation-group">
     <li class="animation-item" data-animation="backOutDown">
       <span class="animation-item--title">backOutDown</span>
@@ -798,7 +798,7 @@
       <footer class="intro-footer">
         <p>
           Another thing from
-          <a href="Daniel Eden" target="_blank" title="Daniel Eden">Daniel Eden</a> and
+          <a href="https://daneden.me" target="_blank" title="Daniel Eden">Daniel Eden</a> and
           <a href="#contributors" title="Contributors">friends</a>
         </p>
       </footer>
@@ -836,7 +836,7 @@
 </blockquote>
 <p><strong>Animate.css</strong> is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/00-intro.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/00-intro.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -853,7 +853,7 @@
 <pre><code class="language-html">&lt;head&gt;
   &lt;link
     rel=&quot;stylesheet&quot;
-    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css&quot;
+    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css&quot;
   /&gt;
 &lt;/head&gt;
 </code></pre>
@@ -888,7 +888,7 @@
 /* This changes all the animations globaly */
 :root {
   --animate-duration: 800ms;
-  --animation-delay: 0.9s;
+  --animate-delay: 0.9s;
 }
 </code></pre>
 <p>Custom properties also make it easy to change all your animations time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:</p>
@@ -900,7 +900,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 </code></pre>
 <p>Even though custom properties are not supported by some aging browsers, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/01-usage.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/01-usage.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -982,12 +982,12 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>The <code>animate__animated</code> class has a default speed of <code>1s</code>. You can also customize the animations duration through the <code>--animate-duration</code> property, globaly or locally. This will affect both the animations and the utility classes. Example:</p>
 <pre><code class="language-css">/* All animations will take twice as long to finish */
 :root {
-  --animation-duration: 2s;
+  --animate-duration: 2s;
 }
 
 /* Only this element will take half the time to finish */
 .my-element {
-  --animation-duration: 0.5s;
+  --animate-duration: 0.5s;
 }
 </code></pre>
 <p>Notice that some animations have a duration of less than 1 second. As we used the CSS <code>calc()</code> function, setting the duration through the <code>--animation-duration</code> property will respect these ratios. So, when you change the global duration all the animations will respond to that change!</p>
@@ -1015,22 +1015,27 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <td><code>animate__repeat-3</code></td>
 <td><code>3</code></td>
 </tr>
+<tr>
+<td><code>animate__infinite</code></td>
+<td><code>infinite</code></td>
+</tr>
 </tbody>
 </table>
-<p>As with the repeat and speed classes, the <code>animate__repeat</code> class is based on the <code>--animate-repeat</code> property and has a default iteration count of <code>1</code>. You can customize them setting the <code>--animate-repeat</code> property to a longer or a shorter value:</p>
+<p>As with the delay and speed classes, the <code>animate__repeat</code> class is based on the <code>--animate-repeat</code> property and has a default iteration count of <code>1</code>. You can customize them by setting the <code>--animate-repeat</code> property to a longer or a shorter value:</p>
 <pre><code class="language-css">/* The element will repeat the animation 2x
-   It's better to set this property only locally and not globally or
+   It's better to set this property locally and not globally or
    you might end up with a messy situation */
 .my-element {
-  --animation-repeat: 2;
+  --animate-repeat: 2;
 }
 </code></pre>
+<p>Notice that <code>animate__infinite</code> doesn't use any custom property and changes to <code>--animate-repeat</code> will have no effect on it. Don't forget to read the <a href="#best-practices">best practices</a> section to make the best use of repeating animations.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/02-utilities.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/02-utilities.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
-      <section class="docSection-best" id="best">
+      <section class="docSection-best-practices" id="best-practices">
         <h2>Best practices</h2>
 <p>Animations can greatly improve an interface's UX, but it's important to follow some guidelines to not overdo it and deteriorate the user experience on your web-things. Following the following rules should provide a good start.</p>
 <h3>Meaningful animations</h3>
@@ -1067,7 +1072,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <h3>Intervals between repeats</h3>
 <p>Unfortunately, this isn't possible with pure CSS right now. You have to use Javascript to achieve this result.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/03-best-practices.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/03-best-practices.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1110,16 +1115,16 @@ element.style.setProperty('--animate-duration', '0.5s');
   });
 </code></pre>
 <p>And use it like this:</p>
-<pre><code class="language-javascript">animateCSS('.my-element', 'animate__bounce');
+<pre><code class="language-javascript">animateCSS('.my-element', 'bounce');
 
 // or
-animateCSS('.my-element', 'animate__bounce').then((message) =&gt; {
+animateCSS('.my-element', 'bounce').then((message) =&gt; {
   // Do something after the animation
 });
 </code></pre>
 <p>If you had a hard time understanding the previous function, have a look at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow functions</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/04-javascript.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/04-javascript.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1154,11 +1159,11 @@ animateCSS('.my-element', 'animate__bounce').then((message) =&gt; {
 </code></pre>
 <p>In the case of a new project, it's highly recommended to use the default prefixed version as it'll make sure that you'll hardly have classes conflicting with your project. Besides, in later versions, we might decide to discontinue the <code>animate.compat.css</code> file.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/06-migration.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/06-migration.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
-      <section class="docSection-custom" id="custom">
+      <section class="docSection-custom-builds" id="custom-builds">
         <h2>Custom Builds</h2>
 <p>Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS today.</p>
 <p>First of all, you’ll need Node and all other dependencies:</p>
@@ -1197,21 +1202,15 @@ $ npm install
 </code></pre>
 <p>Easy peasy!</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/07-custom-builds.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/07-custom-builds.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
-      <section class="docSection-contributing" id="contributing">
+      <section class="docSection-accessibility" id="accessibility">
         <h2>Accessibility</h2>
 <p>Animate.css supports the <a href="https://webkit.org/blog/7551/responsive-design-for-motion/"><code>prefers-reduced-motion</code> media query</a> so that users with motion sensitivity can opt-out of animations. On supported platforms (currently all the major browsers and OS, including mobile), users can select &quot;reduce motion&quot; on their operating system preferences and it will turn off CSS transitions for them without any further work required.</p>
-<h2>License</h2>
-<p>Animate.css is licensed under the MIT license. (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p>
-<h2>Code of Conduct</h2>
-<p>This project and everyone participating in it are governed by the <a href="CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to <a href="mailto:callmeelton@gmail.com">callmeelton@gmail.com</a>.</p>
-<h2>Contributing</h2>
-<p>Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="https://codepen.io">pen</a>. That <strong>last one is important</strong>.</p>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/08-contributing.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/08-accessibility.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
 
@@ -1239,7 +1238,19 @@ $ npm install
 </tbody>
 </table>
 
-        <p class="edit-github"><a href="https://github.com/daneden/animate.css/blob/master/docsSource/sections/09-contributors.md" title="Edit this on Github">Edit this on Github</a></p>
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/09-contributors.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
+      </section>
+    
+
+      <section class="docSection-license-contributing" id="license-contributing">
+        <h2>License and Contributing</h2>
+<p>Animate.css is licensed under the MIT license. (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p>
+<h3>Contributing</h3>
+<p>Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="https://codepen.io">pen</a>. That <strong>last one is important</strong>.</p>
+<h3>Code of Conduct</h3>
+<p>This project and everyone participating in it are governed by the <a href="https://github.com/animate-css/animate.css/blob/master/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to <a href="mailto:callmeelton@gmail.com">callmeelton@gmail.com</a>.</p>
+
+        <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/master/docsSource/sections/09-license-contributing.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
     
           </div>
@@ -1259,7 +1270,7 @@ $ npm install
                   />
                 </svg>
               </a>
-              <span class="animate-version">v4.0.0</span>
+              <span class="animate-version">v4.1.0</span>
             </div>
           </aside>
         </div>

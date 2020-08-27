@@ -51,10 +51,10 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 And use it like this:
 
 ```javascript
-animateCSS('.my-element', 'animate__bounce');
+animateCSS('.my-element', 'bounce');
 
 // or
-animateCSS('.my-element', 'animate__bounce').then((message) => {
+animateCSS('.my-element', 'bounce').then((message) => {
   // Do something after the animation
 });
 ```
