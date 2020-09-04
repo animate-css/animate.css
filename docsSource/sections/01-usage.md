@@ -20,7 +20,7 @@ or add it directly to your webpage using a CDN:
 <head>
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
   />
 </head>
 ```
