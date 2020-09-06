@@ -1,8 +1,7 @@
 const fs = require('fs');
 const {homepage, version, author, animateConfig} = JSON.parse(fs.readFileSync('package.json'));
 
-const header = `
-@charset "UTF-8";
+const header = `@charset "UTF-8";
 
 /*!
  * animate.css - ${homepage}
