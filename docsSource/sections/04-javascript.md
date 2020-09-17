@@ -37,12 +37,12 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     node.classList.add(`${prefix}animated`, animationName);
 
     // When the animation ends, we clean the classes and resolve the Promise
-    handleAnimationEnd = () => {
+    function handleAnimationEnd() {
       node.classList.remove(`${prefix}animated`, animationName);
       resolve('Animation ended');
     }
 
-    node.addEventListener('animationend', handleAnimationEnd, {once : true});
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
   });
 ```
 
