@@ -870,7 +870,7 @@
 <pre><code class="language-html">&lt;head&gt;
   &lt;link
     rel=&quot;stylesheet&quot;
-    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css&quot;
+    href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;
   /&gt;
 &lt;/head&gt;
 </code></pre>
@@ -1123,12 +1123,10 @@ element.style.setProperty('--animate-duration', '0.5s');
     // When the animation ends, we clean the classes and resolve the Promise
     function handleAnimationEnd() {
       node.classList.remove(`${prefix}animated`, animationName);
-      node.removeEventListener('animationend', handleAnimationEnd);
-
       resolve('Animation ended');
     }
 
-    node.addEventListener('animationend', handleAnimationEnd);
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
   });
 </code></pre>
 <p>And use it like this:</p>
