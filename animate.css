@@ -28,6 +28,7 @@
   -webkit-animation-iteration-count: var(--animate-repeat);
   animation-iteration-count: var(--animate-repeat);
 }
+//this is a comment
 .animate__animated.animate__repeat-2 {
   -webkit-animation-iteration-count: calc(1 * 2);
   animation-iteration-count: calc(1 * 2);
