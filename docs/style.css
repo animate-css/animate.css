@@ -70,7 +70,7 @@ pre {
 
   background-color: var(--c-dark);
   border-radius: 0.25em;
-  color: #fff;
+  color: rgb(99, 99, 99);
 }
 
 pre code {
