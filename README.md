@@ -23,6 +23,11 @@ yarn add animate.css
 ## Getting started
 
 You can find the Animate.css documentation on the [website](https://animate.style/).
+add it directly to your webpage using a CDN
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 ## Accessibility
 
