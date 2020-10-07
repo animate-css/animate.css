@@ -20,7 +20,7 @@ Install with yarn:
 yarn add animate.css
 ```
 
-## Getting started
+## Website For Animate.css Documentation.
 
 You can find the Animate.css documentation on the [website](https://animate.style/).
 
