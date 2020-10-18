@@ -1,0 +1,31 @@
+.outer{
+  width:300px;
+  border:1px solid lightgray;
+  padding:10px;
+  }
+.lower{
+  width:250px;
+  border:1px;
+  padding:10px;
+  margin-top:5px;
+}
+.fact{
+  font-style:italic;
+}
+  img{
+width:300px;
+height:200px;
+}
+
+li{
+  list-style:none;
+  text-align:left;
+}
+
+em{
+  font-weight:bold;
+}
+ul{
+  padding:0px;
+  margin:0px;
+}
