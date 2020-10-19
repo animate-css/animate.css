@@ -45,7 +45,7 @@
     "cssnano": "^4.1.10",
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.4.2",
     "markdown-it": "^11.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.35",
