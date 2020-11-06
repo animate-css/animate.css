@@ -67,7 +67,7 @@ Example:
   --animate-duration: 2s;
 }
 
-/* This changes all the animations globaly */
+/* This changes all the animations globally */
 :root {
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
