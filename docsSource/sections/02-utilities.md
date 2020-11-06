@@ -48,7 +48,7 @@ You can control the speed of the animation by adding these classes, as below:
 | `animate__fast`   | `800ms`            |
 | `animate__faster` | `500ms`            |
 
-The `animate__animated` class has a default speed of `1s`. You can also customize the animations duration through the `--animate-duration` property, globaly or locally. This will affect both the animations and the utility classes. Example:
+The `animate__animated` class has a default speed of `1s`. You can also customize the animations duration through the `--animate-duration` property, globally or locally. This will affect both the animations and the utility classes. Example:
 
 ```css
 /* All animations will take twice as long to finish */
