@@ -30,7 +30,7 @@ You can also use a simple function to add the animations classes and remove them
 ```javascript
 const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
-  new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const animationName = `${prefix}${animation}`;
     const node = document.querySelector(element);
 
