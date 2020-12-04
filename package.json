@@ -48,7 +48,7 @@
     "lint-staged": "^10.5.2",
     "markdown-it": "^12.0.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.1.10",
+    "postcss": "^8.1.14",
     "postcss-cli": "^7.1.2",
     "postcss-header": "^3.0.1",
     "postcss-import": "^12.0.1",
