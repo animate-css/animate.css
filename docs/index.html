@@ -1114,7 +1114,7 @@ element.style.setProperty('--animate-duration', '0.5s');
 <p>You can also use a simple function to add the animations classes and remove them automatically:</p>
 <pre><code class="language-javascript">const animateCSS = (element, animation, prefix = 'animate__') =&gt;
   // We create a Promise and return it
-  new Promise((resolve, reject) =&gt; {
+  return new Promise((resolve, reject) =&gt; {
     const animationName = `${prefix}${animation}`;
     const node = document.querySelector(element);
 
@@ -1295,7 +1295,7 @@ $ npm install
     <footer class="main-footer">
       <p>
         Animate.css is a MIT licensed library.
-        You can use it freely, respecting the terms included in the <a href="https://github.com/daneden/animate.css/blob/main/LICENSE" title="license">license file.
+        You can use it freely, respecting the terms included in the <a href="https://github.com/daneden/animate.css/blob/main/LICENSE" title="license">license file.</a>
       </p>
     </footer>
 
