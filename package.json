@@ -51,7 +51,7 @@
     "postcss": "^8.1.14",
     "postcss-cli": "^8.3.1",
     "postcss-header": "^3.0.1",
-    "postcss-import": "^12.0.1",
+    "postcss-import": "^13.0.0",
     "postcss-prefixer": "^2.1.2",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1"
