@@ -1541,10 +1541,10 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
-markdown-it@^12.0.3:
-  version "12.0.3"
-  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.0.3.tgz#8d1e47daf1d716d63610495eb93f6665573e4abe"
-  integrity sha512-M57RsMv+QQmJHz1yCu0gTJRMx/LlxRPtrrw+2kb/CpDVK/graCmWO0qfNnz/SE1FCNdyq3pkMMZ+itTnyT/YGA==
+markdown-it@^12.0.4:
+  version "12.0.4"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-12.0.4.tgz#eec8247d296327eac3ba9746bdeec9cfcc751e33"
+  integrity sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==
   dependencies:
     argparse "^2.0.1"
     entities "~2.1.0"
