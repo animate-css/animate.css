@@ -1114,7 +1114,7 @@ element.style.setProperty('--animate-duration', '0.5s');
 <p>You can also use a simple function to add the animations classes and remove them automatically:</p>
 <pre><code class="language-javascript">const animateCSS = (element, animation, prefix = 'animate__') =&gt;
   // We create a Promise and return it
-  return new Promise((resolve, reject) =&gt; {
+  new Promise((resolve, reject) =&gt; {
     const animationName = `${prefix}${animation}`;
     const node = document.querySelector(element);
 
