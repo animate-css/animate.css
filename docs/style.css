@@ -616,3 +616,94 @@ blockquote {
 .animation-list {
   text-align: left;
 }
+
+/*-----------------------------------*\
+  $DARK-MODE
+\*-----------------------------------*/
+
+.night-light-toggle-button .night-light-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.night-light-checkbox:checked + .night-light-label .night-light-ball {
+  transform: translateX(28px);
+}
+.night-light-label {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 68px;
+  height: 30px;
+  border: 2px solid #4672fe;
+  padding: 4px 7px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.night-light-ball {
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #4672fe;
+  border-radius: 50%;
+  transition: transform 0.3s linear;
+}
+.moon-svg,
+.sun-svg {
+  width: 17px;
+}
+
+body.dark{
+  background-color: #111;
+  color: #e0e0e0;
+}
+
+body.dark .intro{
+  background: #111;
+}
+
+body.dark .animation-list,
+body.dark .sidebar{
+  background: #15151D;
+}
+
+body.dark .button.button-animations,
+body.dark .callout-hideList.button{
+  color: #e0e0e0;
+  border-color: rgba(255, 255, 255, .7);
+  outline: none;
+}
+
+body.dark .copy-icon,
+body.dark .copy-icon:hover{
+  background: #15151D;
+  border-color: #e0e0e0;
+}
+
+body.dark .copy-icon::before,
+body.dark .copy-icon:hover::before{
+  border-color: #e0e0e0;
+}
+
+body.dark code{
+  color: #111;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark a[title="Documentation"],
+body.dark pre *{
+  color: #e0e0e0;
+}
+
+body.dark section{
+  border-color: rgba(255, 255, 255, .2);
+}
+
+body.dark h1,
+body.dark a{
+  color: #4672fe;
+}
