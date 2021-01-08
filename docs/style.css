@@ -726,7 +726,7 @@ body.dark .back-to-top .up-svg path{
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
-  display: grid;
+  display: none;
   place-content: center;
   cursor: pointer;
   z-index: 999;
