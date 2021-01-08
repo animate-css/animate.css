@@ -38,7 +38,6 @@ darkCheck.addEventListener('click', () => {
     }
 })
 
-
 document.querySelectorAll('.copy-icon').forEach(icon => {
     icon.addEventListener('click', () => {
         icon.classList.add('copied');
@@ -49,3 +48,18 @@ document.querySelectorAll('.copy-icon').forEach(icon => {
         }, 750)
     })
 })
+
+const backToTopBtn = document.querySelector('.back-to-top');
+backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+})
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 400) {
+    backToTopBtn.style.display = "grid";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+

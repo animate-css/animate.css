@@ -698,12 +698,44 @@ body.dark a[title="Documentation"],
 body.dark pre *{
   color: #e0e0e0;
 }
-
 body.dark section{
   border-color: rgba(255, 255, 255, .2);
 }
-
 body.dark h1,
 body.dark a{
   color: #4672fe;
+}
+
+body.dark .back-to-top{
+  background: #e0e0e0;
+}
+
+body.dark .back-to-top .up-svg path{
+  fill: #111;
+}
+
+/*-----------------------------------*\
+  $BACK-TO-TOP
+\*-----------------------------------*/
+
+.back-to-top{
+  width: 35px;
+  height: 35px;
+  background: #111;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.back-to-top .up-svg{
+  width: 13px;
+}
+
+.back-to-top .up-svg path{
+  fill: #e0e0e0;
 }
