@@ -41,7 +41,7 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.0",
+    "autoprefixer": "^10.2.1",
     "cssnano": "^4.1.10",
     "eslint": "^7.17.0",
     "husky": "^4.3.7",
