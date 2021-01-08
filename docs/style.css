@@ -721,7 +721,7 @@ body.dark .back-to-top .up-svg path{
 .back-to-top{
   width: 35px;
   height: 35px;
-  background: #111;
+  background: rgba(0, 0, 0, .6);
   position: fixed;
   bottom: 20px;
   right: 20px;
