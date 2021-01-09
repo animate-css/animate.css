@@ -16,6 +16,7 @@ requestAnimationFrame(startAnimations);
 const darkCheck = document.getElementById('night-light-checkbox');
 const moon = document.getElementById('moon-svg');
 const sun = document.getElementById('sun-svg');
+const backToTopBtn = document.querySelector('.back-to-top');
 
 if(localStorage.getItem('animate-css')){
     document.body.className = 'dark';
@@ -49,7 +50,6 @@ document.querySelectorAll('.copy-icon').forEach(icon => {
     })
 })
 
-const backToTopBtn = document.querySelector('.back-to-top');
 backToTopBtn.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo(0, 0);
