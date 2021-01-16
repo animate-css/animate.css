@@ -13,31 +13,11 @@ toggleOnClick('.docs-index', 'html', 'hamburger-active');
 
 requestAnimationFrame(startAnimations);
 
+
 const darkCheck = document.getElementById('night-light-checkbox');
 const moon = document.getElementById('moon-svg');
 const sun = document.getElementById('sun-svg');
 const backToTopBtn = document.querySelector('.back-to-top');
-
-if(localStorage.getItem('animate-css')){
-    document.body.className = 'dark';
-    darkCheck.checked = true;
-    moon.style.fill = '#e0e0e0';
-    sun.style.fill = '#e0e0e0';
-}
-
-darkCheck.addEventListener('click', () => {
-    if(darkCheck.checked){
-        document.body.className = 'dark';
-        localStorage.setItem('animate-css', 'dark');
-        moon.style.fill = '#e0e0e0';
-        sun.style.fill = '#e0e0e0';
-    }else{
-        document.body.className = '';
-        localStorage.removeItem('animate-css');
-        moon.style.fill = '#111';
-        sun.style.fill = '#111';
-    }
-})
 
 document.querySelectorAll('.copy-icon').forEach(icon => {
     icon.addEventListener('click', () => {
@@ -55,6 +35,20 @@ backToTopBtn.addEventListener('click', (e) => {
     window.scrollTo(0, 0);
 })
 
+darkCheck.addEventListener('click', () => {
+    if(darkCheck.checked){
+        document.body.className = 'dark';
+        localStorage.setItem('animate-css', 'dark');
+        moon.style.fill = '#e0e0e0';
+        sun.style.fill = '#e0e0e0';
+    }else{
+        document.body.className = '';
+        localStorage.removeItem('animate-css');
+        moon.style.fill = '#111';
+        sun.style.fill = '#111';
+    }
+})
+
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 400) {
     backToTopBtn.style.display = "grid";
@@ -63,3 +57,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
+if(localStorage.getItem('animate-css')){
+    document.body.className = 'dark';
+    darkCheck.checked = true;
+    moon.style.fill = '#e0e0e0';
+    sun.style.fill = '#e0e0e0';
+}
