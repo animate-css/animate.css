@@ -16,9 +16,25 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar,
+.animation-list::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track,
+.animation-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(99, 99, 99, 0.5);
+  background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb,
+.animation-list::-webkit-scrollbar-thumb {
+  background-color: #351c75;
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
-
   color: var(--c-dark);
   font-size: 100%;
   font-family: 'Work Sans', sans-serif;
@@ -283,7 +299,7 @@ blockquote {
   justify-content: space-between;
 }
 
-.animation-item--title{
+.animation-item--title {
   width: 100%;
 }
 
@@ -320,23 +336,23 @@ blockquote {
 .copy-icon {
   position: relative;
   height: 10px;
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   align-self: center;
   outline: none;
   cursor: pointer;
   background: none;
-  background: #F7D7B5;
+  background: #f7d7b5;
   visibility: hidden;
 }
 
-.copy-icon::before{
+.copy-icon::before {
   content: '';
   position: absolute;
   right: -4px;
   top: -4px;
   width: 120%;
   height: 120%;
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 
@@ -345,7 +361,7 @@ blockquote {
 }
 
 .animation-item .copy-icon:hover,
-.animation-item .copy-icon:hover::before{
+.animation-item .copy-icon:hover::before {
   border-color: black;
 }
 
