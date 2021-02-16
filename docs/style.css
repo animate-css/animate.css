@@ -625,9 +625,11 @@ blockquote {
   position: absolute;
   visibility: hidden;
 }
+
 .night-light-checkbox:checked + .night-light-label .night-light-ball {
   transform: translateX(28px);
 }
+
 .night-light-label {
   margin-top: 20px;
   display: flex;
@@ -650,92 +652,69 @@ blockquote {
   border-radius: 50%;
   transition: transform 0.3s linear;
 }
+
 .moon-svg,
 .sun-svg {
   width: 17px;
 }
 
-body.dark{
+.dark {
   background-color: #111;
   color: #e0e0e0;
 }
 
-body.dark .intro{
+.dark .intro {
   background: #111;
 }
 
-body.dark .animation-list,
-body.dark .sidebar{
+.dark .animation-list,
+.dark .sidebar {
   background: #15151D;
 }
 
-body.dark .button.button-animations,
-body.dark .callout-hideList.button{
+.dark .button.button-animations,
+.dark .callout-hideList.button {
   color: #e0e0e0;
   border-color: rgba(255, 255, 255, .7);
   outline: none;
 }
 
-body.dark .copy-icon,
-body.dark .copy-icon:hover{
+.dark .copy-icon,
+.dark .copy-icon:hover {
   background: #15151D;
   border-color: #e0e0e0;
 }
 
-body.dark .copy-icon::before,
-body.dark .copy-icon:hover::before{
+.dark .copy-icon::before,
+.dark .copy-icon:hover::before {
   border-color: #e0e0e0;
 }
 
-body.dark code{
+.dark code {
   color: #111;
 }
 
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark a[title="Documentation"],
-body.dark pre *{
+.dark h2,
+.dark h3,
+.dark h4,
+.dark a[title="Documentation"],
+.dark pre * {
   color: #e0e0e0;
 }
-body.dark section{
+
+.dark section {
   border-color: rgba(255, 255, 255, .2);
 }
-body.dark h1,
-body.dark a{
+
+.dark h1,
+.dark a {
   color: #4672fe;
 }
 
-body.dark .back-to-top{
+.dark .back-to-top {
   background: #e0e0e0;
 }
 
-body.dark .back-to-top .up-svg path{
+.dark .back-to-top .up-svg path {
   fill: #111;
-}
-
-/*-----------------------------------*\
-  $BACK-TO-TOP
-\*-----------------------------------*/
-
-.back-to-top{
-  width: 35px;
-  height: 35px;
-  background: rgba(0, 0, 0, .6);
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  display: none;
-  place-content: center;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.back-to-top .up-svg{
-  width: 13px;
-}
-
-.back-to-top .up-svg path{
-  fill: #e0e0e0;
 }
