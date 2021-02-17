@@ -621,41 +621,58 @@ blockquote {
   $DARK-MODE
 \*-----------------------------------*/
 
-.night-light-toggle-button .night-light-checkbox {
+.night-light-label .night-light-checkbox {
   position: absolute;
   visibility: hidden;
 }
 
-.night-light-checkbox:checked + .night-light-label .night-light-ball {
-  transform: translateX(28px);
-}
-
 .night-light-label {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 68px;
-  height: 30px;
+  display: block;
+  margin: 20px 0;
+  height: 31px;
+  width: 60px;
   border: 2px solid #4672fe;
-  padding: 4px 7px;
-  border-radius: 60px;
+  border-radius: 30px;
+  position: relative;
   cursor: pointer;
 }
 
-.night-light-ball {
-  display: inline-block;
+.night-light-label .night-light-ball {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: #4672fe;
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: 1px;
   border-radius: 50%;
-  transition: transform 0.3s linear;
+  background: #4672fe;
+  z-index: 99;
+  transition: 300ms;
+}
+
+.night-light-label .night-light-checkbox:checked + .night-light-ball {
+  transform: translateX(28px);
 }
 
 .moon-svg,
 .sun-svg {
-  width: 17px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.moon-svg {
+  right: 5px;  
+}
+
+.sun-svg {
+  left: 5px;
+}
+
+.dark #moon-svg,
+.dark #sun-svg {
+  fill: #e0e0e0 !important;
 }
 
 .dark {
@@ -709,12 +726,4 @@ blockquote {
 .dark h1,
 .dark a {
   color: #4672fe;
-}
-
-.dark .back-to-top {
-  background: #e0e0e0;
-}
-
-.dark .back-to-top .up-svg path {
-  fill: #111;
 }
