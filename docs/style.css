@@ -621,7 +621,7 @@ blockquote {
   $DARK-MODE
 \*-----------------------------------*/
 
-.night-light-label .night-light-checkbox {
+.night-light-label #night-light-checkbox {
   position: absolute;
   visibility: hidden;
 }
@@ -649,7 +649,7 @@ blockquote {
   transition: 300ms;
 }
 
-.night-light-label .night-light-checkbox:checked + .night-light-ball {
+.night-light-label #night-light-checkbox:checked + .night-light-ball {
   transform: translateX(28px);
 }
 

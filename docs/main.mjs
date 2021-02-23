@@ -2,10 +2,11 @@ import buildDocsIndex from './modules/buildDocsIndex.mjs';
 import playground from './modules/playground.mjs';
 import startAnimations from './modules/startAnimations.mjs';
 import toggleOnClick from './modules/toggle.mjs';
-import('./modules/darkMode.mjs');
+import darkModeControl from './modules/darkMode.mjs';
 
 buildDocsIndex();
 playground();
+darkModeControl();
 
 toggleOnClick('.callout-showList', 'html', 'animationList-active');
 toggleOnClick('.callout-hideList', 'html', 'animationList-active');
