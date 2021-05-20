@@ -1,0 +1,16 @@
+@keyframes dizzy {
+  from {
+    font-size: 1px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1440deg);
+  }
+}
+
+.dizzy {
+  animation-name: dizzy;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
