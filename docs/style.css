@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 :root {
-  --c-main: #351c75;
+  --c-main: #4a299e;
   --c-secondary: #e69138;
   --c-dark: #333;
   --c-background: #fce5cd;
@@ -283,7 +283,7 @@ blockquote {
   justify-content: space-between;
 }
 
-.animation-item--title{
+.animation-item--title {
   width: 100%;
 }
 
@@ -320,23 +320,23 @@ blockquote {
 .copy-icon {
   position: relative;
   height: 10px;
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   align-self: center;
   outline: none;
   cursor: pointer;
   background: none;
-  background: #F7D7B5;
+  background: #f7d7b5;
   visibility: hidden;
 }
 
-.copy-icon::before{
+.copy-icon::before {
   content: '';
   position: absolute;
   right: -4px;
   top: -4px;
   width: 120%;
   height: 120%;
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 
@@ -345,7 +345,7 @@ blockquote {
 }
 
 .animation-item .copy-icon:hover,
-.animation-item .copy-icon:hover::before{
+.animation-item .copy-icon:hover::before {
   border-color: black;
 }
 
@@ -531,7 +531,7 @@ blockquote {
 }
 
 [class*='docSection'] {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #fff;
 }
 
 [class*='docSection']:last-of-type {
