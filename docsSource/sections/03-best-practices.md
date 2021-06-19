@@ -32,7 +32,7 @@ Even though Animate.css provides utility classes for repeating animations, inclu
 
 ### Mind the initial and final state of your elements
 
-All the Animate.css animations include a CSS property called `animation-fill-mode` which controls the states of an element before and after animation. You can read more about it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode). Animate.css defaults to `animation-fill-mode: both`, but you can change it to suit your needs.
+All the Animate.css animations include a CSS property called `animation-fill-mode`, which controls the states of an element before and after animation. You can read more about it [here](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode). Animate.css defaults to `animation-fill-mode: both`, but you can change it to suit your needs.
 
 ### Don't disable the `prefers-reduced-motion` media query
 
