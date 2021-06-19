@@ -57,7 +57,7 @@ Be aware that some animations are dependent on the `animation-timing` property s
 
 #### CSS Custom Properties (CSS Variables)
 
-Since version 4, Animate.css makes use of custom properties (also known as CSS variables) to define the animations duration, delay, and iteractions. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value to globally or locally.
+Since version 4, Animate.css makes use of custom properties (also known as CSS variables) to define the animations duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value to globally or locally.
 
 Example:
 
