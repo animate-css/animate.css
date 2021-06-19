@@ -1,10 +1,10 @@
 ## Migration from v3.x and under
 
-Animate.css v4 brought some improvements, improved animations, and new animations, which makes it worth upgrading. But it also comes with a breaking change: we have added prefix for all of the Animate.css classes - defaulting to `animate__` - so a direct migration is not possible.
+Animate.css v4 brought some improvements, improved animations, and new animations, which makes it worth upgrading. However, it also comes with a breaking change: we have added a prefix for all of the Animate.css classes - defaulting to `animate__` - so a direct migration is impossible.
 
 But fear not! Although the default build, `animate.min.css`, brings the `animate__` prefix we also provide the `animate.compat.css` file which brings no prefix at all, like the previous versions (3.x and under).
 
-If you're using a bundler, just update your import:
+If you're using a bundler, update your import:
 
 from:
 
@@ -20,7 +20,7 @@ import 'animate.compat.css';
 
 Notice that depending on your project's configuration, this might change a bit.
 
-In case of using a CDN, just update the link on your HTML:
+In case of using a CDN, update the link in your HTML:
 
 from:
 
