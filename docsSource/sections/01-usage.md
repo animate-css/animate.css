@@ -39,7 +39,7 @@ That's it! You've got a CSS animated element. Super!
 
 #### Using `@keyframes`
 
-Even though the library provides you a few helper classes like the `animated` class to get you up running quickly, you can use the provided animations `keyframes` directly. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.
+Even though the library provides you a few helper classes like the `animated` class to get you up running quickly, you can directly use the provided animations `keyframes`. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.
 
 Example:
 
@@ -57,7 +57,7 @@ Be aware that some animations are dependent on the `animation-timing` property s
 
 #### CSS Custom Properties (CSS Variables)
 
-Since version 4, Animate.css makes use of custom properties (also known as CSS variables) to define the animations duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value to globally or locally.
+Since version 4, Animate.css uses custom properties (also known as CSS variables) to define the animation's duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value globally or locally.
 
 Example:
 
@@ -74,7 +74,7 @@ Example:
 }
 ```
 
-Custom properties also make it easy to change all your animations time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:
+Custom properties also make it easy to change all your animation's time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:
 
 ```javascript
 // All animations will take twice the time to accomplish
@@ -84,4 +84,4 @@ document.documentElement.style.setProperty('--animate-duration', '2s');
 document.documentElement.style.setProperty('--animate-duration', '.5s');
 ```
 
-Even though custom properties are not supported by some aging browsers, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.
+Even though some aging browsers do not support custom properties, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.
