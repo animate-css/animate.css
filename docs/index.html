@@ -48,7 +48,7 @@
   <body>
 
     <!-- Fork Corner -->
-    <a href="https://github.com/animate-css/animate.css" target="_blank" id="fork-corner" class="fork-corner fc-size-small fc-pos-tl fc-animate-default fc-theme-github"></a>
+    <a href="https://github.com/animate-css/animate.css" target="_blank" id="fork-corner" class="fork-corner fc-size-small fc-pos-tl fc-animate-grow fc-theme-github"></a>
 
     <article class="intro">
       <section class="callout">
@@ -907,7 +907,7 @@
 <p>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the <a href="#best-practices">best practices</a> and <a href="#gotchas">gotchas</a> sections to bring your web-things to life in the best way possible.</p>
 </blockquote>
 <h4>Using <code>@keyframes</code></h4>
-<p>Even though the library provides you a few helper classes like the <code>animated</code> class to get you up running quickly, you can use the provided animations <code>keyframes</code> directly. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
+<p>Even though the library provides you a few helper classes like the <code>animated</code> class to get you up running quickly, you can directly use the provided animations <code>keyframes</code>. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
 <p>Example:</p>
 <pre><code class="language-css">.my-element {
   display: inline-block;
@@ -919,7 +919,7 @@
 </code></pre>
 <p>Be aware that some animations are dependent on the <code>animation-timing</code> property set on the animation's class. Changing or not declaring it might lead to unexpected results.</p>
 <h4>CSS Custom Properties (CSS Variables)</h4>
-<p>Since version 4, Animate.css makes use of custom properties (also known as CSS variables) to define the animations duration, delay, and iteractions. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value to globally or locally.</p>
+<p>Since version 4, Animate.css uses custom properties (also known as CSS variables) to define the animation's duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value globally or locally.</p>
 <p>Example:</p>
 <pre><code class="language-css">/* This only changes this particular animation duration */
 .animate__animated.animate__bounce {
@@ -932,14 +932,14 @@
   --animate-delay: 0.9s;
 }
 </code></pre>
-<p>Custom properties also make it easy to change all your animations time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:</p>
+<p>Custom properties also make it easy to change all your animation's time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:</p>
 <pre><code class="language-javascript">// All animations will take twice the time to accomplish
 document.documentElement.style.setProperty('--animate-duration', '2s');
 
 // All animations will take half the time to accomplish
 document.documentElement.style.setProperty('--animate-duration', '.5s');
 </code></pre>
-<p>Even though custom properties are not supported by some aging browsers, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.</p>
+<p>Even though some aging browsers do not support custom properties, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/01-usage.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
@@ -1031,7 +1031,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
   --animate-duration: 0.5s;
 }
 </code></pre>
-<p>Notice that some animations have a duration of less than 1 second. As we used the CSS <code>calc()</code> function, setting the duration through the <code>--animation-duration</code> property will respect these ratios. So, when you change the global duration all the animations will respond to that change!</p>
+<p>Notice that some animations have a duration of less than 1 second. As we used the CSS <code>calc()</code> function, setting the duration through the <code>--animation-duration</code> property will respect these ratios. So, when you change the global duration, all the animations will respond to that change!</p>
 <h3>Repeating classes</h3>
 <p>You can control the iteration count of the animation by adding these classes, like below:</p>
 <pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__repeat-2&quot;&gt;Example&lt;/div&gt;
@@ -1070,7 +1070,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
   --animate-repeat: 2;
 }
 </code></pre>
-<p>Notice that <code>animate__infinite</code> doesn't use any custom property and changes to <code>--animate-repeat</code> will have no effect on it. Don't forget to read the <a href="#best-practices">best practices</a> section to make the best use of repeating animations.</p>
+<p>Notice that <code>animate__infinite</code> doesn't use any custom property, and changes to <code>--animate-repeat</code> will have no effect. Don't forget to read the <a href="#best-practices">best practices</a> section to make the best use of repeating animations.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/02-utilities.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
@@ -1096,7 +1096,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <h3>Infinite animations should be avoided</h3>
 <p>Even though Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
 <h3>Mind the initial and final state of your elements</h3>
-<p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code> which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">here</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
+<p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code>, which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">here</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
 <h3>Don't disable the <code>prefers-reduced-motion</code> media query</h3>
 <p>Since version 3.7.0 Animate.css supports the <code>prefers-reduced-motion</code> media query which disables animations based on the OS system's preference on supporting browsers (most current browsers support it). This is a <strong>critical accessibility feature</strong> and should never be disabled! This is built into browsers to help people with vestibular and seizure disorders. You can read more about it <a href="https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/">here</a>. If your web-thing needs the animations to function, warn users, but don't disable the feature. You can do it easily with CSS only. Here's a simple example:</p>
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="eltonmesquita" data-slug-hash="oNjGGbw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Prefers-reduce-motion media query">
@@ -1170,9 +1170,9 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 
       <section class="docSection-migration" id="migration">
         <h2>Migration from v3.x and under</h2>
-<p>Animate.css v4 brought some improvements, improved animations, and new animations, which makes it worth upgrading. But it also comes with a breaking change: we have added prefix for all of the Animate.css classes - defaulting to <code>animate__</code> - so a direct migration is not possible.</p>
+<p>Animate.css v4 brought some improvements, improved animations, and new animations, which makes it worth upgrading. However, it also comes with a breaking change: we have added a prefix for all of the Animate.css classes - defaulting to <code>animate__</code> - so a direct migration is impossible.</p>
 <p>But fear not! Although the default build, <code>animate.min.css</code>, brings the <code>animate__</code> prefix we also provide the <code>animate.compat.css</code> file which brings no prefix at all, like the previous versions (3.x and under).</p>
-<p>If you're using a bundler, just update your import:</p>
+<p>If you're using a bundler, update your import:</p>
 <p>from:</p>
 <pre><code class="language-js">import 'animate.min.css';
 </code></pre>
@@ -1180,7 +1180,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 <pre><code class="language-js">import 'animate.compat.css';
 </code></pre>
 <p>Notice that depending on your project's configuration, this might change a bit.</p>
-<p>In case of using a CDN, just update the link on your HTML:</p>
+<p>In case of using a CDN, update the link in your HTML:</p>
 <p>from:</p>
 <pre><code class="language-html">&lt;head&gt;
   &lt;link
@@ -1248,7 +1248,7 @@ $ npm install
 
       <section class="docSection-accessibility" id="accessibility">
         <h2>Accessibility</h2>
-<p>Animate.css supports the <a href="https://webkit.org/blog/7551/responsive-design-for-motion/"><code>prefers-reduced-motion</code> media query</a> so that users with motion sensitivity can opt-out of animations. On supported platforms (currently all the major browsers and OS, including mobile), users can select &quot;reduce motion&quot; on their operating system preferences and it will turn off CSS transitions for them without any further work required.</p>
+<p>Animate.css supports the <a href="https://webkit.org/blog/7551/responsive-design-for-motion/"><code>prefers-reduced-motion</code> media query</a> so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the major browsers and OS, including mobile), users can select &quot;reduce motion&quot; on their operating system preferences, and it will turn off CSS transitions for them without any further work required.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/08-accessibility.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
@@ -1286,9 +1286,9 @@ $ npm install
         <h2>License and Contributing</h2>
 <p>Animate.css is licensed under the MIT license. (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p>
 <h3>Contributing</h3>
-<p>Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="https://codepen.io">pen</a>. That <strong>last one is important</strong>.</p>
+<p>Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc.]) and let us see a demo of submitted animations in a <a href="https://codepen.io">pen</a>. That <strong>last one is important</strong>.</p>
 <h3>Code of Conduct</h3>
-<p>This project and everyone participating in it are governed by the <a href="https://github.com/animate-css/animate.css/blob/main/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to <a href="mailto:callmeelton@gmail.com">callmeelton@gmail.com</a>.</p>
+<p>This project and everyone participating in it is governed by the <a href="https://github.com/animate-css/animate.css/blob/main/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to <a href="mailto:callmeelton@gmail.com">callmeelton@gmail.com</a>.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/09-license-contributing.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
