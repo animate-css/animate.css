@@ -21,12 +21,12 @@
     "raw": "npx postcss source/animate.css -o animate.css --no-map --env development",
     "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
     "format": "prettier --write \"**/*.{js,json,md,css}\"",
-    "precommit": "lint-staged",
     "docs:library": "npx postcss source/animate.css -o ./docs/animate.min.css --no-map --env production",
     "docs:pages": "node ./docsSource/index.js",
     "docs": "npm-run-all docs:library docs:pages",
     "version": "npm-run-all start docs && git add -A docs animate.css animate.min.css animate.compat.css",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "prepare": "husky install"
   },
   "browserslist": [
     "> 3%",
@@ -44,8 +44,8 @@
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.7",
     "eslint": "^7.31.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.4",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
     "markdown-it": "^12.1.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
@@ -57,14 +57,7 @@
     "prettier": "^2.3.2"
   },
   "lint-staged": {
-    "*.{mjs,js,json,md,css}": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm-run-all start precommit"
-    }
+    "*.{mjs,js,json,md,css}": "prettier --write"
   },
   "files": [
     "animate.compat.css",
