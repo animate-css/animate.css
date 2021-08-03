@@ -43,7 +43,7 @@
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.7",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.1",
     "markdown-it": "^12.2.0",
