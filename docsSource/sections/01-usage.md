@@ -8,15 +8,16 @@ Install with npm:
 $ npm install animate.css --save
 ```
 
-Or install with Yarn:
+Or install with Yarn (this will only work with appropriate tooling like Webpack, Parcel, etc. If you are not using any tool for packing or bundling your code, you can simply use the CDN method below):
 
 ```shell
 $ yarn add animate.css
 ```
 
 Import it into your file:
+
 ```js
-import "animate.css"
+import 'animate.css';
 ```
 
 Or add it directly to your webpage using a CDN:
