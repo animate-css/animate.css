@@ -42,7 +42,7 @@
 }
 .animate__animated.animate__delay-1s {
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  animation-delay: 2s;
   -webkit-animation-delay: var(--animate-delay);
   animation-delay: var(--animate-delay);
 }
