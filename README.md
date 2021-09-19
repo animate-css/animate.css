@@ -37,7 +37,7 @@ Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.o
 
 ## License
 
-Animate.css is licensed under the MIT license. <https://opensource.org/licenses/MIT>
+Animate.css is licensed under the [Hippocratic License](http://firstdonoharm.dev).
 
 ## Code of Conduct
 
