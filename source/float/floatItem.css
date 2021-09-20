@@ -1,0 +1,14 @@
+@keyframes floatItem {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, -40px, 0);
+  }
+}
+
+.floatItem {
+  animation: floatItem 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
