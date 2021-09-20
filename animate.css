@@ -863,6 +863,35 @@
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+@-webkit-keyframes dizzy {
+  from {
+    font-size: 1px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1440deg);
+    transform:rotate(1440deg);
+  }
+}
+@keyframes dizzy {
+  from {
+    font-size: 1px;
+    transform:rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1440deg);
+    transform: rotate(1440deg);
+  }
+}
+.animate__dizzy {
+  -webkit-animation-name: dizzy;
+  animation-name: dizzy;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
 /* Back entrances */
 @-webkit-keyframes backInDown {
   0% {
