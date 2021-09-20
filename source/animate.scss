@@ -1,0 +1,131 @@
+@import '_vars';
+@import '_base';
+
+/* Attention seekers  */
+@import 'attention_seekers/bounce';
+@import 'attention_seekers/flash';
+@import 'attention_seekers/pulse';
+@import 'attention_seekers/rubberBand';
+@import 'attention_seekers/shakeX';
+@import 'attention_seekers/shakeY';
+@import 'attention_seekers/headShake';
+@import 'attention_seekers/swing';
+@import 'attention_seekers/tada';
+@import 'attention_seekers/wobble';
+@import 'attention_seekers/jello';
+@import 'attention_seekers/heartBeat';
+
+/* Back entrances */
+@import 'back_entrances/backInDown';
+@import 'back_entrances/backInLeft';
+@import 'back_entrances/backInRight';
+@import 'back_entrances/backInUp';
+
+/* Back exits */
+@import 'back_exits/backOutDown';
+@import 'back_exits/backOutLeft';
+@import 'back_exits/backOutRight';
+@import 'back_exits/backOutUp';
+
+/* Bouncing entrances  */
+@import 'bouncing_entrances/bounceIn';
+@import 'bouncing_entrances/bounceInDown';
+@import 'bouncing_entrances/bounceInLeft';
+@import 'bouncing_entrances/bounceInRight';
+@import 'bouncing_entrances/bounceInUp';
+
+/* Bouncing exits  */
+@import 'bouncing_exits/bounceOut';
+@import 'bouncing_exits/bounceOutDown';
+@import 'bouncing_exits/bounceOutLeft';
+@import 'bouncing_exits/bounceOutRight';
+@import 'bouncing_exits/bounceOutUp';
+
+/* Fading entrances  */
+@import 'fading_entrances/fadeIn';
+@import 'fading_entrances/fadeInDown';
+@import 'fading_entrances/fadeInDownBig';
+@import 'fading_entrances/fadeInLeft';
+@import 'fading_entrances/fadeInLeftBig';
+@import 'fading_entrances/fadeInRight';
+@import 'fading_entrances/fadeInRightBig';
+@import 'fading_entrances/fadeInUp';
+@import 'fading_entrances/fadeInUpBig';
+@import 'fading_entrances/fadeInTopLeft';
+@import 'fading_entrances/fadeInTopRight';
+@import 'fading_entrances/fadeInBottomLeft';
+@import 'fading_entrances/fadeInBottomRight';
+
+/* Fading exits */
+@import 'fading_exits/fadeOut';
+@import 'fading_exits/fadeOutDown';
+@import 'fading_exits/fadeOutDownBig';
+@import 'fading_exits/fadeOutLeft';
+@import 'fading_exits/fadeOutLeftBig';
+@import 'fading_exits/fadeOutRight';
+@import 'fading_exits/fadeOutRightBig';
+@import 'fading_exits/fadeOutUp';
+@import 'fading_exits/fadeOutUpBig';
+@import 'fading_exits/fadeOutTopLeft';
+@import 'fading_exits/fadeOutTopRight';
+@import 'fading_exits/fadeOutBottomRight';
+@import 'fading_exits/fadeOutBottomLeft';
+
+/* Flippers */
+@import 'flippers/flip';
+@import 'flippers/flipInX';
+@import 'flippers/flipInY';
+@import 'flippers/flipOutX';
+@import 'flippers/flipOutY';
+
+/* Lightspeed */
+@import 'lightspeed/lightSpeedInRight';
+@import 'lightspeed/lightSpeedInLeft';
+@import 'lightspeed/lightSpeedOutRight';
+@import 'lightspeed/lightSpeedOutLeft';
+
+/* Rotating entrances */
+@import 'rotating_entrances/rotateIn';
+@import 'rotating_entrances/rotateInDownLeft';
+@import 'rotating_entrances/rotateInDownRight';
+@import 'rotating_entrances/rotateInUpLeft';
+@import 'rotating_entrances/rotateInUpRight';
+
+/* Rotating exits */
+@import 'rotating_exits/rotateOut';
+@import 'rotating_exits/rotateOutDownLeft';
+@import 'rotating_exits/rotateOutDownRight';
+@import 'rotating_exits/rotateOutUpLeft';
+@import 'rotating_exits/rotateOutUpRight';
+
+/* Specials */
+@import 'specials/hinge';
+@import 'specials/jackInTheBox';
+@import 'specials/rollIn';
+@import 'specials/rollOut';
+
+/* Zooming entrances */
+@import 'zooming_entrances/zoomIn';
+@import 'zooming_entrances/zoomInDown';
+@import 'zooming_entrances/zoomInLeft';
+@import 'zooming_entrances/zoomInRight';
+@import 'zooming_entrances/zoomInUp';
+
+/* Zooming exits */
+@import 'zooming_exits/zoomOut';
+@import 'zooming_exits/zoomOutDown';
+@import 'zooming_exits/zoomOutLeft';
+@import 'zooming_exits/zoomOutRight';
+@import 'zooming_exits/zoomOutUp';
+
+/* Sliding entrances */
+@import 'sliding_entrances/slideInDown';
+@import 'sliding_entrances/slideInLeft';
+@import 'sliding_entrances/slideInRight';
+@import 'sliding_entrances/slideInUp';
+
+/* Sliding exits */
+@import 'sliding_exits/slideOutDown';
+@import 'sliding_exits/slideOutLeft';
+@import 'sliding_exits/slideOutRight';
+@import 'sliding_exits/slideOutUp';
