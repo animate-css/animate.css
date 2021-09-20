@@ -20,6 +20,7 @@
   }
 
   to {
+    opacity: 1;
     transform: perspective(400px);
   }
 }
