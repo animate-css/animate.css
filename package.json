@@ -10,7 +10,7 @@
     "name": "Animate.css"
   },
   "homepage": "https://animate.style/",
-  "license": "MIT",
+  "license": "HL-2.1",
   "animateConfig": {
     "prefix": "animate__"
   },
