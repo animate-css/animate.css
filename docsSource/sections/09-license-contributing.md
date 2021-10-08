@@ -1,6 +1,6 @@
 ## License and Contributing
 
-Animate.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
+Animate.css is licensed under the [Hippocratic License](http://firstdonoharm.dev).
 
 ### Contributing
 
