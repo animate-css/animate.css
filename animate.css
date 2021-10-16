@@ -107,14 +107,14 @@
   }
 
   .animate__animated[class*='Out'] {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 /* Attention seekers  */
 @-webkit-keyframes bounce {
   from,
-  20%,
-  53%,
+  22%,
+  50%,
   to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -151,8 +151,8 @@
 }
 @keyframes bounce {
   from,
-  20%,
-  53%,
+  22%,
+  530%,
   to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
