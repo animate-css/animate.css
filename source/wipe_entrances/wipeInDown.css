@@ -1,0 +1,14 @@
+@keyframes wipeInDown {
+  from {
+    clip-path: inset(0px 0px 100% 0px);
+  }
+  
+  to {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+  
+.wipeInDown {
+  animation-name: wipeInDown;
+}
+    

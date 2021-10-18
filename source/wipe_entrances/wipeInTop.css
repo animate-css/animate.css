@@ -1,0 +1,14 @@
+@keyframes wipeInTop {
+  from {
+    clip-path: inset(100% 0px 0px 0px);
+  }
+  
+  to {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+  
+.wipeInTop {
+  animation-name: wipeInTop;
+}
+  

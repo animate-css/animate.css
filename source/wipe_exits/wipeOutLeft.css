@@ -1,0 +1,13 @@
+@keyframes wipeOutLeft {
+  to {
+    clip-path: inset(0px 100% 0px 0px);
+  }
+  
+  from {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+  
+.wipeOutLeft {
+  animation-name: wipeOutLeft;
+}

@@ -1,0 +1,14 @@
+@keyframes wipeInRight {
+  from {
+    clip-path: inset(0px 100% 0px 0px);
+  }
+  
+  to {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+}
+    
+.wipeInRight {
+  animation-name: wipeInRight;
+}
+  
