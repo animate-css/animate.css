@@ -1,6 +1,7 @@
 {
   "name": "animate.css",
   "version": "4.1.1",
+  "description": "A cross-browser library of CSS animations",
   "main": "animate.css",
   "repository": {
     "type": "git",
