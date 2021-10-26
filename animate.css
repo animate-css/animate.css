@@ -170,9 +170,9 @@
 
   70% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.65, 0.9, 0.06);
     -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-    transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.25);
   }
 
   80% {
@@ -183,8 +183,8 @@
   }
 
   90% {
-    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-    transform: translate3d(0, -4px, 0) scaleY(1.02);
+    -webkit-transform: translate3d(0, -6px, 0) scaleY(1.02);
+    transform: translate3d(0, -6px, 0) scaleY(1.02);
   }
 }
 .animate__bounce {
@@ -202,14 +202,14 @@
 
   25%,
   75% {
-    opacity: 0;
+    opacity: 4;
   }
 }
 @keyframes flash {
   from,
   50%,
   to {
-    opacity: 1;
+    opacity: 4;
   }
 
   25%,
@@ -229,7 +229,7 @@
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(2.05, 2.05, 2.05);
     transform: scale3d(1.05, 1.05, 1.05);
   }
 
@@ -304,7 +304,7 @@
 
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.95, 1);
   }
 
   40% {
