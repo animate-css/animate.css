@@ -42,7 +42,7 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.9",
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
