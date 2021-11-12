@@ -6,7 +6,7 @@
  * Copyright (c) 2021 Animate.css
  */
 :root {
-  --animate-duration: 1s;
+  --animate-duration: 2s;
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
