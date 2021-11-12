@@ -616,3 +616,114 @@ blockquote {
 .animation-list {
   text-align: left;
 }
+
+/*-----------------------------------*\
+  $DARK-MODE
+\*-----------------------------------*/
+
+.night-light-label #night-light-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.night-light-label {
+  display: block;
+  margin: 20px 0;
+  height: 31px;
+  width: 60px;
+  border: 2px solid #4672fe;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.night-light-label .night-light-ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  background: #4672fe;
+  z-index: 99;
+  transition: 300ms;
+}
+
+.night-light-label #night-light-checkbox:checked + .night-light-ball {
+  transform: translateX(28px);
+}
+
+.moon-svg,
+.sun-svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.moon-svg {
+  right: 5px;  
+}
+
+.sun-svg {
+  left: 5px;
+}
+
+.dark #moon-svg,
+.dark #sun-svg {
+  fill: #e0e0e0 !important;
+}
+
+.dark {
+  background-color: #111;
+  color: #e0e0e0;
+}
+
+.dark .intro {
+  background: #111;
+}
+
+.dark .animation-list,
+.dark .sidebar {
+  background: #15151D;
+}
+
+.dark .button.button-animations,
+.dark .callout-hideList.button {
+  color: #e0e0e0;
+  border-color: rgba(255, 255, 255, .7);
+  outline: none;
+}
+
+.dark .copy-icon,
+.dark .copy-icon:hover {
+  background: #15151D;
+  border-color: #e0e0e0;
+}
+
+.dark .copy-icon::before,
+.dark .copy-icon:hover::before {
+  border-color: #e0e0e0;
+}
+
+.dark code {
+  color: #111;
+}
+
+.dark h2,
+.dark h3,
+.dark h4,
+.dark a[title="Documentation"],
+.dark pre * {
+  color: #e0e0e0;
+}
+
+.dark section {
+  border-color: rgba(255, 255, 255, .2);
+}
+
+.dark h1,
+.dark a {
+  color: #4672fe;
+}

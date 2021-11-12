@@ -1,18 +1,18 @@
 const fs = require('fs');
 const {homepage, version, author, animateConfig} = JSON.parse(fs.readFileSync('package.json'));
 
-const header = `@charset "UTF-8";
+const header = `
+@charset "UTF-8";
 
 /*!
  * animate.css - ${homepage}
  * Version - ${version}
- * Licensed under the MIT license - https://opensource.org/licenses/MIT
+ * Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
  *
  * Copyright (c) ${new Date().getFullYear()} ${author.name}
  */
 
-
-  `;
+`;
 
 module.exports = (ctx) => {
   const prefix = ctx.env === 'compat' ? '' : animateConfig.prefix;
