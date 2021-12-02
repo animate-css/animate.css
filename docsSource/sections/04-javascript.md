@@ -43,7 +43,9 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
       resolve('Animation ended');
     }
 
-    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+      ['animationend', 'webkitAnimationEnd', 'oAnimationEnd'].forEach((e) => {
+      node.addEventListener(e, handleAnimationEnd, {once: true});
+    });
   });
 ```
 
