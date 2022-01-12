@@ -1,11 +1,14 @@
 ## Custom Builds
 
-Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS today.
+<p class="warning">Custom builds are not possible from a node_modules folder as we don't ship the building tools in the npm module.</p>
+
+Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS with proper fallbacks.
 
 First of all, you’ll need Node and all other dependencies:
 
 ```shell
-$ cd path/to/animate.css/
+$ git clone https://github.com/animate-css/animate.css.git
+$ cd animate.css
 $ npm install
 ```
 

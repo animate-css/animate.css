@@ -1208,9 +1208,11 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 
       <section class="docSection-custom-builds" id="custom-builds">
         <h2>Custom Builds</h2>
-<p>Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS today.</p>
+<p class="warning">Custom builds are not possible from a node_modules folder as we don't ship the building tools in the npm module.</p>
+<p>Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS with proper fallbacks.</p>
 <p>First of all, you’ll need Node and all other dependencies:</p>
-<pre><code class="language-shell">$ cd path/to/animate.css/
+<pre><code class="language-shell">$ git clone https://github.com/animate-css/animate.css.git
+$ cd animate.css
 $ npm install
 </code></pre>
 <p>Next, run <code>npm start</code> to compile your custom build. Three files will be generated:</p>
