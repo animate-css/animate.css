@@ -1,4 +1,4 @@
-## Utility classes
+## Utility Classes
 
 Animate.css comes packed with a few utility classes to simplify its use.
 
