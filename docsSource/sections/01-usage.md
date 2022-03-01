@@ -1,4 +1,4 @@
-## Installation and usage
+## Installation and Usage
 
 ### Installing
 

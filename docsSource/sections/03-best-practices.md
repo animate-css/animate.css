@@ -1,4 +1,4 @@
-## Best practices
+## Best Practices
 
 Animations can greatly improve an interface's UX, but it's important to follow some guidelines to not overdo it and deteriorate the user experience on your web-things. Following the following rules should provide a good start.
 

@@ -1,4 +1,4 @@
-## Migration from v3.x and under
+## Migration from v3.x and Under
 
 Animate.css v4 brought some improvements, improved animations, and new animations, which makes it worth upgrading. However, it also comes with a breaking change: we have added a prefix for all of the Animate.css classes - defaulting to `animate__` - so a direct migration is impossible.
 
