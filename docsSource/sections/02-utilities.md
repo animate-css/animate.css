@@ -7,17 +7,17 @@ Animate.css comes packed with a few utility classes to simplify its use.
 You can add delays directly on the element's class attribute, just like this:
 
 ```html
-<div class="animate__animated animate__bounce animate__delay-2s">Example</div>
+<div class="animate__animated animate__bounce animate__delay-2x">Example</div>
 ```
 
 Animate.css provides the following delays:
 
 | Class name          | Default delay time |
 | ------------------- | ------------------ |
-| `animate__delay-2s` | `2s`               |
-| `animate__delay-3s` | `3s`               |
-| `animate__delay-4s` | `4s`               |
-| `animate__delay-5s` | `5s`               |
+| `animate__delay-2x` | `2s`               |
+| `animate__delay-3x` | `3s`               |
+| `animate__delay-4x` | `4s`               |
+| `animate__delay-5x` | `5s`               |
 
 The provided delays are from 1 to 5 seconds. You can customize them setting the `--animate-delay` property to a longer or a shorter duration:
 
