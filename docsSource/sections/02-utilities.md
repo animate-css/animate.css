@@ -19,6 +19,8 @@ Animate.css provides the following delays:
 | `animate__delay-4x` | `4s`               |
 | `animate__delay-5x` | `5s`               |
 
+> In the previous versions, the library supported a slightly different version of the classes, like `animate__delay-2s`. As this utility works as a multiplier, it made it very confusing to use if the root variable `--animate-delay` was set to anything but `1`. We changed it but we still support the old classes and there's no need to migrate your code to the newer version.
+
 The provided delays are from 1 to 5 seconds. You can customize them setting the `--animate-delay` property to a longer or a shorter duration:
 
 ```css

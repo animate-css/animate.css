@@ -953,7 +953,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
 <h3>Delay classes</h3>
 <p>You can add delays directly on the element's class attribute, just like this:</p>
-<pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__delay-2s&quot;&gt;Example&lt;/div&gt;
+<pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__delay-2x&quot;&gt;Example&lt;/div&gt;
 </code></pre>
 <p>Animate.css provides the following delays:</p>
 <table>
@@ -965,23 +965,26 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 </thead>
 <tbody>
 <tr>
-<td><code>animate__delay-2s</code></td>
+<td><code>animate__delay-2x</code></td>
 <td><code>2s</code></td>
 </tr>
 <tr>
-<td><code>animate__delay-3s</code></td>
+<td><code>animate__delay-3x</code></td>
 <td><code>3s</code></td>
 </tr>
 <tr>
-<td><code>animate__delay-4s</code></td>
+<td><code>animate__delay-4x</code></td>
 <td><code>4s</code></td>
 </tr>
 <tr>
-<td><code>animate__delay-5s</code></td>
+<td><code>animate__delay-5x</code></td>
 <td><code>5s</code></td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>In the previous versions, the library supported a slightly different version of the classes, like <code>animate__delay-2s</code>. As this utility works as a multiplier, it made it very confusing to use if the root variable <code>--animate-delay</code> was set to anything but <code>1</code>. We changed it but we still support the old classes and there's no need to migrate your code to the newer version.</p>
+</blockquote>
 <p>The provided delays are from 1 to 5 seconds. You can customize them setting the <code>--animate-delay</code> property to a longer or a shorter duration:</p>
 <pre><code class="language-css">/* All delay classes will take 2x longer to start */
 :root {
