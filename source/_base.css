@@ -1,5 +1,6 @@
 .animated {
   animation-duration: var(--animate-duration);
+  animation-delay: var(--animate-delay);
   animation-fill-mode: both;
 }
 
