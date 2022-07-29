@@ -50,7 +50,7 @@
     "markdown-it": "^12.3.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
-    "postcss-cli": "^8.3.1",
+    "postcss-cli": "^10.0.0",
     "postcss-header": "^3.0.1",
     "postcss-import": "^14.0.2",
     "postcss-prefixer": "^2.1.3",
