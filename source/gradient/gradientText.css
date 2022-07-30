@@ -1,0 +1,21 @@
+@keyframes gradientText {
+  from {
+    background-position : 0;
+  }
+  
+  to {
+    background-position : 100%;
+  }
+}
+
+.gradientText {
+  background: #12c2e9;
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background-clip: text;
+  color : transparent;
+  background-size : 300%;
+  background-position : -200%;
+  animation-name: gradientText;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
