@@ -1,4 +1,4 @@
-@keyframes flipInX {
+@keyframes flipInY {
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     animation-timing-function: ease-in;
@@ -24,7 +24,7 @@
   }
 }
 
-.flipInX {
+.flipInY {
   backface-visibility: visible !important;
-  animation-name: flipInX;
+  animation-name: flipInY;
 }
