@@ -4,18 +4,18 @@
   }
 
   30% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
 
   to {
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
 }
 
 .flipOutY {
   animation-duration: calc(var(--animate-duration) * 0.75);
-  backface-visibility: visible !important;
   animation-name: flipOutY;
+  backface-visibility: visible !important;
 }
