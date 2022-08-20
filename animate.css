@@ -2178,6 +2178,38 @@
   -webkit-animation-name: fadeInBottomRight;
   animation-name: fadeInBottomRight;
 }
+
+@-webkit-keyframes fadeInLetterSpace {
+  0% {
+    opacity: 0;
+    letter-spacing: 8rem;
+  }
+  75% {
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 1rem;
+  }
+}
+
+@keyframes fadeInLetterSpace {
+  0% {
+    opacity: 0;
+    letter-spacing: 8rem;
+  }
+  75% {
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 1rem;
+  }
+}
+.animate__fadeInLetterSpace {
+  -webkit-animation-name: fadeInLetterSpace;
+  animation-name: fadeInLetterSpace;
+}
 /* Fading exits */
 @-webkit-keyframes fadeOut {
   from {
@@ -2520,6 +2552,38 @@
 .animate__fadeOutBottomLeft {
   -webkit-animation-name: fadeOutBottomLeft;
   animation-name: fadeOutBottomLeft;
+}
+
+@-webkit-keyframes fadeOutLetterSpace {
+  0% {
+    opacity: 1;
+    letter-spacing: 1rem;
+  }
+  25% {
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 8rem;
+  }
+}
+
+@keyframes fadeOutLetterSpace {
+  0% {
+    opacity: 1;
+    letter-spacing: 1rem;
+  }
+  25% {
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 8rem;
+  }
+}
+.animate__fadeOutLetterSpace {
+  -webkit-animation-name: fadeOutLetterSpace;
+  animation-name: fadeOutLetterSpace;
 }
 /* Flippers */
 @-webkit-keyframes flip {
