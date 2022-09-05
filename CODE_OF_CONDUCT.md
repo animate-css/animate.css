@@ -1,4 +1,18 @@
-# Contributor Covenant Code of Conduct
+<a href="https://animate.style/">
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 30%;
+           border-radius: 4px;"
+    src="./logo.png" 
+    alt="Animate.css">
+</img>
+</a>
+<br/>
+<div style="text-align: center;">
+     <h1>Contributor Covenant Code of Conduct</h1>
+</div>
 
 ## Our Pledge
 
@@ -45,3 +59,16 @@ This Code of Conduct is adapted from the [Contributor Covenant][homepage], versi
 [homepage]: https://www.contributor-covenant.org
 
 For answers to common questions about this code of conduct, see https://www.contributor-covenant.org/faq
+<br/>
+<a href="https://animate.style/">
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 30%;
+           border-radius: 4px;"
+    src="./logo.png" 
+    alt="Animate.css">
+</img>
+</a>
+<br/>
