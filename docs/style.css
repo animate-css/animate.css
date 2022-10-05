@@ -25,6 +25,27 @@ html {
   line-height: 1.2;
 }
 
+/* width */
+.animation-list::-webkit-scrollbar {
+  width: .7em;
+}
+
+/* Track */
+.animation-list::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+ 
+/* Handle */
+.animation-list::-webkit-scrollbar-thumb {
+  background: var(--c-secondary); 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.animation-list::-webkit-scrollbar-thumb:hover {
+  background: var(--c-main); 
+}
+
 @media screen and (min-width: 700px) {
   html {
     font-size: 112.5%;
@@ -264,6 +285,9 @@ blockquote {
   transition: transform 0.2s ease-out;
 
   background-color: var(--c-background-dark);
+  
+  
+  
 }
 
 .animationList-active .animation-list {
