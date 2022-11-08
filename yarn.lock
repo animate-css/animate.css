@@ -1876,10 +1876,10 @@ postcss-gap-properties@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-postcss-header@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-header/-/postcss-header-3.0.1.tgz#2695d7956536590d61e4cca8b7943235005226b4"
-  integrity sha512-bPt7W9yVq7RY7hEs3r9Zy9Q3PhNRq0aLup5+K5Gwt01s7Oeqb0QV7BGtL6fJwTk132/zxzsVe9Gg6gwlXSLZ3A==
+postcss-header@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-header/-/postcss-header-3.0.3.tgz#b25e54c86b3f58346e6ae1d7b852ae90be7c3dae"
+  integrity sha512-bmm/qVdphnJcHHLyL2efiPUaLRR6y0iMRYKWl06cfdvNEoXlPUBENL1vqBBn2uTnxYTYvWoec7o+bYnPRJAmMA==
 
 postcss-image-set-function@^3.0.1:
   version "3.0.1"
