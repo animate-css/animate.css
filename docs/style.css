@@ -79,6 +79,30 @@ pre code {
 }
 
 /*-----------------------------------*\
+  Custom Scroll bar
+\*-----------------------------------*/
+
+.animation-list::-webkit-scrollbar {
+  width: .7em;
+}
+
+/* Track */
+.animation-list::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+/* Handle */
+.animation-list::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--c-secondary); 
+}
+
+/* Handle on hover */
+.animation-list::-webkit-scrollbar-thumb:hover {
+  background: var(--c-main); 
+}
+
+/*-----------------------------------*\
   $TYPOGRAPHY
 \*-----------------------------------*/
 
