@@ -5,7 +5,7 @@
  * Version - 4.1.1
  * Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
  *
- * Copyright (c) 2022 Animate.css
+ * Copyright (c) 2023 Animate.css
  */
 :root {
   --animate-duration: 1s;
@@ -1885,6 +1885,36 @@
 .animate__fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
+}
+@-webkit-keyframes fadeInDownSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3rem, 0);
+    transform: translate3d(0, -3rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDownSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3rem, 0);
+    transform: translate3d(0, -3rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInDownSmall {
+  -webkit-animation-name: fadeInDownSmall;
+  animation-name: fadeInDownSmall;
 }
 @-webkit-keyframes fadeInLeft {
   from {
