@@ -2951,8 +2951,8 @@
 }
 @-webkit-keyframes lightSpeedInTop {
   from {
-    -webkit-transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(80%);
-    transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(80%);
+    -webkit-transform: perspective(400px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(120%);
+    transform: perspective(400px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(120%);
     opacity: 0;
   }
 
@@ -2974,8 +2974,8 @@
 }
 @keyframes lightSpeedInTop {
   from {
-    -webkit-transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(80%);
-    transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(80%);
+    -webkit-transform: perspective(400px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(120%);
+    transform: perspective(400px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(120%);
     opacity: 0;
   }
 
@@ -3003,8 +3003,8 @@
 }
 @-webkit-keyframes lightSpeedInBottom {
   from {
-    -webkit-transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(80%);
-    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(80%);
+    -webkit-transform: perspective(400px) translate3d(0, 150%, 0) rotateX(10deg) scaleY(120%);
+    transform: perspective(400px) translate3d(0, 150%, 0) rotateX(10deg) scaleY(120%);
     opacity: 0;
   }
 
@@ -3018,7 +3018,7 @@
     -webkit-transform: rotateX(-10deg) scaleY(120%);
     transform: rotateX(-10deg) scaleY(120%);
   }
-
+  
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -3026,8 +3026,8 @@
 }
 @keyframes lightSpeedInBottom {
   from {
-    -webkit-transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(80%);
-    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(80%);
+    -webkit-transform: perspective(400px) translate3d(0, 150%, 0) rotateX(10deg) scaleY(120%);
+    transform: perspective(400px) translate3d(0, 150%, 0) rotateX(10deg) scaleY(120%);
     opacity: 0;
   }
 
@@ -3041,7 +3041,7 @@
     -webkit-transform: rotateX(-10deg) scaleY(120%);
     transform: rotateX(-10deg) scaleY(120%);
   }
-
+  
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -3059,19 +3059,19 @@
     transform: translate3d(0, 0, 0);
   }
 
-  20% {
-    -webkit-transform: rotateX(10deg) scaleY(110%);
-    transform: rotateX(10deg) scaleY(110%);
+  30% {
+    -webkit-transform: translate3d(0, 10%, 0) scaleY(120%);
+    transform: translate3d(0, 10%, 0) scaleY(120%);
   }
 
   40% {
-    -webkit-transform: rotateX(-20deg) scaleY(80%);
-    transform: rotateX(-20deg) scaleY(80%);
+    -webkit-transform: scaleY(70%);
+    transform: scaleY(70%);
   }
 
   to {
-    -webkit-transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(120%);
-    transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(120%);
+    -webkit-transform: perspective(200px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(110%);
+    transform: perspective(200px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(110%);
     opacity: 0;
   }
 }
@@ -3081,19 +3081,19 @@
     transform: translate3d(0, 0, 0);
   }
 
-  20% {
-    -webkit-transform: rotateX(10deg) scaleY(110%);
-    transform: rotateX(10deg) scaleY(110%);
+  30% {
+    -webkit-transform: translate3d(0, 10%, 0) scaleY(120%);
+    transform: translate3d(0, 10%, 0) scaleY(120%);
   }
 
   40% {
-    -webkit-transform: rotateX(-20deg) scaleY(80%);
-    transform: rotateX(-20deg) scaleY(80%);
+    -webkit-transform: scaleY(70%);
+    transform: scaleY(70%);
   }
 
   to {
-    -webkit-transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(120%);
-    transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(120%);
+    -webkit-transform: perspective(200px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(110%);
+    transform: perspective(200px) translate3d(0, -150%, 0) rotateX(-10deg) scaleY(110%);
     opacity: 0;
   }
 }
@@ -3105,46 +3105,44 @@
 }
 @-webkit-keyframes lightSpeedOutBottom {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
   }
-
-  20% {
-    -webkit-transform: rotateX(-10deg) scaleY(110%);
-    transform: rotateX(-10deg) scaleY(110%);
+  30% {
+      -webkit-transform: translate3d(0, -10%, 0) scaleY(120%);
+      transform: translate3d(0, -10%, 0) scaleY(120%);
   }
-
   40% {
-    -webkit-transform: rotateX(20deg) scaleY(80%);
-    transform: rotateX(20deg) scaleY(80%);
+      -webkit-transform: scaleY(70%);
+      transform: scaleY(70%);
   }
-
   to {
-    -webkit-transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
-    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
-    opacity: 0;
+      -webkit-transform: perspective(200px) translate3d(0, 150%, 0) rotateX(20deg)
+          scaleY(110%);
+      transform: perspective(200px) translate3d(0, 150%, 0) rotateX(20deg)
+          scaleY(110%);
+      opacity: 0;
   }
 }
 @keyframes lightSpeedOutBottom {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
   }
-
-  20% {
-    -webkit-transform: rotateX(-10deg) scaleY(110%);
-    transform: rotateX(-10deg) scaleY(110%);
+  30% {
+      -webkit-transform: translate3d(0, -10%, 0) scaleY(120%);
+      transform: translate3d(0, -10%, 0) scaleY(120%);
   }
-
   40% {
-    -webkit-transform: rotateX(20deg) scaleY(80%);
-    transform: rotateX(20deg) scaleY(80%);
+      -webkit-transform: scaleY(70%);
+      transform: scaleY(70%);
   }
-
   to {
-    -webkit-transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
-    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
-    opacity: 0;
+      -webkit-transform: perspective(200px) translate3d(0, 150%, 0) rotateX(20deg)
+          scaleY(110%);
+      transform: perspective(200px) translate3d(0, 150%, 0) rotateX(20deg)
+          scaleY(110%);
+      opacity: 0;
   }
 }
 .animate__lightSpeedOutBottom {

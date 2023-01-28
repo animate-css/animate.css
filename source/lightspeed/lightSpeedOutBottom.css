@@ -2,17 +2,14 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-
-  20% {
-    transform: rotateX(-10deg) scaleY(110%);
+  30% {
+    transform: translate3d(0, -10%, 0) scaleY(120%);
   }
-
   40% {
-    transform: rotateX(20deg) scaleY(80%);
+    transform: scaleY(70%);
   }
-
   to {
-    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
+    transform: perspective(200px) translate3d(0, 150%, 0) rotateX(20deg) scaleY(110%);
     opacity: 0;
   }
 }
