@@ -81,8 +81,13 @@
 /* Lightspeed */
 @import 'lightspeed/lightSpeedInRight.css';
 @import 'lightspeed/lightSpeedInLeft.css';
+@import 'lightspeed/lightSpeedInTop.css';
+@import 'lightspeed/lightSpeedInBottom.css';
+@import 'lightspeed/lightSpeedOutTop.css';
+@import 'lightspeed/lightSpeedOutBottom.css';
 @import 'lightspeed/lightSpeedOutRight.css';
 @import 'lightspeed/lightSpeedOutLeft.css';
+
 
 /* Rotating entrances */
 @import 'rotating_entrances/rotateIn.css';

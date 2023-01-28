@@ -1,0 +1,23 @@
+@keyframes lightSpeedOutBottom {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  20% {
+    transform: rotateX(-10deg) scaleY(110%);
+  }
+
+  40% {
+    transform: rotateX(20deg) scaleY(80%);
+  }
+
+  to {
+    transform: perspective(400px) translate3d(0, 100%, 0) rotateX(10deg) scaleY(120%);
+    opacity: 0;
+  }
+}
+
+.lightSpeedOutBottom {
+  animation-name: lightSpeedOutBottom;
+  animation-timing-function: ease-in;
+}

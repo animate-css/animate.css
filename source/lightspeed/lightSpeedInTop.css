@@ -1,0 +1,24 @@
+@keyframes lightSpeedInTop {
+  from {
+    transform: perspective(400px) translate3d(0, -100%, 0) rotateX(-10deg) scaleY(80%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateX(-20deg) scaleY(70%);
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotateX(10deg) scaleY(120%);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedInTop {
+  animation-name: lightSpeedInTop;
+  animation-timing-function: ease-out;
+}
