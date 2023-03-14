@@ -562,6 +562,19 @@ blockquote {
   border-radius: 100%;
 }
 
+.docSection-contributors td a {
+  text-decoration: none;
+}
+
+.docSection-contributors td a:hover {
+  /* background-color:#e69138;
+  border: 2px solid black; */
+  border-radius: 20px;
+  text-decoration: underline 2px red;
+
+  padding: 4px;
+}
+
 /*-----------------------------------*\
   $FOOTER
 \*-----------------------------------*/
