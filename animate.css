@@ -5,7 +5,7 @@
  * Version - 4.1.1
  * Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
  *
- * Copyright (c) 2022 Animate.css
+ * Copyright (c) 2023 Animate.css
  */
 :root {
   --animate-duration: 1s;
@@ -3499,6 +3499,12 @@
   50% {
     opacity: 1;
   }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 @keyframes zoomIn {
   from {
@@ -3509,6 +3515,12 @@
 
   50% {
     opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 .animate__zoomIn {
