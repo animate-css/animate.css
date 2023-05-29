@@ -4072,3 +4072,21 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+@keyframes bounceAndRotate {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg) translateY(0) rotate(0);
+  }
+}
+
+.animate_bounceAndRotate {
+  animation-name: bounceAndRotate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
