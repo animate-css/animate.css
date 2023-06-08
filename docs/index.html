@@ -873,7 +873,7 @@
             
       <section class="docSection-intro" id="intro">
         <blockquote>
-<p>Animate.css v4 brought some <strong>breaking changes</strong>, please refer to the <a href="#migration">migration guide</a> before updating from v3.x and under.</p>
+<p>Animate.css v4 brought some <strong>breaking changes</strong>, please refer to the <a href="#migration">migration guide</a> before updating from v3.x and older versions.</p>
 </blockquote>
 <p><strong>Animate.css</strong> is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.</p>
 
@@ -910,7 +910,7 @@
 <p>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the <a href="#best-practices">best practices</a> and <a href="#gotchas">gotchas</a> sections to bring your web-things to life in the best way possible.</p>
 </blockquote>
 <h4>Using <code>@keyframes</code></h4>
-<p>Even though the library provides you a few helper classes like the <code>animated</code> class to get you up running quickly, you can directly use the provided animations <code>keyframes</code>. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
+<p>Even though the library provides you with a few helper classes like the <code>animated</code> class to get you up running quickly, you can directly use the provided animations <code>keyframes</code>. This provides a flexible way to use Animate.css with your current projects without having to refactor your HTML code.</p>
 <p>Example:</p>
 <pre><code class="language-css">.my-element {
   display: inline-block;
@@ -982,7 +982,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 </tr>
 </tbody>
 </table>
-<p>The provided delays are from 1 to 5 seconds. You can customize them setting the <code>--animate-delay</code> property to a longer or a shorter duration:</p>
+<p>The provided delays are from 1 to 5 seconds. You can customize by setting the <code>--animate-delay</code> property to a longer or a shorter duration:</p>
 <pre><code class="language-css">/* All delay classes will take 2x longer to start */
 :root {
   --animate-delay: 2s;
@@ -1097,7 +1097,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 &lt;/body&gt;
 </code></pre>
 <h3>Infinite animations should be avoided</h3>
-<p>Even though Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
+<p>Even though Animate.css provides utility classes for repeating animations, including an infinite one, it is recommended to avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
 <h3>Mind the initial and final state of your elements</h3>
 <p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code>, which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">here</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
 <h3>Don't disable the <code>prefers-reduced-motion</code> media query</h3>
