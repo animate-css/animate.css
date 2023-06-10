@@ -737,3 +737,22 @@ blockquote {
 .dark a {
   color: #4672fe;
 }
+
+/*styling copy btn*/
+pre:hover .copy-btn {
+  display: block;
+}
+.copy-btn {
+  background-color: #343435;
+  color: white;
+  margin-top: 0.7em;
+  box-shadow: 2px 2px 10px 2px #836262;
+  border: 0;
+  padding: 0.4em 0.9em;
+  display: none;
+}
+/*increasing text area so that user can copied by clicking on it*/
+pre code {
+  display: block;
+  width: 100%;
+}

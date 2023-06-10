@@ -885,14 +885,16 @@
         <h2>Installation and Usage</h2>
 <h3>Installing</h3>
 <p>Install with npm:</p>
+
 <pre><code class="language-shell">$ npm install animate.css --save
-</code></pre>
+</code><button class="copy-btn"> copy</button></pre>
+
 <p>Or install with Yarn (this will only work with appropriate tooling like Webpack, Parcel, etc. If you are not using any tool for packing or bundling your code, you can simply use the CDN method below):</p>
 <pre><code class="language-shell">$ yarn add animate.css
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Import it into your file:</p>
 <pre><code class="language-js">import 'animate.css';
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Or add it directly to your webpage using a CDN:</p>
 <pre><code class="language-html">&lt;head&gt;
   &lt;link
@@ -900,11 +902,11 @@
     href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;
   /&gt;
 &lt;/head&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <h3>Basic usage</h3>
 <p>After installing Animate.css, add the class <code>animate__animated</code> to an element, along with any of the <a href="#attention_seekers">animation names</a> (don't forget the <code>animate__</code> prefix!):</p>
 <pre><code class="language-html">&lt;h1 class=&quot;animate__animated animate__bounce&quot;&gt;An animated element&lt;/h1&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>That's it! You've got a CSS animated element. Super!</p>
 <blockquote>
 <p>Animations can improve the UX of an interface, but keep in mind that they can also get in the way of your users! Please read the <a href="#best-practices">best practices</a> and <a href="#gotchas">gotchas</a> sections to bring your web-things to life in the best way possible.</p>
@@ -919,7 +921,7 @@
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Be aware that some animations are dependent on the <code>animation-timing</code> property set on the animation's class. Changing or not declaring it might lead to unexpected results.</p>
 <h4>CSS Custom Properties (CSS Variables)</h4>
 <p>Since version 4, Animate.css uses custom properties (also known as CSS variables) to define the animation's duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need to change an animation duration? Just set a new value globally or locally.</p>
@@ -934,14 +936,14 @@
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
 }
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Custom properties also make it easy to change all your animation's time-constrained properties on the fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:</p>
 <pre><code class="language-javascript">// All animations will take twice the time to accomplish
 document.documentElement.style.setProperty('--animate-duration', '2s');
 
 // All animations will take half the time to accomplish
 document.documentElement.style.setProperty('--animate-duration', '.5s');
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Even though some aging browsers do not support custom properties, Animate.css provides a proper fallback, widening its support for any browser that supports CSS animations.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/01-usage.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
@@ -954,7 +956,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <h3>Delay classes</h3>
 <p>You can add delays directly on the element's class attribute, just like this:</p>
 <pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__delay-2s&quot;&gt;Example&lt;/div&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Animate.css provides the following delays:</p>
 <table>
 <thead>
@@ -992,11 +994,11 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 :root {
   --animate-delay: 0.5s;
 }
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <h3>Slow, slower, fast, and Faster classes</h3>
 <p>You can control the speed of the animation by adding these classes, as below:</p>
 <pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__faster&quot;&gt;Example&lt;/div&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <table>
 <thead>
 <tr>
@@ -1033,12 +1035,12 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 .my-element {
   --animate-duration: 0.5s;
 }
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Notice that some animations have a duration of less than 1 second. As we used the CSS <code>calc()</code> function, setting the duration through the <code>--animation-duration</code> property will respect these ratios. So, when you change the global duration, all the animations will respond to that change!</p>
 <h3>Repeating classes</h3>
 <p>You can control the iteration count of the animation by adding these classes, like below:</p>
 <pre><code class="language-html">&lt;div class=&quot;animate__animated animate__bounce animate__repeat-2&quot;&gt;Example&lt;/div&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <table>
 <thead>
 <tr>
@@ -1072,7 +1074,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 .my-element {
   --animate-repeat: 2;
 }
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Notice that <code>animate__infinite</code> doesn't use any custom property, and changes to <code>--animate-repeat</code> will have no effect. Don't forget to read the <a href="#best-practices">best practices</a> section to make the best use of repeating animations.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/02-utilities.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
@@ -1095,7 +1097,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
     &lt;!-- Your code --&gt;
   &lt;/main&gt;
 &lt;/body&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <h3>Infinite animations should be avoided</h3>
 <p>Even though Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
 <h3>Mind the initial and final state of your elements</h3>
@@ -1125,7 +1127,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <p>You can do a whole bunch of other stuff with animate.css when you combine it with Javascript. A simple example:</p>
 <pre><code class="language-javascript">const element = document.querySelector('.my-element');
 element.classList.add('animate__animated', 'animate__bounceOutLeft');
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>You can detect when an animation ends:</p>
 <pre><code class="language-javascript">const element = document.querySelector('.my-element');
 element.classList.add('animate__animated', 'animate__bounceOutLeft');
@@ -1133,11 +1135,11 @@ element.classList.add('animate__animated', 'animate__bounceOutLeft');
 element.addEventListener('animationend', () =&gt; {
   // do something
 });
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>or change its duration:</p>
 <pre><code class="language-javascript">const element = document.querySelector('.my-element');
 element.style.setProperty('--animate-duration', '0.5s');
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>You can also use a simple function to add the animations classes and remove them automatically:</p>
 <pre><code class="language-javascript">const animateCSS = (element, animation, prefix = 'animate__') =&gt;
   // We create a Promise and return it
@@ -1156,7 +1158,7 @@ element.style.setProperty('--animate-duration', '0.5s');
 
     node.addEventListener('animationend', handleAnimationEnd, {once: true});
   });
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>And use it like this:</p>
 <pre><code class="language-javascript">animateCSS('.my-element', 'bounce');
 
@@ -1164,7 +1166,7 @@ element.style.setProperty('--animate-duration', '0.5s');
 animateCSS('.my-element', 'bounce').then((message) =&gt; {
   // Do something after the animation
 });
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>If you had a hard time understanding the previous function, have a look at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow functions</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a>.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/04-javascript.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
@@ -1178,10 +1180,10 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 <p>If you're using a bundler, update your import:</p>
 <p>from:</p>
 <pre><code class="language-js">import 'animate.min.css';
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>to</p>
 <pre><code class="language-js">import 'animate.compat.css';
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Notice that depending on your project's configuration, this might change a bit.</p>
 <p>In case of using a CDN, update the link in your HTML:</p>
 <p>from:</p>
@@ -1191,7 +1193,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
     href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css&quot;
   /&gt;
 &lt;/head&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>to</p>
 <pre><code class="language-html">&lt;head&gt;
   &lt;link
@@ -1199,7 +1201,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
     href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css&quot;
   /&gt;
 &lt;/head&gt;
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>In the case of a new project, it's highly recommended to use the default prefixed version as it'll make sure that you'll hardly have classes conflicting with your project. Besides, in later versions, we might decide to discontinue the <code>animate.compat.css</code> file.</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/06-migration.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
@@ -1214,7 +1216,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 <pre><code class="language-shell">$ git clone https://github.com/animate-css/animate.css.git
 $ cd animate.css
 $ npm install
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Next, run <code>npm start</code> to compile your custom build. Three files will be generated:</p>
 <ul>
 <li><code>animate.css</code>: raw build, easy to read and without any optimization</li>
@@ -1233,7 +1235,7 @@ $ npm install
 @import 'attention_seekers/wobble.css';
 @import 'attention_seekers/jello.css';
 @import 'attention_seekers/heartBeat.css';
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Now, just run <code>npm start</code> and your highly optimized build will be generated at the root of the project.</p>
 <h3>Changing the default prefix</h3>
 <p>It's pretty straight forward to change animate's prefix on your custom build. Change the <code>animateConfig</code>'s <code>prefix</code> property in the <code>package.json</code> file and rebuild the library with <code>npm start</code>:</p>
@@ -1241,10 +1243,10 @@ $ npm install
 &quot;animateConfig&quot;: {
   &quot;prefix&quot;: &quot;myCustomPrefix__&quot;
 },
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>then:</p>
 <pre><code class="language-shell">$ npm start
-</code></pre>
+</code><button class="copy-btn">copy</button></pre>
 <p>Easy peasy!</p>
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/07-custom-builds.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
