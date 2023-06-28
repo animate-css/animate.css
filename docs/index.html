@@ -1145,7 +1145,7 @@ element.style.setProperty('--animate-duration', '0.5s');
     const animationName = `${prefix}${animation}`;
     const node = document.querySelector(element);
 
-    node.classList.add(`${prefix}animated`, animationName);
+    node && node.classList.add(`${prefix}animated`, animationName);
 
     // When the animation ends, we clean the classes and resolve the Promise
     function handleAnimationEnd(event) {
@@ -1154,7 +1154,7 @@ element.style.setProperty('--animate-duration', '0.5s');
       resolve('Animation ended');
     }
 
-    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+    node && node.addEventListener('animationend', handleAnimationEnd, {once: true});
   });
 </code></pre>
 <p>And use it like this:</p>
