@@ -18,7 +18,7 @@ Next, run `npm start` to compile your custom build. Three files will be generate
 - `animate.min.css`: minified build ready for production
 - `animate.compat.css`: minified build ready for production **without class prefix**. This should only be used as an easy path for migrations.
 
-For example, if you'll only use some of the “attention seekers” animations, simply edit the `./source/animate.css` file, delete every `@import` and the ones you want to use.
+For example, if you'll only use some of the “attention seekers” animations, simply edit the `./source/animate.css` file, delete every `@import`, and add the ones you want to use.
 
 ```css
 @import 'attention_seekers/bounce.css';
