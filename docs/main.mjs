@@ -25,3 +25,12 @@ document.querySelectorAll('.copy-icon').forEach(icon => {
     }, 750)
   })
 })
+
+const topButton = document.querySelector('.back-to-top');
+
+topButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

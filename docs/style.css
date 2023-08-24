@@ -737,3 +737,32 @@ blockquote {
 .dark a {
   color: #4672fe;
 }
+
+.dark .back-to-top {
+  background: #4672fe;
+  color: #fff;
+}
+
+/*-----------------------------------*\
+  $BACK TO TOP
+\*-----------------------------------*/
+
+.back-to-top {
+  position: fixed; 
+  bottom: 25px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #502bafef;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.back-to-top:hover {
+  background: #836dff;
+  transition: background 0.5s ease-in-out;
+}
