@@ -13,14 +13,14 @@
   "homepage": "https://animate.style/",
   "license": "Hippocratic-2.1",
   "animateConfig": {
-    "prefix": "animate__"
+    "prefix": "ada__"
   },
   "scripts": {
     "start": "npm-run-all raw prod compat",
     "compat": "npx postcss source/animate.css -o animate.compat.css --no-map --env compat",
     "dev": "npx postcss source/animate.css -o animate.css --no-map --env development -w",
     "raw": "npx postcss source/animate.css -o animate.css --no-map --env development",
-    "prod": "npx postcss source/animate.css -o animate.min.css --no-map --env production",
+    "prod": "npx postcss source/animate.css -o ada_animate.min.css --no-map --env production",
     "format": "prettier --write \"**/*.{js,json,md,css}\"",
     "docs:library": "npx postcss source/animate.css -o ./docs/animate.min.css --no-map --env production",
     "docs:pages": "node ./docsSource/index.js",
@@ -53,8 +53,9 @@
     "postcss-cli": "^8.3.1",
     "postcss-header": "^3.0.1",
     "postcss-import": "^14.0.2",
+    "postcss-prefix-keyframe": "^0.0.1",
     "postcss-prefixer": "^2.1.3",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^7.0.0",
     "prettier": "^2.7.1"
   },
   "lint-staged": {

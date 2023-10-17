@@ -29,6 +29,9 @@ module.exports = (ctx) => {
         prefix,
         ignore: [/\[class\*=.*\]/],
       },
+      'postcss-prefix-keyframe': {
+        prefix
+      },
       'postcss-preset-env': {
         autoprefixer: {
           cascade: false,
