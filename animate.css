@@ -1650,14 +1650,18 @@
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
+:root {
+  --animate-duration: 1s;
 }
-.animate__bounceOut {
-  -webkit-animation-duration: calc(1s * 0.75);
-  animation-duration: calc(1s * 0.75);
+
+.var.animate__bounceOut {
   -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
   animation-duration: calc(var(--animate-duration) * 0.75);
   -webkit-animation-name: bounceOut;
   animation-name: bounceOut;
+}
+
+
 }
 @-webkit-keyframes bounceOutDown {
   20% {
