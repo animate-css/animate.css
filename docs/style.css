@@ -383,6 +383,58 @@ blockquote {
 }
 
 /*-----------------------------------*\
+  $NAVBAR
+\*-----------------------------------*/
+#nav-index-docs {
+  position: relative;
+  background-color: var(--c-main);
+  color: var(--c-secondary);
+  z-index: 1000;
+  transition: top 0.3s, background-color 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.2;
+}
+
+#nav-index-docs.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#menu li {
+  padding: 1rem;
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#menu li:hover{
+color: var(--c-background-dark);
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+section.active {
+  z-index: 2;
+}
+
+/*-----------------------------------*\
   $DOCS
 \*-----------------------------------*/
 
@@ -393,21 +445,6 @@ blockquote {
   max-width: 100%;
 }
 
-@media (min-width: 1000px) {
-  .container {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: calc(100% - 300px - 1rem) 300px;
-  }
-}
-
-@media (min-width: 1520px) {
-  .container {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1100px 2fr;
-  }
-}
-
 .docs {
   position: relative;
 }
@@ -415,16 +452,13 @@ blockquote {
 .docs-header {
   position: relative;
   padding: 0.5rem 0;
-
   background-color: var(--c-main);
   z-index: 100;
 }
 
 .docs-mainTitle {
-  grid-column: 1 / 2;
   padding-left: 1rem;
   margin-top: 0;
-
   font-size: 1.3333rem;
 }
 
@@ -433,11 +467,6 @@ blockquote {
   text-decoration: none;
 }
 
-@media (min-width: 1520px) {
-  .docs-mainTitle {
-    grid-column: 2 / 3;
-  }
-}
 
 .meta {
   padding-left: 2rem;
@@ -447,70 +476,6 @@ blockquote {
 .content {
   padding: 0 1rem;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 1520px) {
-  .content {
-    grid-column: 2 / 3;
-  }
-}
-
-.hamburger {
-  --size: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 2rem;
-  left: 100%;
-  width: var(--size);
-  height: var(--size);
-
-  background-color: var(--c-secondary);
-  transition: transform 0.2s ease-out;
-
-  text-align: center;
-}
-
-.hamburger-active .hamburger {
-  transform: translateX(-240px);
-}
-
-@media (min-width: 1000px) {
-  .hamburger {
-    display: none;
-  }
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  z-index: 100;
-
-  width: 240px;
-  height: 100%;
-  padding-right: 1rem;
-
-  background: var(--c-background-dark);
-  transition: transform 0.2s ease-out;
-}
-
-.hamburger-active .sidebar {
-  transform: translateX(-100%);
-}
-
-@media (min-width: 1000px) {
-  .sidebar {
-    position: static;
-    width: auto;
-    height: auto;
-  }
-
-  .hamburger-active .sidebar {
-    transform: none;
-  }
 }
 
 .icon-github {
@@ -736,4 +701,57 @@ blockquote {
 .dark h1,
 .dark a {
   color: #4672fe;
+}
+
+/*-----------------------------------*\
+  $NAVBAR
+\*-----------------------------------*/
+
+.dark #nav-index-docs {
+  position: relative;
+  background-color: var(--c-main);
+  color: white;
+  z-index: 1000;
+  transition: top 0.3s, background-color 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.2;
+}
+
+.dark #nav-index-docs.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.dark #menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.dark #menu li {
+  padding: 1rem;
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.dark #menu li:hover{
+color: #4672fe;
+}
+
+.dark section {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.dark section.active {
+  z-index: 2;
 }
