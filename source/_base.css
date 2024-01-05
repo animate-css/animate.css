@@ -1,62 +1,62 @@
 .animated {
   animation-duration: var(--animate-duration);
   animation-fill-mode: both;
-}
 
-.animated.infinite {
-  animation-iteration-count: infinite;
-}
-
-.animated.repeat-1 {
-  animation-iteration-count: var(--animate-repeat);
-}
-
-.animated.repeat-2 {
-  animation-iteration-count: calc(var(--animate-repeat) * 2);
-}
-
-.animated.repeat-3 {
-  animation-iteration-count: calc(var(--animate-repeat) * 3);
-}
-
-.animated.delay-1s {
-  animation-delay: var(--animate-delay);
-}
-
-.animated.delay-2s {
-  animation-delay: calc(var(--animate-delay) * 2);
-}
-
-.animated.delay-3s {
-  animation-delay: calc(var(--animate-delay) * 3);
-}
-
-.animated.delay-4s {
-  animation-delay: calc(var(--animate-delay) * 4);
-}
-
-.animated.delay-5s {
-  animation-delay: calc(var(--animate-delay) * 5);
-}
-
-.animated.faster {
-  animation-duration: calc(var(--animate-duration) / 2);
-}
-
-.animated.fast {
-  animation-duration: calc(var(--animate-duration) * 0.8);
-}
-
-.animated.slow {
-  animation-duration: calc(var(--animate-duration) * 2);
-}
-
-.animated.slower {
-  animation-duration: calc(var(--animate-duration) * 3);
+  & .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  & .repeat-1 {
+    animation-iteration-count: var(--animate-repeat);
+  }
+  
+  & .repeat-2 {
+    animation-iteration-count: calc(var(--animate-repeat) * 2);
+  }
+  
+  & .repeat-3 {
+    animation-iteration-count: calc(var(--animate-repeat) * 3);
+  }
+  
+  & .delay-1s {
+    animation-delay: var(--animate-delay);
+  }
+  
+  & .delay-2s {
+    animation-delay: calc(var(--animate-delay) * 2);
+  }
+  
+  & .delay-3s {
+    animation-delay: calc(var(--animate-delay) * 3);
+  }
+  
+  & .delay-4s {
+    animation-delay: calc(var(--animate-delay) * 4);
+  }
+  
+  & .delay-5s {
+    animation-delay: calc(var(--animate-delay) * 5);
+  }
+  
+  & .faster {
+    animation-duration: calc(var(--animate-duration) / 2);
+  }
+  
+  & .fast {
+    animation-duration: calc(var(--animate-duration) * 0.8);
+  }
+  
+  & .slow {
+    animation-duration: calc(var(--animate-duration) * 2);
+  }
+  
+  & .slower {
+    animation-duration: calc(var(--animate-duration) * 3);
+  }
 }
 
 @media print, (prefers-reduced-motion: reduce) {
-  .animated {
+  .animated  {
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;
