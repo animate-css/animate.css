@@ -8,8 +8,8 @@
  * Copyright (c) 2022 Animate.css
  */
 :root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
+  --animate-duration: 3s;
+  --animate-delay: 3s;
   --animate-repeat: 1;
 }
 .animate__animated {
