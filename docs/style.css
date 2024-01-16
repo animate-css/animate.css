@@ -22,13 +22,13 @@ html {
   color: var(--c-dark);
   font-size: 100%;
   font-family: 'Work Sans', sans-serif;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 695px) {
   html {
-    font-size: 112.5%;
-    line-height: 1.35;
+    font-size: 112.6%;
+    line-height: 1.45;
   }
 }
 
@@ -69,7 +69,7 @@ pre {
   padding: 1rem;
 
   background-color: var(--c-dark);
-  border-radius: 0.25em;
+  border-radius: 0.24em;
   color: #fff;
 }
 
