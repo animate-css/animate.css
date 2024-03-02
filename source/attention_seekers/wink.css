@@ -1,0 +1,17 @@
+@keyframes winky {
+  0% {
+    clip-path: ellipse(100% 100% at center);
+  }
+  50% {
+    clip-path: ellipse(100% 0% at center);
+  }
+  100% {
+    clip-path: ellipse(100% 100% at center);
+  }
+}
+
+.wink {
+  animation-timing-function: cubic-bezier(1, 0.5, 0.5, 0);
+  animation-duration: 0.5s;
+  animation-name: winky;
+}
