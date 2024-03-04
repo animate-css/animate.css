@@ -1889,10 +1889,10 @@ postcss-image-set-function@^3.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-import@^14.0.2:
-  version "14.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-14.0.2.tgz#60eff77e6be92e7b67fe469ec797d9424cae1aa1"
-  integrity sha512-BJ2pVK4KhUyMcqjuKs9RijV5tatNzNa73e/32aBVE/ejYPe37iH+6vAu9WvqUkB5OAYgLHzbSvzHnorybJCm9g==
+postcss-import@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-16.0.1.tgz#c2e0478c5af8cb39ab3964c35d8fee8e70c362b8"
+  integrity sha512-i2Pci0310NaLHr/5JUFSw1j/8hf1CzwMY13g6ZDxgOavmRHQi2ba3PmUHoihO+sjaum+KmCNzskNsw7JDrg03g==
   dependencies:
     postcss-value-parser "^4.0.0"
     read-cache "^1.0.0"
