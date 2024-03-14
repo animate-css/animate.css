@@ -25,3 +25,35 @@ document.querySelectorAll('.copy-icon').forEach(icon => {
     }, 750)
   })
 })
+
+
+document.querySelectorAll(".copy-code").forEach((copyBtn) => {
+  copyBtn.addEventListener("click", () => {
+    const codeEl = copyBtn.nextElementSibling.querySelector("code");
+    const codeText = codeEl.innerText;
+    
+    var checkSvg = copyBtn.querySelector("#check-svg");
+    var codeSvg = copyBtn.querySelector("#code-svg");
+    var tooltip = copyBtn.querySelector(".tooltip");
+
+    codeSvg.style.display = "none";
+    checkSvg.style.display = "block";
+    tooltip.style.visibility = "visible";
+
+    setTimeout(() => {
+      codeSvg.style.display = "block";
+      checkSvg.style.display = "none";
+      tooltip.style.visibility = "hidden";
+    }, 750);
+
+    navigator.clipboard.writeText(codeText)
+      .then(() => {
+        //console.log("Code copied successfully!");
+        // You can add visual feedback or notifications here
+      })
+      .catch((error) => {
+        console.error("Failed to copy code:", error);
+        // Handle error, e.g., display a message to the user
+      });
+  });
+});
