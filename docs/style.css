@@ -78,6 +78,51 @@ pre code {
   font-size: 0.8rem !important;
 }
 
+
+.code-copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-container {
+  width: 100%;
+  position: relative;
+}
+
+.code-container .copy-code {
+  width: 2rem;
+  height: 2rem;
+
+  position: absolute;
+  background: #535353;
+  top: 1vw;
+  right: 1vw;
+  border-radius: 5px;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.code-container #check-svg {
+  display: none;
+}
+
+.code-container .code-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+.code-container .code-container svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+
+}
+
+
+
 /*-----------------------------------*\
   $TYPOGRAPHY
 \*-----------------------------------*/
