@@ -346,21 +346,28 @@ blockquote {
   top: -4px;
   width: 120%;
   height: 120%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 5px solid rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
 
 .animation-item:hover .copy-icon {
   visibility: visible;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  opacity: 10.5;
+ 
 }
 
 .animation-item .copy-icon:hover,
 .animation-item .copy-icon:hover::before {
   border-color: black;
+  text-shadow: 5px 5px black ;
+  
+  
 }
 
 .copy-icon:hover .tooltip {
   visibility: visible;
+  
 }
 
 .animation-group,
@@ -710,11 +717,13 @@ blockquote {
 .dark .copy-icon:hover {
   background: #15151d;
   border-color: #e0e0e0;
+  border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 .dark .copy-icon::before,
 .dark .copy-icon:hover::before {
   border-color: #e0e0e0;
+  border: 5px solid rgba(255, 255, 255, 0.6);
 }
 
 .dark code {
