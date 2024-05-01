@@ -5,8 +5,8 @@
 :root {
   --c-main: #351c75;
   --c-secondary: #e69138;
-  --c-dark: #333;
-  --c-background: #fce5cd;
+  --c-dark: #454545;
+  --c-background: #ffead4;
   --c-background-dark: #f7d7b5;
 }
 
@@ -151,7 +151,7 @@ h5 {
 .warning {
   padding: 1rem;
 
-  color: #000;
+  color: #0a0a0a;
   background: var(--c-background-dark);
   border-radius: 0.25em;
 
