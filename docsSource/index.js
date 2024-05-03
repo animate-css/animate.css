@@ -23,3 +23,4 @@ fs.writeFile(output, withVersion, 'utf8', (err) => {
   if (err) console.error(err);
   console.log('Template compiled succesfully.');
 });
+

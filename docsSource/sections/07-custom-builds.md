@@ -1,11 +1,14 @@
 ## Custom Builds
 
-Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS today.
+<p class="warning">Custom builds are not possible from a node_modules folder as we don't ship the building tools in the npm module.</p>
+
+Animate.css is powered by npm, postcss + postcss-preset-env, which means you can create custom builds pretty easily, using future CSS with proper fallbacks.
 
 First of all, you’ll need Node and all other dependencies:
 
 ```shell
-$ cd path/to/animate.css/
+$ git clone https://github.com/animate-css/animate.css.git
+$ cd animate.css
 $ npm install
 ```
 
@@ -15,7 +18,7 @@ Next, run `npm start` to compile your custom build. Three files will be generate
 - `animate.min.css`: minified build ready for production
 - `animate.compat.css`: minified build ready for production **without class prefix**. This should only be used as an easy path for migrations.
 
-For example, if you'll only use some of the “attention seekers” animations, simply edit the `./source/animate.css` file, delete every `@import` and the ones you want to use.
+For example, if you'll only use some of the “attention seekers” animations, simply edit the `./source/animate.css` file, delete every `@import`, and add the ones you want to use.
 
 ```css
 @import 'attention_seekers/bounce.css';
