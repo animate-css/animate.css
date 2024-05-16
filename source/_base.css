@@ -1,5 +1,7 @@
 .animated {
+  animation-delay: var(--animate-delay);
   animation-duration: var(--animate-duration);
+  animation-iteration-count: var(--animate-repeat);
   animation-fill-mode: both;
 }
 
