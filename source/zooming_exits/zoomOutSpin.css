@@ -1,0 +1,28 @@
+@-webkit-keyframes zoomOutSpin {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: scale(0) rotate(-360deg);
+        transform: scale(0) rotate(-360deg);
+    }
+}
+
+@keyframes zoomOutSpin {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: scale(0) rotate(-360deg);
+        transform: scale(0) rotate(-360deg);
+    }
+}
+
+.animate__zoomOutSpin {
+    -webkit-animation-name: zoomOutSpin;
+    animation-name: zoomOutSpin;
+}

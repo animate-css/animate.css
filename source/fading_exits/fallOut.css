@@ -1,0 +1,42 @@
+@-webkit-keyframes fallOut {
+    0% {
+        -webkit-transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, 4, 0.5, 0deg);
+        transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, 4, 0.5, 0deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: perspective(500px) translate3d(-20%, -20%, 180px) rotate3d(1, 4, 0.5, -8deg);
+        transform: perspective(500px) translate3d(-20%, -20%, 180px) rotate3d(1, 4, 0.5, -8deg);
+    }
+}
+
+@keyframes fallOut {
+    0% {
+        -webkit-transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, 4, 0.5, 0deg);
+        transform: perspective(500px) translate3d(0, 0, 0) rotate3d(1, 4, 0.5, 0deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: perspective(500px) translate3d(-20%, -20%, 180px) rotate3d(1, 4, 0.5, -8deg);
+        transform: perspective(500px) translate3d(-20%, -20%, 180px) rotate3d(1, 4, 0.5, -8deg);
+    }
+}
+
+.animate__fallOut {
+    -webkit-animation-name: fallOut;
+    animation-name: fallOut;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(.14, .57, .72, 1);
+    animation-timing-function: cubic-bezier(.14, .57, .72, 1);
+}

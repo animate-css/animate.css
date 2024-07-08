@@ -1,0 +1,28 @@
+@-webkit-keyframes zoomInSpin {
+    0% {
+        -webkit-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes zoomInSpin {
+    0% {
+        -webkit-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.animate__zoomInSpin {
+    -webkit-animation-name: zoomInSpin;
+    animation-name: zoomInSpin;
+}

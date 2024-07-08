@@ -1,0 +1,30 @@
+@-webkit-keyframes shrinkDown {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes shrinkDown {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.animate__shrinkDown {
+    -webkit-animation-name: shrinkDown;
+    animation-name: shrinkDown;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
