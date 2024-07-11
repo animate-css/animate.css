@@ -1,0 +1,38 @@
+       .animate__flipBounce
+        {
+          display: flex;
+          align-items: center;
+          transform-style: preserve-3d;
+          perspective-origin: 30% 50%;
+          perspective: 1000px !important;
+          position: relative;
+        }
+
+        .animate__flipBounce::after
+        {
+          content:attr(data-content);
+          transform-origin: 50% 100%;
+          display: block;
+          -webkit-animation-name: flipBounce;
+           animation-name: flipBounce;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          top: 0;
+          left: 0;
+
+        }
+        @keyframes flipBounce
+        {
+          30%
+          {
+              transform: rotateX(96deg);
+          }
+          60%
+          {
+              transform: rotateX(-20deg);
+          }
+          100%
+          {
+              transform: rotateX(0deg); 
+          }
+        }

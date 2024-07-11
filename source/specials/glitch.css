@@ -1,0 +1,47 @@
+        .animate__glitch
+        {
+          position: relative;
+          background: inherit; !important;
+          text-shadow: -3px 0 #F40102,-5px 0 #FBF700,2px 0 #0002FC,5px 0 #00F8FB;
+        }
+
+        .animate__glitch::after,.animate__glitch::before
+        {
+          content:attr(data-glitch);
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: inherit !important;
+          text-shadow:none;
+        }
+
+        .animate__glitch::after
+        {
+          transform: translateX(2px);
+          background: inherit !important;
+          clip-path: polygon(0 0,100% 0,100% 30%,0 100%);
+          animation: glitch 0.2s 0.5s infinite;
+          -webkit-animation:glitch 0.2s 0.5s infinite;
+        }
+
+        .animate__glitch::before
+        {
+          transform: translateX(-3px);
+          background: inherit !important;
+          clip-path: polygon(0 60%,100% 0%,100% 100%,0 100%);
+          animation: glitch 0.2s infinite linear alternate;
+          -webkit-animation: glitch 0.2s infinite linear alternate;    
+        }
+
+        @keyframes glitch
+        {
+          from
+          {
+              opacity: 0;
+          }
+          to
+          {
+              opacity: 1;
+
+          }
+        }

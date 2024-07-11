@@ -1,0 +1,28 @@
+  .animate__fadeSmoke
+  {
+    -webkit-animation-name: fadeSmoke;
+  animation-name: fadeSmoke;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+       @keyframes fadeSmoke
+       {
+        0%
+        {
+filter: blur(0px);
+transform: scaleY(1)translateY(0px);
+opacity: 1;
+        }
+        90%
+        {
+filter: blur(10px);
+transform: scaleY(1.2)translateY(-20px);
+
+
+        }
+        100%
+        {
+          opacity: 0;
+        }
+       }
