@@ -55,7 +55,7 @@
     "postcss-import": "^14.0.2",
     "postcss-prefixer": "^2.1.3",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.7.1"
+    "prettier": "^3.3.3"
   },
   "lint-staged": {
     "*.{mjs,js,json,md,css}": "prettier --write"
