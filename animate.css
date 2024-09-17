@@ -3008,8 +3008,8 @@
 /* Rotating entrances */
 @-webkit-keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
     opacity: 0;
   }
 
@@ -3021,8 +3021,8 @@
 }
 @keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
     opacity: 0;
   }
 
