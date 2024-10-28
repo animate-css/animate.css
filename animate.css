@@ -17,6 +17,8 @@
   animation-duration: 1s;
   -webkit-animation-duration: var(--animate-duration);
   animation-duration: var(--animate-duration);
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
