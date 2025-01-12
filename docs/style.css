@@ -67,10 +67,22 @@ code {
 
 pre {
   padding: 1rem;
-
+position: relative;
   background-color: var(--c-dark);
   border-radius: 0.25em;
   color: #fff;
+}
+
+.copy-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 1em;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 0 0.25em;
+  cursor: pointer;
+  background: none;
 }
 
 pre code {
