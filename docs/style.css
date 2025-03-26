@@ -225,7 +225,7 @@ blockquote {
 
   animation-delay: 0.3s;
 
-  color: var(--c-secondary);
+  color: #AA4f02;
   font-size: 1.3333rem;
   font-size: min(10vw, 1.3333rem);
 }
