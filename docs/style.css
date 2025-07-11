@@ -350,6 +350,62 @@ blockquote {
   z-index: -1;
 }
 
+.code-block-wrapper {
+  position: relative;
+}
+
+.copy-code-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.copy-code-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
+
+.copy-code-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.copy-tooltip {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.copy-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #333 transparent transparent transparent;
+}
+
 .animation-item:hover .copy-icon {
   visibility: visible;
 }
@@ -736,4 +792,21 @@ blockquote {
 .dark h1,
 .dark a {
   color: #4672fe;
+}
+
+.dark .copy-code-btn {
+  color: #e0e0e0;
+}
+
+.dark .copy-code-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .copy-tooltip {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.dark .copy-tooltip::after {
+  border-color: #e0e0e0 transparent transparent transparent;
 }
