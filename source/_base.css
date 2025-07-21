@@ -66,3 +66,14 @@
     opacity: 0;
   }
 }
+@keyframes color-blink {
+  0% { color: red; }
+  50% { color: yellow; }
+  100% { color: red; }
+}
+
+.color-blink {
+  animation-name: color-blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
