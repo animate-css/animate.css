@@ -4072,3 +4072,29 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+@keyframes WarningFlash {
+  0% {
+    text-shadow: 
+      0 0 10px rgba(255, 200, 0, 0.3), 
+      0 0 20px rgba(255, 200, 0, 0.2), 
+      0 0 30px rgba(255, 200, 0, 0.1); 
+  }
+
+  50% {
+    text-shadow: 
+      0 0 20px #fff700,
+      0 0 40px #ffe347,
+      0 0 60px #ffcc00;  
+  }
+
+  100% {
+    text-shadow: 
+      0 0 10px rgba(255, 200, 0, 0.3), 
+      0 0 20px rgba(255, 200, 0, 0.2), 
+      0 0 30px rgba(255, 200, 0, 0.1); 
+  }
+}
+.animate__WarningFlash{
+  -webkit-animation-name:WarningFlash ;
+  animation-name:WarningFlash;
+}
