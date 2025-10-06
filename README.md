@@ -26,7 +26,7 @@ You can find the Animate.css documentation on the [website](https://animate.styl
 
 ## Accessibility
 
-Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
+Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and Operating Systems), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
 ## Core Team
 
@@ -45,4 +45,4 @@ This project and everyone participating in it is governed by the [Contributor Co
 
 ## Contributing
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.
+Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorized [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.
