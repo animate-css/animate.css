@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixture of Experts → AGI Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 393px;
+            position: relative;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(100, 200, 255, 0.5);
+        }
+
+        .subtitle {
+            color: #8899bb;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .animation-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1;
+            max-width: 393px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 30px rgba(100, 200, 255, 0.3));
+        }
+
+        /* Expert nodes */
+        .expert {
+            transform-origin: center;
+        }
+
+        .expert-circle {
+            animation: expertPulse 3s ease-in-out infinite;
+        }
+
+        .expert:nth-child(1) .expert-circle { animation-delay: 0s; }
+        .expert:nth-child(2) .expert-circle { animation-delay: 0.5s; }
+        .expert:nth-child(3) .expert-circle { animation-delay: 1s; }
+        .expert:nth-child(4) .expert-circle { animation-delay: 1.5s; }
+        .expert:nth-child(5) .expert-circle { animation-delay: 2s; }
+        .expert:nth-child(6) .expert-circle { animation-delay: 2.5s; }
+
+        @keyframes expertPulse {
+            0%, 100% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.15);
+            }
+        }
+
+        /* AGI central node */
+        .agi-core {
+            animation: agiGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes agiGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+                opacity: 0.9;
+            }
+            50% {
+                filter: drop-shadow(0 0 30px rgba(255, 255, 255, 1));
+                opacity: 1;
+            }
+        }
+
+        /* Connection lines */
+        .connection {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: drawLine 2s ease-in-out infinite;
+        }
+
+        .connection:nth-child(1) { animation-delay: 0s; }
+        .connection:nth-child(2) { animation-delay: 0.3s; }
+        .connection:nth-child(3) { animation-delay: 0.6s; }
+        .connection:nth-child(4) { animation-delay: 0.9s; }
+        .connection:nth-child(5) { animation-delay: 1.2s; }
+        .connection:nth-child(6) { animation-delay: 1.5s; }
+
+        @keyframes drawLine {
+            0% {
+                stroke-dashoffset: 300;
+                opacity: 0;
+            }
+            50% {
+                stroke-dashoffset: 0;
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: -300;
+                opacity: 0;
+            }
+        }
+
+        /* Data particles */
+        .particle {
+            animation: particleFlow 3s ease-in-out infinite;
+        }
+
+        .particle:nth-child(odd) { animation-delay: 0s; }
+        .particle:nth-child(even) { animation-delay: 1.5s; }
+
+        @keyframes particleFlow {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            30% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            70% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        /* Orbital rings */
+        .orbit-ring {
+            animation: rotate 20s linear infinite;
+            transform-origin: center;
+        }
+
+        .orbit-ring:nth-child(1) { animation-duration: 20s; }
+        .orbit-ring:nth-child(2) { animation-duration: 30s; animation-direction: reverse; }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Info section */
+        .info {
+            margin-top: 30px;
+            color: #8899bb;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .expert-label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: 0 0 8px currentColor;
+        }
+
+        /* Responsive adjustments for iPhone 16 Pro */
+        @media screen and (max-width: 393px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 12px;
+            }
+
+            .info {
+                font-size: 11px;
+            }
+
+            .animation-container {
+                max-width: 100%;
+            }
+        }
+
+        /* Larger screens */
+        @media screen and (min-width: 768px) {
+            .container {
+                max-width: 600px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .animation-container {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mixture of Experts → AGI</h1>
+        <p class="subtitle">Cross-Frontier AI Models Collaborating</p>
+
+        <div class="animation-container">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- Gradients for each expert -->
+                    <radialGradient id="visionGrad">
+                        <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#c44569;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="languageGrad">
+                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="reasoningGrad">
+                        <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="codeGrad">
+                        <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fee140;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="multimodalGrad">
+                        <stop offset="0%" style="stop-color:#a18cd1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fbc2eb;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="audioGrad">
+                        <stop offset="0%" style="stop-color:#ffd89b;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#19547b;stop-opacity:0.8" />
+                    </radialGradient>
+                    <radialGradient id="agiGrad">
+                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                        <stop offset="30%" style="stop-color:#e0e0ff;stop-opacity:0.95" />
+                        <stop offset="100%" style="stop-color:#8888ff;stop-opacity:0.9" />
+                    </radialGradient>
+
+                    <!-- Blur filter for glow -->
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Orbital rings -->
+                <g class="orbit-ring">
+                    <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="5,5"/>
+                </g>
+                <g class="orbit-ring">
+                    <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" stroke-dasharray="3,7"/>
+                </g>
+
+                <!-- Connection lines from experts to AGI center -->
+                <g id="connections">
+                    <line class="connection" x1="200" y1="60" x2="200" y2="200" stroke="#4facfe" stroke-width="1.5" opacity="0.6"/>
+                    <line class="connection" x1="321.65" y1="110" x2="200" y2="200" stroke="#ff6b9d" stroke-width="1.5" opacity="0.6"/>
+                    <line class="connection" x1="321.65" y1="290" x2="200" y2="200" stroke="#43e97b" stroke-width="1.5" opacity="0.6"/>
+                    <line class="connection" x1="200" y1="340" x2="200" y2="200" stroke="#fa709a" stroke-width="1.5" opacity="0.6"/>
+                    <line class="connection" x1="78.35" y1="290" x2="200" y2="200" stroke="#a18cd1" stroke-width="1.5" opacity="0.6"/>
+                    <line class="connection" x1="78.35" y1="110" x2="200" y2="200" stroke="#ffd89b" stroke-width="1.5" opacity="0.6"/>
+                </g>
+
+                <!-- Data particles along connection paths -->
+                <g id="particles">
+                    <!-- Top expert particles -->
+                    <circle class="particle" cx="200" cy="130" r="3" fill="#4facfe" filter="url(#glow)">
+                        <animateMotion dur="3s" repeatCount="indefinite">
+                            <mpath href="#path1"/>
+                        </animateMotion>
+                    </circle>
+
+                    <!-- Define motion paths -->
+                    <path id="path1" d="M 200,60 L 200,200" fill="none" opacity="0"/>
+                    <path id="path2" d="M 321.65,110 L 200,200" fill="none" opacity="0"/>
+                    <path id="path3" d="M 321.65,290 L 200,200" fill="none" opacity="0"/>
+                    <path id="path4" d="M 200,340 L 200,200" fill="none" opacity="0"/>
+                    <path id="path5" d="M 78.35,290 L 200,200" fill="none" opacity="0"/>
+                    <path id="path6" d="M 78.35,110 L 200,200" fill="none" opacity="0"/>
+                </g>
+
+                <!-- Expert nodes positioned in a hexagon -->
+                <!-- Language Expert (top) -->
+                <g class="expert" transform="translate(200, 60)">
+                    <circle class="expert-circle" r="25" fill="url(#languageGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">L</text>
+                </g>
+
+                <!-- Vision Expert (top-right) -->
+                <g class="expert" transform="translate(321.65, 110)">
+                    <circle class="expert-circle" r="25" fill="url(#visionGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">V</text>
+                </g>
+
+                <!-- Reasoning Expert (bottom-right) -->
+                <g class="expert" transform="translate(321.65, 290)">
+                    <circle class="expert-circle" r="25" fill="url(#reasoningGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">R</text>
+                </g>
+
+                <!-- Code Expert (bottom) -->
+                <g class="expert" transform="translate(200, 340)">
+                    <circle class="expert-circle" r="25" fill="url(#codeGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">C</text>
+                </g>
+
+                <!-- Multimodal Expert (bottom-left) -->
+                <g class="expert" transform="translate(78.35, 290)">
+                    <circle class="expert-circle" r="25" fill="url(#multimodalGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">M</text>
+                </g>
+
+                <!-- Audio Expert (top-left) -->
+                <g class="expert" transform="translate(78.35, 110)">
+                    <circle class="expert-circle" r="25" fill="url(#audioGrad)" filter="url(#glow)"/>
+                    <text x="0" y="5" text-anchor="middle" fill="white" font-size="28" font-weight="bold">A</text>
+                </g>
+
+                <!-- AGI Central Core -->
+                <g class="agi-core" transform="translate(200, 200)">
+                    <circle r="45" fill="url(#agiGrad)" filter="url(#glow)"/>
+                    <text x="0" y="-5" text-anchor="middle" fill="#1a1a2e" font-size="20" font-weight="bold">AGI</text>
+                    <text x="0" y="15" text-anchor="middle" fill="#1a1a2e" font-size="10">TARGET</text>
+
+                    <!-- Rotating ring around AGI -->
+                    <circle r="50" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="5,5">
+                        <animateTransform
+                            attributeName="transform"
+                            type="rotate"
+                            from="0 0 0"
+                            to="360 0 0"
+                            dur="15s"
+                            repeatCount="indefinite"/>
+                    </circle>
+                </g>
+            </svg>
+        </div>
+
+        <div class="info">
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></span>
+                <span><strong>L</strong> - Language Model Expert</span>
+            </div>
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #ff6b9d, #c44569);"></span>
+                <span><strong>V</strong> - Vision Expert</span>
+            </div>
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"></span>
+                <span><strong>R</strong> - Reasoning Expert</span>
+            </div>
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #fa709a, #fee140);"></span>
+                <span><strong>C</strong> - Code Expert</span>
+            </div>
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);"></span>
+                <span><strong>M</strong> - Multimodal Expert</span>
+            </div>
+            <div class="expert-label">
+                <span class="color-dot" style="background: linear-gradient(135deg, #ffd89b, #19547b);"></span>
+                <span><strong>A</strong> - Audio Expert</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
