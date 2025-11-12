@@ -37,13 +37,64 @@
     />
 
     <!-- Fork Corner Stylesheet -->
-    <link 
+    <link
       href="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.css"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="animate.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 1. Wrapper for positioning */
+      .code-container {
+        position: relative;
+        margin: 1.5em 0; /* Add some space around the code blocks */
+      }
+
+      /* 2. Style the <pre> tag itself */
+      .code-container pre {
+        /* The <pre> tag already has styles, but we ensure margin is 0
+           since the wrapper handles it */
+        margin: 0;
+        /* Add some padding to make room for the button */
+        padding-right: 50px;
+      }
+
+      /* 3. The copy button */
+      .copy-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 8px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      }
+
+      /* 4. Hover effect */
+      .copy-btn:hover {
+        opacity: 1;
+        background-color: #555;
+      }
+
+      /* 5. Icon styles */
+      .copy-btn svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        vertical-align: middle;
+      }
+
+      /* 6. "Copied" feedback state */
+      .copy-btn.copied {
+        background-color: #28a745; /* A nice green color */
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
 
@@ -75,7 +126,7 @@
           </svg>
         </label>
         <button class="callout-hideList button">Close list</button>
-        
+
       <section class="attention_seekers" id="attention_seekers">
         <h3 class="animation-title">Attention seekers</h3>
         <ul class="animation-group">
@@ -163,7 +214,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="back_entrances" id="back_entrances">
         <h3 class="animation-title">Back entrances</h3>
@@ -196,7 +247,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="back_exits" id="back_exits">
         <h3 class="animation-title">Back exits</h3>
@@ -229,7 +280,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="bouncing_entrances" id="bouncing_entrances">
         <h3 class="animation-title">Bouncing entrances</h3>
@@ -269,7 +320,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="bouncing_exits" id="bouncing_exits">
         <h3 class="animation-title">Bouncing exits</h3>
@@ -309,7 +360,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="fading_entrances" id="fading_entrances">
         <h3 class="animation-title">Fading entrances</h3>
@@ -405,7 +456,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="fading_exits" id="fading_exits">
         <h3 class="animation-title">Fading exits</h3>
@@ -501,7 +552,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="flippers" id="flippers">
         <h3 class="animation-title">Flippers</h3>
@@ -541,7 +592,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="lightspeed" id="lightspeed">
         <h3 class="animation-title">Lightspeed</h3>
@@ -574,7 +625,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="rotating_entrances" id="rotating_entrances">
         <h3 class="animation-title">Rotating entrances</h3>
@@ -614,7 +665,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="rotating_exits" id="rotating_exits">
         <h3 class="animation-title">Rotating exits</h3>
@@ -654,7 +705,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="specials" id="specials">
         <h3 class="animation-title">Specials</h3>
@@ -687,7 +738,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="zooming_entrances" id="zooming_entrances">
         <h3 class="animation-title">Zooming entrances</h3>
@@ -727,7 +778,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="zooming_exits" id="zooming_exits">
         <h3 class="animation-title">Zooming exits</h3>
@@ -767,7 +818,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="sliding_entrances" id="sliding_entrances">
         <h3 class="animation-title">Sliding entrances</h3>
@@ -800,7 +851,7 @@
       </button>
     </li></ul>
       </section>
-    
+
 
       <section class="sliding_exits" id="sliding_exits">
         <h3 class="animation-title">Sliding exits</h3>
@@ -833,7 +884,7 @@
       </button>
     </li></ul>
       </section>
-    
+
       </section>
 
       <footer class="intro-footer">
@@ -870,7 +921,7 @@
         </span>
         <div class="container">
           <div class="content">
-            
+
       <section class="docSection-intro" id="intro">
         <blockquote>
 <p>Animate.css v4 brought some <strong>breaking changes</strong>, please refer to the <a href="#migration">migration guide</a> before updating from v3.x and under.</p>
@@ -879,7 +930,7 @@
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/00-intro.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-usage" id="usage">
         <h2>Installation and Usage</h2>
@@ -946,7 +997,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/01-usage.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-utilities" id="utilities">
         <h2>Utility Classes</h2>
@@ -1077,7 +1128,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/02-utilities.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-best-practices" id="best-practices">
         <h2>Best Practices</h2>
@@ -1118,7 +1169,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/03-best-practices.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-javascript" id="javascript">
         <h2>Usage with Javascript</h2>
@@ -1169,7 +1220,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/04-javascript.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-migration" id="migration">
         <h2>Migration from v3.x and Under</h2>
@@ -1204,7 +1255,7 @@ animateCSS('.my-element', 'bounce').then((message) =&gt; {
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/06-migration.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-custom-builds" id="custom-builds">
         <h2>Custom Builds</h2>
@@ -1221,7 +1272,7 @@ $ npm install
 <li><code>animate.min.css</code>: minified build ready for production</li>
 <li><code>animate.compat.css</code>: minified build ready for production <strong>without class prefix</strong>. This should only be used as an easy path for migrations.</li>
 </ul>
-<p>For example, if you'll only use some of the “attention seekers” animations, simply edit the <code>./source/animate.css</code> file, delete every <code>@import</code> and the ones you want to use.</p>
+<p>For example, if you'll only use some of the “attention seekers” animations, simply edit the <code>./source/animate.css</code> file, delete every <code>@import</code>, and add the ones you want to use.</p>
 <pre><code class="language-css">@import 'attention_seekers/bounce.css';
 @import 'attention_seekers/flash.css';
 @import 'attention_seekers/pulse.css';
@@ -1249,7 +1300,7 @@ $ npm install
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/07-custom-builds.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-accessibility" id="accessibility">
         <h2>Accessibility</h2>
@@ -1257,7 +1308,7 @@ $ npm install
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/08-accessibility.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-contributors" id="contributors">
         <h2>Core Team</h2>
@@ -1285,7 +1336,7 @@ $ npm install
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/09-contributors.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
 
       <section class="docSection-license-contributing" id="license-contributing">
         <h2>License and Contributing</h2>
@@ -1297,7 +1348,7 @@ $ npm install
 
         <p class="edit-github"><a href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/09-license-contributing.md" title="Edit this on GitHub">Edit this on GitHub</a></p>
       </section>
-    
+
           </div>
           <aside class="sidebar">
             <div class="meta">
@@ -1358,5 +1409,53 @@ $ npm install
 
     <!-- Fork Corner Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Find all <pre> blocks
+        const allPreBlocks = document.querySelectorAll('pre');
+
+        allPreBlocks.forEach(preBlock => {
+          // 3. Create the wrapper div
+          const container = document.createElement('div');
+          container.className = 'code-container';
+
+          // 4. Wrap the <pre> block
+          preBlock.parentNode.insertBefore(container, preBlock);
+          container.appendChild(preBlock);
+
+          // 5. Create the copy button
+          const copyButton = document.createElement('button');
+          copyButton.className = 'copy-btn';
+          copyButton.innerText = 'Copy';
+          copyButton.setAttribute('aria-label', 'Copy code to clipboard');
+
+          // 6. Append the button to the wrapper
+          container.appendChild(copyButton);
+
+          // 7. Add the click event listener
+          copyButton.addEventListener('click', () => {
+            const codeElement = preBlock.querySelector('code');
+            const textToCopy = codeElement ? codeElement.innerText : '';
+
+            if (textToCopy) {
+              navigator.clipboard.writeText(textToCopy).then(() => {
+                // Success feedback
+                copyButton.innerText = 'Copied!';
+                copyButton.classList.add('copied');
+
+                // Revert after 2 seconds
+                setTimeout(() => {
+                  copyButton.innerText = 'Copy';
+                  copyButton.classList.remove('copied');
+                }, 2000);
+
+              }).catch(err => {
+                console.error('Failed to copy text: ', err);
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

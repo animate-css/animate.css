@@ -65,5 +65,8 @@
     "animate.min.css",
     "animate.css",
     "source/**/*.css"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
