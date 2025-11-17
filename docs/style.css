@@ -77,6 +77,38 @@ pre code {
   background-color: transparent;
   font-size: 0.8rem !important;
 }
+/* Footer link hover effect styles - top level */
+.main-footer a,
+.intro-footer a {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-footer a::after,
+.intro-footer a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #ff5722;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.main-footer a:hover,
+.intro-footer a:hover {
+  color: #ff5722;
+}
+
+.main-footer a:hover::after,
+.intro-footer a:hover::after {
+  transform: scaleX(1);
+}
 
 /*-----------------------------------*\
   $TYPOGRAPHY
@@ -285,7 +317,35 @@ blockquote {
 
   font-size: 0.75rem;
   text-align: center;
-}
+  }
+
+  .intro-footer a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .intro-footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #ff5722;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .intro-footer a:hover {
+    color: #ff5722;
+  }
+
+  .intro-footer a:hover::after {
+    transform: scaleX(1);
+  }
 
 .animation-item {
   cursor: pointer;
