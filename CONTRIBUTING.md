@@ -22,6 +22,34 @@ The animations in Animate.css should follow a few key principles:
 3. End each file with a blank line
 4. Make sure you have an editorconfig plugin/extension enabled in your editor and all the dependencies installed so editorconfig and prettier can automatically format your code when committing.
 
+## Types of Contributions We Welcome
+
+Animate.css is more than just a collection of animations. We welcome a variety of contributions that help improve the project for everyone, including:
+
+### 🧩 Animation Improvements
+- Refinements to existing animations (timing, easing, consistency)
+- Bug fixes that improve reliability or performance
+- New animations that follow the design guidelines above
+
+### 📚 Documentation Improvements
+- Fixing typos, grammar, or formatting issues
+- Improving clarity of usage examples
+- Expanding explanations for accessibility or best practices
+
+### ♿ Accessibility Enhancements
+- Improvements that help animations respect user preferences such as `prefers-reduced-motion`
+- Documentation updates that explain accessibility considerations when using Animate.css
+
+### 🧪 Demos and Examples
+- Improvements to existing demo pages
+- Clearer or more illustrative examples showing real-world usage
+
+### 🛠 Tooling and Maintenance
+- Build, formatting, or configuration improvements
+- CI or test-related enhancements that do not change public APIs
+
+If you are unsure whether a change fits within the scope of Animate.css, feel free to open an issue to discuss it before starting work.
+
 ## How To Contribute
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project
