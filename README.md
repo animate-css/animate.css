@@ -1,5 +1,8 @@
 # Animate.css
 
+![GitHub Repo Banner](https://ghrb.waren.build/banner?header=Animate.css%F0%9F%8D%BF&subheader=Just-add-water+CSS+animation&bg=f3f4f6&color=1f2937&support=true)
+<!-- Created with GitHub Repo Banner by Waren Gonzaga: https://ghrb.waren.build -->
+
 [![GitHub Version](https://img.shields.io/github/release/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/releases) [![Github Star](https://img.shields.io/github/stars/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/stargazers) [![Github Fork](https://img.shields.io/github/forks/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/network/members) [![License](https://img.shields.io/badge/license-hippocratic%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/animate-css/animate.css/blob/main/LICENSE)
 
 > If you need the old docs - v3.x.x and under - you can find it [here](https://github.com/animate-css/animate.css/tree/a8d92e585b1b302f7749809c3308d5e381f9cb17).
