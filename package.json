@@ -44,7 +44,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.0.17",
-    "eslint": "^7.32.0",
+    "eslint": "^4.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "markdown-it": "^12.3.2",
@@ -53,8 +53,8 @@
     "postcss-cli": "^8.3.1",
     "postcss-header": "^3.0.1",
     "postcss-import": "^14.0.2",
-    "postcss-prefixer": "^2.1.3",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-prefixer": "^3.0.0",
+    "postcss-preset-env": "^11.1.3",
     "prettier": "^2.7.1"
   },
   "lint-staged": {
@@ -65,5 +65,8 @@
     "animate.min.css",
     "animate.css",
     "source/**/*.css"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

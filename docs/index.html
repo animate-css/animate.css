@@ -26,29 +26,57 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- Fork Corner Stylesheet -->
     <link 
       href="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.css"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link 
+        href="https://cdn.jsdelivr.net/npm/fork-corner/dist/fork-corner.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <link rel="stylesheet" href="animate.min.css" />
+    <link rel="stylesheet" href="animate.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="animate.min.css" /></noscript>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
     <!-- Fork Corner -->
-    <a href="https://github.com/animate-css/animate.css" target="_blank" id="fork-corner" class="fork-corner fc-size-small fc-pos-tl fc-animate-grow fc-theme-github"></a>
+    <a href="https://github.com/animate-css/animate.css" target="_blank" id="fork-corner" class="fork-corner fc-size-small fc-pos-tl fc-animate-grow fc-theme-github" aria-label="View source on GitHub"></a>
 
     <article class="intro">
       <section class="callout">
@@ -1099,9 +1127,9 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
 <h3>Infinite animations should be avoided</h3>
 <p>Even though Animate.css provides utility classes for repeating animations, including an infinite one, you should avoid endless animations. It will just distract your users and might annoy a good slice of them. So, use it wisely!</p>
 <h3>Mind the initial and final state of your elements</h3>
-<p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code>, which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">here</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
+<p>All the Animate.css animations include a CSS property called <code>animation-fill-mode</code>, which controls the states of an element before and after animation. You can read more about it <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode">on MDN's documentation</a>. Animate.css defaults to <code>animation-fill-mode: both</code>, but you can change it to suit your needs.</p>
 <h3>Don't disable the <code>prefers-reduced-motion</code> media query</h3>
-<p>Since version 3.7.0 Animate.css supports the <code>prefers-reduced-motion</code> media query which disables animations based on the OS system's preference on supporting browsers (most current browsers support it). This is a <strong>critical accessibility feature</strong> and should never be disabled! This is built into browsers to help people with vestibular and seizure disorders. You can read more about it <a href="https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/">here</a>. If your web-thing needs the animations to function, warn users, but don't disable the feature. You can do it easily with CSS only. Here's a simple example:</p>
+<p>Since version 3.7.0 Animate.css supports the <code>prefers-reduced-motion</code> media query which disables animations based on the OS system's preference on supporting browsers (most current browsers support it). This is a <strong>critical accessibility feature</strong> and should never be disabled! This is built into browsers to help people with vestibular and seizure disorders. You can read more about it <a href="https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/">on CSS-Tricks</a>. If your web-thing needs the animations to function, warn users, but don't disable the feature. You can do it easily with CSS only. Here's a simple example:</p>
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="eltonmesquita" data-slug-hash="oNjGGbw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Prefers-reduce-motion media query">
   <span>See the Pen <a href="https://codepen.io/eltonmesquita/pen/oNjGGbw">
   Prefers-reduce-motion media query</a> by Elton Mesquita (<a href="https://codepen.io/eltonmesquita">@eltonmesquita</a>)
@@ -1264,9 +1292,9 @@ $ npm install
 <table>
 <thead>
 <tr>
-<th><img src="https://avatars2.githubusercontent.com/u/439365?s=460&amp;u=512b4cc5324938ae40bbb8f3b7769d335953cd3a&amp;v=4" alt=""></th>
-<th><img src="https://avatars2.githubusercontent.com/u/5007208?s=460&amp;u=418401ee605824272e5dcb955fd64ea24546a857&amp;v=4" alt=""></th>
-<th><img src="https://avatars1.githubusercontent.com/u/15052701?s=460&amp;u=9e58364978379536d3f26c4ce5cae1a2a449a0e4&amp;v=4" alt=""></th>
+<th><img src="https://avatars2.githubusercontent.com/u/439365?s=460&amp;u=512b4cc5324938ae40bbb8f3b7769d335953cd3a&amp;v=4" alt="" width="150" height="150"></th>
+<th><img src="https://avatars2.githubusercontent.com/u/5007208?s=460&amp;u=418401ee605824272e5dcb955fd64ea24546a857&amp;v=4" alt="" width="150" height="150"></th>
+<th><img src="https://avatars1.githubusercontent.com/u/15052701?s=460&amp;u=9e58364978379536d3f26c4ce5cae1a2a449a0e4&amp;v=4" alt="" width="150" height="150"></th>
 </tr>
 </thead>
 <tbody>
@@ -1301,7 +1329,7 @@ $ npm install
           </div>
           <aside class="sidebar">
             <div class="meta">
-              <a href="https://github.com/animate-css/animate.css" target="_blank" class="icon-github">
+              <a href="https://github.com/animate-css/animate.css" target="_blank" class="icon-github" aria-label="View source on GitHub">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1348,7 +1376,7 @@ $ npm install
           rel="noopener noreferrer"
           href="https://developers.google.com/web/updates/2019/03/prefers-reduced-motion"
         >
-          here</a
+          on Google Developers</a
         >.
       </p>
     </aside>

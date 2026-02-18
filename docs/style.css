@@ -8,6 +8,7 @@
   --c-dark: #333;
   --c-background: #fce5cd;
   --c-background-dark: #f7d7b5;
+  --c-secondary-dark: #a85d00;
 }
 
 html,
@@ -225,7 +226,7 @@ blockquote {
 
   animation-delay: 0.3s;
 
-  color: var(--c-secondary);
+  color: var(--c-secondary-dark);
   font-size: 1.3333rem;
   font-size: min(10vw, 1.3333rem);
 }
