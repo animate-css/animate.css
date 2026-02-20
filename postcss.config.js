@@ -1,4 +1,11 @@
 const fs = require('fs');
+const postcssImport = require('postcss-import');
+const postcssPrefixer = require('postcss-prefixer');
+const postcssPresetEnv = require('postcss-preset-env');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const postcssHeader = require('postcss-header');
+
 const {homepage, version, author, animateConfig} = JSON.parse(fs.readFileSync('package.json'));
 
 const header = `
@@ -23,24 +30,22 @@ module.exports = (ctx) => {
   return {
     map: ctx.options.map,
     parser: ctx.options.parser,
-    plugins: {
-      'postcss-import': {root: ctx.file.dirname},
-      'postcss-prefixer': {
+    plugins: [
+      postcssImport({root: ctx.file.dirname}),
+      postcssPrefixer({
         prefix,
         ignore: [/\[class\*=.*\]/],
-      },
-      'postcss-preset-env': {
-        autoprefixer: {
-          cascade: false,
-        },
+      }),
+      postcssPresetEnv({
         features: {
           'custom-properties': true,
         },
-      },
-      cssnano: ctx.env === 'production' || ctx.env === 'compat' ? {} : false,
-      'postcss-header': {
-        header,
-      },
-    },
+      }),
+      autoprefixer({
+        cascade: false,
+      }),
+      ctx.env === 'production' || ctx.env === 'compat' ? cssnano() : false,
+      postcssHeader({header}),
+    ].filter(Boolean),
   };
 };
