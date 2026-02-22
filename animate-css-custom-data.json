@@ -1,0 +1,23 @@
+{
+  "version": 1.1,
+  "properties": [
+    {
+      "name": "--animate-duration",
+      "description": "Sets the duration of all Animate.css animations. Defaults to `1s`.",
+      "syntax": "<time>"
+    },
+    {
+      "name": "--animate-delay",
+      "description": "Sets the delay of all Animate.css animations. Defaults to `1s`.",
+      "syntax": "<time>"
+    },
+    {
+      "name": "--animate-repeat",
+      "description": "Sets the number of times Animate.css animations repeat. Defaults to `1`.",
+      "syntax": "<number>"
+    }
+  ],
+  "atDirectives": [],
+  "pseudoClasses": [],
+  "pseudoElements": []
+}

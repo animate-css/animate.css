@@ -24,6 +24,20 @@ yarn add animate.css
 
 You can find the Animate.css documentation on the [website](https://animate.style/).
 
+## IDE / IntelliSense support
+
+Animate.css ships a [VS Code CSS Custom Data](https://code.visualstudio.com/blogs/2020/02/24/custom-data-format) file (`animate-css-custom-data.json`) that enables IntelliSense for the CSS custom properties (`--animate-duration`, `--animate-delay`, `--animate-repeat`) exposed by the library.
+
+Add the following to your `.vscode/settings.json` (or user settings) to activate it:
+
+```json
+{
+  "css.customData": ["./node_modules/animate.css/animate-css-custom-data.json"]
+}
+```
+
+For **class-name completion** in HTML files, install the [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) extension and make sure your stylesheet (or `node_modules/animate.css/animate.css`) is linked in your project. The extension will automatically scan it and suggest the `animate__*` classes as you type.
+
 ## Accessibility
 
 Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.

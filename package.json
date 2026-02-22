@@ -64,6 +64,7 @@
     "animate.compat.css",
     "animate.min.css",
     "animate.css",
+    "animate-css-custom-data.json",
     "source/**/*.css"
   ]
 }
