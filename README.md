@@ -24,6 +24,21 @@ yarn add animate.css
 
 You can find the Animate.css documentation on the [website](https://animate.style/).
 
+## Using with JavaScript Libraries
+
+When using Animate.css with scroll-triggered JavaScript libraries (such as [wow.js](https://wowjs.uk/), [ScrollReveal](https://scrollrevealjs.org/), or [AOS](https://michalsnik.github.io/aos/)), animations may appear to restart on every page load or when an element re-enters the viewport. This is expected CSS animation behavior: whenever an animation class is removed from an element and then re-added, the animation plays again from the start.
+
+To run an animation only **once**, remove the animation classes after the animation ends using the `animationend` event:
+
+```javascript
+const element = document.querySelector('.animate__animated.animate__bounceIn');
+element.addEventListener('animationend', () => {
+  element.classList.remove('animate__animated', 'animate__bounceIn');
+}, { once: true });
+```
+
+If you are using wow.js specifically, you can prevent it from re-triggering animations on elements already visible in the viewport by initialising it with the `resetAnimation` option set to `false` (if supported by your version), or by removing the animation class on `animationend` as shown above.
+
 ## Accessibility
 
 Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
