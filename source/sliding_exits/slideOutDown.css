@@ -1,11 +1,11 @@
 @keyframes slideOutDown {
   from {
-    transform: translate3d(0, 0, 0);
+    translate: none;
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(0, 100%, 0);
+    translate: 0 100%;
   }
 }
 
