@@ -27,7 +27,7 @@
     "docs": "npm-run-all docs:library docs:pages",
     "version": "npm-run-all start docs && git add -A docs animate.css animate.min.css animate.compat.css",
     "postversion": "git push && git push --tags",
-    "prepare": "husky install"
+    "prepare": "node -e \"if (process.env.INIT_CWD === process.cwd()) require('child_process').execSync('husky install', {stdio: 'inherit'});\""
   },
   "browserslist": [
     "> 3%",
