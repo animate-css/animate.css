@@ -24,6 +24,18 @@ yarn add animate.css
 
 You can find the Animate.css documentation on the [website](https://animate.style/).
 
+## Usage with custom CSS
+
+When using Animate.css animation names directly in your own CSS (without the `.animate__animated` utility class), remember to set `animation-fill-mode: both` (or `forwards`) so the element retains its final animated state after the animation completes. The `.animate__animated` class already handles this for you.
+
+```css
+#my-element {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both; /* keeps the element visible after the animation ends */
+}
+```
+
 ## Accessibility
 
 Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
