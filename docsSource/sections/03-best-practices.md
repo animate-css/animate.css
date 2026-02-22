@@ -58,3 +58,19 @@ Most of the Animate.css animations will move elements across the screen and migh
 ### Intervals between repeats
 
 Unfortunately, this isn't possible with pure CSS right now. You have to use Javascript to achieve this result.
+
+### Combining page-load and hover animations
+
+Applying a page-load animation and a hover animation to the same element can cause an unexpected restart of the entrance animation after the hover animation finishes. This happens because browsers re-evaluate the `animation` property whenever it changes (e.g., when a class is added or removed on hover), which resets the animation cycle.
+
+The recommended fix is to remove the page-load animation classes with Javascript once the animation is complete, so there is nothing to restart:
+
+```javascript
+const element = document.querySelector('.my-element');
+
+element.addEventListener('animationend', () => {
+  element.classList.remove('animate__animated', 'animate__fadeIn');
+}, {once: true});
+```
+
+After removing those classes the hover animation works independently and the entrance animation will not be restarted.
