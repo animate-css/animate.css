@@ -582,6 +582,14 @@ blockquote {
 
 .main-footer a {
   color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease, text-shadow 0.2s ease;
+}
+
+.main-footer a:hover {
+  opacity: 0.85;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
 }
 
 /*-----------------------------------*\
