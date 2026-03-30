@@ -21,6 +21,6 @@ const withVersion = withListAndDocs.replace('{{version}}', version);
 
 fs.writeFile(output, withVersion, 'utf8', (err) => {
   if (err) console.error(err);
-  console.log('Template compiled succesfully.');
+  console.log('Template compiled successfully.');
 });
 
