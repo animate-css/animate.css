@@ -16,7 +16,7 @@ const header = `
 
 module.exports = (ctx) => {
   const prefix = ctx.env === 'compat' ? '' : animateConfig.prefix;
-  const devMessage = `🎉🎉🎉🎉 \nanimate.css ${ctx.env} build was compiled sucessfully! \n`;
+  const devMessage = `🎉🎉🎉🎉 \nanimate.css ${ctx.env} build was compiled successfully! \n`;
 
   console.log(devMessage);
 
