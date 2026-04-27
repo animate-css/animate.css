@@ -1,11 +1,9 @@
 @keyframes rotateOutUpRight {
-  0% {
-    transform-origin: right bottom;
+  from {
     opacity: 1;
   }
 
-  100% {
-    transform-origin: right bottom;
+  to {
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
   }
@@ -13,4 +11,5 @@
 
 .rotateOutUpRight {
   animation-name: rotateOutUpRight;
+  transform-origin: right bottom;
 }

@@ -1,5 +1,5 @@
-@keyframes lightSpeedIn {
-  0% {
+@keyframes lightSpeedInRight {
+  from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
@@ -11,16 +11,14 @@
 
   80% {
     transform: skewX(-5deg);
-    opacity: 1;
   }
 
-  100% {
-    transform: none;
-    opacity: 1;
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
 
-.lightSpeedIn {
-  animation-name: lightSpeedIn;
+.lightSpeedInRight {
+  animation-name: lightSpeedInRight;
   animation-timing-function: ease-out;
 }

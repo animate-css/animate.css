@@ -1,73 +1,48 @@
-#Animate.css
-*Just-add-water CSS animation*
+# Animate.css
 
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+[![GitHub Version](https://img.shields.io/github/release/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/releases) [![Github Star](https://img.shields.io/github/stars/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/stargazers) [![Github Fork](https://img.shields.io/github/forks/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/animate-css/animate.css/network/members) [![License](https://img.shields.io/badge/license-hippocratic%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/animate-css/animate.css/blob/main/LICENSE)
 
-##Usage
-To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
+> If you need the old docs - v3.x.x and under - you can find it [here](https://github.com/animate-css/animate.css/tree/a8d92e585b1b302f7749809c3308d5e381f9cb17).
 
-```html
-<head>
-  <link rel="stylesheet" href="animate.min.css">
-</head>
+## _Just-add-water CSS animation_
+
+## Installation
+
+Install with npm:
+
+```shell
+npm install animate.css --save
 ```
 
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
+Install with yarn:
 
-```javascript
-$('#yourElement').addClass('animated bounceOutLeft');
+```shell
+yarn add animate.css
 ```
 
-You can also detect when an animation ends:
+## Getting Started
 
-<!--
-Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
+You can find the Animate.css documentation on the [website](https://animate.style/).
 
-http://api.jquery.com/one/
--->
+## Accessibility
 
-```javascript
-$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
-```
+Animate.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently all the majors browsers and OS), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
 
-**Note:** `jQuery#one` is used when you want to execute the event handler at most *once*. More information [here](http://api.jquery.com/one/).
+## Core Team
 
-You can change the duration of your animations, add a delay or change the number of times that it plays:
-
-```css
-#yourElement {
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
-}
-```
-
-*Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)*
-
-## Custom Builds
-Animate.css is powered by [Grunt](http://gruntjs.com), and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:
-
-```sh
-$ cd path/to/animate.css/
-$ sudo npm install
-```
-
-Next, run `grunt watch` to watch for changes and compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
-
-```javascript
-"attention_seekers": {
-  "bounce": true,
-  "flash": false,
-  "pulse": false,
-  "shake": true,
-  "swing": true,
-  "tada": true,
-  "wobble": true
-}
-```
+| ![Daniel Eden](https://avatars2.githubusercontent.com/u/439365?s=460&u=512b4cc5324938ae40bbb8f3b7769d335953cd3a&v=4) | ![Elton Mesquita](https://avatars2.githubusercontent.com/u/5007208?s=460&u=418401ee605824272e5dcb955fd64ea24546a857&v=4) | ![Waren Gonzaga](https://avatars1.githubusercontent.com/u/15052701?s=460&u=9e58364978379536d3f26c4ce5cae1a2a449a0e4&v=4) |
+| --- | --- | --- |
+| [Daniel Eden](https://github.com/daneden) | [Elton Mesquita](https://github.com/eltonmesquita) | [Waren Gonzaga](https://github.com/WarenGonzaga) |
+| Animate.css Creator | Maintainer | Core Contributor |
 
 ## License
-Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+
+Animate.css is licensed under the [Hippocratic License](http://firstdonoharm.dev).
+
+## Code of Conduct
+
+This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [animate@eltonmesquita.com](mailto:animate@eltonmesquita.com).
 
 ## Contributing
-Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That last one is important.
+
+Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.

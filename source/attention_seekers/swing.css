@@ -15,7 +15,7 @@
     transform: rotate3d(0, 0, 1, -5deg);
   }
 
-  100% {
+  to {
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }

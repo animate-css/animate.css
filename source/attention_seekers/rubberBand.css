@@ -1,5 +1,5 @@
 @keyframes rubberBand {
-  0% {
+  from {
     transform: scale3d(1, 1, 1);
   }
 
@@ -16,14 +16,14 @@
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
-  100% {
+  to {
     transform: scale3d(1, 1, 1);
   }
 }

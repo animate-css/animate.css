@@ -1,11 +1,16 @@
 @keyframes bounceIn {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   20% {
@@ -13,7 +18,7 @@
   }
 
   40% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(0.9, 0.9, 0.9);
   }
 
   60% {
@@ -22,16 +27,16 @@
   }
 
   80% {
-    transform: scale3d(.97, .97, .97);
+    transform: scale3d(0.97, 0.97, 0.97);
   }
 
-  100% {
+  to {
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
 }
 
 .bounceIn {
+  animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: bounceIn;
-  animation-duration: .75s;
 }

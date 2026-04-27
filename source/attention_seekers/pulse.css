@@ -1,7 +1,7 @@
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @keyframes pulse {
-  0% {
+  from {
     transform: scale3d(1, 1, 1);
   }
 
@@ -9,11 +9,12 @@
     transform: scale3d(1.05, 1.05, 1.05);
   }
 
-  100% {
+  to {
     transform: scale3d(1, 1, 1);
   }
 }
 
 .pulse {
   animation-name: pulse;
+  animation-timing-function: ease-in-out;
 }
