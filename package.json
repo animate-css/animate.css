@@ -65,5 +65,10 @@
     "animate.min.css",
     "animate.css",
     "source/**/*.css"
-  ]
+  ],
+  "exports": {
+    ".": "./animate.css",
+    "./*.css": "./*.css",
+    "./source/*": "./source/*"
+  }
 }
