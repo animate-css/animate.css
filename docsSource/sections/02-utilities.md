@@ -14,6 +14,7 @@ Animate.css provides the following delays:
 
 | Class name          | Default delay time |
 | ------------------- | ------------------ |
+| `animate__delay-1s` | `1s`               |
 | `animate__delay-2s` | `2s`               |
 | `animate__delay-3s` | `3s`               |
 | `animate__delay-4s` | `4s`               |
@@ -62,7 +63,7 @@ The `animate__animated` class has a default speed of `1s`. You can also customiz
 }
 ```
 
-Notice that some animations have a duration of less than 1 second. As we used the CSS `calc()` function, setting the duration through the `--animation-duration` property will respect these ratios. So, when you change the global duration, all the animations will respond to that change!
+Notice that some animations have a duration of less than 1 second. As we used the CSS `calc()` function, setting the duration through the `--animate-duration` property will respect these ratios. So, when you change the global duration, all the animations will respond to that change!
 
 ### Repeating classes
 
@@ -79,7 +80,7 @@ You can control the iteration count of the animation by adding these classes, li
 | `animate__repeat-3` | `3`                     |
 | `animate__infinite` | `infinite`              |
 
-As with the delay and speed classes, the `animate__repeat` class is based on the `--animate-repeat` property and has a default iteration count of `1`. You can customize them by setting the `--animate-repeat` property to a longer or a shorter value:
+As with the delay and speed classes, the `animate__repeat-1`, `animate__repeat-2`, and `animate__repeat-3` classes set the iteration count. You can also customize it by setting the `--animate-repeat` property to a longer or a shorter value:
 
 ```css
 /* The element will repeat the animation 2x
