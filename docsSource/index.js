@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const {version} = JSON.parse(fs.readFileSync('package.json'));
+const {version} = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')));
 const compileMD = require('./compileMD');
 const compileAnimationList = require('./compileAnimationList');
 
@@ -23,4 +23,3 @@ fs.writeFile(output, withVersion, 'utf8', (err) => {
   if (err) console.error(err);
   console.log('Template compiled succesfully.');
 });
-
