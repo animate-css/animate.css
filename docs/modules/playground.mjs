@@ -25,9 +25,9 @@ const playground = (
   setEndListener(targetEl, target.replace('.', ''));
 
   containerEl.addEventListener('click', (e) => {
-    const el = e.target
+    const el = e.target;
 
-    if(el.classList.contains('animation-item--title')) {
+    if (el.classList.contains('animation-item--title')) {
       clearAll(items);
       const animation = `animate__${el.parentElement.getAttribute('data-animation')}`;
 
@@ -36,8 +36,10 @@ const playground = (
       document.documentElement.classList.remove('animationList-active');
     }
 
-    if (el.classList.contains('copy-icon')) {
-      const animation = `animate__${el.parentElement.getAttribute('data-animation')}`;
+    const copyBtn = e.target.closest('.copy-icon');
+
+    if (copyBtn) {
+      const animation = `animate__${copyBtn.parentElement.getAttribute('data-animation')}`;
       navigator.clipboard.writeText(animation);
     }
   });
