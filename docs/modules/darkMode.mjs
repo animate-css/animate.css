@@ -9,12 +9,12 @@ const darkModeControl = () => {
       document.body.classList.remove('dark');
       localStorage.removeItem('animate-css');
     }
-  })
+  });
 
   if (localStorage.getItem('animate-css')) {
-    document.body.className = 'dark';
+    document.body.classList.add('dark');
     darkCheck.checked = true;
   }
-}
+};
 
 export default darkModeControl;
