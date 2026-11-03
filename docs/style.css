@@ -2,13 +2,15 @@
   $BASE
 \*-----------------------------------*/
 
+
 :root {
-  --c-main: #351c75;
-  --c-secondary: #e69138;
-  --c-dark: #333;
-  --c-background: #fce5cd;
-  --c-background-dark: #f7d7b5;
+  --c-main: #2563eb;
+  --c-secondary: #0f766e;
+  --c-dark: #1e293b;
+  --c-background: #f8fafc;
+  --c-background-dark: #e2e8f0;
 }
+
 
 html,
 body {
@@ -136,16 +138,34 @@ h5 {
 \*-----------------------------------*/
 
 .button {
-  padding: 0.4em 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.65em 1.2em;
 
   color: var(--c-main);
-  border-radius: 4px;
-  border: 2px solid var(--c-main);
+  border: 1px solid var(--c-main);
+  border-radius: 8px;
   background: transparent;
 
   font-family: inherit;
   font-size: 0.9rem;
+  font-weight: 600;
   text-decoration: none;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--c-secondary);
+  outline-offset: 3px;
 }
 
 .warning {
@@ -153,9 +173,13 @@ h5 {
 
   color: #000;
   background: var(--c-background-dark);
-  border-radius: 0.25em;
+  border-radius: 0.8em;
 
   font-style: italic;
+  border-left : 4px solid var(--c-main);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 blockquote {
