@@ -38,14 +38,19 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
     // When the animation ends, we clean the classes and resolve the Promise
     function handleAnimationEnd(event) {
+      if (event.target !== node) return;
+
       event.stopPropagation();
       node.classList.remove(`${prefix}animated`, animationName);
+      node.removeEventListener('animationend', handleAnimationEnd);
       resolve('Animation ended');
     }
 
-    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+    node.addEventListener('animationend', handleAnimationEnd);
   });
 ```
+
+The handler ignores animation events that bubble up from children. It removes itself after the selected element finishes; using `{once: true}` would remove it on the first child event instead.
 
 And use it like this:
 
