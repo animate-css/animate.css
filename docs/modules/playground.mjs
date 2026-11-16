@@ -21,6 +21,9 @@ const playground = (
   const containerEl = document.querySelector(container);
   const items = [...containerEl.querySelectorAll(item)];
   const targetEl = document.querySelector(target);
+  const animationClasses = items.map(
+    (item) => `animate__${item.getAttribute('data-animation')}`,
+  );
 
   setEndListener(targetEl, target.replace('.', ''));
 
@@ -31,6 +34,9 @@ const playground = (
       clearAll(items);
       const animation = `animate__${el.parentElement.getAttribute('data-animation')}`;
 
+      targetEl.classList.remove(...animationClasses);
+      // Flush removal so selecting the same animation starts a new run.
+      void targetEl.offsetWidth;
       targetEl.classList.add('animate__animated', animation);
       document.documentElement.classList.add('isPlaying');
       document.documentElement.classList.remove('animationList-active');
