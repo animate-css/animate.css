@@ -57,6 +57,7 @@
 
 @media print, (prefers-reduced-motion: reduce) {
   .animated {
+    animation-delay: 0s !important;
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;

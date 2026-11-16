@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Reduced motion delay regression</title>
+  <link rel="stylesheet" href="../animate.css" />
+  <h1>Delayed entrance</h1>
+  <p>
+    Build with npm start. With reduced motion enabled, the message below should appear immediately
+    and report animationend. With no preference, it should retain its five-second delay. Also check
+    print preview.
+  </p>
+  <p id="status" role="status">Waiting for animationend...</p>
+  <p id="message" class="animate__animated animate__fadeIn animate__delay-5s">
+    This content should not remain hidden for five seconds under reduced motion.
+  </p>
+  <script>
+    document.getElementById('message').addEventListener('animationend', function () {
+      document.getElementById('status').textContent = 'animationend received';
+    });
+  </script>
+</html>
