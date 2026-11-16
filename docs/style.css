@@ -295,6 +295,19 @@ blockquote {
 
 .animation-item--title {
   width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.animation-item--title:focus-visible,
+.copy-icon:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 .tooltip {
@@ -350,7 +363,8 @@ blockquote {
   z-index: -1;
 }
 
-.animation-item:hover .copy-icon {
+.animation-item:hover .copy-icon,
+.animation-item:focus-within .copy-icon {
   visibility: visible;
 }
 
@@ -359,7 +373,8 @@ blockquote {
   border-color: black;
 }
 
-.copy-icon:hover .tooltip {
+.copy-icon:hover .tooltip,
+.copy-icon:focus .tooltip {
   visibility: visible;
 }
 
