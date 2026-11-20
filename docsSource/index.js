@@ -19,8 +19,5 @@ const withDocs = template.replace('{{docs}}', docs);
 const withListAndDocs = withDocs.replace('{{list}}', list);
 const withVersion = withListAndDocs.replace('{{version}}', version);
 
-fs.writeFile(output, withVersion, 'utf8', (err) => {
-  if (err) console.error(err);
-  console.log('Template compiled succesfully.');
-});
-
+fs.writeFileSync(output, withVersion, 'utf8');
+console.log('Template compiled successfully.');
