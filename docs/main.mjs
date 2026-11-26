@@ -15,13 +15,16 @@ toggleOnClick('.docs-index', 'html', 'hamburger-active');
 
 requestAnimationFrame(startAnimations);
 
-document.querySelectorAll('.copy-icon').forEach(icon => {
+document.querySelectorAll('.copy-icon').forEach((icon) => {
   icon.addEventListener('click', () => {
     icon.classList.add('copied');
-    document.querySelector('.copied .tooltip').textContent = 'Copied!';
+
+    const tooltip = icon.querySelector('.tooltip');
+    if (tooltip) tooltip.textContent = 'Copied!';
+
     setTimeout(() => {
-      icon.children[0].textContent = 'Copy class name to clipboard'
-      icon.classList.remove('copied')
-    }, 750)
-  })
-})
+      icon.children[0].textContent = 'Copy class name to clipboard';
+      icon.classList.remove('copied');
+    }, 750);
+  });
+});
